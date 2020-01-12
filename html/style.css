@@ -2024,6 +2024,7 @@ body .tz-header-4 .mega-nav{
     position: relative;
     z-index: 3;
 }
+
 .tz-slider-images:after{
     position: absolute;
     top: 0;
@@ -2135,6 +2136,13 @@ body .tz-header-4 .mega-nav{
     -moz-transform: translateX(0px);
     transform: translateX(0px);
     opacity: 1;
+}
+
+.tr-fp-image img {
+    width: 100%;
+    height: 400px;
+    
+
 }
 .tz-slider-images img {
     width: 100%;
