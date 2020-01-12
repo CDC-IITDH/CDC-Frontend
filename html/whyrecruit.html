@@ -13,8 +13,31 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
-
+<!-----The next few lines are for the effect shown in cards in beyond academics------>
+<style>
+.thumbnail{
+    background-color: blue;
+    background-image: blue;
+    color: blue;
+}
+.card-thumbnail{
+    background-color: blue;
+    background-image: blue;
+}
+.card-image{
+    
+}
+.card{
+    margin:7px;
+    border:1px  color:dodgerblue;
+    transition: 0.7s ease-out;
+}
+.card:hover{
+    z-index: 99;
+    box-shadow:5px 2px 5px grey;
+    transform: scale(1.05);
+}
+</style>
 
 <!--  End  Bootstrap and jquery cdn -->
 
@@ -106,10 +129,10 @@
                                         <a href="placementandintership.html">Placement and Internship</a>
                                     </li>
                                     <li>
-                                        <a href="curriculum.html">Curriculum</a>
+                                        <a href="https://www.iitdh.ac.in/academics_curriculum.php">Curriculum</a>
                                     </li>
                                     <li>
-                                        <a href="#">Brochures</a>
+                                        <a href="https://www.iitdh.ac.in/pdf/CDC/Brochure.pdf">Brochures</a>
                                     </li>
                                     <li>
                                         <a href="faqs.html">FAQs</a>
@@ -349,66 +372,64 @@
             <h2 class="text-primary col-lg-offset-1  col-sm-12 col-lg-9" style="border-bottom:1px solid blue">Beyond Academics</h2>
         </div>
 
-        x<div class="row">
-            <div class="col-lg-3 col-sm-12 col-md-6 col-lg-offset-1">
-                <div class="card">
-                   <img src="1.jpeg" alt="" class="card-image img-responsive img fluid">
-                   <div class="card-img-overlay"></div>
-                   <div class="card-footer bg-primary">
+        <div class="row">
+            <div class="col-lg-3 col-sm-12 col-md-6 col-lg-offset-1" title="Write description of the image 1 here">
+                <div class="card" id="test">
+                     <img src="1.jpeg" alt="" class="card-image img-responsive img fluid" />
+                        
+                   <!--<div class="card-footer bg-primary">
                        <h3>Picture 1</h3>
-                   </div>
+                   </div> -->
                 </div>
             </div>
-            <div class="col-lg-3 col-sm-12 col-md-6">
+            <div class="col-lg-3 col-sm-12 col-md-6" title="Write description of the image 2 here">
                     <div class="card">
                             <img src="1.jpeg" alt="" class="card-image img-responsive img fluid">
                             <div class="card-img-overlay"></div>
-                            <div class="card-footer bg-primary">
+                            <!--<div class="card-footer bg-primary">
                                 <h3>Picture 2</h3>
-                            </div>
+                            </div>-->
                          </div>
             </div>
-            <div class="col-lg-3 col-sm-12 col-md-6">
+            <div class="col-lg-3 col-sm-12 col-md-6" title="Write description of the image 3 here">
                 <div class="card">
-                        <div class="card">
+                        
                                 <img src="1.jpeg" alt="" class="card-image img-responsive img fluid">
                                 <div class="card-img-overlay"></div>
-                                <div class="card-footer bg-primary">
+                                <!--<div class="card-footer bg-primary">
                                     <h3>Picture 3</h3>
-                                </div>
-                             </div>
+                                </div>-->
+                        
                 </div>
                 </div>
-                </div>
+                <!--</div>
             
-                <div class="row mt-4">
-                    <div class="col-lg-3 col-sm-12 col-md-6 col-lg-offset-1">
+                <div class="row mt-4">-->
+                    <div class="col-lg-3 col-sm-12 col-md-6 col-lg-offset-1" title="Write description of the image 4 here">
                             <div class="card">
                                     <img src="1.jpeg" alt="" class="card-image img-responsive img fluid">
                                     <div class="card-img-overlay"></div>
-                                    <div class="card-footer bg-primary">
+                                    <!--<div class="card-footer bg-primary">
                                         <h3>Picture 4</h3>
-                                    </div>
+                                    </div>-->
                                  </div>
                     </div>
-                    <div class="col-lg-3 col-sm-12 col-md-6">
+                    <div class="col-lg-3 col-sm-12 col-md-6" title="Write description of the image 5 here">
                         <div class="card">
-                                <div class="card">
                                         <img src="1.jpeg" alt="" class="card-image img-responsive img fluid">
                                         <div class="card-img-overlay"></div>
-                                        <div class="card-footer bg-primary">
+                                        <!--<div class="card-footer bg-primary">
                                             <h3>Picture 5</h3>
-                                        </div>
-                                     </div>
+                                        </div>-->
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-12 col-md-6">
+                    <div class="col-lg-3 col-sm-12 col-md-6" title="Write description of the image 6 here">
                             <div class="card">
                                     <img src="1.jpeg" alt="" class="card-image img-responsive img fluid">
                                     <div class="card-img-overlay"></div>
-                                    <div class="card-footer bg-primary">
+                                    <!--<div class="card-footer bg-primary">
                                         <h3>Picture 6</h3>
-                                    </div>
+                                    </div>-->
                                  </div>
                         </div>
                         </div>
@@ -417,6 +438,7 @@
 
         </div>
        </div>
+       <br><br>
 
 
 
