@@ -20,6 +20,49 @@
     <link href='css/owl.theme.css' rel='stylesheet' type='text/css'>
     <link href="style.css" rel="stylesheet" />
 </head>
+<style>
+
+  #more {display: none;}
+  #more1 {display: none;}
+
+</style>
+
+<script>
+  function myFunction() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more";
+      moreText.style.display = "none";
+    } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+      }
+  }
+</script>
+
+<script>
+  function myFunction1() {
+    var dots = document.getElementById("dots1");
+    var moreText = document.getElementById("more1");
+    var btnText = document.getElementById("myBtn1");
+
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less";
+      moreText.style.display = "inline";
+    }
+  }
+</script>
+
 <body>
     <div class="loading-page">
         <img src="images/image-preload.gif" alt="Images-loading">
@@ -525,6 +568,7 @@
         </div>
     </section>
 
+
     <section class="tz-wrapper-default">
         <!--<div class="tz-blog-title" style = "height:70px;padding-top:10px;padding-bottom:10px">
 
@@ -556,7 +600,7 @@ to contribute to the practical world of engineering. Most courses include
 knowledgable faculty. Our capable and enthusiastic students contribute to
 their peers‘ learning in group projects, acting as Teaching assistants and even
 writing manuals for new courses or making changes to pre-existing ones.
-                                    </p><span id="dots">...</span><span id="more">
+</p><span id="dots1">...</span><span id="more1">
                                     <p style = "color:#383131">As an infant IIT, students form committees to improve their academic
 productivity and “college experience”. Each student contributes by working
 through his/her strengths, covering their peers’ weaknesses and helping to
@@ -567,7 +611,7 @@ students and internships for the pre-final year students, hoping that your visit
 shall begin a promising and an everlasting relationship between the Institute
 and your organization in the days ahead.
                                    </p></span>
-                                   <button onclick="myFunction()" id="myBtn" style = "outline:none;border:none;background-color: Transparent;cursor:pointer;overflow:hidden;color:#334878;">Read more</button>
+                                   <button onclick="myFunction1()" id="myBtn1" style = "outline:none;border:none;background-color: Transparent;cursor:pointer;overflow:hidden;color:#334878;">Read more</button>
 
                                </div>
                             </div>
@@ -580,31 +624,6 @@ and your organization in the days ahead.
             <!-- End class tz-blog-wrapper -->
         </div>
     </section>
-
-    <style>
-
-    #more {display: none;}
-
-    </style>
-
-    <script>
-    function myFunction() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
-
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more";
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less";
-    moreText.style.display = "inline";
-  }
-}
-    </script>
-
 
     <!-- Begin section tz-portfolio-wrapper -->
     <section class="tz-portfolio-wrapper">
