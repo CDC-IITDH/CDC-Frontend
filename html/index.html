@@ -505,13 +505,14 @@
                                         activities to strengthen their individuality. Our faculty comprises of both visiting
                                         professors from other IITs and permanent faculty of IIT-Dharwad ensuring the
                                         finest teachers to guide the students.
-                                    </p>
+                                    </p><span id="dots">...</span><span id="more">
                                     <p style = "color:#383131">It gives me immense pleasure to extend a hearty welcome to your
                                        esteemed organization for placement of final year students and internships for
                                        pre-final year students. We look forward to your participation. You will recognize
                                        the potential of our students who will surely evolve into the talented engineers
                                        of tomorrow.
-                                   </p>
+                                   </p></span>
+                                   <button onclick="myFunction()" id="myBtn" style = "outline:none;border:none;background-color: Transparent;cursor:pointer;overflow:hidden;color:#334878;">Read more</button>
                                </div>
                             </div>
                         </div>
@@ -555,7 +556,7 @@ to contribute to the practical world of engineering. Most courses include
 knowledgable faculty. Our capable and enthusiastic students contribute to
 their peers‘ learning in group projects, acting as Teaching assistants and even
 writing manuals for new courses or making changes to pre-existing ones.
-                                    </p>
+                                    </p><span id="dots">...</span><span id="more">
                                     <p style = "color:#383131">As an infant IIT, students form committees to improve their academic
 productivity and “college experience”. Each student contributes by working
 through his/her strengths, covering their peers’ weaknesses and helping to
@@ -565,7 +566,9 @@ turn those weaknesses to strengths.
 students and internships for the pre-final year students, hoping that your visit
 shall begin a promising and an everlasting relationship between the Institute
 and your organization in the days ahead.
-                                   </p>
+                                   </p></span>
+                                   <button onclick="myFunction()" id="myBtn" style = "outline:none;border:none;background-color: Transparent;cursor:pointer;overflow:hidden;color:#334878;">Read more</button>
+
                                </div>
                             </div>
                         </div>
@@ -577,6 +580,30 @@ and your organization in the days ahead.
             <!-- End class tz-blog-wrapper -->
         </div>
     </section>
+
+    <style>
+
+    #more {display: none;}
+
+    </style>
+
+    <script>
+    function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+    </script>
 
 
     <!-- Begin section tz-portfolio-wrapper -->
