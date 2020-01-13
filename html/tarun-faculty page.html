@@ -17,6 +17,40 @@
     <link href="fonts/awesome/css/font-awesome.min.css" rel="stylesheet" />
     <link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
     <link href="style.css" rel="stylesheet" />
+    <script>
+        window.onload = function() {
+        
+        var chart = new CanvasJS.Chart("chartContainer", {
+            theme: "light2", // "light1", "light2", "dark1", "dark2"
+            exportEnabled: true,
+            animationEnabled: true,
+            title: {
+                text: "Departwise Wise Faculty Breakup"
+            },
+            data: [{
+                type: "pie",
+                startAngle: 25,
+                toolTipContent: "<b>{label}</b>: {y}%",
+                showInLegend: "true",
+                legendText: "{label}",
+                indexLabelFontSize: 16,
+                indexLabel: "{label}",
+                dataPoints: [
+                    { y: 22.80, label: "Computer Science" },
+                    { y: 14.03, label: "Electrical" },
+                    { y: 26.31, label: "Mechanical" },
+                    { y: 5.26, label: "Chemistry" },
+                    { y: 8.77, label: "Physics" },
+                    { y: 12.28, label: "Mathematics" },
+                    { y: 7.01, label: "Humanities and Social Science" },
+                    { y: 2.50, label: "Biosciences and Bioengineering" }
+                ]
+            }]
+        });
+        chart.render();
+        
+        }
+        </script>
 </head>
 <body>
 <div class="loading-page">
@@ -294,11 +328,12 @@
         <div class="tz-slider-banner">
             <div class="tz-items">
                 <div class="tr-fp-image">
-                    <img src="images/facultyimage3.jfif" alt="Images">
+                    <img src="images/facultyimage4.jfif" alt="Images">
                 </div>
                 <div class="tz-banner-content">
                     <div class="container">
-                        <h4 style="color:black;font-family: Verdana, Geneva, Tahoma, sans-serif;">Faculty AT IIT Dharwad</h4>
+                        <h4 style="color:white;font-family: Verdana, Geneva, Tahoma, sans-serif;">Faculty AT IIT Dharwad</h4>
+                        <span class="tz-under-line"></span>
                     </div>
                 </div>
             </div>      
@@ -319,22 +354,53 @@
             <article class="tz-single-content">
                 
                 <div class="tz-single-description">
-                    <p>"A mind is a fire to be kindled, not a vessel to be filled."  </p>
+                    <p style="text-align: center; color: teal; font-size: x-large;">"A mind is a fire to be kindled, not a vessel to be filled."  </p>
                     <p>Our faculty members kindled that fire in our students with great challenges of global importance.</p>
                     <p>IIT Dharwad, as a young new institute has highly experienced and renowned professors with great expertise in their respective fields. Our faculty members hold degrees from various prestigious universities. Also, we have some visiting professors from the IIT Bombay (Our Mentoring Institute).</p>
                     <p>Institute encourages the strong tradition of national service among all faculty members. Frequently they also go for various conferences and talks. Each faculty member is provided with some TA (Teaching Assistant) for smooth conduct of courses. Faculty members appreciate feedback from the students and faculty advisors. This assists them in updating their teaching skills by which students are always benefited. Most of the faculty members serve as faculty advisors and advisors to various committees in the institute. The faculty members also act as mentors to the students through their involvement in extra-curricular activities to bring out the overall personality of every student.</p>
                     <p>Currently the institute has ** own faculty members, ** visiting professors from various universities along with ** lab and TA staffs. These numbers keep on increasing as institute hires more and more energetic and experience members in its faculty.</p>
-                    <h3>Department Wise Faculty</h3>
-                    <h4>Department of Computer Science and Engineering</h4>
+                    <br><p style="color: black;font-size: x-large;text-decoration: underline;">Department Wise Faculty</p>
+                    <a href="https://www.iitdh.ac.in/faculty_dept.php" class="tz-item-more-details-style-2" id="ab">
+                        <span><i class="fa fa-arrows-alt"></i>Department of Computer Science and Engineering</span>
+                    </a>
+                    <a href="https://www.iitdh.ac.in/faculty_dept.php" class="tz-item-more-details-style-2" id="bc">
+                        <span><i class="fa fa-arrows-alt"></i>Department of Electrical Engineering</span>
+                    </a><br><br>
+                    <a href="https://www.iitdh.ac.in/faculty_dept.php" class="tz-item-more-details-style-2" id="ab">
+                        <span><i class="fa fa-arrows-alt"></i>Department of Mechanical Engineering</span>
+                    </a>
+                    <a href="https://www.iitdh.ac.in/faculty_dept.php" class="tz-item-more-details-style-2" id="bc">
+                        <span><i class="fa fa-arrows-alt"></i>Department of Physics</span>
+                    </a><br><br>
+                    <a href="https://www.iitdh.ac.in/faculty_dept.php" class="tz-item-more-details-style-2" id="ab">
+                        <span><i class="fa fa-arrows-alt"></i>Department of Mathematics</span>
+                    </a>
+                    <a href="https://www.iitdh.ac.in/faculty_dept.php" class="tz-item-more-details-style-2" id="bc">
+                        <span><i class="fa fa-arrows-alt"></i>Department of Chemistry</span>
+                    </a><br><br>
+                    <a href="https://www.iitdh.ac.in/faculty_dept.php" class="tz-item-more-details-style-2" id="ab">
+                        <span><i class="fa fa-arrows-alt"></i>Department of Humanities and Social Science</span>
+                    </a>
+                    <a href="https://www.iitdh.ac.in/faculty_dept.php" class="tz-item-more-details-style-2" id="bc">
+                        <span><i class="fa fa-arrows-alt"></i>Department of Biosciences and Bioengineering</span>
+                    </a><br><br><br><br>
+                    <!--add pie chart-->
+                    <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+                    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+                    <!--pie chart ends-->
+                    <!-- <h4>Department of Computer Science and Engineering</h4>
                     <h4>Department of Electrical Engineering</h4>
                     <h4>Department of Mechanical Engineering</h4>
                     <h4>Department of Physics</h4>
                     <h4>Department of Mathematics</h4>
                     <h4>Department of Chemistry</h4>
                     <h4>Department of Humanities and Social Science</h4>
-                    <h4>Department of Biosciences and Bioengineering</h4>
-                    <h3>Faculty Area Of Research</h3>
-                    <a href="#">Check here</a>
+                    <h4>Department of Biosciences and Bioengineering</h4> -->
+                    <h3 style="text-decoration: underline;">Faculty Area Of Research</h3>
+                    <a href="https://www.iitdh.ac.in/research_area.php" class="tz-item-more-details-style-2">
+                        <span><i class="fa fa-arrows-alt"></i>Check Here To Know More</span>
+                    </a>
+                    
                 </div>
             </article>
            
@@ -342,6 +408,8 @@
         <!-- End class tzsing_post -->
     </div>
 </section>
+
+
 
 <!-- Begin Footer -->
 <footer class="tz-footer">
