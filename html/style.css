@@ -2140,7 +2140,7 @@ body .tz-header-4 .mega-nav{
 
 .tr-fp-image img {
     width: 100%;
-    height: 400px;
+    height: 500px;
     
 
 }
@@ -2805,7 +2805,7 @@ body .tz-introduce-content-style-2 p {
 
 .tz-item-more-details-style-2 {
     display: inline-block;
-    margin-top: 50px;
+    margin-top: 25px;
     position: relative;
     overflow: hidden;
 }
@@ -2840,6 +2840,14 @@ body .tz-introduce-content-style-2 p {
 }
 .tz-item-more-details-style-2 span i{
     padding-right: 20px;
+}
+
+#ab {
+     position: absolute;
+}
+
+#bc {
+    margin-left: 500px; position: absolute;
 }
 
 /** ----------------------Home 3------------------------ */
@@ -6337,10 +6345,11 @@ body .bg-video-style-7{
     padding-right: 10px;
 }
 .tz-single-description p {
-    color: #999999;
+    color:#757575;
     line-height: 25.2px;
     margin: 0;
     padding: 0 0 25px;
+    font-size: large;
 }
 .tz-single-description blockquote {
     border: 1px solid #eee;
