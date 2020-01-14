@@ -6716,7 +6716,7 @@ body .tz-event-search .tz-bog-search{
 .tz-events-item{
     text-align: center;
     margin: 0 0 31px;
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 0px solid #eeeeee;
 }
 .tz-events-item .tz-image {
     position: relative;
