@@ -35,10 +35,40 @@
     *{
       margin:0;
       padding: 0;
-    
+      
     }
     .btn-link{
       text-decoration: none;
+    }
+    .card-header:hover{
+        cursor:pointer ;
+        transform : translateX(60px) scale(1.07);
+    }    
+    .card-body:hover{
+        cursor:default;
+        
+    }
+    .card-header{
+        background: black;
+        background: rgba(0, 0, 0, 0);
+        color: #f1f1f1; 
+        
+    }
+    .card-body{
+        background: rgba(255, 255, 255, 0.05);
+    }
+    .card{
+        font-size: 120%;
+       z-index: 2;
+       opacity : 1;
+       background: rgb(5, 5, 5); /* Fallback color */
+  background: rgba(5, 5, 5, 0.8); /* Black background with 0.5 opacity */
+  color: #f1f1f1; 
+  transition: 2s ease-in-out;
+    }
+    .image{
+        background-image:url("./images/faq_background.jpg") ;
+        background-size: cover;
     }
     </style>
 </head>
@@ -330,9 +360,11 @@
     <div class="container">
         <h1 class="text-primary shadow shadow-lg p-4" style="border-left:5px solid dodgerblue;">Frequently Asked Question</h1>
     </div>
+    <div class="image" > 
     <div class="container">
+        <br>
         <div class="card">
-            <div class="card-header bg-primary" data-toggle="collapse" data-target="#first">
+            <div class="card-header" data-toggle="collapse" data-target="#first">
                 <h4>Why I should choose this college ?</h4>
             </div>
             <div class="card-body collapse" id="first">
@@ -341,7 +373,7 @@
             </div>
         </div>
         <div class="card mt-2 shadow shadow-lg">
-            <div class="card-header bg-light" data-toggle="collapse" data-target="#second">
+            <div class="card-header" data-toggle="collapse" style="border-left: 5px transparent;" data-target="#second">
                 <h4>Why I should choose this college ?</h4>
             </div>
             <div class="card-body collapse" id="second" aria-expanded="false">
@@ -349,8 +381,8 @@
                  asperiores exercitationem, reiciendis dicta cum. Repudiandae corrupti pariatur nemo aliquid ipsam quaerat harum.
             </div>
         </div>
-        <div class="card mt-2 hadow shadow-lg">
-            <div class="card-header bg-primary" data-toggle="collapse" data-target="#third">
+        <div class="card mt-2 shadow shadow-lg">
+            <div class="card-header" data-toggle="collapse" data-target="#third">
                 <h4>Why I should choose this college ?</h4>
             </div>
             <div class="card-body collapse" id="third" aria-expanded="false">
@@ -359,7 +391,7 @@
             </div>
         </div>
          <div class="card mt-2 hadow shadow-lg ">
-            <div class="card-header bg-light" data-toggle="collapse" data-target="#fourth">
+            <div class="card-header" data-toggle="collapse" data-target="#fourth">
                 <h4>Why I should choose this college ?</h4>
             </div>
             <div class="card-body collapse" id="fourth" aria-expanded="false">
@@ -368,7 +400,7 @@
             </div>
         </div>
         <div class="card mt-2 hadow shadow-lg">
-            <div class="card-header bg-primary" data-toggle="collapse" data-target="#fifth">
+            <div class="card-header" data-toggle="collapse" data-target="#fifth">
                 <h4>Why I should choose this college ?</h4>
             </div>
             <div class="card-body collapse" id="fifth">
@@ -377,7 +409,7 @@
             </div>
         </div>
         <div class="card mt-2 hadow shadow-lg">
-            <div class="card-header bg-light" data-toggle="collapse" data-target="#sixth">
+            <div class="card-header" data-toggle="collapse" data-target="#sixth">
                 <h4>Why I should choose this college ?</h4>
             </div>
             <div class="card-body collapse" id="sixth" aria-expanded="false">
@@ -386,7 +418,7 @@
             </div>
         </div>
         <div class="card mt-2 hadow shadow-lg">
-            <div class="card-header bg-primary" data-toggle="collapse" data-target="#seventh">
+            <div class="card-header" data-toggle="collapse" data-target="#seventh">
                 <h4>Why I should choose this college ?</h4>
             </div>
             <div class="card-body collapse" id="seventh" aria-expanded="false">
@@ -395,13 +427,15 @@
             </div>
         </div>
         <div class="card mt-2 hadow shadow-lg">
-            <div class="card-header bg-light" data-toggle="collapse" data-target="#eight">
+            <div class="card-header" data-toggle="collapse" data-target="#eight">
                 <h4>Why I should choose this college ?</h4>
             </div>
             <div class="card-body collapse" id="eight" aria-expanded="false">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et a, nesciunt, sint excepturi mollitia iste earum amet
                  asperiores exercitationem, reiciendis dicta cum. Repudiandae corrupti pariatur nemo aliquid ipsam quaerat harum.
             </div>
+        </div>
+        <br>
         </div>
         </div>
     </div>
