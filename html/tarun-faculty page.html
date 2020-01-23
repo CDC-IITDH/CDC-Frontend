@@ -17,40 +17,35 @@
     <link href="fonts/awesome/css/font-awesome.min.css" rel="stylesheet" />
     <link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
     <link href="style.css" rel="stylesheet" />
-    <script>
-        window.onload = function() {
-        
-        var chart = new CanvasJS.Chart("chartContainer", {
-            theme: "light2", // "light1", "light2", "dark1", "dark2"
-            exportEnabled: true,
-            animationEnabled: true,
-            title: {
-                text: "Departwise Wise Faculty Breakup"
-            },
-            data: [{
-                type: "pie",
-                startAngle: 25,
-                toolTipContent: "<b>{label}</b>: {y}%",
-                showInLegend: "true",
-                legendText: "{label}",
-                indexLabelFontSize: 16,
-                indexLabel: "{label}",
-                dataPoints: [
-                    { y: 22.80, label: "Computer Science" },
-                    { y: 14.03, label: "Electrical" },
-                    { y: 26.31, label: "Mechanical" },
-                    { y: 5.26, label: "Chemistry" },
-                    { y: 8.77, label: "Physics" },
-                    { y: 12.28, label: "Mathematics" },
-                    { y: 7.01, label: "Humanities and Social Science" },
-                    { y: 2.50, label: "Biosciences and Bioengineering" }
-                ]
-            }]
-        });
-        chart.render();
-        
-        }
-        </script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Department of Biosciences and Bioengineering',     2],
+          ['Department of Chemistry',      3],
+          ['Department of Computer Science and Engineering',  13],
+          ['Department of Electrical Engineering', 10],
+          ['Department of Humanities and Social Sciences',    4],
+          ['Department of Mathematics',    7],
+          ['Department of Mechanical Engineering',    15],
+          ['Department of Physics',    5]
+        ]);
+
+        var options = {
+          
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
 </head>
 <body>
 <div class="loading-page">
@@ -385,8 +380,9 @@
                         <span style="border: 0px;"><i class="fa fa-arrows-alt"></i>Department of Biosciences and Bioengineering</span>
                     </a><br><br><br><br><br>
                     <!--add pie chart-->
-                    <div id="chartContainer" style="height: 370px; width: 100%;"></div>
-                    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+                    <p style="text-align: center; color: black; font-size: x-large;">Department Wise Faculty Breakup<br></p>
+                
+                    <div id="piechart" style="width: 900px; height: 500px;margin-left: 220px;margin-top: -25px;" ></div>
                     <!--pie chart ends-->
                     <!-- <h4>Department of Computer Science and Engineering</h4>
                     <h4>Department of Electrical Engineering</h4>
