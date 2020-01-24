@@ -6,6 +6,12 @@
     <title>Ethic - HomePage</title>
     <!--   Bootstrap and jquery cdn -->
     <meta charset="UTF-8">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="fonts/awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
+    <link href='css/owl.carousel.css' rel='stylesheet' type='text/css'>
+    <link href='css/owl.theme.css' rel='stylesheet' type='text/css'>
+    <link href="style.css" rel="stylesheet" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
@@ -15,6 +21,13 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <!-----The next few lines are for the effect shown in cards in beyond academics------>
 <style>
+p{
+    font-size :120%;
+    font-family: Geneva, Verdana,  Tahoma, sans-serif;
+}
+h5{
+    font-size: 150%;
+}
 .thumbnail{
     background-color: blue;
     background-image: blue;
@@ -24,13 +37,20 @@
     background-color: blue;
     background-image: blue;
 }
-.card-image{
-    
+.card-img-overlay:hover{
+    background: black;
+    opacity:1;
+    background: rgba(0, 0, 0, 0.75);
+}
+.card-img-overlay{
+    opacity:0;
+    color:whitesmoke;
+    transition:0.5s ease-in-out;
 }
 .card{
     margin:7px;
-    border:1px;  color:dodgerblue;
-    transition: 0.7s ease-out;
+    border:1px;
+    transition: 0.7s ease-in-out;
 }
 .card:hover{
     z-index: 99;
@@ -347,55 +367,100 @@
        <div class="container">
            <div class="row">
                <div class="col-lg-9 col-sm-12 col-lg-offset-1 ">
-                   <h2 class="text-primary" style="border-bottom:1px solid blue; margin-top:80px;">Why Recruit?</h2><br>
-                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error asperiores repellat totam, voluptas consequatur maxime at voluptatum hic magnam ducimus neque ratione, velit fugit,
-                     ex architecto aliquid voluptates? Nisi, sint?</p>
+                   <h2 class="text-primary" style="font-family:Geneva; font-size:45px; margin-top:80px;">Why Recruit?</h2><br>
+                   <p>IIT Dharwad is one of the third tier IIT established on 30th August 2016. 
+                       Situated in Dharwad district also known as "education hub" of Karnataka, 
+                       students gain a lot of education opportunities. IIT Dharwad currently has 
+                       8 department and 3 B.Tech programmes, 3 MS programs and 8 PhD programs.
+                        Students here are exposed to a curriculum which also focuses on current 
+                        industrial needs.
+                </p>
                </div>
            </div>
-
+           <br>
            
            <div class="row">
-               <h2 class="text-primary col-lg-offset-1 col-lg-9" style="border-bottom:1px solid blue">Academics</h2>
+               <h2 class="text-primary col-lg-offset-1 col-lg-9" style="font-family:Geneva; font-size:45px;">Academics</h2>
            </div>
        
            <div class="row">
-               <div class="col-lg-5 col-sm-12 col-lg-offset-1">
-                   Demographics<br>    
+               <div class="col-lg-3 col-sm-12 col-lg-offset-1 " style="padding-top: 10px;">    
                    <img src="1.jpeg" style="width: 300px;" alt="">
-               </div>
-               <div class="col-lg-5 col-sm-12 col-lg-offset-1">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta cupiditate libero, modi iure rem, voluptatem earum soluta esse labore a 
-                 explicabo accusantium perferendis, itaque eveniet totam delectus! Autem, repellendus molestiae.</p>
+               </div><br>
+               <div class="col-lg-5 col-sm-12 col-lg-offset-1" style="padding-top: 10px;">
+                <p>As a new IIT we had the chance to build our curriculum from scratch. Our
+                     curriculum not only focuses on departmental subjects but also on new 
+                     courses to cope with industrial needs; exposure to non engineering 
+                     subjects so that students will have all round developement. We are 
+                     equipped with state of the art labs and facilities.
+                </p>
             </div>
            </div>
+           <br>
            <div class="row">
-            <h2 class="text-primary col-lg-offset-1  col-sm-12 col-lg-9" style="border-bottom:1px solid blue">Beyond Academics</h2>
+            <h2 class="text-primary col-lg-offset-1  col-sm-12 col-lg-9" style="font-family:Geneva; font-size:45px;">Beyond Academics</h2>
         </div>
-
         <div class="row">
-            <div class="col-lg-3 col-sm-12 col-md-6 col-lg-offset-1" title="Write description of the image 1 here">
+            <div class="col-lg-5 col-sm-12 col-md-6 col-lg-offset-1" >
+                <div class="card">
+                                <img src="./images/wr_dial_2018.JPG" alt="" class="card-image img-responsive img fluid">
+                                <div class="card-img-overlay">
+                                    <h3>DIAL 2018</h3><hr> <h5>Some information about this image in about one or two lines.</h5>
+                                </div>
+                                <!--<div class="card-footer bg-primary">
+                                    <h3>Picture 5</h3>
+                                </div>-->
+                </div>
+            </div>
+
+            <div class="col-lg-5 col-sm-12 col-md-6" >
+                    <div class="card">
+                            <img src="./images/wr_dial_2019.jpg" alt="" class="card-image img-responsive img fluid">
+                            <div class="card-img-overlay" style="color:white;">
+                                <h3>DIAL Mechanical 2019</h3><hr> <h5>Some information about this image in about one or two lines.</h5>
+                            </div>
+                            <!--<div class="card-footer bg-primary">
+                                <h3>Picture 6</h3>
+                            </div>-->
+                         </div>
+                </div>
+                </div>
+        <div class="row">
+            <div class="col-lg-5 col-sm-12 col-md-6 col-lg-offset-1">
                 <div class="card" id="test">
-                     <img src="1.jpeg" alt="" class="card-image img-responsive img fluid" />
-                        
+                     <img src="./images/wr_devhack.JPG" alt="" class="card-image img-responsive img fluid" />
+                     <div class="card-img-overlay">
+                        <h3>DEVHACK 2019</h3>
+                        <hr> <h5>Devhack is an annual hackathon where in students have to solve real life problem statements in 36 hours.</h5>
+                    </div>  
                    <!--<div class="card-footer bg-primary">
                        <h3>Picture 1</h3>
                    </div> -->
                 </div>
             </div>
-            <div class="col-lg-3 col-sm-12 col-md-6" title="Write description of the image 2 here">
-                    <div class="card">
-                            <img src="1.jpeg" alt="" class="card-image img-responsive img fluid">
-                            <div class="card-img-overlay"></div>
-                            <!--<div class="card-footer bg-primary">
-                                <h3>Picture 2</h3>
-                            </div>-->
-                         </div>
+            <div class="col-lg-5 col-sm-12 col-md-6">
+                <div class="card">
+                    <img src="./images/wr_narayanmurthy.jpg" alt="" class="card-image img-responsive img fluid">
+                    <div class="card-img-overlay">
+                        <h3>Narayan Murthy</h3>
+                        <hr> <h5>Some information about this image in about one or two lines.</h5>
+                    </div>
+                    <!--<div class="card-footer bg-primary">
+                        <h3>Picture 2</h3>
+                    </div>-->
+                 </div>
             </div>
-            <div class="col-lg-3 col-sm-12 col-md-6" title="Write description of the image 3 here">
+       
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-lg-5 col-sm-12 col-md-6 col-lg-offset-1">
                 <div class="card">
                         
-                                <img src="1.jpeg" alt="" class="card-image img-responsive img fluid">
-                                <div class="card-img-overlay"></div>
+                                <img src="./images/wr_studyjam.JPG" alt="" class="card-image img-responsive img fluid">
+                                <div class="card-img-overlay">
+                                    <h3>Google Cloud Study JAM</h3><hr> <h5>Some information about this image in about one or two lines.</h5>
+                                </div>
                                 <!--<div class="card-footer bg-primary">
                                     <h3>Picture 3</h3>
                                 </div>-->
@@ -406,34 +471,33 @@
             
                 <div class="row mt-4">-->
                     
-                    <div class="col-lg-3 col-sm-12 col-md-6 col-lg-offset-1" title="Write description of the image 4 here">
+                    <div class="col-lg-5 col-sm-12 col-md-6">
                             <div class="card">
                                     <img src="1.jpeg" alt="" class="card-image img-responsive img fluid">
-                                    <div class="card-img-overlay"></div>
+                                    <div class="card-img-overlay">
+                                        <h3>Title</h3><hr> <h5>Some information about this image in about one or two lines.</h5>
+                                    </div>
                                     <!--<div class="card-footer bg-primary">
                                         <h3>Picture 4</h3>
                                     </div>-->
                                  </div>
                     </div>
-                    <div class="col-lg-3 col-sm-12 col-md-6" title="Write description of the image 5 here">
-                        <div class="card">
-                                        <img src="1.jpeg" alt="" class="card-image img-responsive img fluid">
-                                        <div class="card-img-overlay"></div>
-                                        <!--<div class="card-footer bg-primary">
-                                            <h3>Picture 5</h3>
-                                        </div>-->
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-12 col-md-6" title="Write description of the image 6 here">
-                            <div class="card">
-                                    <img src="1.jpeg" alt="" class="card-image img-responsive img fluid">
-                                    <div class="card-img-overlay"></div>
-                                    <!--<div class="card-footer bg-primary">
-                                        <h3>Picture 6</h3>
-                                    </div>-->
-                                 </div>
-                        </div>
-                        </div>
+        </div>
+       
+                        <!-- <div class="element tz-item-portfolio">
+                            <div class="tz-image-portfolio">
+                                <img src="http://placehold.it/384x384" alt="Vivamus in lorem nisl">
+                            </div>
+                            <div class="tz-portfolio-content-style-2">
+                                <h4>Responsive Blog - Centro de Inovacoes InovaCidades</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis ...</p>
+                                <span>
+                                    <a href="#"><i class="fa fa-arrows-alt"></i>READ MORE</a>
+                                </span>
+                            </div>
+                        </div> -->
+               
+            </div>
                         </div>
                 
 
