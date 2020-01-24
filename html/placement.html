@@ -33,7 +33,15 @@ table {
 
 th {
   height: 50px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(38, 73, 145);
+  color: white;
 }
+tr:nth-child(even){background-color: #f2f2f2;}
+
+tr:hover {background-color: rgb(38, 100, 216);}
 /* The actual timeline (the vertical ruler) */
 
   .center {
@@ -44,9 +52,31 @@ th {
     width:700px;
   }
   .ipd{
-    margin-left:100px;
-    width:1550px;
+    margin-left:10%;
+    width:80%;
+    font-size: 125%;
   }
+
+  div.card {
+  margin-left: 11%;
+  width: 78%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+
+div.header {
+  background-color: rgb(39, 73, 145);
+  color: white;
+  padding: 10px;
+
+  font-size: 30px;
+  text-align: center;
+}
+
+div.container {
+  padding: 10px;
+}
+
 </style>
 </head>
 <body>
@@ -321,12 +351,14 @@ th {
   <div class="tz-blog-title">
         <img src="placement1.jpeg" height="250" width="800" alt="Image">
     </div>
-    <div>
-        <h1 class="center">Placements</h1>
+    <div class="card">
+        <div class="header">
+            <h1>Placements</h1>
+        </div>
     </div>
     <br>
     <div>
-        <p class="center"> Placements at IIT Dharwad are being facilitated by CDC through a tier-based system determined based on the Gross Pay offered by the company as shown in the table below.</p>
+        <p class="center" style="padding:20px;font-size:20px ;color: rgb(49, 39, 39);margin-left:10%;margin-right:10%"> Placements at IIT Dharwad are being facilitated by CDC through a tier-based system determined based on the Gross Pay offered by the company as shown in the table below.</p>
     </div>
     <div id="first_section">
         <table>
@@ -340,30 +372,30 @@ th {
           </tr>
           <tr>
             <td class="center">Tier-2</td>
-            <td class="center">&age;15 LPA but <18 LPA</td>
+            <td class="center">&ge;15 LPA but <18 LPA</td>
           </tr>
            <tr>
             <td class="center">Tier-3</td>
-            <td class="center">&age;12 LPA but <15 LPA</td>
+            <td class="center">&ge;12 LPA but <15 LPA</td>
           </tr>
            <tr>
             <td class="center">Tier-4</td>
-            <td class="center">&age;9 LPA but <12 LPA</td>
+            <td class="center">&ge;9 LPA but <12 LPA</td>
           </tr>
            <tr>
             <td class="center">Tier-5</td>
-            <td class="center">&age;6 LPA but <9 LPA</td>
+            <td class="center">&ge;6 LPA but <9 LPA</td>
           </tr>
            <tr>
             <td class="center">Tier-6</td>
-            <td class="center">&age;6 LPA</td>
+            <td class="center">&ge;6 LPA</td>
           </tr> 
         </table>
         <br>
         <br>
     </div>
     <div class="ipd">
-    NOTE:</div>
+    <h4 style="text-decoration: underline blue;"><b>NOTE:</b></h4></div>
     <div class="ipd">
         <ul>
             <li><p>&nbsp;<img src="images/check.png" alt="images">   
@@ -375,17 +407,20 @@ th {
             </li>
         </ul>
     </div>
-    <div class="ipd">
-        placement rules for students
-    </div>
-    <div class="ipd">
+    <div  class="card">
+        <div class="header">
+            Placement rule for students
+        </div>
+      </div> 
+      <br>
+      <div class="ipd"> 
         <ul>
             <li>&nbsp;&nbsp;<b>1.&nbsp;&nbsp;Registration date:&nbsp;&nbsp; </b>All students who expect to graduate from the Institute by the end of the academic year
             2019-2020 and are seeking employment must register for campus placements with this office by 31st of August.
             Placement Registration is valid for ONE ACADEMIC YEAR ONLY. Only registered students are allowed to
             appear in the campus recruitment process.</li>
 
-            <li>&nbsp;&nbsp;<b>1.&nbsp;&nbsp;job offer policy&nbsp;&nbsp; </b><br>The placement policy for the academic year 2019-2020 i as per below flowchart.<br>
+            <li>&nbsp;&nbsp;<b>2.&nbsp;&nbsp;job offer policy&nbsp;&nbsp; </b><br>The placement policy for the academic year 2019-2020 i as per below flowchart.<br>
             <b>important note:</b>
                 <ul>
                     <li><p>&nbsp;<img src="images/check.png" alt="images">   
@@ -402,7 +437,7 @@ th {
                 </ul>
                     </li>
                 </ul>
-            </div>
+      </div>
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6 col-sm-8 col-lg-6">
@@ -415,7 +450,7 @@ th {
             </div>
 
             <div class="ipd">
-        Disciplinary rules:
+       <b style="text-decoration: underline overline;"> Disciplinary rules:</b><br>
         </div>
         <div class="ipd">
             <ul>
