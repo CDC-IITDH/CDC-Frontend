@@ -13,7 +13,7 @@ Google charts -> For pie charts
 This page consist of students projects done by iit dharwad during there engineering.
 
 #### Used file from template
-blog-04-column.html -> used 4-column grid design code
+blog-04-column.html -> used 4-column grid design code<br/>
 Events-grid.html -> used overlay effect for each item of grid
 
 ### Libraries Used-
@@ -28,5 +28,5 @@ Courses-ListInTable.html -> used courseListintable design for showing all labs.
 
 ***
 ### R&d Department Page
-This page includes short description about r&d @ iitdh, sponsering agencies, links which gets redirect to iit dharwad main website, research collabrations with other institute.
+This page includes short description about r&d @ iitdh, sponsering agencies, links which gets redirect to iit dharwad main website, research collabrations with other institute, a number counter.
 
