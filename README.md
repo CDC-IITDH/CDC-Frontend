@@ -1,2 +1,2 @@
 # CDC-Frontend
-task assign for acad
+This branch contains the base website.
