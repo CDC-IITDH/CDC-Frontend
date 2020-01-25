@@ -3,8 +3,19 @@ This Repo is for IIT Dharwad cdc(career development cell) website frontend part.
 
 ***
 ## Faculty Page
-This page consist of short description for IIT Dharwad faculty, links to check out all faculty members of various departments, and a departwise faculty breakup where we have used pie chart to show attractive.
+This page consist of short description for IIT Dharwad faculty, links to check out all faculty members of various departments, and a departwise faculty breakup where we have used pie chart to show it attractive.
 
-### Libraries/Api Used-
-Google charts
+### Libraries Used-
+Google charts -> For pie charts
+
+***
+## Students Page
+This page consist of students projects done by iit dharwad during there engineering.
+
+### Libraries Used-
+Lightbox gallary -> for enlarging image.
+
+***
+## Academic Facility Page
+
 
