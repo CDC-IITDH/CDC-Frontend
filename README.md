@@ -23,6 +23,9 @@ Lightbox gallary -> for enlarging image.
 ## Academic Facility Page
 This page includes short description of all academic facilities, academic support system provided by the institute.
 
+### Libraries Used-
+Swiper -> for image gallary slider.
+
 #### Used file from template
 Courses-ListInTable.html -> used courseListintable design for showing all labs. 
 
