@@ -17,40 +17,39 @@
     <link href="fonts/awesome/css/font-awesome.min.css" rel="stylesheet" />
     <link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
     <link href="style.css" rel="stylesheet" />
-    <script>
-        window.onload = function() {
-        
-        var chart = new CanvasJS.Chart("chartContainer", {
-            theme: "light2", // "light1", "light2", "dark1", "dark2"
-            exportEnabled: true,
-            animationEnabled: true,
-            title: {
-                text: "Departwise Wise Faculty Breakup"
-            },
-            data: [{
-                type: "pie",
-                startAngle: 25,
-                toolTipContent: "<b>{label}</b>: {y}%",
-                showInLegend: "true",
-                legendText: "{label}",
-                indexLabelFontSize: 16,
-                indexLabel: "{label}",
-                dataPoints: [
-                    { y: 22.80, label: "Computer Science" },
-                    { y: 14.03, label: "Electrical" },
-                    { y: 26.31, label: "Mechanical" },
-                    { y: 5.26, label: "Chemistry" },
-                    { y: 8.77, label: "Physics" },
-                    { y: 12.28, label: "Mathematics" },
-                    { y: 7.01, label: "Humanities and Social Science" },
-                    { y: 2.50, label: "Biosciences and Bioengineering" }
-                ]
-            }]
-        });
-        chart.render();
-        
+    <style>
+        .col_half { width: 49%; }
+        .col_third { width: 32%; }
+        .col_fourth { width: 23.5%; }
+        .col_fifth { width: 18.4%; }
+        .col_sixth { width: 15%; }
+        .col_three_fourth { width: 74.5%;}
+        .col_twothird{ width: 66%;}
+        .col_half,
+        .col_third,
+        .col_twothird,
+        .col_fourth,
+        .col_three_fourth,
+        .col_fifth{
+            position: relative;
+            display:inline;
+            display: inline-block;
+            float: left;
+            margin-right: 2%;
+            margin-bottom: 20px;
         }
-        </script>
+        .end { margin-right: 0 !important; }
+        /* Column Grids End */
+
+        .wrapper { width: 980px; margin: 30px auto; position: relative;}
+        .counter { background-color:#FFFFFF; padding: 20px 0; border-radius: 5px;}
+        .count-title { font-size: 40px; font-weight: normal;  margin-top: 10px; margin-bottom: 0; text-align: center; }
+        .count-text { font-size: 20px; font-weight: normal;  margin-top: 10px; margin-bottom: 0; text-align: center; }
+        .fa-2x { margin: 0 auto; float: none; display: table; color: #4ad1e5; }
+
+    </style>
+    
+    
 </head>
 <body>
 <div class="loading-page">
@@ -355,8 +354,9 @@
                 
                 <div class="tz-single-description">
                     
-                    <p>Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here.Content Comes.</p>
-                       
+                    <p>Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here............Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here............Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here............Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here............Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here............Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here............</p>
+                    <p>Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here.Content Comes Here............</p>
+
                 </div>
             </article>
            
@@ -365,41 +365,34 @@
     </div>
 </section>
 
-<!-- Begin section tz-services -->
-<section class="tz-services">
-    <div class="container">
-        <div class="tz-services-wrapper">
-            <ul class="row tz-cource-services">
-                    <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12 tz-col-4">
-                        <div class="tz-background-color-1">
-                            <a href="#"><i class="tz-color-1 fa fa-file-text-o"></i></a>
-                            <span><a href="#">Research Papers</a></span>
-                        </div>
-                    </li>
-                    <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12 tz-col-4">
-                        <div class="tz-background-color-2">
-                            <a href="#"><i class="tz-color-2 fa fa-paperclip"></i></a>
-                            <span><a href="#">Sponsered Projects</a></span>
-                        </div>
-                    </li>
-                    <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12 tz-col-4">
-                        <div class="tz-background-color-3">
-                            <a href="#"><i class="tz-color-3 fa fa-magic"></i></a>
-                            <span><a href="#">Patents</a></span>
-                        </div>
-                    </li>
-                    <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12 tz-col-4">
-                        <div class="tz-background-color-4">
-                            <a href="#"><i class="tz-color-4 fa fa-cog"></i></a>
-                            <span><a href="#">Research Collabration</a></span>
-                        </div>
-                    </li>
-                </ul>
-        </div>
-    </div><!-- End class container tz-services -->
-</section>
-<!-- End section tz-services -->
+<!-- Jquery number counter animation -->
+<div class="wrapper">
+    <div class="counter col_fourth">
+      <i class="fa fa-code fa-2x"></i>
+      <h2 class="timer count-title count-number" >100+</h2>
+       <p class="count-text ">Sponsered Projects</p>
+    </div>
 
+    <div class="counter col_fourth">
+      <i class="fa fa-coffee fa-2x"></i>
+      <h2 class="timer count-title count-number">200+</h2>
+      <p class="count-text ">Research Articles</p>
+    </div>
+
+    <div class="counter col_fourth">
+      <i class="fa fa-lightbulb-o fa-2x"></i>
+      <h2 class="timer count-title count-number">10+</h2>
+      <p class="count-text ">Patents</p>
+    </div>
+
+    <div class="counter col_fourth end">
+      <i class="fa fa-users fa-2x"></i>
+      <h2 class="timer count-title count-number">50+</h2>
+      <p class="count-text ">Research Collabration</p>
+    </div>
+</div>
+
+<br><br><br><br><br><br><br><br>
 <!-- Begin Footer -->
 <footer class="tz-footer">
     <div class="tz-footer-content">
