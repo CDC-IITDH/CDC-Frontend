@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <title>Ethic - Blog- Single Post Page</title>
     <!--[if IE 8]>
     <link href="style_ie8.css" rel="stylesheet" type="text/css" />
@@ -17,6 +18,7 @@
     <link href="fonts/awesome/css/font-awesome.min.css" rel="stylesheet" />
     <link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
     <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/swiper.min.css">
     <script>
         window.onload = function() {
         
@@ -51,6 +53,32 @@
         
         }
         </script>
+
+<style>
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+  </style>
 </head>
 <body>
 <div class="loading-page">
@@ -732,6 +760,7 @@
                     <p>Content Comes here.Content Comes here.Content Comes here.Content Comes here.Content Comes here.Content Comes here.Content Comes here.Content Comes here.Content Comes here.Content Comes here.Content Comes here.</p>
                     <p style="color: black; font-size: x-large;">Student Mentership Programmes</p>
                     <p>Content Comes here.Content Comes here.Content Comes here.Content Comes here.Content Comes here.Content Comes here.Content Comes here.Content Comes here.Content Comes here.Content Comes here.Content Comes here.</p><br>
+                    <p style="text-align: center; color: black; font-size: x-large;text-decoration: underline;">Gallary</p>
 
                 </div>
 
@@ -741,6 +770,50 @@
         <!-- End class tzsing_post -->
     </div>
 </section>
+
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="images/sp1.jfif"></div>
+      <div class="swiper-slide"><img src="images/sp1.jfif"></div>
+      <div class="swiper-slide"><img src="images/sp1.jfif"></div>
+      <div class="swiper-slide"><img src="images/sp1.jfif"></div>
+      <div class="swiper-slide"><img src="images/sp1.jfif"></div>
+      <div class="swiper-slide"><img src="images/sp1.jfif"></div>
+      <div class="swiper-slide"><img src="images/sp1.jfif"></div>
+      <div class="swiper-slide"><img src="images/sp1.jfif"></div>
+      <div class="swiper-slide"><img src="images/sp1.jfif"></div>
+      <div class="swiper-slide"><img src="images/sp1.jfif"></div>
+    </div>
+    <br><br>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      slidesPerGroup: 4,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+  <br><br>
 
 <!-- Begin Footer -->
 <footer class="tz-footer">
