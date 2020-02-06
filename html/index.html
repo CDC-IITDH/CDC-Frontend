@@ -20,6 +20,49 @@
     <link href='css/owl.theme.css' rel='stylesheet' type='text/css'>
     <link href="style.css" rel="stylesheet" />
 </head>
+<style>
+
+  #more {display: none;}
+  #more1 {display: none;}
+
+</style>
+
+<script>
+  function myFunction() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more";
+      moreText.style.display = "none";
+    } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+      }
+  }
+</script>
+
+<script>
+  function myFunction1() {
+    var dots = document.getElementById("dots1");
+    var moreText = document.getElementById("more1");
+    var btnText = document.getElementById("myBtn1");
+
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less";
+      moreText.style.display = "inline";
+    }
+  }
+</script>
+
 <body>
     <div class="loading-page">
         <img src="images/image-preload.gif" alt="Images-loading">
@@ -35,17 +78,17 @@
 
     <!-- Begin class tz-header-2 -->
     <header class="tz-header tz-header-2">
-        <div class="tz-sign-in">
+        <!--<div class="tz-sign-in">
         <div class="container">
             <p><i class="fa fa-times"></i>Welcome to Ethic University. Sign in to enjoy our best online lessions!</p>
             <button class="tz-search"><i class="fa fa-search"></i></button>
         </div>
-    </div>
+    </div>-->
         <div class="tz-customer-container">
             <div class="container">
                 <div class="tz-header-content">
                     <h3 class="tz-logo pull-left">
-                        <a href="#"><img alt="Images Logo" src="images/logo-header-2.png"></a>
+                        <a href="#"><img alt="Images Logo" src="images/home/logo.png" style = "height:80px;width:100px"></a>
                     </h3>
                     <button type="button" class="tz-button-toggle btn-navbar pull-right" data-target=".nav-collapse">
                         <i class="fa fa-bars"></i>
@@ -54,7 +97,7 @@
                         <ul class="tz-menu">
                             <li>
                                 <a href="#">HOME</a>
-                                <ul class="sub-menu sub-menu-style-1">
+                                <!--<ul class="sub-menu sub-menu-style-1">
                                     <li>
                                         <a href="Home-01.html">Home Version 01</a>
                                     </li>
@@ -76,44 +119,47 @@
                                     <li>
                                         <a href="Home-07.html">Home Version 07</a>
                                     </li>
+                                </ul>-->
+                            </li>
+                            <li>
+                                <a href="#">Academic Info</a>
+                                <ul class="sub-menu sub-menu-style-1">
+                                    <li>
+                                        <a href="Events-Grid.html">Students</a>
+                                    </li>
+                                    <li>
+                                        <a href="Events-List.html">Faculty</a>
+                                    </li>
+                                    <li>
+                                        <a href="Events-Single-Page.html">R&D</a>
+                                    </li>
+                                    <li>
+                                        <a href="Events-Single-Page.html">Students Projects</a>
+                                    </li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">EVENTS</a>
+                                <a href="#">For recruiters</a>
                                 <ul class="sub-menu sub-menu-style-1">
                                     <li>
-                                        <a href="Events-Grid.html">Event Grid</a>
+                                        <a href="Courses-Grid.html">Why recruit?</a>
                                     </li>
                                     <li>
-                                        <a href="Events-List.html">Event List</a>
+                                        <a href="Courses-ListClass.html">Placement</a>
                                     </li>
                                     <li>
-                                        <a href="Events-Single-Page.html">Event Single Page</a>
+                                        <a href="Courses-ListInTable.html">Internship</a>
+                                    </li>
+                                    <li>
+                                        <a href="Courses-Register.html">Brochure</a>
+                                    </li>
+                                    <li>
+                                        <a href="Courses-Single.html">FAQs</a>
                                     </li>
                                 </ul>
                             </li>
-                            <li>
-                                <a href="#">COURSES</a>
-                                <ul class="sub-menu sub-menu-style-1">
-                                    <li>
-                                        <a href="Courses-Grid.html">Courses Grid</a>
-                                    </li>
-                                    <li>
-                                        <a href="Courses-ListClass.html">Courses ListClass</a>
-                                    </li>
-                                    <li>
-                                        <a href="Courses-ListInTable.html">Courses List InTable</a>
-                                    </li>
-                                    <li>
-                                        <a href="Courses-Register.html">Courses Register</a>
-                                    </li>
-                                    <li>
-                                        <a href="Courses-Single.html">Courses Single</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="tz-point-static">
-                                <a href="#">FEATURES</a>
+                            <!--<li class="tz-point-static">
+                                <a href="#">For Students</a>
                                 <div class="sub-menu sub-menu-style-2">
                                     <div class="tz-submenu-2-wrapper">
                                         <div class="row">
@@ -206,73 +252,55 @@
                                         </div>
                                     </div>
                                 </div>
-                            </li>
+                            </li>-->
                             <li>
-                                <a href="#">BLOG</a>
+                                <a href="#">For students</a>
                                 <ul class="sub-menu sub-menu-style-1">
                                     <li>
-                                        <a href="Blog-01-Column.html">Blog 1 Column</a>
+                                        <a href="Blog-01-Column.html">For placements</a>
                                     </li>
                                     <li>
-                                        <a href="Blog-02-Column.html">Blog 2 Column</a>
+                                        <a href="Blog-02-Column.html">For Internships</a>
                                     </li>
                                     <li>
-                                        <a href="Blog-03-Column.html">Blog 3 Column</a>
-                                    </li>
-                                    <li>
-                                        <a href="Blog-04-Column.html">Blog 4 Column</a>
-                                    </li>
-                                    <li>
-                                        <a href="Blog-LeftSideBar.html">Blog LeftSideBar</a>
-                                    </li>
-                                    <li>
-                                        <a href="Blog-RightSideBar.html">Blog RightSideBar</a>
-                                    </li>
-                                    <li>
-                                        <a href="Blog-Single Post Page.html">Blog Single Post Page</a>
-                                    </li>
-                                    <li>
-                                        <a href="Blog-TimeLine.html">Blog TimeLine</a>
+                                        <a href="Blog-03-Column.html">FAQs</a>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">FORUM</a>
+                                <a href="#">Events</a>
                                 <ul class="sub-menu sub-menu-style-1">
                                     <li>
-                                        <a href="Social-Activity.html">Social Activity</a>
+                                        <a href="Social-Activity.html">IIC</a>
                                     </li>
                                     <li>
-                                        <a href="Social-Groups.html">Social Groups</a>
+                                        <a href="Social-Groups.html">SMP</a>
                                     </li>
                                     <li>
-                                        <a href="Social-Login.html">Social Login</a>
+                                        <a href="Social-Login.html">Cultural Events</a>
                                     </li>
                                     <li>
-                                        <a href="Social-Members.html">Social Members</a>
+                                        <a href="Social-Members.html">OSS</a>
                                     </li>
                                     <li>
-                                        <a href="Social-SingleGroup.html">Social Single Group</a>
-                                    </li>
-                                    <li>
-                                        <a href="Social-SingleMember.html">Social Single Member</a>
+                                        <a href="Social-SingleGroup.html">CSR</a>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">PAGE</a>
+                                <a href="#">Contact Us</a>
                                 <ul class="sub-menu sub-menu-style-1">
-                                    <li>
-                                        <a href="JoomlaBase-404Page.html">JoomlaBase 404Page</a>
+                                    <!--<li>
+                                        <a href="JoomlaBase-404Page.html">CDC Head</a>
                                     </li>
                                     <li>
-                                        <a href="JoomlaBase-NewFeed.html">JoomlaBase NewFeed</a>
+                                        <a href="JoomlaBase-NewFeed.html">Professors</a>
                                     </li>
                                     <li>
-                                        <a href="JoomlaBase-NewLink.html">JoomlaBase NewLink</a>
+                                        <a href="JoomlaBase-NewLink.html">Executive</a>
                                     </li>
                                     <li>
-                                        <a href="JoomlaBase-Page-Login.html">JoomlaBase Login</a>
+                                        <a href="JoomlaBase-Page-Login.html">F</a>
                                     </li>
                                     <li>
                                         <a href="JoomlaBase-Page-Profile-User.html">JoomlaBase Profile User</a>
@@ -285,7 +313,7 @@
                                     </li>
                                     <li>
                                         <a href="JoomlaBase-Page-Resgister.html">JoomlaBase Resgister</a>
-                                    </li>
+                                    </li>-->
                                 </ul>
                             </li>
                         </ul>
@@ -302,27 +330,27 @@
             <div class="tz-slider-banner">
                 <div class="tz-items">
                     <div class="tz-slider-images">
-                        <img src="http://placehold.it/1920x800" alt="Images">
+                        <img src="images/home/gate.jpg" alt="Images">
                     </div>
                     <div class="tz-banner-content">
                         <div class="container">
-                            <small>NUMBER ONE</small>
-                            <h4>ENGLAND UNIVERSITY</h4>
+                            <small>Indian Institute of Technology</small>
+                            <h4>Dharwad</h4>
                             <span class="tz-under-line"></span>
-                            <h6>We Are The Best Worldwide University</h6>
-                            <a class="tz-item-more-details" href="#">
+                            <!--<h6>We Are The Best Worldwide University</h6>-->
+                            <!--<a class="tz-item-more-details" href="#">
                                 <span><i class="fa fa-arrows-alt"></i>MORE DETAILS</span>
-                            </a>
+                            </a>-->
                         </div>
                     </div>
-                    <button class="tz-button-left">
+                    <!--<button class="tz-button-left">
                         <i class="fa fa-angle-left"></i>
                     </button>
                     <button class="tz-button-right">
                         <i class="fa fa-angle-right"></i>
-                    </button>
+                    </button>-->
                 </div>
-                <div class="tz-items">
+                <!--<div class="tz-items">
                     <div class="tz-slider-images">
                         <img src="http://placehold.it/1920x800" alt="Images">
                     </div>
@@ -409,7 +437,7 @@
                     <button class="tz-button-right">
                         <i class="fa fa-angle-right"></i>
                     </button>
-                </div>
+                </div>-->
             </div>
         </div>
         <!-- End  class banner style-3 -->
@@ -422,19 +450,19 @@
                 <li>
                     <div class="tz-background-color-1">
                         <a href="#"><i class="tz-color-1 fa fa-file-text-o"></i></a>
-                        <span><a href="#">How To Apply</a></span>
+                        <span><a href="#">Why Recruit?</a></span>
                     </div>
                 </li>
                 <li>
                     <div class="tz-background-color-2">
                         <a href="#"><i class="tz-color-2 fa fa-paperclip"></i></a>
-                        <span><a href="#">Deadlines</a></span>
+                        <span><a href="#">Procedure</a></span>
                     </div>
                 </li>
                 <li>
                     <div class="tz-background-color-3">
                         <a href="#"><i class="tz-color-3 fa fa-magic"></i></a>
-                        <span><a href="#">Find A Major</a></span>
+                        <span><a href="#">Academics</a></span>
                     </div>
                 </li>
                 <li>
@@ -445,143 +473,283 @@
                 </li>
             </ul>
         </div>
-        <div class="tz-introduce-content">
-            <img src="images/number-one-logo.png" alt="Image">
-            <h4>NUMBER ONE ENGLAND UNIVERSITY</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis laoreet. Morbi non dignissim tellus, vitae <br>blandit urna Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi non dignissim.</p>
-            <img src="images/check-01-home1.png" alt="Images"><br>
-            <a href="#" class="tz-item-more-details-style-2">
-                <span><i class="fa fa-arrows-alt"></i>MORE DETAILS</span>
-            </a>
         </div>
+
     </section>
     <!-- End section tz-introduce-univesity -->
 
-    <!-- Begin section tz-portfolio-wrapper -->    
+
+        <section class="tz-introduce-style-4">
+            <div class="container">
+                <div class="tz-introduce-content tz-introduce-content-style-4">
+                    <h4>About IIT Dharwad</h4>
+                    <p style = "text-align:left;color:#383131;margin:0 0 5px">Established in 2016 as an autonomous institute of national
+    importance by the Ministry of Human Resource Development, GoI, Indian
+    Institute of Technology Dharwad (IIT Dharwad) aims at producing world
+    class engineers who would establish themselves in the higher echelons of
+    any field they venture into.
+                    </p>
+                    <p style = "text-align:left;color:#383131;margin:0 0 5px">The institute offers three UG programs – B.Tech. in Computer Science and
+    Engineering, Electrical Engineering and Mechanical Engineering.
+    Ph.D Programs are offered in the areas of
+    Electrical Engineering, Mechanical Engineering, Mathematics, Computer
+    Science, Physics, Humanities and Social Sciences, Biosciences
+    Bioengineering and Chemistry.
+                    </p>
+                    <p style = "text-align:left;color:#383131;margin:0 0 5px">The institute aims to make education an innovative and enriching
+    experience through unique blend of academic, sports and extra-curricular
+    programs delivered within student-centric culture to enable the younger
+    generation emerge as future leaders.
+                    </p>
+                    <p style = "text-align:left;color:#383131;margin:0 0 5px">The overall academic environment in the institution is highly
+    conducive for achieving academic excellence and for
+    developing analytical abilities, ethics and integrity.
+                    </p>
+                    <p style = "text-align:left;color:#383131;margin:0 0 0">Apart from academic excellence, the institute lays
+    emphasis on research temperament and entrepreneurship and motivates
+    its students to recognize their true potential without the fear of Failure.
+                    </p>
+                    <img src="images/check-01-home1.png" alt="Images">
+                </div>
+            </div><!-- End container class tz-home-4-introduce -->
+        </section><!-- End class tz-home-4-introduce -->
+
+    <section class="tz-wrapper-default">
+        <div class="tz-blog-title" style = "height:70px;padding-top:10px;padding-bottom:10px">
+
+        </div>
+        <div class="container">
+            <h1><a href="#" style = "color:#2f3d56">Director's Message</a></h1>
+            <!-- Start class tz-blog-wrapper -->
+            <div class="tz-blog-wrapper">
+                <div class="row">
+                <div class="col-lg-12 col-md-9 col-sm-12 col-xs-12">
+                    <!-- Start class tz-blog-item -->
+                    <article class="tz-blog-item">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-5 col-sm-12 col-xs-12">
+                                <div class="tz-blog-thubnail">
+                                    <img src="images/home/director.jpg" alt="Images">
+                                </div>
+                            </div>
+                            <div class="col-lg-9 col-md-7 col-sm-12 col-xs-12">
+                                <div class="tz-blog-description">
+                                    <p style = "color:#383131">Dharwad, a district in northern Karnataka, rich in art, culture and history
+                                       is often referred to as the “Education Hub” of Karnataka. The establishment of
+                                       the Indian Institute of Technology–Dharwad in 2016 only solidifies that name.
+                                       We at Indian Institute of Technology Dharwad strive to foster and develop
+                                       India’s leading engineers and citizens by providing our students with an environment conducive to both creativity and curiosity.
+                                    </p>
+                                    <p style = "color:#383131"> IIT Dharwad started with 120 students in its B.Tech. program in three
+                                        disciplines, and has now grown to house 3 Batches of B.Tech. students and 3
+                                        batches of Ph.D researchers. We provide each of our students with world class
+                                    </p><span id="dots">...</span><span id="more">
+                                        equipment and resources, to aid them in challenging hands-on based academics that is built on the foundation of IIT–Bombay’s tried and tested course
+                                        structure. Students are also encouraged to participate in cultural and sports
+                                        activities to strengthen their individuality. Our faculty comprises of both visiting
+                                        professors from other IITs and permanent faculty of IIT-Dharwad ensuring the
+                                        finest teachers to guide the students.
+                                    <p style = "color:#383131">It gives me immense pleasure to extend a hearty welcome to your
+                                       esteemed organization for placement of final year students and internships for
+                                       pre-final year students. We look forward to your participation. You will recognize
+                                       the potential of our students who will surely evolve into the talented engineers
+                                       of tomorrow.
+                                   </p></span>
+                                   <button onclick="myFunction()" id="myBtn" style = "outline:none;border:none;background-color: Transparent;cursor:pointer;overflow:hidden;color:#334878;">Read more</button>
+                               </div>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- End class tz-blog-item -->
+                </div>
+            </div>
+            </div>
+            <!-- End class tz-blog-wrapper -->
+        </div>
+    </section>
+
+
+    <section class="tz-wrapper-default">
+        <!--<div class="tz-blog-title" style = "height:70px;padding-top:10px;padding-bottom:10px">
+
+        </div>-->
+        <div class="container">
+            <h1><a href="#" style = "color:#2f3d56">Dean's Message</a></h1>
+            <!-- Start class tz-blog-wrapper -->
+            <div class="tz-blog-wrapper">
+                <div class="row">
+                <div class="col-lg-12 col-md-9 col-sm-12 col-xs-12">
+                    <!-- Start class tz-blog-item -->
+                    <article class="tz-blog-item">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-5 col-sm-12 col-xs-12">
+                                <div class="tz-blog-thubnail">
+                                    <img src="images/home/director.jpg" alt="Images">
+                                </div>
+                            </div>
+                            <div class="col-lg-9 col-md-7 col-sm-12 col-xs-12">
+                                <div class="tz-blog-description">
+                                    <p style = "color:#383131">I am pleased to invite you to our esteemed institute on behalf of the
+students,faculty and the staff of IIT Dharwad, to participate in placements for
+the final year students and internships for the pre-final year students.
+                                    </p>
+                                    <p style = "color:#383131">IIT Dharwad’s course structure is designed to incorporate more hands-on
+approach with the intention to provide students the, necessary skills required
+to contribute to the practical world of engineering. Most courses include
+“Course Projects” which the students conceive and are then guided by our
+knowledgable faculty. Our capable and enthusiastic students contribute to
+their peers‘ learning in group projects, acting as Teaching assistants and even
+writing manuals for new courses or making changes to pre-existing ones.
+</p><span id="dots1">...</span><span id="more1">
+                                    <p style = "color:#383131">As an infant IIT, students form committees to improve their academic
+productivity and “college experience”. Each student contributes by working
+through his/her strengths, covering their peers’ weaknesses and helping to
+turn those weaknesses to strengths.
+                                   </p>
+                                   <p style = "color:#383131">I look forward to your participation in the placements for the final year
+students and internships for the pre-final year students, hoping that your visit
+shall begin a promising and an everlasting relationship between the Institute
+and your organization in the days ahead.
+                                   </p></span>
+                                   <button onclick="myFunction1()" id="myBtn1" style = "outline:none;border:none;background-color: Transparent;cursor:pointer;overflow:hidden;color:#334878;">Read more</button>
+
+                               </div>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- End class tz-blog-item -->
+                </div>
+            </div>
+            </div>
+            <!-- End class tz-blog-wrapper -->
+        </div>
+    </section>
+
+    <!-- Begin section tz-portfolio-wrapper -->
     <section class="tz-portfolio-wrapper">
-        <span class="tz-images-check"><img src="images/check-01-home1.png" alt="Images"></span>
-        <h3 class="tz-portfolio-title"><a href="#">LATEST ARTICLES</a></h3>
+        <!--<span class="tz-images-check"><img src="images/check-01-home1.png" alt="Images"></span>-->
+        <h3 class="tz-portfolio-title" style = "padding-top:30px"><a href="#">LATEST ARTICLES</a></h3>
         <div class="tz-portfolio">
             <div class="element tz-item-portfolio">
                 <div class="tz-image-portfolio">
-                    <img src="http://placehold.it/384x384" alt="Vivamus in lorem nisl">
+                    <img src="images/home/gallery_1.jpg" alt="Vivamus in lorem nisl">
                 </div>
                 <div class="tz-portfolio-content-style-2">
                     <h4>Responsive Blog - Centro de Inovacoes InovaCidades</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis ...</p>
-                    <span>
+                    <!--<span>
                         <a href="#"><i class="fa fa-arrows-alt"></i>READ MORE</a>
-                    </span>
+                    </span>-->
                 </div>
             </div>
             <div class="element tz-item-portfolio">
                 <div class="tz-image-portfolio">
-                    <img src="http://placehold.it/384x384" alt="Vivamus in lorem nisl">
+                    <img src="images/home/gallery_2.jpg" alt="Vivamus in lorem nisl">
                 </div>
                 <div class="tz-portfolio-content-style-2">
                     <h4>Responsive Blog - Centro de Inovacoes InovaCidades</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis ...</p>
-                    <span>
+                    <!--<span>
                         <a href="#"><i class="fa fa-arrows-alt"></i>READ MORE</a>
-                    </span>
+                    </span>-->
                 </div>
             </div>
             <div class="element tz-item-portfolio">
                 <div class="tz-image-portfolio">
-                    <img src="http://placehold.it/384x384" alt="Vivamus in lorem nisl">
+                    <img src="images/home/gallery_3.jpg" alt="Vivamus in lorem nisl">
                 </div>
                 <div class="tz-portfolio-content-style-2">
                     <h4>Responsive Blog - Centro de Inovacoes InovaCidades</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis ...</p>
-                    <span>
+                    <!--<span>
                         <a href="#"><i class="fa fa-arrows-alt"></i>READ MORE</a>
-                    </span>
+                    </span>-->
                 </div>
             </div>
             <div class="element tz-item-portfolio">
                 <div class="tz-image-portfolio">
-                    <img src="http://placehold.it/384x384" alt="Vivamus in lorem nisl">
+                    <img src="images/home/gallery_4.jpg" alt="Vivamus in lorem nisl">
                 </div>
                 <div class="tz-portfolio-content-style-2">
                     <h4>Responsive Blog - Centro de Inovacoes InovaCidades</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis ...</p>
-                    <span>
+                    <!--<span>
                         <a href="#"><i class="fa fa-arrows-alt"></i>READ MORE</a>
-                    </span>
+                    </span>-->
                 </div>
             </div>
             <div class="element tz-item-portfolio">
                 <div class="tz-image-portfolio">
-                    <img src="http://placehold.it/384x384" alt="Vivamus in lorem nisl">
+                    <img src="images/home/gallery_5.jpg" alt="Vivamus in lorem nisl">
                     <a href="#" class="tz-color-icon-1"> <i class="fa fa-camera"></i></a>
                 </div>
                 <div class="tz-portfolio-content-style-2">
                     <h4>Responsive Blog - Centro de Inovacoes InovaCidades</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis ...</p>
-                    <span>
+                    <!--<span>
                         <a href="#"><i class="fa fa-arrows-alt"></i>READ MORE</a>
-                    </span>
+                    </span>-->
                 </div>
             </div>
             <div class="element tz-item-portfolio">
                 <div class="tz-image-portfolio">
-                    <img src="http://placehold.it/384x384" alt="Vivamus in lorem nisl">
+                    <img src="images/home/gallery_6.jpg" alt="Vivamus in lorem nisl">
                 </div>
                 <div class="tz-portfolio-content-style-2">
                     <h4>Responsive Blog - Centro de Inovacoes InovaCidades</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis ...</p>
-                    <span>
+                    <!--<span>
                         <a href="#"><i class="fa fa-arrows-alt"></i>READ MORE</a>
-                    </span>
+                    </span>-->
                 </div>
             </div>
             <div class="element tz-item-portfolio">
                 <div class="tz-image-portfolio">
-                    <img src="http://placehold.it/384x384" alt="Vivamus in lorem nisl">
+                    <img src="images/home/video.jpg" alt="Vivamus in lorem nisl">
                     <a href="#" class="tz-color-icon-2"><i class="fa fa-video-camera"></i></a>
                 </div>
                 <div class="tz-portfolio-content-style-2">
                     <h4>Responsive Blog - Centro de Inovacoes InovaCidades</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis ...</p>
-                    <span>
+                    <!--<span>
                         <a href="#"><i class="fa fa-arrows-alt"></i>READ MORE</a>
-                    </span>
+                    </span>-->
                 </div>
             </div>
             <div class="element tz-item-portfolio">
                 <div class="tz-image-portfolio">
-                    <img src="http://placehold.it/384x384" alt="Vivamus in lorem nisl">
+                    <img src="images/home/gallery_7.jpg" alt="Vivamus in lorem nisl">
                 </div>
                 <div class="tz-portfolio-content-style-2">
                     <h4>Responsive Blog - Centro de Inovacoes InovaCidades</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis ...</p>
-                    <span>
+                    <!--<span>
                         <a href="#"><i class="fa fa-arrows-alt"></i>READ MORE</a>
-                    </span>
+                    </span>-->
                 </div>
             </div>
             <div class="element tz-item-portfolio">
                 <div class="tz-image-portfolio">
-                    <img src="http://placehold.it/384x384" alt="Vivamus in lorem nisl">
+                    <img src="images/home/gallery_8.jpg" alt="Vivamus in lorem nisl">
                 </div>
                 <div class="tz-portfolio-content-style-2">
                     <h4>Responsive Blog - Centro de Inovacoes InovaCidades</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis ...</p>
-                    <span>
+                    <!--<span>
                         <a href="#"><i class="fa fa-arrows-alt"></i>READ MORE</a>
-                    </span>
+                    </span>-->
                 </div>
             </div>
             <div class="element tz-item-portfolio">
                 <div class="tz-image-portfolio">
-                    <img src="http://placehold.it/384x384" alt="Vivamus in lorem nisl">
+                    <img src="images/home/gallery_9.jpg" alt="Vivamus in lorem nisl">
                 </div>
                 <div class="tz-portfolio-content-style-2">
                     <h4>Responsive Blog - Centro de Inovacoes InovaCidades</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis ...</p>
-                    <span>
+                    <!--<span>
                         <a href="#"><i class="fa fa-arrows-alt"></i>READ MORE</a>
-                    </span>
+                    </span>-->
                 </div>
             </div>
         </div><!--End class tz-portfolio-->
@@ -589,7 +757,7 @@
     <!-- End section tz-portfolio-wrapper -->
 
     <!-- Begin section tz-cources -->
-    <section class="tz-cources">
+    <!--<section class="tz-cources">
         <span class="tz-images-check"><img src="images/check-01-home1.png" alt="Images"></span>
         <h3 class="tz-title-find">FIND COURSES</h3>
         <div class="container">
@@ -926,7 +1094,7 @@
                 </div>
             </div>
         </div><!-- End container class tz-cources -->
-    </section>
+    </section>-->
     <!-- End section tz-cources -->
 
     <!-- Begin section tz-video -->
@@ -947,8 +1115,161 @@
     </section>
     <!--End section tz-video-->
 
+
+        <!-- Begin section tz-lastest-event -->
+        <section class="tz-lastest-event" style = "padding-top:20px">
+            <!--<span class="tz-images-check"><img src="images/check-01-home1.png" alt="Images"></span>-->
+            <h3 class="tz-title-event tz-title-event-2" style = "padding-top:40px">Past Recruiters</h3>
+            <div class="container">
+                <button class="tz-last-event-prev">
+                    <i class="fa fa-angle-left"></i>
+                </button>
+                <button class="tz-last-event-next">
+                    <i class="fa fa-angle-right"></i>
+                </button>
+                <div class="tz-event-container">
+                    <div class="tz-event-wrapper">
+                        <div class="tz-event-content">
+                            <div class="tz-image-event-item">
+                                <img src="images/home/recruiters/nasdaq.png" alt="Image">
+                                <a href="#"><i class="fa fa-arrows-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="tz-event-content">
+                            <div class="tz-image-event-item">
+                                <img src="images/home/recruiters/air_asia.jpg" alt="Image">
+                                <a href="#"><i class="fa fa-arrows-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="tz-event-content">
+                            <div class="tz-image-event-item">
+                                <img src="images/home/recruiters/maq_software.png" alt="Image">
+                                <a href="#"><i class="fa fa-arrows-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="tz-event-content">
+                            <div class="tz-image-event-item">
+                                <img src="images/home/recruiters/mcafree.png" alt="Image">
+                                <a href="#"><i class="fa fa-arrows-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="tz-event-content">
+                            <div class="tz-image-event-item">
+                                <img src="images/home/recruiters/tcs.jpg" alt="Image">
+                                <a href="#"><i class="fa fa-arrows-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="tz-event-content">
+                            <div class="tz-image-event-item">
+                                <img src="images/home/recruiters/cognizant.png" alt="Image">
+                                <a href="#"><i class="fa fa-arrows-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="tz-event-content">
+                            <div class="tz-image-event-item">
+                                <img src="images/home/recruiters/l&t.png" alt="Image">
+                                <a href="#"><i class="fa fa-arrows-alt"></i></a>
+                            </div>
+                            <!--<img src="images/check-01-home1.png" alt="Images">-->
+                        </div>
+                        <div class="tz-event-content">
+                            <div class="tz-image-event-item">
+                                <img src="images/home/recruiters/broadridge.jpg" alt="Image">
+                                <a href="#"><i class="fa fa-arrows-alt"></i></a>
+                            </div>
+                            <!--<img src="images/check-01-home1.png" alt="Images">-->
+                        </div>
+                        <div class="tz-event-content">
+                            <div class="tz-image-event-item">
+                                <img src="images/home/recruiters/raam_group.png" alt="Image">
+                                <a href="#"><i class="fa fa-arrows-alt"></i></a>
+                            </div>
+                            <!--<img src="images/check-01-home1.png" alt="Images">-->
+                    </div>
+                </div>
+            </div><!-- End container class tz-lastest-event -->
+        </section>
+        <!-- End section tz-lastest-event -->
+
+        <!-- Start class tz-wrapper-default -->
+        <!--<section class="tz-wrapper-default">
+            <div class="">
+                <div class="tz-events-wrapper">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                            <div class="row">
+
+                                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                                    <div class="tz-gallary">
+                                        <h3>
+                                            <a href="#">Recruiters letter</a>
+                                        </h3>
+                                        <div class="tz-gallery-images">
+                                            <button class="tz-cources-prev">
+                                                <i class="fa fa-angle-left"></i>
+                                            </button>
+                                            <button class="tz-cources-next">
+                                                <i class="fa fa-angle-right"></i>
+                                            </button>
+                                            <ul class="tz-gallery-wrapper">
+                                                <li>
+                                                    <!-- End class tz-services-wrapper-style-6
+                                                    <section class="tz-services-wrapper-style-6">
+                                                        <div class="container">
+                                                            <div class="tz-services-style-6">
+                                                                <div class="row">
+                                                                    <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12">
+                                                                        <div class="tz-services-description">
+
+                                                                            <h3><a href="#">ETHIC GIVE YOUR BEST SERVICES</a></h3>
+                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis laoreet. Morbi non dignissim tellus, vitae blandit urna Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi non dignissim.</p>
+                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis laoreet. Morbi non dignissim tellus, vitae blandit urna Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi non dignissim.</p>
+                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis laoreet. Morbi non dignissim tellus, vitae blandit urna Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi non dignissim.</p>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div><!-- End container class tz-services-style-6
+                                                    </section>
+                                                    <!-- End class tz-services-wrapper-style-6
+                                                </li>
+                                                <li>
+                                                    <!-- End class tz-services-wrapper-style-6
+                                                    <section class="tz-services-wrapper-style-6">
+                                                        <div class="container">
+                                                            <div class="tz-services-style-6">
+                                                                <div class="row">
+                                                                    <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12">
+                                                                        <div class="tz-services-description">
+                                                                            <h3><a href="#">ETHIC GIVE YOUR BEST SERVICES</a></h3>
+                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis laoreet. Morbi non dignissim tellus, vitae blandit urna Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi non dignissim.</p>
+                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis laoreet. Morbi non dignissim tellus, vitae blandit urna Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi non dignissim.</p>
+                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis laoreet. Morbi non dignissim tellus, vitae blandit urna Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi non dignissim.</p>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div><!-- End container class tz-services-style-6
+                                                    </section>
+                                                    <!-- End class tz-services-wrapper-style-6
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>-->
+        <!-- End class tz-wrapper-default -->
+
+
     <!-- Begin section tz-lastest-event -->
-    <section class="tz-lastest-event">
+    <!--<section class="tz-lastest-event">
         <span class="tz-images-check"><img src="images/check-01-home1.png" alt="Images"></span>
         <h3 class="tz-title-event tz-title-event-2">LATEST EVENTS</h3>
         <div class="container">
@@ -1034,12 +1355,12 @@
                     </div>
                 </div>
             </div>
-        </div><!-- End container class tz-lastest-event -->
-    </section>
+        </div>
+    </section>-->
     <!-- End section tz-lastest-event -->
 
     <!-- Begin section tz-contact-us -->
-    <div class="tz-contact-us">
+    <!--<div class="tz-contact-us">
         <div class="container">
             <form action="#" method="post" class="tz-contact-form" name="frm_contact">
                 <ul class="tz-contact-wapper">
@@ -1060,15 +1381,92 @@
                     </li>
                 </ul>
             </form>
-        </div><!-- End class container tz-contact-us -->
-    </div>
+        </div><!-- End class container tz-contact-us
+    </div>-->
     <!-- End section tz-contact-us -->
 
     <!-- Begin Footer -->
     <footer class="tz-footer">
         <div class="tz-footer-content tz-footer-content-2 tz-background-color-4">
             <div class="container">
-                <img src="images/icon-footer.png" alt="Icon-footer">
+                <div class = "row">
+                    <div class = "col-lg-3">
+                        <img src="images/home/logo.png" alt="Icon-footer" style = "padding-bottom:30px">
+                        <ul>
+                            <li><a href="#" style = "color:#fff">Indian Institute of Technology Dharwad,</a></li>
+                            <li><a href="#" style = "color:#fff">Karnataka, India - 580011</a></li>
+                            <li><a href="#" style = "color:#fff">pro@iitdh.ac.in</a></li>
+                            <li><a href="#" style = "color:#fff">+91 836 2212 839</a></li>
+                        </ul>
+                    </div>
+
+                    <div class = "col-lg-3">
+                        <ul class="">
+                            <li>
+                                <div class="tz-footer-content-main">
+                                    <!--<img src="images/check-02-home2.png" alt="Images remove footer">-->
+                                    <h4>Quick Links</h4>
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                    </ul>
+
+                                    <h4>Academic Information</h4>
+                                    <ul>
+                                        <li><a href="#">Students</a></li>
+                                        <li><a href="#">Faculty</a></li>
+                                        <li><a href="#">R&D</a></li>
+                                        <li><a href="#">Students Projects</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class = "col-lg-3">
+                        <ul class="">
+                            <li>
+                                <div class="tz-footer-content-main">
+                                    <!--<img src="images/check-02-home2.png" alt="Images remove footer">-->
+                                    <h4>For Recruiters</h4>
+                                    <ul>
+                                        <li><a href="#">Why recruit?</a></li>
+                                        <li><a href="#">Placement</a></li>
+                                        <li><a href="#">Internship</a></li>
+                                        <li><a href="#">Brochur</a></li>
+                                        <li><a href="#">FAQs</a></li>
+                                    </ul>
+
+                                    <h4>For Students</h4>
+                                    <ul>
+                                        <li><a href="#">For Placements</a></li>
+                                        <li><a href="#">For Internships</a></li>
+                                        <li><a href="#">FAQs</a></li>
+                                    </ul>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class = "col-lg-3">
+                        <ul class="">
+                            <li>
+                                <div class="tz-footer-content-main">
+                                    <!--<img src="images/check-02-home2.png" alt="Images remove footer">-->
+                                    <h4>Events</h4>
+                                    <ul>
+                                        <li><a href="#">IIC</a></li>
+                                        <li><a href="#">SMP</a></li>
+                                        <li><a href="#">Cultural Events</a></li>
+                                        <li><a href="#">OSS</a></li>
+                                        <li><a href="#">CSR</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--<img src="images/home/logo.png" alt="Icon-footer">
                 <ul class="tz-footer-part">
                     <li>
                         <div class="tz-footer-content-main">
@@ -1144,11 +1542,8 @@
                             </ul>
                         </div>
                     </li>
-                </ul>
+                </ul>-->
             </div>
-        </div>
-        <div class="tz-footer-address-site">
-            <address>University Address, GK-120 678 Warsaw, Poland | Phone: +48 0045356723</address>
         </div>
     </footer>
     <!-- End Footer -->
