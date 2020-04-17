@@ -3,8 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <title>Ethic - Blog- Single Post Page</title>
+    <title>Ethic - HomePage</title>
     <!--[if IE 8]>
     <link href="style_ie8.css" rel="stylesheet" type="text/css" />
     <![endif]-->
@@ -17,969 +16,858 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="fonts/awesome/css/font-awesome.min.css" rel="stylesheet" />
     <link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
+    <link href='css/owl.carousel.css' rel='stylesheet' type='text/css'>
+    <link href='css/owl.theme.css' rel='stylesheet' type='text/css'>
     <link href="style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/swiper.min.css">
-    <script>
-        window.onload = function() {
-
-        var chart = new CanvasJS.Chart("chartContainer", {
-            theme: "light2", // "light1", "light2", "dark1", "dark2"
-            exportEnabled: true,
-            animationEnabled: true,
-            title: {
-                text: "Departwise Wise Faculty Breakup"
-            },
-            data: [{
-                type: "pie",
-                startAngle: 25,
-                toolTipContent: "<b>{label}</b>: {y}%",
-                showInLegend: "true",
-                legendText: "{label}",
-                indexLabelFontSize: 16,
-                indexLabel: "{label}",
-                dataPoints: [
-                    { y: 22.80, label: "Computer Science" },
-                    { y: 14.03, label: "Electrical" },
-                    { y: 26.31, label: "Mechanical" },
-                    { y: 5.26, label: "Chemistry" },
-                    { y: 8.77, label: "Physics" },
-                    { y: 12.28, label: "Mathematics" },
-                    { y: 7.01, label: "Humanities and Social Science" },
-                    { y: 2.50, label: "Biosciences and Bioengineering" }
-                ]
-            }]
-        });
-        chart.render();
-
-        }
-        </script>
-
-<style>
-    .swiper-container {
-      width: 100%;
-      height: 100%;
-    }
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-
-      /* Center slide text vertically */
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
-    }
-  </style>
 </head>
 <body>
-<div class="loading-page">
-    <img src="images/image-preload.gif" alt="Images-loading">
-</div>
-<!-- Begin section search form -->
-<div class="tz-content-search">
-    <form action="#" method="get">
-        <i class="fa fa-times tz-form-close"></i>
-        <input type="text" class="tz-search-input" id="tz-search-input" name="search" placeholder="Search...">
-    </form><!-- End form search -->
-</div>
-<!-- End section search form -->
-
-<!-- Begin class tz-header-2 -->
-<header class="tz-header tz-header-2">
-    <!--<div class="tz-sign-in">
-    <div class="container">
-        <p><i class="fa fa-times"></i>Welcome to Ethic University. Sign in to enjoy our best online lessions!</p>
-        <button class="tz-search"><i class="fa fa-search"></i></button>
+    <div class="loading-page">
+        <img src="images/image-preload.gif" alt="Images-loading">
     </div>
-</div>-->
-    <div class="tz-customer-container">
-        <div class="container">
-            <div class="tz-header-content">
-                <h3 class="tz-logo pull-left">
-                    <a href="#"><img alt="Images Logo" src="images/home/logo.png" style = "height:80px;width:100px"></a>
-                </h3>
-                <button type="button" class="tz-button-toggle btn-navbar pull-right" data-target=".nav-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <nav class="nav-collapse pull-right">
-                    <ul class="tz-menu">
-                        <li>
-                            <a href="index.html">HOME</a>
-                            <!--<ul class="sub-menu sub-menu-style-1">
-                                <li>
-                                    <a href="Home-01.html">Home Version 01</a>
-                                </li>
-                                <li>
-                                    <a href="Home-02.html">Home Version 02</a>
-                                </li>
-                                <li>
-                                    <a href="Home-03.html">Home Version 03</a>
-                                </li>
-                                <li>
-                                    <a href="Home-04.html">Home Version 04</a>
-                                </li>
-                                <li>
-                                    <a href="index.html">Home Version 05</a>
-                                </li>
-                                <li>
-                                    <a href="Home-06.html">Home Version 06</a>
-                                </li>
-                                <li>
-                                    <a href="Home-07.html">Home Version 07</a>
-                                </li>
-                            </ul>-->
-                        </li>
-                        <li>
-                            <a href="#">Academic Info</a>
-                            <ul class="sub-menu sub-menu-style-1">
-                                <li>
-                                    <a href="academic_facility_page.html">Academic Facilities</a>
-                                </li>
-                                <li>
-                                    <a href="faculty_page.html">Faculty</a>
-                                </li>
-                                <li>
-                                    <a href="r&d_page.html">R&D</a>
-                                </li>
-                                <li>
-                                    <a href="acad_studentProject.html">Students Projects</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">For recruiters</a>
-                            <ul class="sub-menu sub-menu-style-1">
-                                <li>
-                                    <a href="Courses-Grid.html">Why recruit?</a>
-                                </li>
-                                <li>
-                                    <a href="Courses-ListClass.html">Placement</a>
-                                </li>
-                                <li>
-                                    <a href="Courses-ListInTable.html">Internship</a>
-                                </li>
-                                <li>
-                                    <a href="Courses-Register.html">Brochure</a>
-                                </li>
-                                <li>
-                                    <a href="Courses-Single.html">FAQs</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <!--<li class="tz-point-static">
-                            <a href="#">For Students</a>
-                            <div class="sub-menu sub-menu-style-2">
-                                <div class="tz-submenu-2-wrapper">
-                                    <div class="row">
-                                        <div class="col-md-3 sub-menu-2-item">
-                                            <ul>
-                                                <li>
-                                                    <a href="Mega-Menu-Style-01.html"><i class="fa fa-home"></i>Mega Menu Style 01</a>
-                                                </li>
-                                                <li>
-                                                    <a href="Mega-Menu-Style-02.html"><i class="fa fa-gift"></i>Mega Menu Style 02</a>
-                                                </li>
-                                                <li>
-                                                    <a href="Mega-Menu-Style-03.html"><i class="fa fa-film"></i>Mega Menu Style 03</a>
-                                                </li>
-                                                <li>
-                                                    <a href="Mega-Menu-Style-04.html"><i class="fa fa-flask"></i>Mega Menu Style 04</a>
-                                                </li>
-                                                <li>
-                                                    <a href="Feature-Forum.html"><i class="fa fa-gavel"></i>Feature Forum</a>
-                                                </li>
-                                                <li>
-                                                    <a href="Feature-RTLLayout.html"><i class="fa fa-glass"></i>Feature RTLLayout</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-3 sub-menu-2-item">
-                                            <ul>
-                                                <li>
-                                                    <a href="Feature-Typography.html"><i class="fa fa-plus"></i>Feature Typography</a>
-                                                </li>
-                                                <li>
-                                                    <a href="Feature-Color-01.html"><i class="fa fa-power-off"></i>Feature Color Style 01</a>
-                                                </li>
-                                                <li>
-                                                    <a href="Feature-Color-02.html"><i class="fa fa-random"></i>Feature Color Style 02</a>
-                                                </li>
-                                                <li>
-                                                    <a href="Feature-Color-03.html"><i class="fa fa-road"></i>Feature Color Style 03</a>
-                                                </li>
-                                                <li>
-                                                    <a href="Feature-Color-04.html"><i class="fa fa-share-square"></i>Feature Color Style 04</a>
-                                                </li>
-                                                <li>
-                                                    <a href="Feature-Color-05.html"><i class="fa fa-sign-in"></i>Feature Color Style 05</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-3 sub-menu-2-item">
-                                            <ul>
-                                                <li>
-                                                    <a href="Feature-SortCodes.html"><i class="fa fa-spoon"></i>Feature SortCodes</a>
-                                                </li>
-                                                <li>
-                                                    <a href="Contact.html"><i class="fa fa-star-o"></i>Contact Us</a>
-                                                </li>
-                                                <li>
-                                                    <a href="About.html"><i class="fa fa-tasks"></i>About Us</a>
-                                                </li>
-                                                <li>
-                                                    <a href="CanvasMenu.html"><i class="fa fa-ticket"></i>Canvas Menu</a>
-                                                </li>
-                                                <li>
-                                                    <a href="Header-01.html"><i class="fa fa-tint"></i>Header Style 01</a>
-                                                </li>
-                                                <li>
-                                                    <a href="Header-02.html"><i class="fa fa-users"></i>Header Style 02</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-3 sub-menu-2-item">
-                                            <ul>
+    <!-- Begin section search form -->
+    <div class="tz-content-search">
+        <form action="#" method="get">
+            <i class="fa fa-times tz-form-close"></i>
+            <input type="text" class="tz-search-input" id="tz-search-input" name="search" placeholder="Search...">
+        </form><!-- End form search -->
+    </div>
+    <!-- End section search form -->
 
-                                                <li>
-                                                    <a href="Header-03.html"><i class="fa fa-volume-up"></i>Header Style 03</a>
-                                                </li>
-                                                <li>
-                                                    <a href="Header-04.html"><i class="fa fa-ambulance"></i>Header Style 04</a>
-                                                </li>
-                                                <li>
-                                                    <a href="Header-05.html"><i class="fa fa-wrench"></i>Header Style 05</a>
-                                                </li>
-                                                <li>
-                                                    <a href="Header-06.html"><i class="fa fa-truck"></i>Header Style 06</a>
-                                                </li>
-                                                <li>
-                                                    <a href="Header-07.html"><i class="fa fa-thumb-tack"></i>Header Style 07</a>
-                                                </li>
-                                            </ul>
+
+        <!-- Begin class tz-header-2 -->
+        <header class="tz-header tz-header-2">
+            <!--<div class="tz-sign-in">
+            <div class="container">
+                <p><i class="fa fa-times"></i>Welcome to Ethic University. Sign in to enjoy our best online lessions!</p>
+                <button class="tz-search"><i class="fa fa-search"></i></button>
+            </div>
+        </div>-->
+            <div class="tz-customer-container">
+                <div class="container">
+                    <div class="tz-header-content">
+                        <h3 class="tz-logo pull-left">
+                            <a href="#"><img alt="Images Logo" src="images/home/logo.png" style = "height:80px;width:100px"></a>
+                        </h3>
+                        <button type="button" class="tz-button-toggle btn-navbar pull-right" data-target=".nav-collapse">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <nav class="nav-collapse pull-right">
+                            <ul class="tz-menu">
+                                <li>
+                                    <a href="index.html">HOME</a>
+                                    <!--<ul class="sub-menu sub-menu-style-1">
+                                        <li>
+                                            <a href="Home-01.html">Home Version 01</a>
+                                        </li>
+                                        <li>
+                                            <a href="Home-02.html">Home Version 02</a>
+                                        </li>
+                                        <li>
+                                            <a href="Home-03.html">Home Version 03</a>
+                                        </li>
+                                        <li>
+                                            <a href="Home-04.html">Home Version 04</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.html">Home Version 05</a>
+                                        </li>
+                                        <li>
+                                            <a href="Home-06.html">Home Version 06</a>
+                                        </li>
+                                        <li>
+                                            <a href="Home-07.html">Home Version 07</a>
+                                        </li>
+                                    </ul>-->
+                                </li>
+                                <li>
+                                    <a href="#">Academic Info</a>
+                                    <ul class="sub-menu sub-menu-style-1">
+                                        <li>
+                                            <a href="academic_facility_page.html">Academic Facilities</a>
+                                        </li>
+                                        <li>
+                                            <a href="faculty_page.html">Faculty</a>
+                                        </li>
+                                        <li>
+                                            <a href="r&d_page.html">R&D</a>
+                                        </li>
+                                        <li>
+                                            <a href="acad_studentProject.html">Students Projects</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">For recruiters</a>
+                                    <ul class="sub-menu sub-menu-style-1">
+                                        <li>
+                                            <a href="whyrecruit.html">Why recruit?</a>
+                                        </li>
+                                        <li>
+                                            <a href="placementprocedure.html">Placement</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Internship</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Brochure</a>
+                                        </li>
+                                        <li>
+                                            <a href="faqs.html">FAQs</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!--<li class="tz-point-static">
+                                    <a href="#">For Students</a>
+                                    <div class="sub-menu sub-menu-style-2">
+                                        <div class="tz-submenu-2-wrapper">
+                                            <div class="row">
+                                                <div class="col-md-3 sub-menu-2-item">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="Mega-Menu-Style-01.html"><i class="fa fa-home"></i>Mega Menu Style 01</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="Mega-Menu-Style-02.html"><i class="fa fa-gift"></i>Mega Menu Style 02</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="Mega-Menu-Style-03.html"><i class="fa fa-film"></i>Mega Menu Style 03</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="Mega-Menu-Style-04.html"><i class="fa fa-flask"></i>Mega Menu Style 04</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="Feature-Forum.html"><i class="fa fa-gavel"></i>Feature Forum</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="Feature-RTLLayout.html"><i class="fa fa-glass"></i>Feature RTLLayout</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-3 sub-menu-2-item">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="Feature-Typography.html"><i class="fa fa-plus"></i>Feature Typography</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="Feature-Color-01.html"><i class="fa fa-power-off"></i>Feature Color Style 01</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="Feature-Color-02.html"><i class="fa fa-random"></i>Feature Color Style 02</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="Feature-Color-03.html"><i class="fa fa-road"></i>Feature Color Style 03</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="Feature-Color-04.html"><i class="fa fa-share-square"></i>Feature Color Style 04</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="Feature-Color-05.html"><i class="fa fa-sign-in"></i>Feature Color Style 05</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-3 sub-menu-2-item">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="Feature-SortCodes.html"><i class="fa fa-spoon"></i>Feature SortCodes</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="Contact.html"><i class="fa fa-star-o"></i>Contact Us</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="About.html"><i class="fa fa-tasks"></i>About Us</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="CanvasMenu.html"><i class="fa fa-ticket"></i>Canvas Menu</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="Header-01.html"><i class="fa fa-tint"></i>Header Style 01</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="Header-02.html"><i class="fa fa-users"></i>Header Style 02</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-3 sub-menu-2-item">
+                                                    <ul>
+
+                                                        <li>
+                                                            <a href="Header-03.html"><i class="fa fa-volume-up"></i>Header Style 03</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="Header-04.html"><i class="fa fa-ambulance"></i>Header Style 04</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="Header-05.html"><i class="fa fa-wrench"></i>Header Style 05</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="Header-06.html"><i class="fa fa-truck"></i>Header Style 06</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="Header-07.html"><i class="fa fa-thumb-tack"></i>Header Style 07</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </li>-->
-                        <li>
-                            <a href="#">For students</a>
-                            <ul class="sub-menu sub-menu-style-1">
-                                <li>
-                                    <a href="Blog-01-Column.html">For placements</a>
-                                </li>
-                                <li>
-                                    <a href="Blog-02-Column.html">For Internships</a>
-                                </li>
-                                <li>
-                                    <a href="Blog-03-Column.html">FAQs</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">Events</a>
-                            <ul class="sub-menu sub-menu-style-1">
-                                <li>
-                                    <a href="Social-Activity.html">IIC</a>
-                                </li>
-                                <li>
-                                    <a href="Social-Groups.html">SMP</a>
-                                </li>
-                                <li>
-                                    <a href="Social-Login.html">Cultural Events</a>
-                                </li>
-                                <li>
-                                    <a href="Social-Members.html">OSS</a>
-                                </li>
-                                <li>
-                                    <a href="Social-SingleGroup.html">CSR</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="contact_cdc.html">Contact Us</a>
-                            <ul class="sub-menu sub-menu-style-1">
-                                <!--<li>
-                                    <a href="JoomlaBase-404Page.html">CDC Head</a>
-                                </li>
-                                <li>
-                                    <a href="JoomlaBase-NewFeed.html">Professors</a>
-                                </li>
-                                <li>
-                                    <a href="JoomlaBase-NewLink.html">Executive</a>
-                                </li>
-                                <li>
-                                    <a href="JoomlaBase-Page-Login.html">F</a>
-                                </li>
-                                <li>
-                                    <a href="JoomlaBase-Page-Profile-User.html">JoomlaBase Profile User</a>
-                                </li>
-                                <li>
-                                    <a href="JoomlaBase-Page-Remind-UserName.html">JoomlaBase UserName</a>
-                                </li>
-                                <li>
-                                    <a href="JoomlaBase-Page-Reset-Pass.html">JoomlaBase Reset Pass</a>
-                                </li>
-                                <li>
-                                    <a href="JoomlaBase-Page-Resgister.html">JoomlaBase Resgister</a>
                                 </li>-->
+                                <li>
+                                    <a href="#">For students</a>
+                                    <ul class="sub-menu sub-menu-style-1">
+                                        <li>
+                                            <a href="placement.html">For placements</a>
+                                        </li>
+                                        <li>
+                                            <a href="intern.html">For Internships</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">FAQs</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Events</a>
+                                    <ul class="sub-menu sub-menu-style-1">
+                                        <li>
+                                            <a href="#">IIC</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">SMP</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Cultural Events</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">OSS</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">CSR</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="contact_cdc.html">Contact Us</a>
+                                    <ul class="sub-menu sub-menu-style-1">
+                                        <!--<li>
+                                            <a href="JoomlaBase-404Page.html">CDC Head</a>
+                                        </li>
+                                        <li>
+                                            <a href="JoomlaBase-NewFeed.html">Professors</a>
+                                        </li>
+                                        <li>
+                                            <a href="JoomlaBase-NewLink.html">Executive</a>
+                                        </li>
+                                        <li>
+                                            <a href="JoomlaBase-Page-Login.html">F</a>
+                                        </li>
+                                        <li>
+                                            <a href="JoomlaBase-Page-Profile-User.html">JoomlaBase Profile User</a>
+                                        </li>
+                                        <li>
+                                            <a href="JoomlaBase-Page-Remind-UserName.html">JoomlaBase UserName</a>
+                                        </li>
+                                        <li>
+                                            <a href="JoomlaBase-Page-Reset-Pass.html">JoomlaBase Reset Pass</a>
+                                        </li>
+                                        <li>
+                                            <a href="JoomlaBase-Page-Resgister.html">JoomlaBase Resgister</a>
+                                        </li>-->
+                                    </ul>
+                                </li>
                             </ul>
+                        </nav>
+                    </div>
+                </div><!-- End Content Main Header -->
+            </div>
+        </header>
+        <!-- End class tz-header-2 -->
+
+        <section class="tz-banner">
+            <!-- Begin class banner style-3 -->
+            <div class="tz-banner-style4">
+                <div class="tz-slider-banner">
+                    <div class="tz-items">
+                        <div class="tr-fp-image">
+                            <img src="images/facultyimage4.jfif" alt="Images">
+                        </div>
+                        <div class="tz-banner-content">
+                            <div class="container">
+                                <h4 style="color:white;font-family: Verdana, Geneva, Tahoma, sans-serif;">Academic Facilities</h4>
+                                <span class="tz-under-line"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End  class banner style-3 -->
+        </section>
+
+        <!-- Begin section tz-portfolio-wrapper -->
+        <section class="tz-portfolio-wrapper">
+            <!--<span class="tz-images-check"><img src="images/check-01-home1.png" alt="Images"></span>-->
+            <h3 class="tz-portfolio-title" style = "padding-top:30px"><a href="#">Academic facilities</a></h3>
+            <div class="tz-portfolio">
+                <div class="element tz-item-portfolio">
+                    <div class="tz-image-portfolio">
+                        <img src="images/Laboratories/acad.jpg" alt="Vivamus in lorem nisl">
+                    </div>
+                    <div class="tz-portfolio-content-style-2">
+                    </div>
+                </div>
+                <div class="element tz-item-portfolio">
+                    <div class="tz-image-portfolio">
+                        <img src="images/Laboratories/library.jpg" alt="Vivamus in lorem nisl">
+                    </div>
+                    <div class="tz-portfolio-content-style-2">
+                        <h4>Library</h4>
+                        <p>Institute’s Library started its initial activities, at least a month before the actual starting of the Institute itself, in a small room, in the mentoring Institute.</p>
+                        <!--<span>
+                            <a href="#"><i class="fa fa-arrows-alt"></i>READ MORE</a>
+                        </span>-->
+                    </div>
+                </div>
+                <div class="element tz-item-portfolio">
+                    <div class="tz-image-portfolio">
+                        <img src="images/Laboratories/classrooms.jpg" alt="Vivamus in lorem nisl">
+                    </div>
+                    <div class="tz-portfolio-content-style-2">
+                        <h4>Classrooms</h4>
+                    </div>
+                </div>
+                <div class="element tz-item-portfolio">
+                    <div class="tz-image-portfolio">
+                        <img src="images/Laboratories/workshops.jpg" alt="Vivamus in lorem nisl">
+                    </div>
+                    <div class="tz-portfolio-content-style-2">
+                        <h4>Workshops</h4>
+                    </div>
+                </div>
+                <div class="element tz-item-portfolio">
+                    <div class="tz-image-portfolio">
+                        <img src="images/home/gallery_5.jpg" alt="Vivamus in lorem nisl">
+                    </div>
+                    <div class="tz-portfolio-content-style-2">
+                        <h4>Laboratories</h4>
+                    </div>
+                </div>
+            </div><!--End class tz-portfolio-->
+        </section>
+        <!-- End section tz-portfolio-wrapper -->
+
+
+    <!-- Begin section tz-cources -->
+    <section class="tz-cources">
+        <section class="tz-introduce-style-4">
+            <div class="container">
+                <div class="tz-introduce-content tz-introduce-content-style-4">
+                    <h4>Laboritories</h4>
+                    <p style = "text-align:left;color:#383131;margin:0 0 5px">The Institute ensures state of the art equipment for all academic facilities giving the students the best experience with practical engineering. From the library to more specialised labs like the machines lab are open for all the students to experiment with the help of the lab staff.
+                    </p>
+                </div>
+            </div><!-- End container class tz-home-4-introduce -->
+        </section><!-- End class tz-home-4-introduce -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <ul id="tz-sidemenu" class="tz-cources-content-left">
+                        <li>
+                            <div>
+                                <a href="#tz-fine-arts" class="tz-open">
+                                    <span><img src="images/check-01-home1.png" alt="Images"></span>
+                                    <i class="fa fa-arrows-alt"></i>
+                                    <strong>Computer Lab</strong>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="#tz-comunication-tudies">
+                                    <span><img src="images/check-01-home1.png" alt="Images"></span>
+                                    <i class="fa fa-arrows-alt"></i>
+                                    <strong>Electronics Lab</strong>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="#tz-bussiness">
+                                    <span><img src="images/check-01-home1.png" alt="Images"></span>
+                                    <i class="fa fa-arrows-alt"></i>
+                                    <strong>Chemistry Lab</strong>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="#tz-humanities">
+                                    <span><img src="images/check-01-home1.png" alt="Images"></span>
+                                    <i class="fa fa-arrows-alt"></i>
+                                    <strong>Physics Lab</strong>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="#tz-languge-global">
+                                    <span><img src="images/check-01-home1.png" alt="Images"></span>
+                                    <i class="fa fa-arrows-alt"></i>
+                                    <strong>Heat Transfer Lab</strong>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="#tz-sciences">
+                                    <span><img src="images/check-01-home1.png" alt="Images"></span>
+                                    <i class="fa fa-arrows-alt"></i>
+                                    <strong>Fluid Dynamics Lab</strong>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="#tz-professinal">
+                                    <span><img src="images/check-01-home1.png" alt="Images"></span>
+                                    <i class="fa fa-arrows-alt"></i>
+                                    <strong>Strength of Material Lab</strong>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="#tz-education">
+                                    <span><img src="images/check-01-home1.png" alt="Images"></span>
+                                    <i class="fa fa-arrows-alt"></i>
+                                    <strong>Measurments Lab</strong>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="#tz-multimedia">
+                                    <span><img src="images/check-01-home1.png" alt="Images"></span>
+                                    <i class="fa fa-arrows-alt"></i>
+                                    <strong>Electronics Power Lab</strong>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="#tz-economics">
+                                    <span><img src="images/check-01-home1.png" alt="Images"></span>
+                                    <i class="fa fa-arrows-alt"></i>
+                                    <strong>Biology Lab</strong>
+                                </a>
+                            </div>
                         </li>
                     </ul>
-                </nav>
-            </div>
-        </div><!-- End Content Main Header -->
-    </div>
-</header>
-<!-- End class tz-header-2 -->
-
-<section class="tz-banner">
-    <!-- Begin class banner style-3 -->
-    <div class="tz-banner-style4">
-        <div class="tz-slider-banner">
-            <div class="tz-items">
-                <div class="tr-fp-image">
-                    <img src="images/facultyimage4.jfif" alt="Images">
                 </div>
-                <div class="tz-banner-content">
-                    <div class="container">
-                        <h4 style="color:white;font-family: Verdana, Geneva, Tahoma, sans-serif;">Academic Facilities</h4>
-                        <span class="tz-under-line"></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End  class banner style-3 -->
-</section>
-
-<section class="tz-wrapper-default">
-    <div class="container">
-        <!-- Start class tzsing_post -->
-        <div class="tzsingle_post">
-            <article class="tz-single-content">
-
-                <div class="tz-single-description">
-                    <p style="color: black; font-size: x-large;">Classrooms</p>
-                    <p>Content comes here.Content comes here.Content comes here.Content comes here.Content comes here.Content comes here.Content comes here.Content comes here.</p>
-                    <p style="color: black; font-size: x-large;">Laboratories</p>
-                    <p>The Institute ensures state of the art equipment for all academic facilities giving the students the best experience with practical engineering. From the library to more specialised labs like the machines lab are open for all the students to experiment with the help of the lab staff.</p>
-
-
-                </div>
-            </article>
-
-        </div>
-        <!-- End class tzsing_post -->
-    </div>
-</section>
-
-<section class="tz-cources tz-cources-4" style="margin-top: -50px;">
-    <span class="tz-images-check">
-        <!-- <img alt="Images" src="images/check-01-home1.png"/> -->
-    </span>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                <ul id="tz-sidemenu" class="tz-cources-content-left">
-                    <li>
-                        <div>
-                            <a href="#tz-fine-arts" class="tz-open">
-                                <span>
-                                    <img alt="Images" src="images/check-01-home1.png"/>
-                                    <i class="fa fa-arrows-alt"></i>
-                                </span>
-                                <strong>Computer Lab</strong>
-                            </a>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                    <div id="tz-fine-arts" class="tz-content-right">
+                        <div class="tz-tab-slider-img">
+                            <button class="tz-cources-prev">
+                                <i class="fa fa-angle-left"></i>
+                            </button>
+                            <button class="tz-cources-next">
+                                <i class="fa fa-angle-right"></i>
+                            </button>
+                            <ul class="tz-tab-slider">
+                                <li>
+                                    <img src="images/Laboratories/computerlab.jpg" alt="Images">
+                                </li>
+                                <li>
+                                    <img src="images/Laboratories/electronicslab.jpg" alt="Images">
+                                </li>
+                                <li>
+                                    <img src="images/Laboratories/chemistrylab.jpg" alt="Images">
+                                </li>
+                                <li>
+                                    <img src="images/Laboratories/physics.jpg" alt="Images">
+                                </li>
+                                <li>
+                                    <img src="http://placehold.it/770x412" alt="Images">
+                                </li>
+                                <li>
+                                    <img src="http://placehold.it/770x412" alt="Images">
+                                </li>
+                                <li>
+                                    <img src="http://placehold.it/770x412" alt="Images">
+                                </li>
+                                <li>
+                                    <img src="http://placehold.it/770x412" alt="Images">
+                                </li>
+                                <li>
+                                    <img src="http://placehold.it/770x412" alt="Images">
+                                </li>
+                                <li>
+                                    <img src="http://placehold.it/770x412" alt="Images">
+                                </li>
+                                <li>
+                                    <img src="http://placehold.it/770x412" alt="Images">
+                                </li>
+                            </ul>
                         </div>
-                    </li>
-                    <li>
-                        <div>
-                            <a href="#tz-comunication-tudies">
-                                <span>
-                                    <img alt="Images" src="images/check-01-home1.png"/>
-                                </span>
-                                <i class="fa fa-arrows-alt"></i>
-                                <strong>Electronics Lab</strong>
-                            </a>
+                        <div class="tz-tab-description">
+                            <img src="images/check-02-home2.png" alt="Images">
+                            <h4>Computer Lab</h4>
                         </div>
-                    </li>
-                    <li>
-                        <div>
-                            <a href="#tz-bussiness">
-                                <span>
-                                    <img alt="Images" src="images/check-01-home1.png"/>
-                                </span>
-                                <i class="fa fa-arrows-alt"></i>
-                                <strong>Chemistry Lab</strong>
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <a href="#tz-humanities">
-                                <span>
-                                    <img alt="Images" src="images/check-01-home1.png"/>
-                                </span>
-                                <i class="fa fa-arrows-alt"></i>
-                                <strong>Physics Lab</strong>
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <a href="#tz-languge-global">
-                                <span>
-                                    <img alt="Images" src="images/check-01-home1.png"/>
-                                </span>
-                                <i class="fa fa-arrows-alt"></i>
-                                <strong>Heat Transfer Lab</strong>
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <a href="#tz-sciences">
-                                <span>
-                                    <img alt="Images" src="images/check-01-home1.png"/>
-                                </span>
-                                <i class="fa fa-arrows-alt"></i>
-                                <strong>Fluid Dynamics Lab</strong>
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <a href="#tz-professinal">
-                                <span>
-                                    <img alt="Images" src="images/check-01-home1.png"/>
-                                </span>
-                                <i class="fa fa-arrows-alt"></i>
-                                <strong>Strength of Materials Lab</strong>
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <a href="#tz-education">
-                                <span>
-                                    <img alt="Images" src="images/check-01-home1.png"/>
-                                </span>
-                                <i class="fa fa-arrows-alt"></i>
-                                <strong>Measurements Lab</strong>
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <a href="#tz-multimedia">
-                                <span>
-                                    <img alt="Images" src="images/check-01-home1.png"/>
-                                </span>
-                                <i class="fa fa-arrows-alt"></i>
-                                <strong>Electronics Power Lab</strong>
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <a href="#tz-economics">
-                                <span>
-                                    <img alt="Images" src="images/check-01-home1.png"/>
-                                </span>
-                                <i class="fa fa-arrows-alt"></i>
-                                <strong>Biology Lab</strong>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
-                <div id="tz-fine-arts" class="tz-content-right">
-                    <div class="tz-tab-slider-img">
-                        <!-- <button class="tz-cources-prev">
-                            <i class="fa fa-angle-left"></i>
-                        </button>
-                        <button class="tz-cources-next">
-                            <i class="fa fa-angle-right"></i>
-                        </button> -->
-                        <ul class="tz-tab-slider">
-                            <li>
-                                <img src="http://placehold.it/770x412" alt="Images">
-                            </li>
-                            <!-- <li>
-                                <img src="http://placehold.it/770x412" alt="Images">
-                            </li>
-                            <li>
-                                <img src="http://placehold.it/770x412" alt="Images">
-                            </li>
-                            <li>
-                                <img src="http://placehold.it/770x412" alt="Images">
-                            </li>
-                            <li>
-                                <img src="http://placehold.it/770x412" alt="Images">
-                            </li>
-                            <li>
-                                <img src="http://placehold.it/770x412" alt="Images">
-                            </li>
-                            <li>
-                                <img src="http://placehold.it/770x412" alt="Images">
-                            </li>
-                            <li>
-                                <img src="http://placehold.it/770x412" alt="Images">
-                            </li>
-                            <li>
-                                <img src="http://placehold.it/770x412" alt="Images">
-                            </li>
-                            <li>
-                                <img src="http://placehold.it/770x412" alt="Images">
-                            </li>
-                            <li>
-                                <img src="http://placehold.it/770x412" alt="Images">
-                            </li> -->
-                        </ul>
                     </div>
-                    <div class="tz-tab-description tz-background-color-8">
-                        <img src="images/check-02-home2.png" alt="Images">
-                        <h4>Computer Lab</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis. Lorem ipsum dolor amet, consectetur adipiscing elit. Elementum nisi eget mi mollis ...</p>
-                                        <span>
-                                            <a href="#">Film Studies</a>
-                                            <a href="#">Mass Media</a>
-                                            <a href="#">Public Relations</a>
-                                        </span>
-                    </div>
-                </div>
-                <div id="tz-comunication-tudies" class="tz-content-right tz-hidden">
-                    <div class="tz-tab-singleImg">
-                        <img src="http://placehold.it/770x412" alt="Images">
-                    </div>
-                    <div class="tz-tab-description tz-background-color-8">
-                        <img src="images/check-02-home2.png" alt="Images">
-                        <h4>Electronics Lab</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis. Lorem ipsum dolor amet, consectetur adipiscing elit. Elementum nisi eget mi mollis ...</p>
-                                        <span>
-                                            <a href="#">Film Studies</a>
-                                            <a href="#">Mass Media</a>
-                                            <a href="#">Public Relations</a>
-                                        </span>
-                    </div>
-                </div>
-                <div id="tz-bussiness" class="tz-content-right tz-hidden">
-                    <div class="tz-tab-slider-img">
-                        <ul class="tz-tab-slider">
-                            <li>
-                                <img src="http://placehold.it/770x412" alt="Images">
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="tz-tab-description tz-background-color-8">
-                        <img src="images/check-02-home2.png" alt="Images">
-                        <h4>Chemistry Lab</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis. Lorem ipsum dolor amet, consectetur adipiscing elit. Elementum nisi eget mi mollis ...</p>
-                                        <span>
-                                            <a href="#">Film Studies</a>
-                                            <a href="#">Mass Media</a>
-                                            <a href="#">Public Relations</a>
-                                        </span>
-                    </div>
-                </div>
-                <div id="tz-humanities" class="tz-content-right tz-hidden">
-                    <div class="tz-tab-slider-img">
-                        <ul class="tz-tab-slider">
-                            <li>
-                                <img src="http://placehold.it/770x412" alt="Images">
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="tz-tab-description tz-background-color-8">
-                        <img src="images/check-02-home2.png" alt="Images">
-                        <h4>Physics Lab</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis. Lorem ipsum dolor amet, consectetur adipiscing elit. Elementum nisi eget mi mollis ...</p>
-                                        <span>
-                                            <a href="#">Film Studies</a>
-                                            <a href="#">Mass Media</a>
-                                            <a href="#">Public Relations</a>
-                                        </span>
-                    </div>
-                </div>
-                <div id="tz-languge-global" class="tz-content-right tz-hidden">
-                    <div class="tz-tab-slider-img">
-                        <ul class="tz-tab-slider">
-                            <li>
-                                <img src="http://placehold.it/770x412" alt="Images">
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="tz-tab-description tz-background-color-8">
-                        <img src="images/check-02-home2.png" alt="Images">
-                        <h4>Heat Transfer Lab</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis. Lorem ipsum dolor amet, consectetur adipiscing elit. Elementum nisi eget mi mollis ...</p>
-                                        <span>
-                                            <a href="#">Film Studies</a>
-                                            <a href="#">Mass Media</a>
-                                            <a href="#">Public Relations</a>
-                                        </span>
-                    </div>
-                </div>
-                <div id="tz-sciences" class="tz-content-right tz-hidden">
-                    <div class="tz-tab-slider-img">
-                        <ul class="tz-tab-slider">
-                            <li>
-                                <img src="http://placehold.it/770x412" alt="Images">
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="tz-tab-description tz-background-color-8">
-                        <img src="images/check-02-home2.png" alt="Images">
-                        <h4>Fluid Dynamics Lab</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis. Lorem ipsum dolor amet, consectetur adipiscing elit. Elementum nisi eget mi mollis ...</p>
-                                        <span>
-                                            <a href="#">Film Studies</a>
-                                            <a href="#">Mass Media</a>
-                                            <a href="#">Public Relations</a>
-                                        </span>
-                    </div>
-                </div>
-                <div id="tz-professinal" class="tz-content-right tz-hidden">
-                    <div class="tz-tab-slider-img">
-                        <ul class="tz-tab-slider">
-                            <li>
-                                <img src="http://placehold.it/770x412" alt="Images">
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="tz-tab-description tz-background-color-8">
-                        <img src="images/check-02-home2.png" alt="Images">
-                        <h4>Streangth Of Material Lab</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis. Lorem ipsum dolor amet, consectetur adipiscing elit. Elementum nisi eget mi mollis ...</p>
-                                        <span>
-                                            <a href="#">Film Studies</a>
-                                            <a href="#">Mass Media</a>
-                                            <a href="#">Public Relations</a>
-                                        </span>
-                    </div>
-                </div>
-                <div id="tz-education" class="tz-content-right tz-hidden">
-                    <div class="tz-tab-slider-img">
-                        <ul class="tz-tab-slider">
-                            <li>
-                                <img src="http://placehold.it/770x412" alt="Images">
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="tz-tab-description tz-background-color-8">
-                        <img src="images/check-02-home2.png" alt="Images">
-                        <h4>Measurement Lab</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis. Lorem ipsum dolor amet, consectetur adipiscing elit. Elementum nisi eget mi mollis ...</p>
-                                        <span>
-                                            <a href="#">Film Studies</a>
-                                            <a href="#">Mass Media</a>
-                                            <a href="#">Public Relations</a>
-                                        </span>
-                    </div>
-                </div>
-                <div id="tz-multimedia"  class="tz-content-right tz-hidden">
-                    <div class="tz-tab-slider-img">
-                        <ul class="tz-tab-slider">
-                            <li>
-                                <img src="http://placehold.it/770x412" alt="Images">
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="tz-tab-description tz-background-color-8">
-                        <img src="images/check-02-home2.png" alt="Images">
-                        <h4>Electronics Power Lab</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis. Lorem ipsum dolor amet, consectetur adipiscing elit. Elementum nisi eget mi mollis ...</p>
-                            <span>
-                                <a href="#">Film Studies</a>
-                                <a href="#">Mass Media</a>
-                                <a href="#">Public Relations</a>
-                            </span>
-                    </div>
-                </div>
-                <div id="tz-economics"  class="tz-content-right tz-hidden">
+                    <div id="tz-comunication-tudies" class="tz-content-right tz-hidden">
                         <div class="tz-tab-slider-img">
                             <ul class="tz-tab-slider">
-                            <li>
-                                <img src="http://placehold.it/770x412" alt="Images">
-                            </li>
-                        </ul>
+                                <li>
+                                    <img src="images/Laboratories/electronicslab.jpg" alt="Images">
+                                </li>
+                            </ul>
                         </div>
-                        <div class="tz-tab-description tz-background-color-8">
-                        <img src="images/check-02-home2.png" alt="Images">
-                        <h4>Biology Lab</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis. Lorem ipsum dolor amet, consectetur adipiscing elit. Elementum nisi eget mi mollis ...</p>
-                            <span>
-                                <a href="#">Film Studies</a>
-                                <a href="#">Mass Media</a>
-                                <a href="#">Public Relations</a>
-                            </span>
+                        <div class="tz-tab-description">
+                            <img src="images/check-02-home2.png" alt="Images">
+                            <h4>Electronics Lab</h4>
                         </div>
                     </div>
+
+                    <div id="tz-bussiness" class="tz-content-right tz-hidden">
+                        <div class="tz-tab-slider-img">
+                            <ul class="tz-tab-slider">
+                                <li>
+                                    <img src="images/Laboratories/chemistrylab.jpg" alt="Images">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tz-tab-description">
+                            <img src="images/check-02-home2.png" alt="Images">
+                            <h4>Chemistry Lab</h4>
+                        </div>
+                    </div>
+
+                    <div id="tz-humanities" class="tz-content-right tz-hidden">
+                        <div class="tz-tab-slider-img">
+                            <ul class="tz-tab-slider">
+                                <li>
+                                    <img src="images/Laboratories/physics.jpg" alt="Images">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tz-tab-description">
+                            <img src="images/check-02-home2.png" alt="Images">
+                            <h4>Physics Lab</h4>
+                        </div>
+                    </div>
+
+                    <div id="tz-languge-global" class="tz-content-right tz-hidden">
+                        <div class="tz-tab-slider-img">
+                            <ul class="tz-tab-slider">
+                                <li>
+                                    <img src="http://placehold.it/770x412" alt="Images">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tz-tab-description">
+                            <img src="images/check-02-home2.png" alt="Images">
+                            <h4>Heat Transfer Lab</h4>
+                        </div>
+                    </div>
+
+                    <div id="tz-sciences" class="tz-content-right tz-hidden">
+                        <div class="tz-tab-slider-img">
+                            <ul class="tz-tab-slider">
+                                <li>
+                                    <img src="http://placehold.it/770x412" alt="Images">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tz-tab-description">
+                            <img src="images/check-02-home2.png" alt="Images">
+                            <h4>Fluid Dynamics Lab</h4>
+                        </div>
+                    </div>
+
+                    <div id="tz-professinal" class="tz-content-right tz-hidden">
+                        <div class="tz-tab-slider-img">
+                            <ul class="tz-tab-slider">
+                                <li>
+                                    <img src="http://placehold.it/770x412" alt="Images">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tz-tab-description">
+                            <img src="images/check-02-home2.png" alt="Images">
+                            <h4>Strength of Material</h4>
+                        </div>
+                    </div>
+
+                    <div id="tz-education" class="tz-content-right tz-hidden">
+                        <div class="tz-tab-slider-img">
+                            <ul class="tz-tab-slider">
+                                <li>
+                                    <img src="http://placehold.it/770x412" alt="Images">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tz-tab-description">
+                            <img src="images/check-02-home2.png" alt="Images">
+                            <h4>Measurments Lab</h4>
+                        </div>
+                    </div>
+
+                    <div id="tz-multimedia"  class="tz-content-right tz-hidden">
+                        <div class="tz-tab-slider-img">
+                            <ul class="tz-tab-slider">
+                                <li>
+                                    <img src="http://placehold.it/770x412" alt="Images">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tz-tab-description">
+                            <img src="images/check-02-home2.png" alt="Images">
+                            <h4>Electronics Power Lab</h4>
+                        </div>
+                    </div>
+
+                    <div id="tz-economics"  class="tz-content-right tz-hidden">
+                        <div class="tz-tab-slider-img">
+                            <ul class="tz-tab-slider">
+                                <li>
+                                    <img src="http://placehold.it/770x412" alt="Images">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tz-tab-description">
+                            <img src="images/check-02-home2.png" alt="Images">
+                            <h4>Biology Lab</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- End container class tz-cources -->
+    </section>
+    <!-- End section tz-cources -->
+
+    <!-- Begin section tz-out-leader -->
+    <section class="tz-our-leader">
+        <span class="tz-images-check">
+            <img src="images/check-01-home1.png" alt="Images">
+        </span>
+        <h2 class="tz-title-leader">Academic Support System</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
+                    <div class="tz-leader-content">
+                        <div class="tz-our-leader-image">
+                            <img src="images/Laboratories/facultyadvisor.png" alt="Images">
+                            <span class="tz-icon-hover">
+                                <a href="#"><i class="fa fa-chain tz-color-5"></i></a>
+                            </span>
+                        </div>
+                        <h6>Faculty Advisors</h6>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
+                    <div class="tz-leader-content">
+                        <div class="tz-our-leader-image">
+                            <img src="images/Laboratories/smp.jpg" alt="Images">
+                            <span class="tz-icon-hover">
+                                <a href="#"><i class="fa fa-chain tz-color-5"></i></a>
+                            </span>
+                        </div>
+                        <h6>Student Mentorship Programm</h6>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
+                    <div class="tz-leader-content">
+                        <div class="tz-our-leader-image">
+                            <img src="images/Laboratories/yourdost.png" alt="Images">
+                            <span class="tz-icon-hover">
+                                <a href="#"><i class="fa fa-chain tz-color-5"></i></a>
+                             </span>
+                        </div>
+                        <h6>Your Dost</h6>
+                    </div>
+                </div>
+            </div>
+        </div><!-- End container class tz-out-leader -->
+    </section>
+    <!-- End section tz-out-leader -->
+
+    <!-- Begin Footer -->
+    <footer class="tz-footer">
+        <div class="tz-footer-content tz-footer-content-2 tz-background-color-4">
+            <div class="container">
+                <div class = "row">
+                    <div class = "col-lg-3">
+                        <img src="images/home/logo.png" alt="Icon-footer" style = "padding-bottom:30px">
+                        <ul>
+                            <li><a href="#" style = "color:#fff">Indian Institute of Technology Dharwad,</a></li>
+                            <li><a href="#" style = "color:#fff">Karnataka, India - 580011</a></li>
+                            <li><a href="#" style = "color:#fff">pro@iitdh.ac.in</a></li>
+                            <li><a href="#" style = "color:#fff">+91 836 2212 839</a></li>
+                        </ul>
+                    </div>
+
+                    <div class = "col-lg-3">
+                        <ul class="">
+                            <li>
+                                <div class="tz-footer-content-main">
+                                    <!--<img src="images/check-02-home2.png" alt="Images remove footer">-->
+                                    <h4>Quick Links</h4>
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                    </ul>
+
+                                    <h4>Academic Information</h4>
+                                    <ul>
+                                        <li><a href="#">Students</a></li>
+                                        <li><a href="#">Faculty</a></li>
+                                        <li><a href="#">R&D</a></li>
+                                        <li><a href="#">Students Projects</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class = "col-lg-3">
+                        <ul class="">
+                            <li>
+                                <div class="tz-footer-content-main">
+                                    <!--<img src="images/check-02-home2.png" alt="Images remove footer">-->
+                                    <h4>For Recruiters</h4>
+                                    <ul>
+                                        <li><a href="#">Why recruit?</a></li>
+                                        <li><a href="#">Placement</a></li>
+                                        <li><a href="#">Internship</a></li>
+                                        <li><a href="#">Brochur</a></li>
+                                        <li><a href="#">FAQs</a></li>
+                                    </ul>
+
+                                    <h4>For Students</h4>
+                                    <ul>
+                                        <li><a href="#">For Placements</a></li>
+                                        <li><a href="#">For Internships</a></li>
+                                        <li><a href="#">FAQs</a></li>
+                                    </ul>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class = "col-lg-3">
+                        <ul class="">
+                            <li>
+                                <div class="tz-footer-content-main">
+                                    <!--<img src="images/check-02-home2.png" alt="Images remove footer">-->
+                                    <h4>Events</h4>
+                                    <ul>
+                                        <li><a href="#">IIC</a></li>
+                                        <li><a href="#">SMP</a></li>
+                                        <li><a href="#">Cultural Events</a></li>
+                                        <li><a href="#">OSS</a></li>
+                                        <li><a href="#">CSR</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--<img src="images/home/logo.png" alt="Icon-footer">
+                <ul class="tz-footer-part">
+                    <li>
+                        <div class="tz-footer-content-main">
+                            <img src="images/check-02-home2.png" alt="Images remove footer">
+                            <h4>ABOUT UNIVERSITY</h4>
+                            <ul>
+                                <li><a href="#">History & Mission</a></li>
+                                <li><a href="#">Administration</a></li>
+                                <li><a href="#">Community</a></li>
+                                <li><a href="#">Around the World</a></li>
+                                <li><a href="#">News Network</a></li>
+                                <li><a href="#">Visitor Information</a></li>
+                                <li><a href="#">Notable Facts & Statistics</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tz-footer-content-main">
+                            <img src="images/check-02-home2.png" alt="Images remove footer">
+                            <h4>ADMISSIONS</h4>
+                            <ul>
+                                <li><a href="#">Undergraduate</a></li>
+                                <li><a href="#">By School</a></li>
+                                <li><a href="#">Process</a></li>
+                                <li><a href="#">Visitor Information</a></li>
+                                <li><a href="#">For Prospective Parents</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tz-footer-content-main">
+                            <img src="images/check-02-home2.png" alt="Images remove footer">
+                            <h4>ACADAMIES</h4>
+                            <ul>
+                                <li><a href="#">Schools</a></li>
+                                <li><a href="#">Depts. and Disciplines</a></li>
+                                <li><a href="#">Undergraduate Studies</a></li>
+                                <li><a href="#">Graduate Studies</a></li>
+                                <li><a href="#">Part-Time and Non-Degree</a></li>
+                                <li><a href="#">Summer</a></li>
+                                <li><a href="#">Distance Education</a></li>
+                                <li><a href="#">Catalogs</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tz-footer-content-main">
+                            <img src="images/check-02-home2.png" alt="Images remove footer">
+                            <h4>RESEARCH</h4>
+                            <ul>
+                                <li><a href="#">Applied Physics Laboratory</a></li>
+                                <li><a href="#">Research Projects</a></li>
+                                <li><a href="#">Administration</a></li>
+                                <li><a href="#">Funding Opportunities</a></li>
+                                <li><a href="#">Undergraduate Research</a></li>
+                                <li><a href="#">Resources</a></li>
+                                <li><a>Health & Medicine</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tz-footer-content-main">
+                            <img src="images/check-02-home2.png" alt="Images remove footer">
+                            <h4>EVENTS</h4>
+                            <ul>
+                                <li><a href="#">Calendar of Events</a></li>
+                                <li><a href="#">Student Life</a></li>
+                                <li><a href="#">Campus Services</a></li>
+                                <li><a href="#">Athletic Facilities</a></li>
+                                <li><a href="#">Arts and Culture</a></li>
+                                <li><a href="#">For Students</a></li>
+                                <li><a href="#">For Parents</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>-->
             </div>
         </div>
-    </div><!-- End container class tz-cources -->
-</section> <!-- End class tz-cources -->
+    </footer>
+    <!-- End Footer -->
 
-<section class="tz-wrapper-default">
-    <div class="container">
-        <!-- Start class tzsing_post -->
-        <div class="tzsingle_post">
-            <article class="tz-single-content">
-
-                <div class="tz-single-description">
-                    <p style="color: black; font-size: x-large;">Innovation Hub</p>
-                    <p>Pop! Did an idea occur? The Innovation Hub is the goto place for anyone with a curious mind. Armed with electronic components, it is the base where one incubates their little robots. From Microcontrollers to 3-D printing, need anything, then innovate along with the Hub.</p>
-                    <p style="color: black; font-size: x-large;">Library</p>
-                    <p>Content Comes here.Content Comes here.Content Comes here.Content Comes here.Content Comes here.Content Comes here.Content Comes here.Content Comes here.Content Comes here.Content Comes here.Content Comes here.<a href="https://www.iitdh.ac.in/library.php" >To know more click here</a></p>
-                    <p style="color: black; font-size: x-large;">Workshop</p>
-                    <p>Content Comes here.Content Comes here.Content Comes here.Content Comes here.Content Comes here.Content Comes here.Content Comes here.Content Comes here.Content Comes here.Content Comes here.Content Comes here.</p><br>
-                    <p style="text-align: center; color: black; font-size: x-large;text-decoration: underline;">Academics Support System </p>
-                    <p style="color: black; font-size: x-large;">YourDost</p>
-                    <p>Pop! Did an idea occur? The Innovation Hub is the goto place for anyone with a curious mind. Armed with electronic components, it is the base where one incubates their little robots. From Microcontrollers to 3-D printing, need anything, then innovate along with the Hub.</p>
-                    <p style="color: black; font-size: x-large;">Faculty Advisors</p>
-                    <p>Content Comes here.Content Comes here.Content Comes here.Content Comes here.Content Comes here.Content Comes here.Content Comes here.Content Comes here.Content Comes here.Content Comes here.Content Comes here.</p>
-                    <p style="color: black; font-size: x-large;">Student Mentership Programmes</p>
-                    <p>Content Comes here.Content Comes here.Content Comes here.Content Comes here.Content Comes here.Content Comes here.Content Comes here.Content Comes here.Content Comes here.Content Comes here.Content Comes here.</p><br>
-                    <p style="text-align: center; color: black; font-size: x-large;text-decoration: underline;">Gallary</p>
-
-                </div>
-
-            </article>
-
-        </div>
-        <!-- End class tzsing_post -->
-    </div>
-</section>
-
-<div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="images/sp1.jfif"></div>
-      <div class="swiper-slide"><img src="images/sp1.jfif"></div>
-      <div class="swiper-slide"><img src="images/sp1.jfif"></div>
-      <div class="swiper-slide"><img src="images/sp1.jfif"></div>
-      <div class="swiper-slide"><img src="images/sp1.jfif"></div>
-      <div class="swiper-slide"><img src="images/sp1.jfif"></div>
-      <div class="swiper-slide"><img src="images/sp1.jfif"></div>
-      <div class="swiper-slide"><img src="images/sp1.jfif"></div>
-      <div class="swiper-slide"><img src="images/sp1.jfif"></div>
-      <div class="swiper-slide"><img src="images/sp1.jfif"></div>
-    </div>
-    <br><br>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
-    <!-- Add Arrows -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-  </div>
-
-  <!-- Swiper JS -->
-  <script src="js/swiper.min.js"></script>
-
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 4,
-      spaceBetween: 30,
-      slidesPerGroup: 4,
-      loop: true,
-      loopFillGroupWithBlank: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-  </script>
-  <br><br>
-
-  <!-- Begin Footer -->
-  <footer class="tz-footer">
-      <div class="tz-footer-content tz-footer-content-2 tz-background-color-4">
-          <div class="container">
-              <div class = "row">
-                  <div class = "col-lg-3">
-                      <img src="images/home/logo.png" alt="Icon-footer" style = "padding-bottom:30px">
-                      <ul>
-                          <li><a href="#" style = "color:#fff">Indian Institute of Technology Dharwad,</a></li>
-                          <li><a href="#" style = "color:#fff">Karnataka, India - 580011</a></li>
-                          <li><a href="#" style = "color:#fff">pro@iitdh.ac.in</a></li>
-                          <li><a href="#" style = "color:#fff">+91 836 2212 839</a></li>
-                      </ul>
-                  </div>
-
-                  <div class = "col-lg-3">
-                      <ul class="">
-                          <li>
-                              <div class="tz-footer-content-main">
-                                  <!--<img src="images/check-02-home2.png" alt="Images remove footer">-->
-                                  <h4>Quick Links</h4>
-                                  <ul>
-                                      <li><a href="#">Home</a></li>
-                                  </ul>
-
-                                  <h4>Academic Information</h4>
-                                  <ul>
-                                      <li><a href="#">Students</a></li>
-                                      <li><a href="#">Faculty</a></li>
-                                      <li><a href="#">R&D</a></li>
-                                      <li><a href="#">Students Projects</a></li>
-                                  </ul>
-                              </div>
-                          </li>
-                      </ul>
-                  </div>
-
-                  <div class = "col-lg-3">
-                      <ul class="">
-                          <li>
-                              <div class="tz-footer-content-main">
-                                  <!--<img src="images/check-02-home2.png" alt="Images remove footer">-->
-                                  <h4>For Recruiters</h4>
-                                  <ul>
-                                      <li><a href="#">Why recruit?</a></li>
-                                      <li><a href="#">Placement</a></li>
-                                      <li><a href="#">Internship</a></li>
-                                      <li><a href="#">Brochur</a></li>
-                                      <li><a href="#">FAQs</a></li>
-                                  </ul>
-
-                                  <h4>For Students</h4>
-                                  <ul>
-                                      <li><a href="#">For Placements</a></li>
-                                      <li><a href="#">For Internships</a></li>
-                                      <li><a href="#">FAQs</a></li>
-                                  </ul>
-
-                              </div>
-                          </li>
-                      </ul>
-                  </div>
-
-                  <div class = "col-lg-3">
-                      <ul class="">
-                          <li>
-                              <div class="tz-footer-content-main">
-                                  <!--<img src="images/check-02-home2.png" alt="Images remove footer">-->
-                                  <h4>Events</h4>
-                                  <ul>
-                                      <li><a href="#">IIC</a></li>
-                                      <li><a href="#">SMP</a></li>
-                                      <li><a href="#">Cultural Events</a></li>
-                                      <li><a href="#">OSS</a></li>
-                                      <li><a href="#">CSR</a></li>
-                                  </ul>
-                              </div>
-                          </li>
-                      </ul>
-                  </div>
-              </div>
-              <!--<img src="images/home/logo.png" alt="Icon-footer">
-              <ul class="tz-footer-part">
-                  <li>
-                      <div class="tz-footer-content-main">
-                          <img src="images/check-02-home2.png" alt="Images remove footer">
-                          <h4>ABOUT UNIVERSITY</h4>
-                          <ul>
-                              <li><a href="#">History & Mission</a></li>
-                              <li><a href="#">Administration</a></li>
-                              <li><a href="#">Community</a></li>
-                              <li><a href="#">Around the World</a></li>
-                              <li><a href="#">News Network</a></li>
-                              <li><a href="#">Visitor Information</a></li>
-                              <li><a href="#">Notable Facts & Statistics</a></li>
-                          </ul>
-                      </div>
-                  </li>
-                  <li>
-                      <div class="tz-footer-content-main">
-                          <img src="images/check-02-home2.png" alt="Images remove footer">
-                          <h4>ADMISSIONS</h4>
-                          <ul>
-                              <li><a href="#">Undergraduate</a></li>
-                              <li><a href="#">By School</a></li>
-                              <li><a href="#">Process</a></li>
-                              <li><a href="#">Visitor Information</a></li>
-                              <li><a href="#">For Prospective Parents</a></li>
-                          </ul>
-                      </div>
-                  </li>
-                  <li>
-                      <div class="tz-footer-content-main">
-                          <img src="images/check-02-home2.png" alt="Images remove footer">
-                          <h4>ACADAMIES</h4>
-                          <ul>
-                              <li><a href="#">Schools</a></li>
-                              <li><a href="#">Depts. and Disciplines</a></li>
-                              <li><a href="#">Undergraduate Studies</a></li>
-                              <li><a href="#">Graduate Studies</a></li>
-                              <li><a href="#">Part-Time and Non-Degree</a></li>
-                              <li><a href="#">Summer</a></li>
-                              <li><a href="#">Distance Education</a></li>
-                              <li><a href="#">Catalogs</a></li>
-                          </ul>
-                      </div>
-                  </li>
-                  <li>
-                      <div class="tz-footer-content-main">
-                          <img src="images/check-02-home2.png" alt="Images remove footer">
-                          <h4>RESEARCH</h4>
-                          <ul>
-                              <li><a href="#">Applied Physics Laboratory</a></li>
-                              <li><a href="#">Research Projects</a></li>
-                              <li><a href="#">Administration</a></li>
-                              <li><a href="#">Funding Opportunities</a></li>
-                              <li><a href="#">Undergraduate Research</a></li>
-                              <li><a href="#">Resources</a></li>
-                              <li><a>Health & Medicine</a></li>
-                          </ul>
-                      </div>
-                  </li>
-                  <li>
-                      <div class="tz-footer-content-main">
-                          <img src="images/check-02-home2.png" alt="Images remove footer">
-                          <h4>EVENTS</h4>
-                          <ul>
-                              <li><a href="#">Calendar of Events</a></li>
-                              <li><a href="#">Student Life</a></li>
-                              <li><a href="#">Campus Services</a></li>
-                              <li><a href="#">Athletic Facilities</a></li>
-                              <li><a href="#">Arts and Culture</a></li>
-                              <li><a href="#">For Students</a></li>
-                              <li><a href="#">For Parents</a></li>
-                          </ul>
-                      </div>
-                  </li>
-              </ul>-->
-          </div>
-      </div>
-  </footer>
-  <!-- End Footer -->
-<script>
-    var Desktop       =   5,
-        tabletportrait    =   2,
-        mobilelandscape   =   1,
-        mobileportrait    =   1,
-        resizeTimer       =   null;
-</script>
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/off-canvas.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/jquery.parallax-1.1.3.js"></script>
-<script src="js/custom.js"></script>
+    <script>
+        var Desktop       =   5,
+            tabletportrait    =   2,
+            mobilelandscape   =   1,
+            mobileportrait    =   1,
+            resizeTimer       =   null;
+    </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/off-canvas.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/resize.js"></script>
+    <script src="js/custom-portfolio.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.parallax-1.1.3.js"></script>
+    <script src="js/custom.js"></script>
 </body>
 </html>
