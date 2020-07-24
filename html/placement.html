@@ -44,8 +44,8 @@ th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #334878;
-  color: white;
+  background-color: #f2f2f2;
+  color: #444444;
   font-size:17px;
 }
 tr:nth-child(even){background-color: #f2f2f2;font-size:16px}
@@ -68,15 +68,14 @@ tr:hover {background-color: #334878;font:#ffffff}
 
   div.card {
   padding-top:40px;
-  margin-left: 11%;
-  width: 78%;
+  width: 100%;
   /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 
 }
 
 div.header {
-  background-color: #334878;
-  color: white;
+  background-color: #ffffff !important;
+  color: #444444;
   padding: 10px;
 
   font-size: 30px;
@@ -89,7 +88,7 @@ div.container {
 
 </style>
 </head>
-<body>
+<body style="font-family: 'Varela', sans-serif !important;">
     <div class="loading-page">
     <img src="images/image-preload.gif" alt="Images-loading">
 </div>
@@ -362,50 +361,57 @@ div.container {
             <h1>Placements</h1>
         </div>
     </div>
-    <br>
-    <div>
-        <p style="padding:20px;font-size:20px ;color: rgb(49, 39, 39);margin-left:10%;margin-right:10%"> Placements at IIT Dharwad are being facilitated by CDC through a tier-based system determined based on the Gross Pay offered by the company as shown in the table below.</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-9 col-xs-12 col-xs-12">
+                <div class="joom-newlink">
+                    <p> Placements at IIT Dharwad are being facilitated by CDC through a tier-based system determined based on the Gross Pay offered by the company as shown in the table below.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-12">
+            <div class="col-lg-2">
+            </div>
+            <div id="first_section" class="col-lg-8">
+                <table>
+                  <tr>
+                    <th class="center">Tier</th>
+                    <th class="center">Gross pay(in Rs.)LPA=Lakhs per annum</th>
+                  </tr>
+                  <tr>
+                    <td class="center">Tier-1</td>
+                    <td class="center">&ge;18 LPA</td>
+                  </tr>
+                  <tr>
+                    <td class="center">Tier-2</td>
+                    <td class="center">&ge;15 LPA but <18 LPA</td>
+                  </tr>
+                   <tr>
+                    <td class="center">Tier-3</td>
+                    <td class="center">&ge;12 LPA but <15 LPA</td>
+                  </tr>
+                   <tr>
+                    <td class="center">Tier-4</td>
+                    <td class="center">&ge;9 LPA but <12 LPA</td>
+                  </tr>
+                   <tr>
+                    <td class="center">Tier-5</td>
+                    <td class="center">&ge;6 LPA but <9 LPA</td>
+                  </tr>
+                   <tr>
+                    <td class="center">Tier-6</td>
+                    <td class="center">&ge;6 LPA</td>
+                  </tr>
+                </table>
+                <br>
+                <br>
+            </div>
+            <div class="col-lg-2">
+            </div>
+        </div>
     </div>
-    <div class="col-lg-12">
-        <div class="col-lg-2">
-        </div>
-        <div id="first_section" class="col-lg-8">
-            <table>
-              <tr>
-                <th class="center">Tier</th>
-                <th class="center">Gross pay(in Rs.)LPA=Lakhs per annum</th>
-              </tr>
-              <tr>
-                <td class="center">Tier-1</td>
-                <td class="center">&ge;18 LPA</td>
-              </tr>
-              <tr>
-                <td class="center">Tier-2</td>
-                <td class="center">&ge;15 LPA but <18 LPA</td>
-              </tr>
-               <tr>
-                <td class="center">Tier-3</td>
-                <td class="center">&ge;12 LPA but <15 LPA</td>
-              </tr>
-               <tr>
-                <td class="center">Tier-4</td>
-                <td class="center">&ge;9 LPA but <12 LPA</td>
-              </tr>
-               <tr>
-                <td class="center">Tier-5</td>
-                <td class="center">&ge;6 LPA but <9 LPA</td>
-              </tr>
-               <tr>
-                <td class="center">Tier-6</td>
-                <td class="center">&ge;6 LPA</td>
-              </tr>
-            </table>
-            <br>
-            <br>
-        </div>
-        <div class="col-lg-2">
-        </div>
-    </div>
+
     <!--<div class="ipd">
     <h4 style="text-decoration: underline blue;"><b>NOTE:</b></h4></div>
     <div class="ipd">
@@ -419,61 +425,88 @@ div.container {
             </li>
         </ul>
     </div>-->
-    <div class="ipd">
-       <ul>
-           <li>
-           <p style="padding:10px;font-size:20px ;color: rgb(49, 39, 39);margin-bottom:0;"><b>NOTE :</b></p>
-               <ul>
-                   <li><p style="padding:5px;font-size:17px ;color: rgb(49, 39, 39);margin-bottom:0">&nbsp;
-                          &nbsp;&nbsp;Public Sector Units (PSUs), Government undertakings, Ministries and Indian Armed Forces are not
-                   classified into any tier.</p>
-                   </li>
-                   <li> <p style="padding:5px;font-size:17px ;color: rgb(49, 39, 39);margin-bottom:0">&nbsp;
-                          &nbsp;&nbsp;The CDC will not have any control over the order in which the companies arrive for placements.</p>
-                   </li>
-               </ul>
-           </li>
-       </ul>
-     </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-9 col-xs-12 col-xs-12">
+                <p style="font-size:20px ;color: rgb(49, 39, 39);margin-bottom:0;"><b>NOTE :</b></p>
+                <div class="joom-newlink" style="padding:0px">
+                    <ul>
+                        <li>
+                            <div class="tz-content pull-left">
+                                <a style = "color:#444444"><span style="margin-right:10px">1.Public Sector Units (PSUs), Government undertakings, Ministries and Indian Armed Forces are not classified into any tier.</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tz-content pull-left">
+                                <a style = "color:#444444"><span style="margin-right:10px">2.The CDC will not have any control over the order in which the companies arrive for placements.</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div  class="card" style="padding-top:40px">
         <div class="header" style = "background-color: #334878;">
             Placement rule for students
         </div>
      </div>
+
      <br>
-     <div class="ipd">
-        <ul>
-            <li><p style="padding:10px;font-size:17px ;color: rgb(49, 39, 39);margin-bottom:0"><b>1.Registration date:&nbsp;&nbsp; </b>All students who expect to graduate from the Institute by the end of the academic year
-            2019-2020 and are seeking employment must register for campus placements with this office by 31st of August.
-            Placement Registration is valid for ONE ACADEMIC YEAR ONLY. Only registered students are allowed to
-            appear in the campus recruitment process.</p></li>
-
-            <li><p style="padding:10px;font-size:17px ;color: rgb(49, 39, 39);margin-bottom:0;"><b>2.job offer policy</b><br>The placement policy for the academic year 2019-2020 i as per below flowchart.</p><br>
-            <p style="padding:10px;font-size:20px ;color: rgb(49, 39, 39);margin-bottom:0;"><b>Important note:</b></p>
-                <ul>
-                    <li><p style="padding:10px;font-size:17px ;color: rgb(49, 39, 39);margin-bottom:0;"><!--<img src="images/check.png" alt="images">-->
-                   <b>PSUs,</b> Government undertakings, Ministries and Indian Armed Forces may visit the campus for placements
-                    any time. If a student secures a job at these organizations as his/her first or second offer then he/she would
-                    be de-registered from CDC.</p></li>
-                    <li><p style="padding:10px;font-size:17px ;color: rgb(49, 39, 39);margin-bottom:0;"><!--<img src="images/check.png" alt="images">-->
-                   <b>pre-placement offer(ppo)</b>If a student has secured PPO from tier i company, it is considered as his/her
-                    first offer. This implies that the student can appear for tier j company where j&lt;i. If he/she secures tier j
-                    company offer then the student be de-registered from CD </p></li>
-                     <li><p style="padding:10px;font-size:17px ;color: rgb(49, 39, 39);margin-bottom:0;"><!--<img src="images/check.png" alt="images">-->
-                   <b>Offer rejection:</b>If a student gets an offer from tier-i company, then he/she is bound to accept the offer. If a
-                    student rejects the offer, then he/she will be de-registered from CDC </p></li>
-                </ul>
-            </li>
-        </ul>
+     <div class="container">
+         <div class="row">
+             <div class="col-lg-12 col-md-9 col-xs-12 col-xs-12">
+                 <div class="joom-newlink" style="padding:0px">
+                     <ul>
+                         <li>
+                             <div class="tz-content pull-left">
+                                 <a style = "color:#444444"><span style="margin-right:10px">1.<b>Registration date:</b></span>All students who expect to graduate from the Institute by the end of the academic year 2019-2020 and are seeking employment must register for campus placements with this office by 31st of August. Placement Registration is valid for ONE ACADEMIC YEAR ONLY. Only registered students are allowed to appear in the campus recruitment process.</a>
+                             </div>
+                         </li>
+                         <li>
+                             <div class="tz-content pull-left">
+                                 <a style = "color:#444444"><span style="margin-right:10px">2.<b>Job offer policy</b></span>The placement policy for the academic year 2019-2020 i as per below flowchart.</a>
+                             </div>
+                         </li>
+                     </ul>
+                 </div>
+             </div>
+         </div>
      </div>
 
-     <div class="ipd">
-        <ul>
-            <li>
-            <p style="padding-top:30px;padding-bottom:30px;font-size:30px ;color: rgb(49, 39, 39);margin-bottom:0;"><b>Placement Policy Flowchart</b></p>
-            </li>
-        </ul>
+     <div class="container">
+         <div class="row">
+             <div class="col-lg-12 col-md-9 col-xs-12 col-xs-12">
+                 <p style="font-size:20px ;color: rgb(49, 39, 39);margin-bottom:0;"><b>Important note:</b></p>
+                 <div class="joom-newlink" style="padding:0px">
+                     <ul>
+                         <li>
+                             <div class="tz-content pull-left">
+                                 <a style = "color:#444444"><span style="margin-right:10px">1.<b>PSUs:</b> Government undertakings, Ministries and Indian Armed Forces may visit the campus for placements any time. If a student secures a job at these organizations as his/her first or second offer then he/she would be de-registered from CDC.</a>
+                             </div>
+                         </li>
+                         <li>
+                             <div class="tz-content pull-left">
+                                 <a style = "color:#444444"><span style="margin-right:10px">2.<b>pre-placement offer(ppo)</b>If a student has secured PPO from tier i company, it is considered as his/her first offer. This implies that the student can appear for tier j company where j < i. If he/she secures tier j company offer then the student be de-registered from CDC</a>
+                             </div>
+                         </li>
+                         <li>
+                             <div class="tz-content pull-left">
+                                 <a style = "color:#444444"><span style="margin-right:10px">2.<b>Offer rejection:</b>If a student gets an offer from tier-i company, then he/she is bound to accept the offer. If a student rejects the offer, then he/she will be de-registered from CDC</a>
+                             </div>
+                         </li>
+                     </ul>
+                 </div>
+             </div>
+         </div>
      </div>
+
+     <div  class="card" style="padding-top:40px">
+         <div class="header" style = "background-color: #334878;">
+             Placement Policy Flow Chart
+         </div>
+     </div><br><br>
 
      <div class="container">
        <!--<h2 class="page-header">Placement Policy Flowchart</h2>-->
@@ -550,31 +583,54 @@ div.container {
         </div>
     </div>-->
 
-    <div class="ipd">
-       <p style="padding:10px;font-size:20px ;color: rgb(49, 39, 39);margin-bottom:0;"><b style="text-decoration: underline;"> Disciplinary rules:</b></p><br>
-    </div>
-    <div class="ipd">
-        <ul>
-            <li>&nbsp;&nbsp;<p style="padding:10px;font-size:17px ;color: rgb(49, 39, 39);margin-bottom:0;"><b>1.&nbsp;&nbsp;updated documentation (no false claims):&nbsp;&nbsp; </b>: Students should complete all required documentation, for example,
-                updated CVs (up to 6
-                th Semester CGPA) in template issued by CDC. If there is any change in CV (mobile No./email
-                id etc.) students should immediately inform the CDC. If a student makes a false claim in his/her submitted resume
-                details, his/her registration at the CDC for placements is liable to be cancelled, if the student already has received a
-                job offer, it may be revoked and further disciplinary actions would be taken</p></li>
+    <div  class="card" style="padding-top:40px">
+        <div class="header" style = "background-color: #334878;">
+            Disciplinary Rules
+        </div>
+     </div>
 
-            <li><p style="padding:10px;font-size:17px ;color: rgb(49, 39, 39);margin-bottom:0;"><b>2.&nbsp;&nbsp;compulsory pre-placement talk(PPT) attendance:&nbsp;&nbsp;</b>It is compulsory for student who has applied for a particular
-                company, to attend the Pre-Placement-Talk (PPT) of that company. If a student does not attend two consecutive
-                PPTs, he/she will not be allowed to apply till further clearance from the faculty in-charge, Placement Wing of
-                Career Development Cell.
-                        <br></p></li>
-                 <li><p style="padding:10px;font-size:17px ;color: rgb(49, 39, 39);margin-bottom:0;"><b>3.&nbsp;&nbsp;No "pending" offers:&nbsp;&nbsp; </b>: Students shall not request any organization to keep an offer pending. Any such request shall
-                be considered as a serious breach of the placement norms.</p></li>
-                 <li><p style="padding:10px;font-size:17px ;color: rgb(49, 39, 39);margin-bottom:0;"><b>4.&nbsp;&nbsp;Respect selection process of the company (including dress code):&nbsp;&nbsp; </b>Students should follow the selection process
-                 norms provided by the company, including the dress code, filling out additional company-specific forms, etc </p></li>
-
-                  <li><p style="padding:10px;font-size:17px ;color: rgb(49, 39, 39);margin-bottom:0;"><b>5.&nbsp;&nbsp;Declaring acceptance of off-campus offer:&nbsp;&nbsp; </b> Student who receive offer of her choice by means outside of CDC,
-                    should declare the same with CDC, and may de-register from CDC placements</p></li>
-        </ul>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-9 col-xs-12 col-xs-12">
+                <div class="joom-newlink" style="padding:0px">
+                    <ul>
+                        <li>
+                            <div class="tz-content pull-left">
+                                <a style = "color:#444444"><span style="margin-right:10px">1.<b>Updated documentation (no false claims):</b></span>Students should complete all required documentation, for example,
+                                    updated CVs (up to 6
+                                    th Semester CGPA) in template issued by CDC. If there is any change in CV (mobile No./email
+                                    id etc.) students should immediately inform the CDC. If a student makes a false claim in his/her submitted resume
+                                    details, his/her registration at the CDC for placements is liable to be cancelled, if the student already has received a
+                                    job offer, it may be revoked and further disciplinary actions would be taken</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tz-content pull-left">
+                                <a style = "color:#444444"><span style="margin-right:10px">2.<b>compulsory pre-placement talk(PPT) attendance:</b></span>It is compulsory for student who has applied for a particular
+                                    company, to attend the Pre-Placement-Talk (PPT) of that company. If a student does not attend two consecutive
+                                    PPTs, he/she will not be allowed to apply till further clearance from the faculty in-charge, Placement Wing of
+                                    Career Development Cell.</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tz-content pull-left">
+                                <a style = "color:#444444"><span style="margin-right:10px">3.<b>No "pending" offers:</b></span>Students shall not request any organization to keep an offer pending. Any such request shall be considered as a serious breach of the placement norms.</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tz-content pull-left">
+                                <a style = "color:#444444"><span style="margin-right:10px">4.<b>Respect selection process of the company (including dress code): </b></span>Students should follow the selection process norms provided by the company, including the dress code, filling out additional company-specific forms, etc</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tz-content pull-left">
+                                <a style = "color:#444444"><span style="margin-right:10px">5.<b>Declaring acceptance of off-campus offer:  </b></span>Student who receive offer of her choice by means outside of CDC, should declare the same with CDC, and may de-register from CDC placements</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Begin Footer -->
