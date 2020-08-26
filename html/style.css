@@ -430,8 +430,8 @@ li{
         transform: translateX(-100%);
     }
     .off-canvas #off-canvas-nav .plazart-mainnav .nav-collapse {
-        background: none;
-        height: auto;
+        background: #333333;
+        height: 100vh;
         margin: 0;
         padding:0;
         width: 100%;
@@ -489,9 +489,7 @@ li{
         width: 100%;
     }
     body .tz-menu > li:hover > a{
-        background: #333333;
-    }
-    body .tz-menu > li:hover > a{
+        background: #111111;
         color: #ffffff;
     }
 
@@ -592,7 +590,7 @@ li{
     }
     body .tz-menu li ul.sub-menu-style-1 li:hover a{
         color: #444444;
-        background: none;
+        background: #222222;
     }
 
     body .plazart-mainnav > ul > li > a {
@@ -933,7 +931,7 @@ li{
     padding-left: 5px;
 }
 .tz-header-2 ul.tz-menu {
-    padding: 0px 60px;
+    padding: 0px 20px;
 }
 .tz-header-2 ul.tz-menu > li{
     padding: 39px 0;
@@ -14594,7 +14592,7 @@ body .widget-general .tz-activity-group li {
         text-align: center;
     }
     body .tz-header-2 .tz-menu li a {
-        padding: 18px 17px;
+        padding: 18px 10px;
     }
     body .tz-header-2 .tz-logo {
         padding: 25px 0px 0;
