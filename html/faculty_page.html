@@ -25,21 +25,56 @@
 
       function drawChart() {
 
-        var data = google.visualization.arrayToDataTable([
-          ['Task', 'Hours per Day'],
-          ['Department of Biosciences and Bioengineering',     2],
-          ['Department of Chemistry',      3],
-          ['Department of Computer Science and Engineering',  13],
-          ['Department of Electrical Engineering', 10],
-          ['Department of Humanities and Social Sciences',    4],
-          ['Department of Mathematics',    7],
-          ['Department of Mechanical Engineering',    15],
-          ['Department of Physics',    5]
-        ]);
+        if ($(window).width() < 800) {
+            var data = google.visualization.arrayToDataTable([
+              ['Task', 'Hours per Day'],
+              ['Biosciences and Bioengineering Dept.',     2],
+              ['Chemistry Dept.',      3],
+              ['Computer Science and Engineering Dept.',  13],
+              ['Electrical Engineering Dept.', 10],
+              ['Humanities and Social Sciences Dept.',    4],
+              ['Mathematics Dept.',    7],
+              ['Mechanical Engineering Dept.',    15],
+              ['Physics Dept.',    5]
+            ]);
 
-        var options = {
+            var options = {
+                is3D: true,
+                title: 'Dept. Wise Faculty Breakup',
+                titleTextStyle: { fontSize: 24,
+                                  bold: false,
+                                  italic: false,
+                                  underline: true
+                                },
+                chartArea: {left:0, height:'85%', width:'40%'},
+                legend: {alignment: 'center', position: 'bottom'}
+            };
+        }
+        else{
+            var data = google.visualization.arrayToDataTable([
+              ['Task', 'Hours per Day'],
+              ['Department of Biosciences and Bioengineering',     2],
+              ['Department of Chemistry',      3],
+              ['Department of Computer Science and Engineering',  13],
+              ['Department of Electrical Engineering', 10],
+              ['Department of Humanities and Social Sciences',    4],
+              ['Department of Mathematics',    7],
+              ['Department of Mechanical Engineering',    15],
+              ['Department of Physics',    5]
+            ]);
 
-        };
+            var options = {
+                is3D: true,
+                title: 'Department Wise Faculty Breakup',
+                titleTextStyle: { fontSize: 32,
+                                  bold: false,
+                                  italic: false,
+                                  underline: true
+                                },
+                chartArea: {height:'85%'},
+                legend: {alignment: 'center'}
+            };
+        }
 
         var chart = new google.visualization.PieChart(document.getElementById('piechart'));
 
@@ -106,7 +141,7 @@
                             </ul>-->
                         </li>
                         <li>
-                            <a href="#">Academic Info</a>
+                            <a href="#">Academic Info &nbsp;<i class="fa fa-chevron-down" style="color: #ffffff; float: right;"></i></a>
                             <ul class="sub-menu sub-menu-style-1">
                                 <li>
                                     <a href="academics.html">Undergraduate</a>
@@ -126,7 +161,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#">For recruiters</a>
+                            <a href="#">For recruiters &nbsp;<i class="fa fa-chevron-down" style="color: #ffffff; float: right;"></i></a>
                             <ul class="sub-menu sub-menu-style-1">
                                 <li>
                                     <a href="internship_procedure.html">Internship</a>
@@ -241,7 +276,7 @@
                             </div>
                         </li>-->
                         <li>
-                            <a href="#">For students</a>
+                            <a href="#">For students &nbsp;<i class="fa fa-chevron-down" style="color: #ffffff; float: right;"></i></a>
                             <ul class="sub-menu sub-menu-style-1">
                                 <!-- <li>
                                     <a href="placement.html">For placements</a>
@@ -258,7 +293,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#">Beyond Academics</a>
+                            <a href="#">Beyond Academics &nbsp;<i class="fa fa-chevron-down" style="color: #ffffff; float: right;"></i></a>
                             <ul class="sub-menu sub-menu-style-1">
                                 <li>
                                     <a href="https://www.iitdh.ac.in/iic/">IIC</a>
@@ -358,7 +393,7 @@
         <h1><a href="#">FACULTY AT IIT DHARWAD</a></h1>
         <span>Single Post Page</span>
     </div>-->
-    <div class="container">
+    <div class="container" style="margin: auto">
         <!-- Start class tzsing_post -->
         <div class="tzsingle_post">
             <article class="tz-single-content">
@@ -366,33 +401,33 @@
                 <div class="tz-single-description" style = "padding-bottom:40px">
                     <br><p style="color: black;font-size: x-large;text-decoration: underline;">Department Wise Faculty</p>
                     <a href="https://www.iitdh.ac.in/faculty_dept.php" class="tz-item-more-details-style-2" id="ab">
-                        <span style="border: 0px;"><i class="fa fa-arrows-alt"></i>Department of Computer Science and Engineering</span>
+                        <span style="border: 0px;"><i class="fa fa-graduation-cap"></i>Department of Computer Science and Engineering</span>
                     </a>
                     <a href="https://www.iitdh.ac.in/faculty_dept.php" class="tz-item-more-details-style-2" id="bc">
-                        <span style="border: 0px;"><i class="fa fa-arrows-alt"></i>Department of Electrical Engineering</span>
+                        <span style="border: 0px;"><i class="fa fa-graduation-cap"></i>Department of Electrical Engineering</span>
                     </a><br><br>
                     <a href="https://www.iitdh.ac.in/faculty_dept.php" class="tz-item-more-details-style-2" id="ab">
-                        <span style="border: 0px;"><i class="fa fa-arrows-alt"></i>Department of Mechanical Engineering</span>
+                        <span style="border: 0px;"><i class="fa fa-graduation-cap"></i>Department of Mechanical Engineering</span>
                     </a>
                     <a href="https://www.iitdh.ac.in/faculty_dept.php" class="tz-item-more-details-style-2" id="bc">
-                        <span style="border: 0px;"><i class="fa fa-arrows-alt"></i>Department of Physics</span>
+                        <span style="border: 0px;"><i class="fa fa-graduation-cap"></i>Department of Physics</span>
                     </a><br><br>
                     <a href="https://www.iitdh.ac.in/faculty_dept.php" class="tz-item-more-details-style-2" id="ab">
-                        <span style="border: 0px;"><i class="fa fa-arrows-alt"></i>Department of Mathematics</span>
+                        <span style="border: 0px;"><i class="fa fa-graduation-cap"></i>Department of Mathematics</span>
                     </a>
                     <a href="https://www.iitdh.ac.in/faculty_dept.php" class="tz-item-more-details-style-2" id="bc">
-                        <span style="border: 0px;"><i class="fa fa-arrows-alt"></i>Department of Chemistry</span>
+                        <span style="border: 0px;"><i class="fa fa-graduation-cap"></i>Department of Chemistry</span>
                     </a><br><br>
                     <a href="https://www.iitdh.ac.in/faculty_dept.php" class="tz-item-more-details-style-2" id="ab">
-                        <span style="border: 0px;"><i class="fa fa-arrows-alt"></i>Department of Humanities and Social Sciences</span>
+                        <span style="border: 0px;"><i class="fa fa-graduation-cap"></i>Department of Humanities and Social Sciences</span>
                     </a>
                     <a href="https://www.iitdh.ac.in/faculty_dept.php" class="tz-item-more-details-style-2" id="bc">
-                        <span style="border: 0px;"><i class="fa fa-arrows-alt"></i>Department of Biosciences and Bioengineering</span>
+                        <span style="border: 0px;"><i class="fa fa-graduation-cap"></i>Department of Biosciences and Bioengineering</span>
                     </a><br><br><br><br><br>
                     <!--add pie chart-->
-                    <p style="text-align: center; color: black; font-size: x-large;text-decoration: underline;">Department Wise Faculty Breakup</p>
+                    <!-- <p style="text-align: center; color: black; font-size: x-large;text-decoration: underline;">Department Wise Faculty Breakup</p> -->
 
-                    <div id="piechart" style="width: 900px; height: 500px;margin-left: 200px;margin-top: -25px;" ></div>
+                    <div id="piechart" style="width: 900px; height: 500px;margin: auto;" ></div>
                     <!--pie chart ends-->
                     <!-- <h4>Department of Computer Science and Engineering</h4>
                     <h4>Department of Electrical Engineering</h4>
@@ -409,8 +444,8 @@
                         IIT-Dh has signed many MOU’s and has hitherto worked on a plethora of projects backed by central and state government research councils and labs such as SERB, CSIR, ISRO, MHRD-SPARC. 
                         Moreover, the faculty has been assisting many companies such as BHEL, ITI Bangalore, Magic Lamp Technology, MAN Energy Solutions Pvt Ltd., MMRFIC, IFCAM, and Colour Plus Polyurethane Pvt Ltd. by working on a diverse range of Consultancy and SGNF projects. 
                         Their research papers and activities are a testament to the capabity, capacity and potential of IIT-Dh's research temperament.</p>
-                    <a href="https://www.iitdh.ac.in/research_area.php" class="tz-item-more-details-style-2">
-                        <span style="border: 0px;"><i class="fa fa-arrows-alt"></i>Check Here To Know More</span>
+                    <a href="https://www.iitdh.ac.in/research_area.php" class="tz-item-more-details-style-2" style="margin-top: 0px;">
+                        <span style="border: 0px;"><i class="fa fa-university"></i>Check Here To Know More</span>
                     </a>
                 </div>
             </article>
