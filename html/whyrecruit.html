@@ -78,7 +78,46 @@ h5{
     <link href='css/owl.theme.css' rel='stylesheet' type='text/css'>
     <link href="style.css" rel="stylesheet" />
 </head>
-<body>
+
+<script>
+  function initial_func() {
+    var elm1 = document.querySelectorAll("#sub1")[1];
+    var elm2 = document.querySelectorAll("#sub2")[1];
+    var elm3 = document.querySelectorAll("#sub3")[1];
+    var elm4 = document.querySelectorAll("#sub4")[1];
+    elm1.style.display = "none";
+    elm2.style.display = "none";
+    elm3.style.display = "none";
+    elm4.style.display = "none";
+    var elm5 = document.querySelectorAll("#a1")[0];
+    var elm6 = document.querySelectorAll("#a2")[0];
+    var elm7 = document.querySelectorAll("#a3")[0];
+    var elm8 = document.querySelectorAll("#a4")[0];
+    var elm9 = document.querySelectorAll("#a5")[0];
+    var elm10 = document.querySelectorAll("#a6")[0];
+    elm5.style.display = "inline";
+    elm6.style.display = "inline";
+    elm7.style.display = "inline";
+    elm8.style.display = "inline";
+    elm9.style.display = "inline";
+    elm10.style.display = "inline";
+    var elm11 = document.querySelectorAll(".nav-collapse")[0];
+    elm11.style.padding = "15px 0px 0px 300px";
+  }
+</script>
+
+<script>
+  function dropdown_func(id) {
+    var elms = document.querySelectorAll("#"+id)[1];
+    if (elms.style.display === "none") {
+      elms.style.display = "block";
+    } else {
+      elms.style.display = "none";
+    }
+  }
+</script>
+
+<body onload="initial_func()">
     <div class="loading-page">
         <img src="images/image-preload.gif" alt="Images-loading">
     </div>
@@ -108,10 +147,10 @@ h5{
                 <button type="button" class="tz-button-toggle btn-navbar pull-right" data-target=".nav-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
-                <nav class="nav-collapse pull-right">
+                <nav class="nav-collapse">
                     <ul class="tz-menu">
                         <li>
-                            <a href="index.html">HOME</a>
+                            <a href="index.html" id="a1">HOME</a>
                             <!--<ul class="sub-menu sub-menu-style-1">
                                 <li>
                                     <a href="Home-01.html">Home Version 01</a>
@@ -137,8 +176,11 @@ h5{
                             </ul>-->
                         </li>
                         <li>
-                            <a href="#">Academic Info &nbsp;<i class="fa fa-chevron-down" style="color: #ffffff; float: right;"></i></a>
-                            <ul class="sub-menu sub-menu-style-1">
+                            <a href="#" id="a2" style="width: 80%">Academic Info</a>
+                            <button type="button" class="tz-button-toggle pull-right" onclick="dropdown_func('sub1')" style="border: none; font-size: 16px; cursor: pointer; background: #333333; color: #ffffff; margin: 5px 10px 0px 0px;">
+                                <i class="fa fa-chevron-down"></i>
+                            </button>
+                            <ul id="sub1" class="sub-menu sub-menu-style-1">
                                 <li>
                                     <a href="academics.html">Undergraduate</a>
                                 </li>
@@ -157,8 +199,11 @@ h5{
                             </ul>
                         </li>
                         <li>
-                            <a href="#">For recruiters &nbsp;<i class="fa fa-chevron-down" style="color: #ffffff; float: right;"></i></a>
-                            <ul class="sub-menu sub-menu-style-1">
+                            <a href="#" id="a3" style="width: 80%">For Recruiters</a>
+                            <button type="button" class="tz-button-toggle  pull-right" onclick="dropdown_func('sub2')" style="border: none; font-size: 16px; cursor: pointer; background: #333333; color: #ffffff; margin: 5px 10px 0px 0px;">
+                                <i class="fa fa-chevron-down"></i>
+                            </button>
+                            <ul id="sub2" class="sub-menu sub-menu-style-1"  >
                                 <li>
                                     <a href="internship_procedure.html">Internship</a>
                                 </li>
@@ -272,8 +317,11 @@ h5{
                             </div>
                         </li>-->
                         <li>
-                            <a href="#">For students &nbsp;<i class="fa fa-chevron-down" style="color: #ffffff; float: right;"></i></a>
-                            <ul class="sub-menu sub-menu-style-1">
+                            <a href="#" id="a4" style="width: 80%">For Students</a>
+                            <button type="button" class="tz-button-toggle  pull-right" onclick="dropdown_func('sub3')" style="border: none; font-size: 16px; cursor: pointer; background: #333333; color: #ffffff; margin: 5px 10px 0px 0px;">
+                                <i class="fa fa-chevron-down"></i>
+                            </button>
+                            <ul id="sub3" class="sub-menu sub-menu-style-1">
                                 <!-- <li>
                                     <a href="placement.html">For placements</a>
                                 </li>
@@ -289,8 +337,11 @@ h5{
                             </ul>
                         </li>
                         <li>
-                            <a href="#">Beyond Academics &nbsp;<i class="fa fa-chevron-down" style="color: #ffffff; float: right;"></i></a>
-                            <ul class="sub-menu sub-menu-style-1">
+                            <a href="#" id="a5" style="width: 80%">Beyond Academics</a>
+                            <button type="button" class="tz-button-toggle pull-right" onclick="dropdown_func('sub4')" style="border: none; cursor: pointer; background: #333333; color: #ffffff; padding: 5px 10px 0px 0px;">
+                                <i class="fa fa-chevron-down"></i>
+                            </button>
+                            <ul id="sub4" class="sub-menu sub-menu-style-1">
                                 <li>
                                     <a href="https://www.iitdh.ac.in/iic/">IIC</a>
                                 </li>
@@ -309,7 +360,7 @@ h5{
                             </ul>
                         </li>
                         <li>
-                            <a href="contact_cdc.html">Contact Us</a>
+                            <a href="contact_cdc.html" id="a6">Contact Us</a>
                             <ul class="sub-menu sub-menu-style-1">
                                 <!--<li>
                                     <a href="JoomlaBase-404Page.html">CDC Head</a>
