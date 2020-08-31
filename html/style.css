@@ -65,9 +65,9 @@ body{
     overflow-x: hidden;
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1000px) {
     .container{
-        max-width: 1200px;
+        max-width: 1400px;
         width: 100%;
     }
 }
@@ -4464,11 +4464,11 @@ div.tz-event-content-style-1 > span{
 .tz-image-event-item:hover:after{
     background:rgba(65, 86, 132, 0.8);
     cursor: e-resize;
-    -webkit-transform: scale(1);
+   /* -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -o-transform: scale(1);
     -ms-transform: scale(1);
-    transform: scale(1);
+    transform: scale(1);*/
     -webkit-transition: all linear 0.3s 0s;
     -moz-transition: all linear 0.3s 0s;
     -ms-transition: all linear 0.3s 0s;
