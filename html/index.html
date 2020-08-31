@@ -64,7 +64,45 @@
   }
 </script>
 
-<body>
+<script>
+  function initial_func() {
+    var elm1 = document.querySelectorAll("#sub1")[1];
+    var elm2 = document.querySelectorAll("#sub2")[1];
+    var elm3 = document.querySelectorAll("#sub3")[1];
+    var elm4 = document.querySelectorAll("#sub4")[1];
+    elm1.style.display = "none";
+    elm2.style.display = "none";
+    elm3.style.display = "none";
+    elm4.style.display = "none";
+    var elm5 = document.querySelectorAll("#a1")[0];
+    var elm6 = document.querySelectorAll("#a2")[0];
+    var elm7 = document.querySelectorAll("#a3")[0];
+    var elm8 = document.querySelectorAll("#a4")[0];
+    var elm9 = document.querySelectorAll("#a5")[0];
+    var elm10 = document.querySelectorAll("#a6")[0];
+    elm5.style.display = "inline";
+    elm6.style.display = "inline";
+    elm7.style.display = "inline";
+    elm8.style.display = "inline";
+    elm9.style.display = "inline";
+    elm10.style.display = "inline";
+    var elm11 = document.querySelectorAll(".nav-collapse")[0];
+    elm11.style.padding = "15px 0px 0px 300px";
+  }
+</script>
+
+<script>
+  function dropdown_func(id) {
+    var elms = document.querySelectorAll("#"+id)[1];
+    if (elms.style.display === "none") {
+      elms.style.display = "block";
+    } else {
+      elms.style.display = "none";
+    }
+  }
+</script>
+
+<body onload="initial_func()">
     <div class="loading-page">
         <img src="images/image-preload.gif" alt="Images-loading">
     </div>
@@ -89,15 +127,15 @@
         <div class="container">
             <div class="tz-header-content">
                 <h3 class="tz-logo pull-left">
-                    <a href="#"><img alt="Images Logo" src="images/home/logo.png" style = "height:80px;width:100px"></a>
+                    <a href="#"><img alt="Images Logo" src="images/home/CDC_Logo/website_header@2x.png" style = "height:80px;width:200px"></a>
                 </h3>
                 <button type="button" class="tz-button-toggle btn-navbar pull-right" data-target=".nav-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
-                <nav class="nav-collapse pull-right">
+                <nav class="nav-collapse">
                     <ul class="tz-menu">
                         <li>
-                            <a href="index.html">HOME</a>
+                            <a href="index.html" id="a1">HOME</a>
                             <!--<ul class="sub-menu sub-menu-style-1">
                                 <li>
                                     <a href="Home-01.html">Home Version 01</a>
@@ -123,8 +161,11 @@
                             </ul>-->
                         </li>
                         <li>
-                            <a href="#">Academic Info</a>
-                            <ul class="sub-menu sub-menu-style-1">
+                            <a href="#" id="a2" style="width: 80%">Academic Info</a>
+                            <button type="button" class="tz-button-toggle pull-right" onclick="dropdown_func('sub1')" style="border: none; font-size: 16px; cursor: pointer; background: #333333; color: #ffffff; margin: 5px 10px 0px 0px;">
+                                <i class="fa fa-chevron-down"></i>
+                            </button>
+                            <ul id="sub1" class="sub-menu sub-menu-style-1">
                                 <li>
                                     <a href="academics.html">Undergraduate</a>
                                 </li>
@@ -143,8 +184,11 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#">For recruiters</a>
-                            <ul class="sub-menu sub-menu-style-1">
+                            <a href="#" id="a3" style="width: 80%">For Recruiters</a>
+                            <button type="button" class="tz-button-toggle  pull-right" onclick="dropdown_func('sub2')" style="border: none; font-size: 16px; cursor: pointer; background: #333333; color: #ffffff; margin: 5px 10px 0px 0px;">
+                                <i class="fa fa-chevron-down"></i>
+                            </button>
+                            <ul id="sub2" class="sub-menu sub-menu-style-1"  >
                                 <li>
                                     <a href="internship_procedure.html">Internship</a>
                                 </li>
@@ -258,8 +302,11 @@
                             </div>
                         </li>-->
                         <li>
-                            <a href="#">For students</a>
-                            <ul class="sub-menu sub-menu-style-1">
+                            <a href="#" id="a4" style="width: 80%">For Students</a>
+                            <button type="button" class="tz-button-toggle  pull-right" onclick="dropdown_func('sub3')" style="border: none; font-size: 16px; cursor: pointer; background: #333333; color: #ffffff; margin: 5px 10px 0px 0px;">
+                                <i class="fa fa-chevron-down"></i>
+                            </button>
+                            <ul id="sub3" class="sub-menu sub-menu-style-1">
                                 <!-- <li>
                                     <a href="placement.html">For placements</a>
                                 </li>
@@ -275,8 +322,11 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#">Beyond Academics</a>
-                            <ul class="sub-menu sub-menu-style-1">
+                            <a href="#" id="a5" style="width: 80%">Beyond Academics</a>
+                            <button type="button" class="tz-button-toggle pull-right" onclick="dropdown_func('sub4')" style="border: none; cursor: pointer; background: #333333; color: #ffffff; padding: 5px 10px 0px 0px;">
+                                <i class="fa fa-chevron-down"></i>
+                            </button>
+                            <ul id="sub4" class="sub-menu sub-menu-style-1">
                                 <li>
                                     <a href="https://www.iitdh.ac.in/iic/">IIC</a>
                                 </li>
@@ -295,7 +345,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="contact_cdc.html">Contact Us</a>
+                            <a href="contact_cdc.html" id="a6">Contact Us</a>
                             <ul class="sub-menu sub-menu-style-1">
                                 <!--<li>
                                     <a href="JoomlaBase-404Page.html">CDC Head</a>
@@ -516,7 +566,7 @@
                     </p>
                     <p style = "text-align:justify;color:#383131;margin:0 0 0">Apart from academic excellence, the institute lays
     emphasis on research temperament, entrepreneurship and motivates
-    its students to recognize their true potential without the fear of failure.
+    its students to recognize their true potential without the fear of failure.   
                     </p>
                     <!-- <img src="images/check-01-home1.png" alt="Images"> -->
                 </div>
@@ -538,33 +588,44 @@
                         <div class="row">
                             <div class="col-lg-3 col-md-5 col-sm-12 col-xs-12">
                                 <div class="tz-blog-thubnail">
-                                    <img src="images/home/director.jpg" alt="Images">
+                                    <img src="images/home/director.jpg" alt="Images"> <br><br>
+                                    <h4><center><strong>Prof. P. Seshu</strong></center></h4>
+                                    <h4><center>Director, IIT Dharwad</center></h4>
                                 </div>
                             </div>
                             <div class="col-lg-9 col-md-7 col-sm-12 col-xs-12">
                                 <div class="tz-blog-description">
                                     <p style = "text-align:justify;color:#383131">Dharwad, a district in northern Karnataka, rich in art, culture and history
+
                                        is often referred to as the “Education Hub” of Karnataka. The establishment of
                                        the Indian Institute of Technology–Dharwad in 2016 only solidifies that name.
                                        We at Indian Institute of Technology Dharwad strive to foster and develop
                                        India’s leading engineers and citizens by providing our students with an environment conducive to both creativity and curiosity.
                                     </p>
                                     <p style = "text-align:justify;color:#383131"> IIT Dharwad started with 120 students in its B.Tech. program in three
+
                                         disciplines, and has now grown to house 3 Batches of B.Tech. students and 3
                                         batches of Ph.D researchers.
-                                    </p><span id="dots">...</span><span id="more">
+                                    </p>
+                                    
+<span id="dots">...</span><span id="more">
+                                    
+                                        <p style = "color:#383131" align="justify">
                                         We provide each of our students with world class
-                                    equipment and resources, to aid them in challenging hands-on based academics that is built on the foundation of IIT–Bombay’s tried and tested course
+                                        equipment and resources, to aid them in challenging hands-on based academics that is built on the foundation of IIT–Bombay’s tried and tested course
                                         structure. Students are also encouraged to participate in cultural and sports
                                         activities to strengthen their individuality. Our faculty comprises of both visiting
                                         professors from other IITs and permanent faculty of IIT-Dharwad ensuring the
                                         finest teachers to guide the students.
+
                                     <p style = "text-align:justify;color:#383131">It gives me immense pleasure to extend a hearty welcome to your
                                        esteemed organization for placement of final year students and internships for
                                        pre-final year students. We look forward to your participation. You will recognize
                                        the potential of our students who will surely evolve into the talented engineers
                                        of tomorrow.
-                                   </p></span>
+                                   </p>
+
+                                </span>
                                    <button onclick="myFunction()" id="myBtn" style = "outline:none;border:none;background-color: Transparent;cursor:pointer;overflow:hidden;color:#334878;">Read more</button>
                                </div>
                             </div>
@@ -584,7 +645,7 @@
 
         </div>-->
         <div class="container">
-            <h1><a href="#" style = "color:#2f3d56">Dean's Message</a></h1>
+            <h1><a href="#" style = "color:#2f3d56">Deans' Message</a></h1>
             <!-- Start class tz-blog-wrapper -->
             <div class="tz-blog-wrapper">
                 <div class="row">
@@ -594,11 +655,14 @@
                         <div class="row">
                             <div class="col-lg-3 col-md-5 col-sm-12 col-xs-12">
                                 <div class="tz-blog-thubnail">
-                                    <img src="images/home/dean.jpg" alt="Images">
+                                    <img src="images/home/dean_ap.jpg" alt="Images"> <br><br>
+                                    <h4><center><strong>Prof. S.V. Prabhu</strong></center></h4>
+                                    <h4><center>Dean of Academic Programmes, IIT Dharwad</center></h4>
                                 </div>
                             </div>
                             <div class="col-lg-9 col-md-7 col-sm-12 col-xs-12">
                                 <div class="tz-blog-description">
+
                                     <p style = "text-align:justify;color:#383131">I am pleased to invite you to our esteemed institute on behalf of the
 students,faculty and the staff of IIT Dharwad, to participate in placements for
 the final year students and internships for the pre-final year students.
@@ -623,6 +687,42 @@ and your organization in the days ahead.
                                    </p></span>
                                    <button onclick="myFunction1()" id="myBtn1" style = "outline:none;border:none;background-color: Transparent;cursor:pointer;overflow:hidden;color:#334878;">Read more</button>
 
+
+            <!-- Start class tz-blog-wrapper -->
+            <div class="tz-blog-wrapper">
+                <div class="row">
+                <div class="col-lg-12 col-md-9 col-sm-12 col-xs-12">
+                    <!-- Start class tz-blog-item -->
+                    <article class="tz-blog-item">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-5 col-sm-12 col-xs-12">
+                                <div class="tz-blog-thubnail">
+                                    <img src="images/home/dean_rnd.png" alt="Images"> <br><br>
+                                    <h4><center><strong>Prof. Mahadeva Prasanna</strong></center></h4>
+                                    <h4><center>Dean of Research & Development, IIT Dharwad</center></h4>
+                                </div>
+                            </div>
+                            <div class="col-lg-9 col-md-7 col-sm-12 col-xs-12">
+                                <div class="tz-blog-description">
+                                    <p style = "color:#383131" align="justify">
+                                        The Research and Development (R&D) section of IIT
+                                        Dharwad is actively working towards bringing up a vibrant
+                                        research and development culture. These include
+                                        coordinating with funding agencies in securing sponsored
+                                        projects, consultancy projects and offering specialized
+                                        in-house courses for industry personnel. 
+                                    </p>   
+
+                                    <p style = "color:#383131" align="justify">
+                                        Industry academia linkage is being established by conducting Development of
+                                        Industry and Academia Linkage (DIAL) days. Within a short
+                                        span of time, our young and dynamic faculty members have
+                                        secured several funded projects worth 6 cr. The R&D
+                                        section is also coordinating with reputed universities and
+                                        industries, India and abroad for collaboration. Already
+                                        many MoUs have been signed with many organizations and
+                                        the collaboration has started.
+                                    </p>                                  
                                </div>
                             </div>
                         </div>
@@ -635,6 +735,9 @@ and your organization in the days ahead.
         </div>
     </section>
 
+
+
+
     <!-- Begin section tz-portfolio-wrapper -->
     <section class="tz-portfolio-wrapper">
         <!--<span class="tz-images-check"><img src="images/check-01-home1.png" alt="Images"></span>-->
@@ -644,123 +747,123 @@ and your organization in the days ahead.
                 <div class="tz-image-portfolio">
                     <img src="images/home/wr_dial_2018-min.jpg" alt="Vivamus in lorem nisl">
                 </div>
-                <div class="tz-portfolio-content-style-2">
+               <!--  <div class="tz-portfolio-content-style-2">
                     <h4></h4>
-                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis ...</p> -->
-                    <!--<span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis ...</p>
+                    <span>
                         <a href="#"><i class="fa fa-arrows-alt"></i>READ MORE</a>
-                    </span>-->
-                </div>
+                    </span>
+                </div> -->
             </div>
             <div class="element tz-item-portfolio">
                 <div class="tz-image-portfolio">
                     <img src="images/home/gallery_1-min.jpg" alt="Vivamus in lorem nisl">
                 </div>
-                <div class="tz-portfolio-content-style-2">
-                    <!-- <h4>Responsive Blog - Centro de Inovacoes InovaCidades</h4> -->
-                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis ...</p> -->
-                    <!--<span>
+                <!-- <div class="tz-portfolio-content-style-2">
+                    <h4>Responsive Blog - Centro de Inovacoes InovaCidades</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis ...</p>
+                    <span>
                         <a href="#"><i class="fa fa-arrows-alt"></i>READ MORE</a>
-                    </span>-->
-                </div>
+                    </span>
+                </div> -->
             </div>
             <div class="element tz-item-portfolio">
                 <div class="tz-image-portfolio">
                     <img src="images/home/gallery_4.jpg" alt="Vivamus in lorem nisl">
                 </div>
-                <div class="tz-portfolio-content-style-2">
-                    <!-- <h4>Responsive Blog - Centro de Inovacoes InovaCidades</h4> -->
-                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis ...</p> -->
-                    <!--<span>
+        <!--         <div class="tz-portfolio-content-style-2">
+                    <h4>Responsive Blog - Centro de Inovacoes InovaCidades</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis ...</p>
+                    <span>
                         <a href="#"><i class="fa fa-arrows-alt"></i>READ MORE</a>
-                    </span>-->
-                </div>
+                    </span>
+                </div> -->
             </div>
             <div class="element tz-item-portfolio">
                 <div class="tz-image-portfolio">
                     <img src="images/home/gallery_8.jpg" alt="Vivamus in lorem nisl">
                 </div>
-                <div class="tz-portfolio-content-style-2">
-                    <!-- <h4>Responsive Blog - Centro de Inovacoes InovaCidades</h4> -->
-                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis ...</p> -->
-                    <!--<span>
+                <!-- <div class="tz-portfolio-content-style-2">
+                    <h4>Responsive Blog - Centro de Inovacoes InovaCidades</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis ...</p>
+                    <span>
                         <a href="#"><i class="fa fa-arrows-alt"></i>READ MORE</a>
-                    </span>-->
-                </div>
+                    </span>
+                </div> -->
             </div>
             <div class="element tz-item-portfolio">
                 <div class="tz-image-portfolio">
                     <img src="images/home/gallery_2.jpg" alt="Vivamus in lorem nisl">
                     <!-- <a href="#" class="tz-color-icon-1"> <i class="fa fa-camera"></i></a> -->
                 </div>
-                <div class="tz-portfolio-content-style-2">
-                    <!-- <h4>Responsive Blog - Centro de Inovacoes InovaCidades</h4> -->
-                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis ...</p> -->
-                    <!--<span>
+                <!-- <div class="tz-portfolio-content-style-2">
+                    <h4>Responsive Blog - Centro de Inovacoes InovaCidades</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis ...</p>
+                    <span>
                         <a href="#"><i class="fa fa-arrows-alt"></i>READ MORE</a>
-                    </span>-->
-                </div>
+                    </span>
+                </div> -->
             </div>
             <div class="element tz-item-portfolio">
                 <div class="tz-image-portfolio">
                     <img src="images/home/workshops.jpg" alt="Vivamus in lorem nisl">
                 </div>
-                <div class="tz-portfolio-content-style-2">
-                    <!-- <h4>Responsive Blog - Centro de Inovacoes InovaCidades</h4> -->
-                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis ...</p> -->
-                    <!--<span>
+                <!-- <div class="tz-portfolio-content-style-2">
+                    <h4>Responsive Blog - Centro de Inovacoes InovaCidades</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis ...</p>
+                    <span>
                         <a href="#"><i class="fa fa-arrows-alt"></i>READ MORE</a>
-                    </span>-->
-                </div>
+                    </span>
+                </div> -->
             </div>
             <div class="element tz-item-portfolio">
                 <div class="tz-image-portfolio">
                     <img src="images/home/greenery_view.png" alt="Vivamus in lorem nisl">
                     <!-- <a href="#" class="tz-color-icon-2"><i class="fa fa-video-camera"></i></a> -->
                 </div>
-                <div class="tz-portfolio-content-style-2">
-                    <!-- <h4>Responsive Blog - Centro de Inovacoes InovaCidades</h4> -->
-                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis ...</p> -->
-                    <!--<span>
+             <!--    <div class="tz-portfolio-content-style-2">
+                    <h4>Responsive Blog - Centro de Inovacoes InovaCidades</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis ...</p>
+                    <span>
                         <a href="#"><i class="fa fa-arrows-alt"></i>READ MORE</a>
-                    </span>-->
-                </div>
+                    </span>
+                </div> -->
             </div>
             <div class="element tz-item-portfolio">
                 <div class="tz-image-portfolio">
                     <img src="images/home/Hardware-win.jpeg" alt="Vivamus in lorem nisl">
                 </div>
-                <div class="tz-portfolio-content-style-2">
-                    <!-- <h4>Responsive Blog - Centro de Inovacoes InovaCidades</h4> -->
-                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis ...</p> -->
-                    <!--<span>
+               <!--  <div class="tz-portfolio-content-style-2">
+                    <h4>Responsive Blog - Centro de Inovacoes InovaCidades</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis ...</p>
+                    <span>
                         <a href="#"><i class="fa fa-arrows-alt"></i>READ MORE</a>
-                    </span>-->
-                </div>
+                    </span>
+                </div> -->
             </div>
             <div class="element tz-item-portfolio">
                 <div class="tz-image-portfolio">
                     <img src="images/home/classrooms.jpg" alt="Vivamus in lorem nisl">
                 </div>
-                <div class="tz-portfolio-content-style-2">
-                    <!-- <h4>Responsive Blog - Centro de Inovacoes InovaCidades</h4> -->
-                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis ...</p> -->
-                    <!--<span>
+         <!--        <div class="tz-portfolio-content-style-2">
+                    <h4>Responsive Blog - Centro de Inovacoes InovaCidades</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis ...</p>
+                    <span>
                         <a href="#"><i class="fa fa-arrows-alt"></i>READ MORE</a>
-                    </span>-->
-                </div>
+                    </span>
+                </div> -->
             </div>
             <div class="element tz-item-portfolio">
                 <div class="tz-image-portfolio">
                     <img src="images/home/cultural-min.jpg" alt="Vivamus in lorem nisl">
                 </div>
-                <div class="tz-portfolio-content-style-2">
-                    <!-- <h4>Responsive Blog - Centro de Inovacoes InovaCidades</h4> -->
-                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis ...</p> -->
-                    <!--<span>
+             <!--    <div class="tz-portfolio-content-style-2">
+                    <h4>Responsive Blog - Centro de Inovacoes InovaCidades</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis ...</p>
+                    <span>
                         <a href="#"><i class="fa fa-arrows-alt"></i>READ MORE</a>
-                    </span>-->
-                </div>
+                    </span>
+                </div> -->
             </div>
         </div><!--End class tz-portfolio-->
     </section>
@@ -1142,183 +1245,176 @@ and your organization in the days ahead.
                         <div class="tz-event-content">
                             <div class="tz-image-event-item">
                                 <img src="images/home/recruiters/nasdaq.png" alt="Image">
-                                <a href="#"><i class="fa fa-arrows-alt"></i></a>
+                                <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
                             </div>
                         </div>
                         <div class="tz-event-content">
                             <div class="tz-image-event-item">
                                 <img src="images/home/recruiters/air_asia.jpg" alt="Image">
-                                <a href="#"><i class="fa fa-arrows-alt"></i></a>
+                                <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
                             </div>
                         </div>
                         <div class="tz-event-content">
                             <div class="tz-image-event-item">
                                 <img src="images/home/recruiters/maq_software.png" alt="Image">
-                                <a href="#"><i class="fa fa-arrows-alt"></i></a>
+                                <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
                             </div>
                         </div>
                         <div class="tz-event-content">
                             <div class="tz-image-event-item">
                                 <img src="images/home/recruiters/mcafree.png" alt="Image">
-                                <a href="#"><i class="fa fa-arrows-alt"></i></a>
+                                <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
                             </div>
                         </div>
                         <div class="tz-event-content">
                             <div class="tz-image-event-item">
                                 <img src="images/home/recruiters/tcs.jpg" alt="Image">
-                                <a href="#"><i class="fa fa-arrows-alt"></i></a>
+                                <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
                             </div>
                         </div>
                         <div class="tz-event-content">
                             <div class="tz-image-event-item">
                                 <img src="images/home/recruiters/cognizant.png" alt="Image">
-                                <a href="#"><i class="fa fa-arrows-alt"></i></a>
+                                <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
                             </div>
                         </div>
                         <div class="tz-event-content">
                             <div class="tz-image-event-item">
                                 <img src="images/home/recruiters/l&t.png" alt="Image">
-                                <a href="#"><i class="fa fa-arrows-alt"></i></a>
+                                <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
                             </div>
                             <!--<img src="images/check-01-home1.png" alt="Images">-->
                         </div>
                         <div class="tz-event-content">
                             <div class="tz-image-event-item">
                                 <img src="images/home/recruiters/broadridge.jpg" alt="Image">
-                                <a href="#"><i class="fa fa-arrows-alt"></i></a>
+                                <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
                             </div>
                             <!--<img src="images/check-01-home1.png" alt="Images">-->
                         </div>
                         <div class="tz-event-content">
                             <div class="tz-image-event-item">
                                 <img src="images/home/recruiters/bharat_electronics.png" alt="Image">
-                                <a href="#"><i class="fa fa-arrows-alt"></i></a>
+                                <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
                             </div>
                             <!--<img src="images/check-01-home1.png" alt="Images">-->
                         </div>
                         <div class="tz-event-content">
                             <div class="tz-image-event-item">
                                 <img src="images/home/recruiters/raam_group.png" alt="Image">
-                                <a href="#"><i class="fa fa-arrows-alt"></i></a>
+                                <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
                             </div>
                             <!--<img src="images/check-01-home1.png" alt="Images">-->
                         </div>
                         <div class="tz-event-content">
                             <div class="tz-image-event-item">
                                 <img src="images/home/recruiters/aequs.png" alt="Image">
-                                <a href="#"><i class="fa fa-arrows-alt"></i></a>
+                                <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
                             </div>
                             <!--<img src="images/check-01-home1.png" alt="Images">-->
                         </div>
                         <div class="tz-event-content">
                             <div class="tz-image-event-item">
                                 <img src="images/home/recruiters/infosys.png" alt="Image">
-                                <a href="#"><i class="fa fa-arrows-alt"></i></a>
-                            </div>
-                            <!--<img src="images/check-01-home1.png" alt="Images">-->
-                        </div>
-                        <div class="tz-event-content">
-                            <div class="tz-image-event-item">
-                                <img src="images/home/recruiters/Cognizant.png" alt="Image">
-                                <a href="#"><i class="fa fa-arrows-alt"></i></a>
+                                <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
                             </div>
                             <!--<img src="images/check-01-home1.png" alt="Images">-->
                         </div>
                         <div class="tz-event-content">
                             <div class="tz-image-event-item">
                                 <img src="images/home/recruiters/credit_one.png" alt="Image">
-                                <a href="#"><i class="fa fa-arrows-alt"></i></a>
+                                <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
                             </div>
                             <!--<img src="images/check-01-home1.png" alt="Images">-->
                         </div>
                         <div class="tz-event-content">
                             <div class="tz-image-event-item">
                                 <img src="images/home/recruiters/dunzo.png" alt="Image">
-                                <a href="#"><i class="fa fa-arrows-alt"></i></a>
+                                <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
                             </div>
                             <!--<img src="images/check-01-home1.png" alt="Images">-->
                         </div>
                         <div class="tz-event-content">
                             <div class="tz-image-event-item">
                                 <img src="images/home/recruiters/arista.png" alt="Image">
-                                <a href="#"><i class="fa fa-arrows-alt"></i></a>
+                                <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
                             </div>
                             <!--<img src="images/check-01-home1.png" alt="Images">-->
                         </div>
                         <div class="tz-event-content">
                             <div class="tz-image-event-item">
                                 <img src="images/home/recruiters/aptean.png" alt="Image">
-                                <a href="#"><i class="fa fa-arrows-alt"></i></a>
+                                <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
                             </div>
                             <!--<img src="images/check-01-home1.png" alt="Images">-->
                         </div>
                         <div class="tz-event-content">
                             <div class="tz-image-event-item">
                                 <img src="images/home/recruiters/cerner.png" alt="Image">
-                                <a href="#"><i class="fa fa-arrows-alt"></i></a>
+                                <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
                             </div>
                             <!--<img src="images/check-01-home1.png" alt="Images">-->
                         </div>
                         <div class="tz-event-content">
                             <div class="tz-image-event-item">
                                 <img src="images/home/recruiters/avanti.png" alt="Image">
-                                <a href="#"><i class="fa fa-arrows-alt"></i></a>
+                                <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
                             </div>
                             <!--<img src="images/check-01-home1.png" alt="Images">-->
                         </div>
                         <div class="tz-event-content">
                             <div class="tz-image-event-item">
                                 <img src="images/home/recruiters/cr.png" alt="Image">
-                                <a href="#"><i class="fa fa-arrows-alt"></i></a>
+                                <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
                             </div>
                             <!--<img src="images/check-01-home1.png" alt="Images">-->
                         </div>
                         <div class="tz-event-content">
                             <div class="tz-image-event-item">
                                 <img src="images/home/recruiters/signalchip.png" alt="Image">
-                                <a href="#"><i class="fa fa-arrows-alt"></i></a>
+                                <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
                             </div>
                             <!--<img src="images/check-01-home1.png" alt="Images">-->
                         </div>
                         <div class="tz-event-content">
                             <div class="tz-image-event-item">
                                 <img src="images/home/recruiters/lekha.png" alt="Image">
-                                <a href="#"><i class="fa fa-arrows-alt"></i></a>
+                                <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
                             </div>
                             <!--<img src="images/check-01-home1.png" alt="Images">-->
                         </div>
                         <div class="tz-event-content">
                             <div class="tz-image-event-item">
                                 <img src="images/home/recruiters/helium.png" alt="Image">
-                                <a href="#"><i class="fa fa-arrows-alt"></i></a>
+                                <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
                             </div>
                             <!--<img src="images/check-01-home1.png" alt="Images">-->
                         </div>
                         <div class="tz-event-content">
                             <div class="tz-image-event-item">
                                 <img src="images/home/recruiters/ajira.png" alt="Image">
-                                <a href="#"><i class="fa fa-arrows-alt"></i></a>
+                                <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
                             </div>
                             <!--<img src="images/check-01-home1.png" alt="Images">-->
                         </div>
                         <div class="tz-event-content">
                             <div class="tz-image-event-item">
                                 <img src="images/home/recruiters/mmrfi.jpg" alt="Image">
-                                <a href="#"><i class="fa fa-arrows-alt"></i></a>
+                                <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
                             </div>
                             <!--<img src="images/check-01-home1.png" alt="Images">-->
                         </div>
                         <div class="tz-event-content">
                             <div class="tz-image-event-item">
                                 <img src="images/home/recruiters/exa.png" alt="Image">
-                                <a href="#"><i class="fa fa-arrows-alt"></i></a>
+                                <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
                             </div>
                             <!--<img src="images/check-01-home1.png" alt="Images">-->
                         </div>
                         <div class="tz-event-content">
                             <div class="tz-image-event-item">
                                 <img src="images/home/recruiters/k12.png" alt="Image">
-                                <a href="#"><i class="fa fa-arrows-alt"></i></a>
+                                <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
                             </div>
                             <!--<img src="images/check-01-home1.png" alt="Images">-->
                         </div>

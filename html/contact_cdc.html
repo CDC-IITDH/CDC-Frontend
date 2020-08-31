@@ -28,7 +28,45 @@
 
 </style>
 
-<body>
+<script>
+  function initial_func() {
+    var elm1 = document.querySelectorAll("#sub1")[1];
+    var elm2 = document.querySelectorAll("#sub2")[1];
+    var elm3 = document.querySelectorAll("#sub3")[1];
+    var elm4 = document.querySelectorAll("#sub4")[1];
+    elm1.style.display = "none";
+    elm2.style.display = "none";
+    elm3.style.display = "none";
+    elm4.style.display = "none";
+    var elm5 = document.querySelectorAll("#a1")[0];
+    var elm6 = document.querySelectorAll("#a2")[0];
+    var elm7 = document.querySelectorAll("#a3")[0];
+    var elm8 = document.querySelectorAll("#a4")[0];
+    var elm9 = document.querySelectorAll("#a5")[0];
+    var elm10 = document.querySelectorAll("#a6")[0];
+    elm5.style.display = "inline";
+    elm6.style.display = "inline";
+    elm7.style.display = "inline";
+    elm8.style.display = "inline";
+    elm9.style.display = "inline";
+    elm10.style.display = "inline";
+    var elm11 = document.querySelectorAll(".nav-collapse")[0];
+    elm11.style.padding = "15px 0px 0px 300px";
+  }
+</script>
+
+<script>
+  function dropdown_func(id) {
+    var elms = document.querySelectorAll("#"+id)[1];
+    if (elms.style.display === "none") {
+      elms.style.display = "block";
+    } else {
+      elms.style.display = "none";
+    }
+  }
+</script>
+
+<body onload="initial_func()">
     <div class="loading-page">
         <img src="images/image-preload.gif" alt="Images-loading">
     </div>
@@ -53,15 +91,15 @@
         <div class="container">
             <div class="tz-header-content">
                 <h3 class="tz-logo pull-left">
-                    <a href="#"><img alt="Images Logo" src="images/home/logo.png" style = "height:80px;width:100px"></a>
+                    <a href="#"><img alt="Images Logo" src="images/home/CDC_Logo/website_header@2x.png" style = "height:80px;width:200px"></a>
                 </h3>
                 <button type="button" class="tz-button-toggle btn-navbar pull-right" data-target=".nav-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
-                <nav class="nav-collapse pull-right">
+                <nav class="nav-collapse">
                     <ul class="tz-menu">
                         <li>
-                            <a href="index.html">HOME</a>
+                            <a href="index.html" id="a1">HOME</a>
                             <!--<ul class="sub-menu sub-menu-style-1">
                                 <li>
                                     <a href="Home-01.html">Home Version 01</a>
@@ -87,8 +125,11 @@
                             </ul>-->
                         </li>
                         <li>
-                            <a href="#">Academic Info</a>
-                            <ul class="sub-menu sub-menu-style-1">
+                            <a href="#" id="a2" style="width: 80%">Academic Info</a>
+                            <button type="button" class="tz-button-toggle pull-right" onclick="dropdown_func('sub1')" style="border: none; font-size: 16px; cursor: pointer; background: #333333; color: #ffffff; margin: 5px 10px 0px 0px;">
+                                <i class="fa fa-chevron-down"></i>
+                            </button>
+                            <ul id="sub1" class="sub-menu sub-menu-style-1">
                                 <li>
                                     <a href="academics.html">Undergraduate</a>
                                 </li>
@@ -107,8 +148,11 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#">For recruiters</a>
-                            <ul class="sub-menu sub-menu-style-1">
+                            <a href="#" id="a3" style="width: 80%">For Recruiters</a>
+                            <button type="button" class="tz-button-toggle  pull-right" onclick="dropdown_func('sub2')" style="border: none; font-size: 16px; cursor: pointer; background: #333333; color: #ffffff; margin: 5px 10px 0px 0px;">
+                                <i class="fa fa-chevron-down"></i>
+                            </button>
+                            <ul id="sub2" class="sub-menu sub-menu-style-1"  >
                                 <li>
                                     <a href="internship_procedure.html">Internship</a>
                                 </li>
@@ -222,8 +266,11 @@
                             </div>
                         </li>-->
                         <li>
-                            <a href="#">For students</a>
-                            <ul class="sub-menu sub-menu-style-1">
+                            <a href="#" id="a4" style="width: 80%">For Students</a>
+                            <button type="button" class="tz-button-toggle  pull-right" onclick="dropdown_func('sub3')" style="border: none; font-size: 16px; cursor: pointer; background: #333333; color: #ffffff; margin: 5px 10px 0px 0px;">
+                                <i class="fa fa-chevron-down"></i>
+                            </button>
+                            <ul id="sub3" class="sub-menu sub-menu-style-1">
                                 <!-- <li>
                                     <a href="placement.html">For placements</a>
                                 </li>
@@ -239,8 +286,11 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#">Beyond Academics</a>
-                            <ul class="sub-menu sub-menu-style-1">
+                            <a href="#" id="a5" style="width: 80%">Beyond Academics</a>
+                            <button type="button" class="tz-button-toggle pull-right" onclick="dropdown_func('sub4')" style="border: none; cursor: pointer; background: #333333; color: #ffffff; padding: 5px 10px 0px 0px;">
+                                <i class="fa fa-chevron-down"></i>
+                            </button>
+                            <ul id="sub4" class="sub-menu sub-menu-style-1">
                                 <li>
                                     <a href="https://www.iitdh.ac.in/iic/">IIC</a>
                                 </li>
@@ -259,7 +309,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="contact_cdc.html">Contact Us</a>
+                            <a href="contact_cdc.html" id="a6">Contact Us</a>
                             <ul class="sub-menu sub-menu-style-1">
                                 <!--<li>
                                     <a href="JoomlaBase-404Page.html">CDC Head</a>
@@ -353,12 +403,12 @@
                           <div class="tab-content">
                             <div class="clearfix"></div>
                             <br/>
-                            <h5 class="pt-1"><strong><U>Placement Executive:</U></strong> </h5>
+                            <h4 class="pt-1"><strong><U>Placement Executive</U></strong></h4>
                             <div class="row">
                               <div class="col-sm-4 col"> </div>
                               <div class="col-sm-4 col">
-                                <br />
-                                <p> <h5>Ms. Sanjana Singh </h5> </p><p> Placement Executive </p>
+                                
+                                <p> <h5><strong>Ms. Sanjana Singh</strong> </h5> </p><p> Placement Executive </p>
                                 <p>
                                     <!-- <div class="mr-auto text-left phone"> -->
                                 <i class="fa fa-phone" aria-hidden="true"></i>+91 9972207534  </p>
@@ -379,11 +429,11 @@
                           <div class="container">
                             <div class="tab-content">
                               <div class="clearfix"></div>
-                              <h4 class="pt-1"><strong><U>Public Relations Team:</U></strong></h4>
+                              <h4 class="pt-1"><strong><U>Public Relations Team</U></strong></h4>
                               <div class="row">
 
                                 <div class="col-sm-4 col">
-                                  <br/><h5> Mandeep Bawa </h5>
+                                  <br/><h5><strong> Mandeep Bawa </strong></h5>
                                   <p>4rd year B.Tech. CSE</p><p>
                                   <!-- <p><div class="mr-auto text-left phone"> -->
                                     <i class="fa fa-phone" aria-hidden="true"></i>+91 8847674044 </p>
@@ -393,7 +443,7 @@
                                     <a href="mailto:170030038@iitdh.ac.in ">170030038@iitdh.ac.in  </a></div>
                                 <!-- </div> -->
                                 <div class="col-sm-4 col">
-                                  <br><h5> Sonu Sourav</h5>
+                                  <br><h5><strong> Sonu Sourav</strong></h5>
                                   <p>4rd year B.Tech. Electrical</p>
                                   <p>
                                     <!-- <div class="mr-auto text-left phone"> -->
@@ -403,7 +453,7 @@
                                       <a href="mailto:170020021@iitdh.ac.in ">170020021@iitdh.ac.in  </a></div>
                                 <!-- </div> -->
                                 <div class="col-sm-4 col">
-                                  <br><h5> Amar Baronia</h5>
+                                  <br><h5><strong> Amar Baronia</strong></h5>
                                   <p>4rd year B.Tech. Mechanical</p>
                                   <p>
                                     <!-- <div class="mr-auto text-left phone"> -->
@@ -413,7 +463,7 @@
                                     <a href="mailto:170030017@iitdh.ac.in ">170030017@iitdh.ac.in  </a></div>
                                 <!-- </div> -->
                                 <div class="col-sm-4 col">
-                                  <br/><h5> Janhavi Dadhania</h5>
+                                  <br/><h5><strong> Janhavi Dadhania</strong></h5>
                                   <p>3rd year B.Tech. CSE</p><p>
                                   <!-- <p><div class="mr-auto text-left phone"> -->
                                     <i class="fa fa-phone" aria-hidden="true"></i>+91 7016441970 </p>
@@ -423,7 +473,7 @@
                                     <a href="mailto:180010012@iitdh.ac.in ">180010012@iitdh.ac.in  </a></div>
                                 <!-- </div> -->
                                 <div class="col-sm-4 col">
-                                  <br><h5> S U Swakath</h5>
+                                  <br><h5><strong> S U Swakath</strong></h5>
                                   <p>3rd year B.Tech. Electrical</p>
                                   <p>
                                     <!-- <div class="mr-auto text-left phone"> -->
@@ -433,7 +483,7 @@
                                       <a href="mailto:180020036@iitdh.ac.in ">180020036@iitdh.ac.in  </a></div>
                                 <!-- </div> -->
                                 <div class="col-sm-4 col">
-                                  <br><h5>Gourav Kumbhojkar</h5>
+                                  <br><h5><strong>Gourav Kumbhojkar</strong></h5>
                                   <p>3rd year B.Tech. Mechanical</p>
                                   <p>
                                     <!-- <div class="mr-auto text-left phone"> -->
@@ -455,7 +505,7 @@
                             <h4 class="pt-1"><strong><U>CDC Student Heads</U></strong> </h4>
                             <div class="row">
                               <div class="col-sm-4 col">
-                                <p> <h5>Prateek Jain</h5> </p>
+                                <p> <h5><strong>Prateek Jain</strong></h5> </p>
                                 <p> 4th year </p><p>
                                     <!-- <div class="mr-auto text-left phone"> -->
                                 <i class="fa fa-phone" aria-hidden="true"></i>+91 8279803383  </p>
@@ -465,7 +515,7 @@
                                 <!-- </div> -->
                               </div>
                               <div class="col-sm-4 col">
-                                    <p> <h5>Abhishek Kalokhe</h5> </p><p>4th Year</p>
+                                    <p> <h5><strong>Abhishek Kalokhe</strong></h5> </p><p>4th Year</p>
                                     <!-- <div class="mr-auto text-left email"> -->
                                         <p>
                                             <!-- <div class="mr-auto text-left phone"> -->
@@ -477,7 +527,7 @@
                               </div>
                           </div>
                               <div class="col-sm-4 col">
-                                <p> <h5>Srishti Srivastava</h5> </p><p>4th Year</p>
+                                <p> <h5><strong>Srishti Srivastava</strong></h5> </p><p>4th Year</p>
                                 <!-- <div class="mr-auto text-left email"> -->
                                     <p>
                                         <!-- <div class="mr-auto text-left phone"> -->
@@ -498,25 +548,25 @@
                           <div class="tab-content">
                             <div class="clearfix"></div>
                             <br/>
-                            <h4 class="pt-1"><strong><U>Faculty Advisor:</U></strong> </h4>
+                            <h4 class="pt-1"><strong><U>Faculty Advisors</U></strong> </h4>
                             <div class="row">
                               <div class="col-sm-4 col">
                                 <br/> <h><u><strong>CAREER GUIDANCE</strong> </u></h>
-                                <p> <h5>Dr. Bharat B. N</h5> </p>
+                                <p> <h5><strong>Dr. Bharat B. N</strong></h5> </p>
                                 <p> Assistant Professor <br/> Dept. of Electrical Engineering </p>
                                 <!-- <div class="mr-auto text-left email"> -->
                                   <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                  <a href="mailto:bharathbn@iitdh.ac.in ">bharathbn@iitdh.ac.in  </a><br>
+                                  <a href="mailto:bharathbn@iitdh.ac.in">bharathbn@iitdh.ac.in  </a><br>
                                 <!-- </div> -->
                                   <a href="https://bharathbettagerenagaraja.wordpress.com/" target="_blank">View profile </a>
                               </div>
                               <div class="col-sm-4 col">
                                     <br/>
                                     <h><u><strong>PLACEMENTS</strong> </u></h>
-                                    <p> <h5>Dr. Dhiraj V. Patil </h5> </p><p> Assistant Professor <br/> Dept. of Mechanical Engineering </p>
+                                    <p> <h5><strong>Dr. Dhiraj V. Patil </strong></h5> </p><p> Assistant Professor <br/> Dept. of Mechanical Engineering </p>
                                     <!-- <div class="mr-auto text-left email"> -->
                                       <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                      <a href="mailto:dhiraj@iitdh.ac.in  ">dhiraj@iitdh.ac.in  </a>
+                                      <a href="mailto:dhiraj@iitdh.ac.in">dhiraj@iitdh.ac.in  </a>
                                     <!-- </div> -->
                                       <div class="mr-auto text">
                                         <a href="https://sites.google.com/site/dvpmultiplefluidsatiitmandi/" target="_blank">View profile </a></div>
@@ -525,10 +575,10 @@
                               <div class="col-sm-4 col">
                                 <br/>
                                 <h><u><strong>INTERNSHIPS</strong> </u></h>
-                                <p> <h5>Dr. Rajshekar K </h5> </p><p> Assistant Professor <br/>  Dept. of Computer Science and Engineering </p>
+                                <p> <h5><strong>Dr. Rajshekar K </strong></h5> </p><p> Assistant Professor <br/>  Dept. of Computer Science and Engineering </p>
                                 <!-- <div class="mr-auto text-left email"> -->
                                   <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                  <a href="mailto:rajshekar.k@iitdh.ac.in ">rajshekar.k@iitdh.ac.in </a>
+                                  <a href="mailto:rajshekar.k@iitdh.ac.in">rajshekar.k@iitdh.ac.in </a>
                                 <!-- </div> -->
                                 <div class="mr-auto text">
                                     <a href="http://www.cse.iitd.ac.in/~rajshekar/" target="_blank">View profile </a>
@@ -537,10 +587,10 @@
                               <div class="col-sm-4 col"> </div>
                               <div class="col-sm-4 col">
                                 <br />
-                                <p> <h5>Dr. Naveen M B </h5> </p><p> Assistant Professor <br/> Dept. of Electrical Engineering </p>
+                                <p> <h5><strong>Dr. Naveen M B</strong> </h5> </p><p> Assistant Professor <br/> Dept. of Electrical Engineering </p>
                                 <!-- <div class="mr-auto text-left email"> -->
                                   <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                  <a href="mailto:naveenmb@iitdh.ac.in  ">naveenmb@iitdh.ac.in  </a>
+                                  <a href="mailto:naveenmb@iitdh.ac.in">naveenmb@iitdh.ac.in  </a>
                                 <!-- </div> -->
                                   <div class="mr-auto text">
                                     <a href="naveenmb" target="_blank">View profile </a></div>
