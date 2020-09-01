@@ -29,6 +29,24 @@
 </style>
 
 <script>
+  function More_func(more_id, button_id, more_text, less_text) {
+    var more = document.getElementById(more_id);
+    var btn = document.getElementById(button_id);
+
+    if (more.style.display === "none") {
+      btn.innerHTML = less_text;
+      more.style.display = "inline";
+    } else {
+        btn.innerHTML = more_text;
+        more.style.display = "none";
+        if($(window).width() < 800){
+            $(document).scrollTop(1800);
+        }
+    }
+  }
+</script>
+
+<script>
 
   function initialize()
   {
@@ -404,218 +422,227 @@
                             </div>
                         </div>
                         <p></p>
-                    </div></div>
+                    </div>
+                </div>
 
-                    <div class="tzWrap">
+                <div class="tzWrap">
                     <div class="tz-map-us">
                         <!-- <img src="images/check.png" alt="Images"> -->
                         <h3><a href="#">CONTACT US</a></h3>
-                      </div></div>
-                        <center>
-                        <h5><strong>Career Development Cell Contact Details  </strong> </h5>
-                        <h>Email ID :<a href="mailto: cdc@iitdh.ac.in"> cdc@iitdh.ac.in</a></h>
-                        <section class="section1">
+                    </div>
+                </div>
+                
+                <center>
+                    <h5><strong>Career Development Cell Contact Details  </strong> </h5>
+                    <h>Email ID :<a href="mailto: cdc@iitdh.ac.in"> cdc@iitdh.ac.in</a></h>
+                    <section class="section1">
                         <div class="container">
-                          <div class="tab-content">
-                            <div class="clearfix"></div>
-                            <br/>
-                            <h4 class="pt-1"><strong><U>Placement Executive</U></strong></h4>
-                            <div class="row">
-                              <div class="col-sm-4 col"> </div>
-                              <div class="col-sm-4 col">
-                                
-                                <p> <h5><strong>Ms. Sanjana Singh</strong> </h5> </p><p> Placement Executive </p>
-                                <p>
-                                    <!-- <div class="mr-auto text-left phone"> -->
-                                <i class="fa fa-phone" aria-hidden="true"></i>+91 9972207534  </p>
-                                <!-- <div class="mr-auto text-left email"> -->
-                                  <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                  <a href="mailto:sanjanasm@iitdh.ac.in ">sanjanasm@iitdh.ac.in  </a>
-                                <!-- </div> -->
-
-                              </div>
-                              <div class="col-lg-4"> </div>
-                              </div>
-                            </div>
-                          </div>
-                        </section></center><br>
-
-
-                       <section class="section1">
-                          <div class="container">
                             <div class="tab-content">
-                              <div class="clearfix"></div>
-                              <h4 class="pt-1"><strong><U>Public Relations Team</U></strong></h4>
-                              <div class="row">
-
-                                <div class="col-sm-4 col">
-                                  <br/><h5><strong> Mandeep Bawa </strong></h5>
-                                  <p>4rd year B.Tech. CSE</p><p>
-                                  <!-- <p><div class="mr-auto text-left phone"> -->
-                                    <i class="fa fa-phone" aria-hidden="true"></i>+91 8847674044 </p>
-                                  <!-- </div> </p> -->
-                                  <!-- <div class="mr-auto text-left email"> -->
-                                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                    <a href="mailto:170030038@iitdh.ac.in ">170030038@iitdh.ac.in  </a></div>
-                                <!-- </div> -->
-                                <div class="col-sm-4 col">
-                                  <br><h5><strong> Sonu Sourav</strong></h5>
-                                  <p>4rd year B.Tech. Electrical</p>
-                                  <p>
-                                    <!-- <div class="mr-auto text-left phone"> -->
-                                      <i class="fa fa-phone" aria-hidden="true"></i>+91 9916228725 </p>
-                                  <!-- <div class="mr-auto text-left email"> -->
-                                      <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                      <a href="mailto:170020021@iitdh.ac.in ">170020021@iitdh.ac.in  </a></div>
-                                <!-- </div> -->
-                                <div class="col-sm-4 col">
-                                  <br><h5><strong> Amar Baronia</strong></h5>
-                                  <p>4rd year B.Tech. Mechanical</p>
-                                  <p>
-                                    <!-- <div class="mr-auto text-left phone"> -->
-                                    <i class="fa fa-phone" aria-hidden="true"></i>+91 9340129093  </p>
-                                  <!-- <div class="mr-auto text-left email"> -->
-                                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                    <a href="mailto:170030017@iitdh.ac.in ">170030017@iitdh.ac.in  </a></div>
-                                <!-- </div> -->
-                                <div class="col-sm-4 col">
-                                  <br/><h5><strong> Janhavi Dadhania</strong></h5>
-                                  <p>3rd year B.Tech. CSE</p><p>
-                                  <!-- <p><div class="mr-auto text-left phone"> -->
-                                    <i class="fa fa-phone" aria-hidden="true"></i>+91 7016441970 </p>
-                                  <!-- </div> </p> -->
-                                  <!-- <div class="mr-auto text-left email"> -->
-                                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                    <a href="mailto:180010012@iitdh.ac.in ">180010012@iitdh.ac.in  </a></div>
-                                <!-- </div> -->
-                                <div class="col-sm-4 col">
-                                  <br><h5><strong> S U Swakath</strong></h5>
-                                  <p>3rd year B.Tech. Electrical</p>
-                                  <p>
-                                    <!-- <div class="mr-auto text-left phone"> -->
-                                      <i class="fa fa-phone" aria-hidden="true"></i>+91 9629469172  </p>
-                                  <!-- <div class="mr-auto text-left email"> -->
-                                      <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                      <a href="mailto:180020036@iitdh.ac.in ">180020036@iitdh.ac.in  </a></div>
-                                <!-- </div> -->
-                                <div class="col-sm-4 col">
-                                  <br><h5><strong>Gourav Kumbhojkar</strong></h5>
-                                  <p>3rd year B.Tech. Mechanical</p>
-                                  <p>
-                                    <!-- <div class="mr-auto text-left phone"> -->
-                                    <i class="fa fa-phone" aria-hidden="true"></i>+91 9130072278  </p>
-                                  <!-- <div class="mr-auto text-left email"> -->
-                                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                    <a href="mailto:180030018@iitdh.ac.in ">180030018@iitdh.ac.in  </a></div>
-                                <!-- </div> -->
-                              </div>
-                            </div>
-                          </div>
-                        </section>
-
-                        <section class="section1">
-                        <div class="container">
-                          <div class="tab-content">
-                            <div class="clearfix"></div>
-                            <br/>
-                            <h4 class="pt-1"><strong><U>CDC Student Heads</U></strong> </h4>
-                            <div class="row">
-                              <div class="col-sm-4 col">
-                                <p> <h5><strong>Prateek Jain</strong></h5> </p>
-                                <p> 4th year </p><p>
-                                    <!-- <div class="mr-auto text-left phone"> -->
-                                <i class="fa fa-phone" aria-hidden="true"></i>+91 8279803383  </p>
-                                <!-- <div class="mr-auto text-left email"> -->
-                                  <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                  <a href="mailto:170010007@iitdh.ac.in ">170010007@iitdh.ac.in  </a><br>
-                                <!-- </div> -->
-                              </div>
-                              <div class="col-sm-4 col">
-                                    <p> <h5><strong>Abhishek Kalokhe</strong></h5> </p><p>4th Year</p>
-                                    <!-- <div class="mr-auto text-left email"> -->
-                                        <p>
-                                            <!-- <div class="mr-auto text-left phone"> -->
-                                            <i class="fa fa-phone" aria-hidden="true"></i>+91 9834646408  </p>
-                                      <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                      <a href="mailto:170030007@iitdh.ac.in  ">170030007@iitdh.ac.in  </a>
-                                    <!-- </div> -->
-                                      <div class="mr-auto text">
-                              </div>
-                          </div>
-                              <div class="col-sm-4 col">
-                                <p> <h5><strong>Srishti Srivastava</strong></h5> </p><p>4th Year</p>
-                                <!-- <div class="mr-auto text-left email"> -->
+                                <div class="clearfix"></div>
+                                <br/>
+                                <h4 class="pt-1"><strong><U>Placement Executive</U></strong></h4>
+                                <div class="row">
+                                  <div class="col-sm-4 col"> </div>
+                                  <div class="col-sm-4 col">
+                                    
+                                    <p> <h5><strong>Ms. Sanjana Singh</strong> </h5> </p><p> Placement Executive </p>
                                     <p>
                                         <!-- <div class="mr-auto text-left phone"> -->
-                                        <i class="fa fa-phone" aria-hidden="true"></i>+91 7022658903  </p>
-                                  <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                  <a href="mailto:170020008@iitdh.ac.in ">170020008@iitdh.ac.in </a>
-                                <!-- </div> -->
-                                <div class="mr-auto text">
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </section>
-
-                        <section class="section1">
-                        <div class="container">
-                          <div class="tab-content">
-                            <div class="clearfix"></div>
-                            <br/>
-                            <h4 class="pt-1"><strong><U>Faculty Advisors</U></strong> </h4>
-                            <div class="row">
-                              <div class="col-sm-4 col">
-                                <br/> <h><u><strong>CAREER GUIDANCE</strong> </u></h>
-                                <p> <h5><strong>Dr. Bharat B. N</strong></h5> </p>
-                                <p> Assistant Professor <br/> Dept. of Electrical Engineering </p>
-                                <!-- <div class="mr-auto text-left email"> -->
-                                  <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                  <a href="mailto:bharathbn@iitdh.ac.in">bharathbn@iitdh.ac.in  </a><br>
-                                <!-- </div> -->
-                                  <a href="https://bharathbettagerenagaraja.wordpress.com/" target="_blank">View profile </a>
-                              </div>
-                              <div class="col-sm-4 col">
-                                    <br/>
-                                    <h><u><strong>PLACEMENTS</strong> </u></h>
-                                    <p> <h5><strong>Dr. Dhiraj V. Patil </strong></h5> </p><p> Assistant Professor <br/> Dept. of Mechanical Engineering </p>
+                                    <i class="fa fa-phone" aria-hidden="true"></i>+91 9972207534  </p>
                                     <!-- <div class="mr-auto text-left email"> -->
                                       <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                      <a href="mailto:dhiraj@iitdh.ac.in">dhiraj@iitdh.ac.in  </a>
+                                      <a href="mailto:sanjanasm@iitdh.ac.in ">sanjanasm@iitdh.ac.in  </a>
                                     <!-- </div> -->
-                                      <div class="mr-auto text">
-                                        <a href="https://sites.google.com/site/dvpmultiplefluidsatiitmandi/" target="_blank">View profile </a></div>
 
-                              </div>
-                              <div class="col-sm-4 col">
-                                <br/>
-                                <h><u><strong>INTERNSHIPS</strong> </u></h>
-                                <p> <h5><strong>Dr. Rajshekar K </strong></h5> </p><p> Assistant Professor <br/>  Dept. of Computer Science and Engineering </p>
-                                <!-- <div class="mr-auto text-left email"> -->
-                                  <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                  <a href="mailto:rajshekar.k@iitdh.ac.in">rajshekar.k@iitdh.ac.in </a>
-                                <!-- </div> -->
-                                <div class="mr-auto text">
-                                    <a href="http://www.cse.iitd.ac.in/~rajshekar/" target="_blank">View profile </a>
+                                  </div>
+                                  <div class="col-lg-4"> </div>
                                 </div>
+                            </div>
+                        </div>
+                    </section>
+                </center>
+                <br>
+
+
+                <section class="section1">
+                  <div class="container">
+                    <div class="tab-content">
+                      <div class="clearfix"></div>
+                      <h4 class="pt-1"><strong><U>Public Relations Team</U></strong></h4>
+                      <div class="row">
+
+                        <div class="col-sm-4 col">
+                          <br/><h5><strong> Mandeep Bawa </strong></h5>
+                          <p>4rd year B.Tech. CSE</p><p>
+                          <!-- <p><div class="mr-auto text-left phone"> -->
+                            <i class="fa fa-phone" aria-hidden="true"></i>+91 8847674044 </p>
+                          <!-- </div> </p> -->
+                          <!-- <div class="mr-auto text-left email"> -->
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            <a href="mailto:170030038@iitdh.ac.in ">170030038@iitdh.ac.in  </a></div>
+                        <!-- </div> -->
+                        <div class="col-sm-4 col">
+                          <br><h5><strong> Sonu Sourav</strong></h5>
+                          <p>4rd year B.Tech. Electrical</p>
+                          <p>
+                            <!-- <div class="mr-auto text-left phone"> -->
+                              <i class="fa fa-phone" aria-hidden="true"></i>+91 9916228725 </p>
+                          <!-- <div class="mr-auto text-left email"> -->
+                              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                              <a href="mailto:170020021@iitdh.ac.in ">170020021@iitdh.ac.in  </a></div>
+                        <!-- </div> -->
+                        <div class="col-sm-4 col">
+                            <br><h5><strong> Amar Baronia</strong></h5>
+                            <p>4rd year B.Tech. Mechanical</p>
+                            <p>
+                            <!-- <div class="mr-auto text-left phone"> -->
+                            <i class="fa fa-phone" aria-hidden="true"></i>+91 9340129093  </p>
+                            <!-- <div class="mr-auto text-left email"> -->
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            <a href="mailto:170030017@iitdh.ac.in ">170030017@iitdh.ac.in  </a></div>
+                            <!-- </div> -->
+                        <div class="col-sm-4 col">
+                          <br/><h5><strong> Janhavi Dadhania</strong></h5>
+                          <p>3rd year B.Tech. CSE</p><p>
+                          <!-- <p><div class="mr-auto text-left phone"> -->
+                            <i class="fa fa-phone" aria-hidden="true"></i>+91 7016441970 </p>
+                          <!-- </div> </p> -->
+                          <!-- <div class="mr-auto text-left email"> -->
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            <a href="mailto:180010012@iitdh.ac.in ">180010012@iitdh.ac.in  </a></div>
+                        <!-- </div> -->
+                        <div class="col-sm-4 col">
+                          <br><h5><strong> S U Swakath</strong></h5>
+                          <p>3rd year B.Tech. Electrical</p>
+                          <p>
+                            <!-- <div class="mr-auto text-left phone"> -->
+                              <i class="fa fa-phone" aria-hidden="true"></i>+91 9629469172  </p>
+                          <!-- <div class="mr-auto text-left email"> -->
+                              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                              <a href="mailto:180020036@iitdh.ac.in ">180020036@iitdh.ac.in  </a></div>
+                        <!-- </div> -->
+                        <div class="col-sm-4 col">
+                          <br><h5><strong>Gourav Kumbhojkar</strong></h5>
+                          <p>3rd year B.Tech. Mechanical</p>
+                          <p>
+                            <!-- <div class="mr-auto text-left phone"> -->
+                            <i class="fa fa-phone" aria-hidden="true"></i>+91 9130072278  </p>
+                          <!-- <div class="mr-auto text-left email"> -->
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            <a href="mailto:180030018@iitdh.ac.in ">180030018@iitdh.ac.in  </a></div>
+                        <!-- </div> -->
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <span id="more" style="display: none;">
+                    <section class="section1">
+                      <div class="container">
+                        <div class="tab-content">
+                          <div class="clearfix"></div>
+                          <br/>
+                          <h4 class="pt-1"><strong><U>CDC Student Heads</U></strong> </h4>
+                          <div class="row">
+                            <div class="col-sm-4 col">
+                              <p> <h5><strong>Prateek Jain</strong></h5> </p>
+                              <p> 4th year </p><p>
+                                  <!-- <div class="mr-auto text-left phone"> -->
+                              <i class="fa fa-phone" aria-hidden="true"></i>+91 8279803383  </p>
+                              <!-- <div class="mr-auto text-left email"> -->
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                <a href="mailto:170010007@iitdh.ac.in ">170010007@iitdh.ac.in  </a><br>
+                              <!-- </div> -->
+                            </div>
+                            <div class="col-sm-4 col">
+                                  <p> <h5><strong>Abhishek Kalokhe</strong></h5> </p><p>4th Year</p>
+                                  <!-- <div class="mr-auto text-left email"> -->
+                                      <p>
+                                          <!-- <div class="mr-auto text-left phone"> -->
+                                          <i class="fa fa-phone" aria-hidden="true"></i>+91 9834646408  </p>
+                                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                    <a href="mailto:170030007@iitdh.ac.in  ">170030007@iitdh.ac.in  </a>
+                                  <!-- </div> -->
+                                    <div class="mr-auto text">
+                                    </div>
+                            </div>
+                            <div class="col-sm-4 col">
+                              <p> <h5><strong>Srishti Srivastava</strong></h5> </p><p>4th Year</p>
+                              <!-- <div class="mr-auto text-left email"> -->
+                                  <p>
+                                      <!-- <div class="mr-auto text-left phone"> -->
+                                      <i class="fa fa-phone" aria-hidden="true"></i>+91 7022658903  </p>
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                <a href="mailto:170020008@iitdh.ac.in ">170020008@iitdh.ac.in </a>
+                              <!-- </div> -->
+                              <div class="mr-auto text">
                               </div>
-                              <div class="col-sm-4 col"> </div>
-                              <div class="col-sm-4 col">
-                                <br />
-                                <p> <h5><strong>Dr. Naveen M B</strong> </h5> </p><p> Assistant Professor <br/> Dept. of Electrical Engineering </p>
-                                <!-- <div class="mr-auto text-left email"> -->
-                                  <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                  <a href="mailto:naveenmb@iitdh.ac.in">naveenmb@iitdh.ac.in  </a>
-                                <!-- </div> -->
-                                  <div class="mr-auto text">
-                                    <a href="naveenmb" target="_blank">View profile </a></div>
-                              </div>
-                              <div class="col-lg-4"> </div>
                             </div>
                           </div>
                         </div>
-                      </section>
+                      </div>
+                    </section>
+
+                    <section class="section1">
+                      <div class="container">
+                        <div class="tab-content">
+                          <div class="clearfix"></div>
+                          <br/>
+                          <h4 class="pt-1"><strong><U>Faculty Advisors</U></strong> </h4>
+                          <div class="row">
+                            <div class="col-sm-4 col">
+                              <br/> <h><u><strong>CAREER GUIDANCE</strong> </u></h>
+                              <p> <h5><strong>Dr. Bharat B. N</strong></h5> </p>
+                              <p> Assistant Professor <br/> Dept. of Electrical Engineering </p>
+                              <!-- <div class="mr-auto text-left email"> -->
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                <a href="mailto:bharathbn@iitdh.ac.in">bharathbn@iitdh.ac.in  </a><br>
+                              <!-- </div> -->
+                                <a href="https://bharathbettagerenagaraja.wordpress.com/" target="_blank">View profile </a>
+                            </div>
+                            <div class="col-sm-4 col">
+                                  <br/>
+                                  <h><u><strong>PLACEMENTS</strong> </u></h>
+                                  <p> <h5><strong>Dr. Dhiraj V. Patil </strong></h5> </p><p> Assistant Professor <br/> Dept. of Mechanical Engineering </p>
+                                  <!-- <div class="mr-auto text-left email"> -->
+                                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                    <a href="mailto:dhiraj@iitdh.ac.in">dhiraj@iitdh.ac.in  </a>
+                                  <!-- </div> -->
+                                    <div class="mr-auto text">
+                                      <a href="https://sites.google.com/site/dvpmultiplefluidsatiitmandi/" target="_blank">View profile </a></div>
+
+                            </div>
+                            <div class="col-sm-4 col">
+                              <br/>
+                              <h><u><strong>INTERNSHIPS</strong> </u></h>
+                              <p> <h5><strong>Dr. Rajshekar K </strong></h5> </p><p> Assistant Professor <br/>  Dept. of Computer Science and Engineering </p>
+                              <!-- <div class="mr-auto text-left email"> -->
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                <a href="mailto:rajshekar.k@iitdh.ac.in">rajshekar.k@iitdh.ac.in </a>
+                              <!-- </div> -->
+                              <div class="mr-auto text">
+                                  <a href="http://www.cse.iitd.ac.in/~rajshekar/" target="_blank">View profile </a>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 col"> </div>
+                            <div class="col-sm-4 col">
+                              <br />
+                              <p> <h5><strong>Dr. Naveen M B</strong> </h5> </p><p> Assistant Professor <br/> Dept. of Electrical Engineering </p>
+                              <!-- <div class="mr-auto text-left email"> -->
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                <a href="mailto:naveenmb@iitdh.ac.in">naveenmb@iitdh.ac.in  </a>
+                              <!-- </div> -->
+                                <div class="mr-auto text">
+                                  <a href="naveenmb" target="_blank">View profile </a></div>
+                            </div>
+                            <div class="col-lg-4"> </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                </span>
+                <br>
+                <br>
+                <button onclick="More_func('more', 'moreBtn', 'More Contacts', 'Less Contacts')" id="moreBtn" class="btn btn-info" style = "outline:none;border:none;cursor:pointer;overflow:hidden;color:#ffffff;">More Contacts</button>
             </div>
         </div>
         <br>
