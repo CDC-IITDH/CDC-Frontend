@@ -55,6 +55,13 @@
     elm10.style.display = "inline";
     var elm11 = document.querySelectorAll(".nav-collapse")[0];
     elm11.style.padding = "15px 0px 0px 300px";
+    var elm12 = document.querySelectorAll("#header_logo")[0];
+    if ($(window).width() < 800) {
+        elm12.style.float = "right"; 
+    }
+    else {
+        elm12.style.float = "left"; 
+    }
   }
 </script>
 
@@ -92,12 +99,12 @@
     <div class="tz-customer-container">
         <div class="container">
             <div class="tz-header-content">
-                <h3 class="tz-logo pull-left">
-                    <a href="#"><img alt="Images Logo" src="images/home/CDC_Logo/website_header@2x.png" style = "height:80px;width:200px"></a>
-                </h3>
-                <button type="button" class="tz-button-toggle btn-navbar pull-right" data-target=".nav-collapse">
+                <button type="button" class="tz-button-toggle btn-navbar pull-left" data-target=".nav-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
+                <h3 class="tz-logo" id="header_logo">
+                    <a href="#"><img alt="Images Logo" src="images/home/CDC_Logo/website_header@2x.png" style = "height:80px;width:200px"></a>
+                </h3>
                 <nav class="nav-collapse">
                     <ul class="tz-menu">
                         <li>
