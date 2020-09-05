@@ -3,6 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="images/home/CDC_Logo/website_header@2x.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="500">
+    <meta property="og:image:height" content="200">
     <title>IITDH-CDC</title>
     <!--[if IE 8]>
     <link href="style_ie8.css" rel="stylesheet" type="text/css" />
@@ -100,11 +104,20 @@
 
 <script>
   function dropdown_func(id) {
-    var elms = document.querySelectorAll("#"+id)[1];
-    if (elms.style.display === "none") {
-      elms.style.display = "block";
-    } else {
-      elms.style.display = "none";
+    var all_subs = ['sub1', 'sub2', 'sub3', 'sub4']
+    for (sub in all_subs) {
+        if (all_subs[sub] != id) {
+            var elms = document.querySelectorAll("#"+all_subs[sub])[1];
+            elms.style.display = "none";
+        }
+        else {
+            var elms = document.querySelectorAll("#"+all_subs[sub])[1];
+            if (elms.style.display === "none") {
+              elms.style.display = "block";
+            } else {
+              elms.style.display = "none";
+            }
+        }
     }
   }
 </script>
