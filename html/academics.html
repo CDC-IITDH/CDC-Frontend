@@ -100,11 +100,20 @@
 
 <script>
   function dropdown_func(id) {
-    var elms = document.querySelectorAll("#"+id)[1];
-    if (elms.style.display === "none") {
-      elms.style.display = "block";
-    } else {
-      elms.style.display = "none";
+    var all_subs = ['sub1', 'sub2', 'sub3', 'sub4']
+    for (sub in all_subs) {
+        if (all_subs[sub] != id) {
+            var elms = document.querySelectorAll("#"+all_subs[sub])[1];
+            elms.style.display = "none";
+        }
+        else {
+            var elms = document.querySelectorAll("#"+all_subs[sub])[1];
+            if (elms.style.display === "none") {
+              elms.style.display = "block";
+            } else {
+              elms.style.display = "none";
+            }
+        }
     }
   }
 </script>
