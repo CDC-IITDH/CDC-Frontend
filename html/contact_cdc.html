@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>IITDH-CDC-Contact</title>
-    <!--[if IE 8]>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IITDH-CDC-Contact</title>
+  <!--[if IE 8]>
     <link href="style_ie8.css" rel="stylesheet" type="text/css" />
     <![endif]-->
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
     <![endif]-->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="fonts/awesome/css/font-awesome.min.css" rel="stylesheet" />
-    <link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
-    <link href='css/owl.carousel.css' rel='stylesheet' type='text/css'>
-    <link href='css/owl.theme.css' rel='stylesheet' type='text/css'>
-    <link href="style.css" rel="stylesheet" />
-    <link rel="icon" href="images/CDC_Logos/favicon.ico" type="image/x-icon" />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="fonts/awesome/css/font-awesome.min.css" rel="stylesheet" />
+  <link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
+  <link href='css/owl.carousel.css' rel='stylesheet' type='text/css'>
+  <link href='css/owl.theme.css' rel='stylesheet' type='text/css'>
+  <link href="style.css" rel="stylesheet" />
+  <link rel="icon" href="images/CDC_Logos/favicon.ico" type="image/x-icon" />
 </head>
 <style>
+  #more {
+    display: none;
+  }
 
-  #more {display: none;}
-  #more1 {display: none;}
-
+  #more1 {
+    display: none;
+  }
 </style>
 
 <script>
@@ -37,25 +41,23 @@
       btn.innerHTML = less_text;
       more.style.display = "inline";
     } else {
-        btn.innerHTML = more_text;
-        more.style.display = "none";
-        if($(window).width() < 800){
-            $(document).scrollTop(1800);
-        }
+      btn.innerHTML = more_text;
+      more.style.display = "none";
+      if ($(window).width() < 800) {
+        $(document).scrollTop(1800);
+      }
     }
   }
 </script>
 
 <script>
-
-  function initialize()
-  {
+  function initialize() {
     var mapProp = {
-        center: new google.maps.LatLng(40.70418,-73.99695),
-        zoom:14,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
+      center: new google.maps.LatLng(40.70418, -73.99695),
+      zoom: 14,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
     };
-    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
   }
 
   function initial_func() {
@@ -83,10 +85,9 @@
     elm11.style.padding = "15px 0px 0px 300px";
     var elm12 = document.querySelectorAll("#header_logo")[0];
     if ($(window).width() < 800) {
-        elm12.style.float = "right"; 
-    }
-    else {
-        elm12.style.float = "left"; 
+      elm12.style.float = "right";
+    } else {
+      elm12.style.float = "left";
     }
 
     var script = document.createElement("script");
@@ -100,37 +101,36 @@
   function dropdown_func(id) {
     var all_subs = ['sub1', 'sub2', 'sub3', 'sub4']
     for (sub in all_subs) {
-        if (all_subs[sub] != id) {
-            var elms = document.querySelectorAll("#"+all_subs[sub])[1];
-            elms.style.display = "none";
+      if (all_subs[sub] != id) {
+        var elms = document.querySelectorAll("#" + all_subs[sub])[1];
+        elms.style.display = "none";
+      } else {
+        var elms = document.querySelectorAll("#" + all_subs[sub])[1];
+        if (elms.style.display === "none") {
+          elms.style.display = "block";
+        } else {
+          elms.style.display = "none";
         }
-        else {
-            var elms = document.querySelectorAll("#"+all_subs[sub])[1];
-            if (elms.style.display === "none") {
-              elms.style.display = "block";
-            } else {
-              elms.style.display = "none";
-            }
-        }
+      }
     }
   }
 </script>
 
 <body onload="initial_func()">
-    <div class="loading-page">
-        <img src="images/image-preload.gif" alt="Images-loading">
-    </div>
-    <!-- Begin section search form -->
-    <div class="tz-content-search">
-        <form action="#" method="get">
-            <i class="fa fa-times tz-form-close"></i>
-            <input type="text" class="tz-search-input" id="tz-search-input" name="search" placeholder="Search...">
-        </form><!-- End form search -->
-    </div>
-    <!-- End section search form -->
+  <div class="loading-page">
+    <img src="images/image-preload.gif" alt="Images-loading">
+  </div>
+  <!-- Begin section search form -->
+  <div class="tz-content-search">
+    <form action="#" method="get">
+      <i class="fa fa-times tz-form-close"></i>
+      <input type="text" class="tz-search-input" id="tz-search-input" name="search" placeholder="Search...">
+    </form><!-- End form search -->
+  </div>
+  <!-- End section search form -->
 
-   <!-- Begin class tz-header-2 -->
-   <header class="tz-header tz-header-2">
+  <!-- Begin class tz-header-2 -->
+  <header class="tz-header tz-header-2">
     <!--<div class="tz-sign-in">
     <div class="container">
         <p><i class="fa fa-times"></i>Welcome to Ethic University. Sign in to enjoy our best online lessions!</p>
@@ -138,19 +138,19 @@
     </div>
 </div>-->
     <div class="tz-customer-container">
-        <div class="container">
-            <div class="tz-header-content">
-                <button type="button" class="tz-button-toggle btn-navbar pull-left" data-target=".nav-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <h3 class="tz-logo" id="header_logo">
-                    <a href="index.html"><img alt="Images Logo" src="images/home/CDC_Logo/website_header@2x.png" style = "height:80px;width:200px"></a>
-                </h3>
-                <nav class="nav-collapse">
-                    <ul class="tz-menu">
-                        <li>
-                            <a href="index.html" id="a1">Home</a>
-                            <!--<ul class="sub-menu sub-menu-style-1">
+      <div class="container">
+        <div class="tz-header-content">
+          <button type="button" class="tz-button-toggle btn-navbar pull-left" data-target=".nav-collapse">
+            <i class="fa fa-bars"></i>
+          </button>
+          <h3 class="tz-logo" id="header_logo">
+            <a href="index.html"><img alt="Images Logo" src="images/home/CDC_Logo/website_header@2x.png" style="height:80px;width:200px"></a>
+          </h3>
+          <nav class="nav-collapse">
+            <ul class="tz-menu">
+              <li>
+                <a href="index.html" id="a1">Home</a>
+                <!--<ul class="sub-menu sub-menu-style-1">
                                 <li>
                                     <a href="Home-01.html">Home Version 01</a>
                                 </li>
@@ -173,54 +173,54 @@
                                     <a href="Home-07.html">Home Version 07</a>
                                 </li>
                             </ul>-->
-                        </li>
-                        <li>
-                            <a href="#" id="a2" style="width: 80%">Academic Info</a>
-                            <button type="button" class="tz-button-toggle pull-right" onclick="dropdown_func('sub1')" style="border: none; font-size: 16px; cursor: pointer; background: #333333; color: #ffffff; margin: 5px 10px 0px 0px;">
-                                <i class="fa fa-chevron-down"></i>
-                            </button>
-                            <ul id="sub1" class="sub-menu sub-menu-style-1">
-                                <li>
-                                    <a href="academics.html">Undergraduate</a>
-                                </li>
-                                <li>
-                                    <a href="academic_facility_page.html">Academic Facilities</a>
-                                </li>
-                                <li>
-                                    <a href="faculty_page.html">Faculty</a>
-                                </li>
-                                <!-- <li>
+              </li>
+              <li>
+                <a href="#" id="a2" style="width: 80%">Academic Info</a>
+                <button type="button" class="tz-button-toggle pull-right" onclick="dropdown_func('sub1')" style="border: none; font-size: 16px; cursor: pointer; background: #333333; color: #ffffff; margin: 5px 10px 0px 0px;">
+                  <i class="fa fa-chevron-down"></i>
+                </button>
+                <ul id="sub1" class="sub-menu sub-menu-style-1">
+                  <li>
+                    <a href="academics.html">Undergraduate</a>
+                  </li>
+                  <li>
+                    <a href="academic_facility_page.html">Academic Facilities</a>
+                  </li>
+                  <li>
+                    <a href="faculty_page.html">Faculty</a>
+                  </li>
+                  <!-- <li>
                                     <a href="r&d_page.html">R&D</a>
                                 </li>
                                 <li>
                                     <a href="acad_studentProject.html">Students Projects</a>
                                 </li> -->
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#" id="a3" style="width: 80%">For Recruiters</a>
-                            <button type="button" class="tz-button-toggle  pull-right" onclick="dropdown_func('sub2')" style="border: none; font-size: 16px; cursor: pointer; background: #333333; color: #ffffff; margin: 5px 10px 0px 0px;">
-                                <i class="fa fa-chevron-down"></i>
-                            </button>
-                            <ul id="sub2" class="sub-menu sub-menu-style-1"  >
-                                <li>
-                                    <a href="internship_procedure.html">Internship</a>
-                                </li>
-                                <li>
-                                    <a href="placementprocedure.html">Placement</a>
-                                </li>
-                                <!-- <li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" id="a3" style="width: 80%">For Recruiters</a>
+                <button type="button" class="tz-button-toggle  pull-right" onclick="dropdown_func('sub2')" style="border: none; font-size: 16px; cursor: pointer; background: #333333; color: #ffffff; margin: 5px 10px 0px 0px;">
+                  <i class="fa fa-chevron-down"></i>
+                </button>
+                <ul id="sub2" class="sub-menu sub-menu-style-1">
+                  <li>
+                    <a href="internship_procedure.html">Internship</a>
+                  </li>
+                  <li>
+                    <a href="placementprocedure.html">Placement</a>
+                  </li>
+                  <!-- <li>
                                     <a href="#">Internship</a>
                                 </li> -->
-                                <li>
-                                    <a href="https://drive.google.com/file/d/13_qduU5w51fdu7YfOtOjGNadX3qziDDV/view" target="_blank">Brochure</a>
-                                </li>
-                                <li>
-                                    <a href="companies_faqs.html">FAQs</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <!--<li class="tz-point-static">
+                  <li>
+                    <a href="https://drive.google.com/file/d/13_qduU5w51fdu7YfOtOjGNadX3qziDDV/view" target="_blank">Brochure</a>
+                  </li>
+                  <li>
+                    <a href="companies_faqs.html">FAQs</a>
+                  </li>
+                </ul>
+              </li>
+              <!--<li class="tz-point-static">
                             <a href="#">For Students</a>
                             <div class="sub-menu sub-menu-style-2">
                                 <div class="tz-submenu-2-wrapper">
@@ -315,13 +315,13 @@
                                 </div>
                             </div>
                         </li>-->
-                        <li>
-                            <a href="#" id="a4" style="width: 80%">For Students</a>
-                            <button type="button" class="tz-button-toggle  pull-right" onclick="dropdown_func('sub3')" style="border: none; font-size: 16px; cursor: pointer; background: #333333; color: #ffffff; margin: 5px 10px 0px 0px;">
-                                <i class="fa fa-chevron-down"></i>
-                            </button>
-                            <ul id="sub3" class="sub-menu sub-menu-style-1">
-                                <!-- <li>
+              <li>
+                <a href="#" id="a4" style="width: 80%">For Students</a>
+                <button type="button" class="tz-button-toggle  pull-right" onclick="dropdown_func('sub3')" style="border: none; font-size: 16px; cursor: pointer; background: #333333; color: #ffffff; margin: 5px 10px 0px 0px;">
+                  <i class="fa fa-chevron-down"></i>
+                </button>
+                <ul id="sub3" class="sub-menu sub-menu-style-1">
+                  <!-- <li>
                                     <a href="placement.html">For placements</a>
                                 </li>
                                 <li>
@@ -330,44 +330,44 @@
                                 <li>
                                     <a href="intern.html">For Internships</a>
                                 </li> -->
-                                <li>
-                                    <a href="https://drive.google.com/file/d/1-v1KiMw0-hlvEnmUEQJc2rAQJTgH3xPg/view?usp=sharing" target="_blank">Placements - Rules & Regulations</a>
-                                </li>
-                                <li>
-                                    <a href="https://drive.google.com/file/d/1W04IZ5sx6Qmp89EpyKA0YCI9TPlf2P7Q/view?usp=sharing" target="_blank">Internships - Rules & Regulations</a>
-                                </li>
-                                <li>
-                                    <a href="https://drive.google.com/file/d/1-jV15-Aj-f45oC0Qp50m-SRxOAzz8W25/view" target="_blank">Internship Information</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#" id="a5" style="width: 80%">Beyond Academics</a>
-                            <button type="button" class="tz-button-toggle pull-right" onclick="dropdown_func('sub4')" style="border: none; cursor: pointer; background: #333333; color: #ffffff; padding: 5px 10px 0px 0px;">
-                                <i class="fa fa-chevron-down"></i>
-                            </button>
-                            <ul id="sub4" class="sub-menu sub-menu-style-1">
-                                <li>
-                                    <a href="https://www.iitdh.ac.in/iic/" target="_blank">IIC</a>
-                                </li>
-                                <li>
-                                    <a href="https://smp.iitdh.ac.in/" target="_blank">SMP</a>
-                                </li>
-                                <!-- <li>
+                  <li>
+                    <a href="https://drive.google.com/file/d/1-v1KiMw0-hlvEnmUEQJc2rAQJTgH3xPg/view?usp=sharing" target="_blank">Placements - Rules & Regulations</a>
+                  </li>
+                  <li>
+                    <a href="https://drive.google.com/file/d/1W04IZ5sx6Qmp89EpyKA0YCI9TPlf2P7Q/view?usp=sharing" target="_blank">Internships - Rules & Regulations</a>
+                  </li>
+                  <li>
+                    <a href="https://drive.google.com/file/d/1-jV15-Aj-f45oC0Qp50m-SRxOAzz8W25/view" target="_blank">Internship Information</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" id="a5" style="width: 80%">Beyond Academics</a>
+                <button type="button" class="tz-button-toggle pull-right" onclick="dropdown_func('sub4')" style="border: none; cursor: pointer; background: #333333; color: #ffffff; padding: 5px 10px 0px 0px;">
+                  <i class="fa fa-chevron-down"></i>
+                </button>
+                <ul id="sub4" class="sub-menu sub-menu-style-1">
+                  <li>
+                    <a href="https://www.iitdh.ac.in/iic/" target="_blank">IIC</a>
+                  </li>
+                  <li>
+                    <a href="https://smp.iitdh.ac.in/" target="_blank">SMP</a>
+                  </li>
+                  <!-- <li>
                                     <a href="#">Cultural Events</a>
                                 </li> -->
-                                <li>
-                                    <a href="https://oss2019.github.io/" target="_blank">OSS</a>
-                                </li>
-                                <!-- <li>
+                  <li>
+                    <a href="https://oss2019.github.io/" target="_blank">OSS</a>
+                  </li>
+                  <!-- <li>
                                     <a href="#">CSR</a>
                                 </li> -->
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="contact_cdc.html" id="a6">Contact Us</a>
-                            <ul class="sub-menu sub-menu-style-1">
-                                <!--<li>
+                </ul>
+              </li>
+              <li>
+                <a href="contact_cdc.html" id="a6">Contact Us</a>
+                <ul class="sub-menu sub-menu-style-1">
+                  <!--<li>
                                     <a href="JoomlaBase-404Page.html">CDC Head</a>
                                 </li>
                                 <li>
@@ -391,31 +391,286 @@
                                 <li>
                                     <a href="JoomlaBase-Page-Resgister.html">JoomlaBase Resgister</a>
                                 </li>-->
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div><!-- End Content Main Header -->
-    </div>
-</header>
-<!-- End class tz-header-2 -->
-
-    <!-- Start class tz-wrapper-default -->
-    <section class="tz-wrapper-default">
-        <div class="tz-contact-title">
-            <!-- <img src="images/check.png" alt="Image"> -->
-            <!-- image for contact -->
-            <h1><a href="#">Contact Us</a></h1>
-            <span>Contact us to get more information</span>
+                </ul>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <!-- Start class tzWrap -->
-        
-        <div class="tzWrap">
+      </div><!-- End Content Main Header -->
+    </div>
+  </header>
+  <!-- End class tz-header-2 -->
+
+  <!-- Start class tz-wrapper-default -->
+  <section class="tz-wrapper-default">
+    <div class="tz-contact-title">
+      <!-- <img src="images/check.png" alt="Image"> -->
+      <!-- image for contact -->
+      <h1><a href="#">Contact Us</a></h1>
+      <span>Contact us to get more information</span>
+    </div>
+    <!-- Start class tzWrap -->
+
+    <div class="tzWrap">
+      <div class="container">
+
+        <!--<div class="tzWrap">
+                    <div class="tz-map-us"> -->
+        <!-- <img src="images/check.png" alt="Images"> -->
+        <!--<h3><a href="#">CONTACT US</a></h3>
+                    </div>
+                </div>-->
+
+        <center>
+          <h5><strong>Career Development Cell Contact Details </strong> </h5>
+          <h>Email ID :<a href="mailto: cdc@iitdh.ac.in"> cdc@iitdh.ac.in</a></h>
+          <section class="section1">
             <div class="container">
+              <div class="tab-content">
+                <div class="clearfix"></div>
+                <br />
+                <!-- <h4 class="pt-1"><strong><U>Placement Executive</U></strong></h4> -->
                 <div class="row">
-                    <div class="tz-map-information">
-                        <!-- <div class="col-lg-4 col-md-4 col-xs-12 col-sm-4">
+                  <div class="col-sm-4 col"> </div>
+                  <div class="col-sm-4 col">
+
+                    <!-- <p> <h5><strong>Ms. Sanjana Singh</strong> </h5> </p><p> Placement Executive </p>
+                                    <p> -->
+                    <!-- <div class="mr-auto text-left phone"> -->
+                    <!-- <i class="fa fa-phone" aria-hidden="true"></i>+91 9972207534  </p> -->
+                    <!-- <div class="mr-auto text-left email"> -->
+                    <!-- <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                      <a href="mailto:sanjanasm@iitdh.ac.in ">sanjanasm@iitdh.ac.in  </a> -->
+                    <!-- </div> -->
+
+                  </div>
+                  <div class="col-lg-4"> </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </center>
+        <br>
+
+
+        <section class="section1">
+          <div class="container">
+            <div class="tab-content">
+              <div class="clearfix"></div>
+              <h4 class="pt-1"><strong><U>Public Relations Team</U></strong></h4>
+              <div class="row">
+
+                <div class="col-sm-4 col">
+                  <br />
+                  <h5><strong> Mandeep Bawa </strong></h5>
+                  <p>4rd year B.Tech. CSE</p>
+                  <p>
+                    <!-- <p><div class="mr-auto text-left phone"> -->
+                    <i class="fa fa-phone" aria-hidden="true"></i>+91 8847674044 </p>
+                  <!-- </div> </p> -->
+                  <!-- <div class="mr-auto text-left email"> -->
+                  <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                  <a href="mailto:170030038@iitdh.ac.in ">170030038@iitdh.ac.in </a>
+                </div>
+                <!-- </div> -->
+                <div class="col-sm-4 col">
+                  <br>
+                  <h5><strong> Sonu Sourav</strong></h5>
+                  <p>4rd year B.Tech. Electrical</p>
+                  <p>
+                    <!-- <div class="mr-auto text-left phone"> -->
+                    <i class="fa fa-phone" aria-hidden="true"></i>+91 9916228725 </p>
+                  <!-- <div class="mr-auto text-left email"> -->
+                  <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                  <a href="mailto:170020021@iitdh.ac.in ">170020021@iitdh.ac.in </a>
+                </div>
+                <!-- </div> -->
+                <div class="col-sm-4 col">
+                  <br>
+                  <h5><strong> Amar Baronia</strong></h5>
+                  <p>4rd year B.Tech. Mechanical</p>
+                  <p>
+                    <!-- <div class="mr-auto text-left phone"> -->
+                    <i class="fa fa-phone" aria-hidden="true"></i>+91 9340129093 </p>
+                  <!-- <div class="mr-auto text-left email"> -->
+                  <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                  <a href="mailto:170030017@iitdh.ac.in ">170030017@iitdh.ac.in </a>
+                </div>
+                <!-- </div> -->
+                <div class="col-sm-4 col">
+                  <br />
+                  <h5><strong> Janhavi Dadhania</strong></h5>
+                  <p>3rd year B.Tech. CSE</p>
+                  <p>
+                    <!-- <p><div class="mr-auto text-left phone"> -->
+                    <i class="fa fa-phone" aria-hidden="true"></i>+91 7016441970 </p>
+                  <!-- </div> </p> -->
+                  <!-- <div class="mr-auto text-left email"> -->
+                  <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                  <a href="mailto:180010012@iitdh.ac.in ">180010012@iitdh.ac.in </a>
+                </div>
+                <!-- </div> -->
+                <div class="col-sm-4 col">
+                  <br>
+                  <h5><strong> S U Swakath</strong></h5>
+                  <p>3rd year B.Tech. Electrical</p>
+                  <p>
+                    <!-- <div class="mr-auto text-left phone"> -->
+                    <i class="fa fa-phone" aria-hidden="true"></i>+91 9629469172 </p>
+                  <!-- <div class="mr-auto text-left email"> -->
+                  <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                  <a href="mailto:180020036@iitdh.ac.in ">180020036@iitdh.ac.in </a>
+                </div>
+                <!-- </div> -->
+                <div class="col-sm-4 col">
+                  <br>
+                  <h5><strong>Gourav Kumbhojkar</strong></h5>
+                  <p>3rd year B.Tech. Mechanical</p>
+                  <p>
+                    <!-- <div class="mr-auto text-left phone"> -->
+                    <i class="fa fa-phone" aria-hidden="true"></i>+91 9130072278 </p>
+                  <!-- <div class="mr-auto text-left email"> -->
+                  <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                  <a href="mailto:180030018@iitdh.ac.in ">180030018@iitdh.ac.in </a>
+                </div>
+                <!-- </div> -->
+              </div>
+            </div>
+          </div>
+        </section>
+        <span id="more" style="display: none;">
+          <section class="section1">
+            <div class="container">
+              <div class="tab-content">
+                <div class="clearfix"></div>
+                <br />
+                <h4 class="pt-1"><strong><U>CDC Student Heads</U></strong> </h4>
+                <div class="row">
+                  <div class="col-sm-4 col">
+                    <p>
+                    <h5><strong>Prateek Jain</strong></h5>
+                    </p>
+                    <p> 4th year </p>
+                    <p>
+                      <!-- <div class="mr-auto text-left phone"> -->
+                      <i class="fa fa-phone" aria-hidden="true"></i>+91 8279803383 </p>
+                    <!-- <div class="mr-auto text-left email"> -->
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    <a href="mailto:170010007@iitdh.ac.in ">170010007@iitdh.ac.in </a><br>
+                    <!-- </div> -->
+                  </div>
+                  <div class="col-sm-4 col">
+                    <p>
+                    <h5><strong>Abhishek Kalokhe</strong></h5>
+                    </p>
+                    <p>4th Year</p>
+                    <!-- <div class="mr-auto text-left email"> -->
+                    <p>
+                      <!-- <div class="mr-auto text-left phone"> -->
+                      <i class="fa fa-phone" aria-hidden="true"></i>+91 9834646408 </p>
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    <a href="mailto:170030007@iitdh.ac.in  ">170030007@iitdh.ac.in </a>
+                    <!-- </div> -->
+                    <div class="mr-auto text">
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col">
+                    <p>
+                    <h5><strong>Srishti Srivastava</strong></h5>
+                    </p>
+                    <p>4th Year</p>
+                    <!-- <div class="mr-auto text-left email"> -->
+                    <p>
+                      <!-- <div class="mr-auto text-left phone"> -->
+                      <i class="fa fa-phone" aria-hidden="true"></i>+91 7022658903 </p>
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    <a href="mailto:170020008@iitdh.ac.in ">170020008@iitdh.ac.in </a>
+                    <!-- </div> -->
+                    <div class="mr-auto text">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="section1">
+            <div class="container">
+              <div class="tab-content">
+                <div class="clearfix"></div>
+                <br />
+                <h4 class="pt-1"><strong><U>Faculty Advisors</U></strong> </h4>
+                <div class="row">
+                  <div class="col-sm-4 col">
+                    <br />
+                    <h><u><strong>CAREER GUIDANCE</strong> </u></h>
+                    <p>
+                    <h5><strong>Dr. Bharat B. N</strong></h5>
+                    </p>
+                    <p> Assistant Professor <br /> Dept. of Electrical Engineering </p>
+                    <!-- <div class="mr-auto text-left email"> -->
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    <a href="mailto:bharathbn@iitdh.ac.in">bharathbn@iitdh.ac.in </a><br>
+                    <!-- </div> -->
+                    <a href="https://bharathbettagerenagaraja.wordpress.com/" target="_blank">View profile </a>
+                  </div>
+                  <div class="col-sm-4 col">
+                    <br />
+                    <h><u><strong>PLACEMENTS</strong> </u></h>
+                    <p>
+                    <h5><strong>Dr. Dhiraj V. Patil </strong></h5>
+                    </p>
+                    <p> Assistant Professor <br /> Dept. of Mechanical Engineering </p>
+                    <!-- <div class="mr-auto text-left email"> -->
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    <a href="mailto:dhiraj@iitdh.ac.in">dhiraj@iitdh.ac.in </a>
+                    <!-- </div> -->
+                    <div class="mr-auto text">
+                      <a href="https://sites.google.com/site/dvpmultiplefluidsatiitmandi/" target="_blank">View profile </a></div>
+
+                  </div>
+                  <div class="col-sm-4 col">
+                    <br />
+                    <h><u><strong>INTERNSHIPS</strong> </u></h>
+                    <p>
+                    <h5><strong>Dr. Rajshekar K </strong></h5>
+                    </p>
+                    <p> Assistant Professor <br /> Dept. of Computer Science and Engineering </p>
+                    <!-- <div class="mr-auto text-left email"> -->
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    <a href="mailto:rajshekar.k@iitdh.ac.in">rajshekar.k@iitdh.ac.in </a>
+                    <!-- </div> -->
+                    <div class="mr-auto text">
+                      <a href="http://www.cse.iitd.ac.in/~rajshekar/" target="_blank">View profile </a>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col"> </div>
+                  <div class="col-sm-4 col">
+                    <br />
+                    <p>
+                    <h5><strong>Dr. Naveen M B</strong> </h5>
+                    </p>
+                    <p> Assistant Professor <br /> Dept. of Electrical Engineering </p>
+                    <!-- <div class="mr-auto text-left email"> -->
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    <a href="mailto:naveenmb@iitdh.ac.in">naveenmb@iitdh.ac.in </a>
+                    <!-- </div> -->
+                    <div class="mr-auto text">
+                      <a href="naveenmb" target="_blank">View profile </a></div>
+                  </div>
+                  <div class="col-lg-4"> </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </span>
+        <br>
+        <br>
+        <button onclick="More_func('more', 'moreBtn', 'More Contacts', 'Less Contacts')" id="moreBtn" class="btn btn-info" style="outline:none;border:none;cursor:pointer;overflow:hidden;color:#ffffff;">More Contacts</button>
+
+        <div class="row">
+          <div class="tz-map-information">
+            <!-- <div class="col-lg-4 col-md-4 col-xs-12 col-sm-4">
                             <div class="tz-map-address">
                                 <a href="#" class="tz-background-color-4">
                                     <i class="fa fa-mobile"></i>
@@ -423,349 +678,132 @@
                                 <p>+91 9972207534 </p>
                             </div>
                         </div> -->
-                        <div class="col-lg-6 col-md-4 col-xs-12 col-sm-4">
-                            <div class="tz-map-address">
-                                <a href="#" class="tz-background-color-4">
-                                    <i class="fa fa-map-marker"></i>
-                                </a>
-                                <!-- <span><img src="images/check.png" alt="Images"></span> -->
+            <div class="col-lg-6 col-md-4 col-xs-12 col-sm-4">
+              <div class="tz-map-address">
+                <a href="#" class="tz-background-color-4">
+                  <i class="fa fa-map-marker"></i>
+                </a>
+                <!-- <span><img src="images/check.png" alt="Images"></span> -->
 
-                                <p>Indian Institute of Technology Dharwad<br> Karnataka, India - 580011.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-4 col-xs-12 col-sm-4">
-                            <div class="tz-map-address">
-                                <a href="#" class="tz-background-color-4">
-                                    <i class="fa fa-envelope-o"></i>
-                                </a>
-                               <!--  <span><img src="images/check.png" alt="Images"></span> -->
-                                <p>cdc@iitdh.ac.in</p>
-                            </div>
-                        
-                        </div>
-                        <p></p>
-                    </div>
-                </div>
-
-                <div class="tzWrap">
-                    <div class="tz-map-us">
-                        <!-- <img src="images/check.png" alt="Images"> -->
-                        <h3><a href="#">CONTACT US</a></h3>
-                    </div>
-                </div>
-                
-                <center>
-                    <h5><strong>Career Development Cell Contact Details  </strong> </h5>
-                    <h>Email ID :<a href="mailto: cdc@iitdh.ac.in"> cdc@iitdh.ac.in</a></h>
-                    <section class="section1">
-                        <div class="container">
-                            <div class="tab-content">
-                                <div class="clearfix"></div>
-                                <br/>
-                                <!-- <h4 class="pt-1"><strong><U>Placement Executive</U></strong></h4> -->
-                                <div class="row">
-                                  <div class="col-sm-4 col"> </div>
-                                  <div class="col-sm-4 col">
-                                    
-                                    <!-- <p> <h5><strong>Ms. Sanjana Singh</strong> </h5> </p><p> Placement Executive </p>
-                                    <p> -->
-                                        <!-- <div class="mr-auto text-left phone"> -->
-                                    <!-- <i class="fa fa-phone" aria-hidden="true"></i>+91 9972207534  </p> -->
-                                    <!-- <div class="mr-auto text-left email"> -->
-                                      <!-- <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                      <a href="mailto:sanjanasm@iitdh.ac.in ">sanjanasm@iitdh.ac.in  </a> -->
-                                    <!-- </div> -->
-
-                                  </div>
-                                  <div class="col-lg-4"> </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </center>
-                <br>
-
-
-                <section class="section1">
-                  <div class="container">
-                    <div class="tab-content">
-                      <div class="clearfix"></div>
-                      <h4 class="pt-1"><strong><U>Public Relations Team</U></strong></h4>
-                      <div class="row">
-
-                        <div class="col-sm-4 col">
-                          <br/><h5><strong> Mandeep Bawa </strong></h5>
-                          <p>4rd year B.Tech. CSE</p><p>
-                          <!-- <p><div class="mr-auto text-left phone"> -->
-                            <i class="fa fa-phone" aria-hidden="true"></i>+91 8847674044 </p>
-                          <!-- </div> </p> -->
-                          <!-- <div class="mr-auto text-left email"> -->
-                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                            <a href="mailto:170030038@iitdh.ac.in ">170030038@iitdh.ac.in  </a></div>
-                        <!-- </div> -->
-                        <div class="col-sm-4 col">
-                          <br><h5><strong> Sonu Sourav</strong></h5>
-                          <p>4rd year B.Tech. Electrical</p>
-                          <p>
-                            <!-- <div class="mr-auto text-left phone"> -->
-                              <i class="fa fa-phone" aria-hidden="true"></i>+91 9916228725 </p>
-                          <!-- <div class="mr-auto text-left email"> -->
-                              <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                              <a href="mailto:170020021@iitdh.ac.in ">170020021@iitdh.ac.in  </a></div>
-                        <!-- </div> -->
-                        <div class="col-sm-4 col">
-                            <br><h5><strong> Amar Baronia</strong></h5>
-                            <p>4rd year B.Tech. Mechanical</p>
-                            <p>
-                            <!-- <div class="mr-auto text-left phone"> -->
-                            <i class="fa fa-phone" aria-hidden="true"></i>+91 9340129093  </p>
-                            <!-- <div class="mr-auto text-left email"> -->
-                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                            <a href="mailto:170030017@iitdh.ac.in ">170030017@iitdh.ac.in  </a></div>
-                            <!-- </div> -->
-                        <div class="col-sm-4 col">
-                          <br/><h5><strong> Janhavi Dadhania</strong></h5>
-                          <p>3rd year B.Tech. CSE</p><p>
-                          <!-- <p><div class="mr-auto text-left phone"> -->
-                            <i class="fa fa-phone" aria-hidden="true"></i>+91 7016441970 </p>
-                          <!-- </div> </p> -->
-                          <!-- <div class="mr-auto text-left email"> -->
-                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                            <a href="mailto:180010012@iitdh.ac.in ">180010012@iitdh.ac.in  </a></div>
-                        <!-- </div> -->
-                        <div class="col-sm-4 col">
-                          <br><h5><strong> S U Swakath</strong></h5>
-                          <p>3rd year B.Tech. Electrical</p>
-                          <p>
-                            <!-- <div class="mr-auto text-left phone"> -->
-                              <i class="fa fa-phone" aria-hidden="true"></i>+91 9629469172  </p>
-                          <!-- <div class="mr-auto text-left email"> -->
-                              <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                              <a href="mailto:180020036@iitdh.ac.in ">180020036@iitdh.ac.in  </a></div>
-                        <!-- </div> -->
-                        <div class="col-sm-4 col">
-                          <br><h5><strong>Gourav Kumbhojkar</strong></h5>
-                          <p>3rd year B.Tech. Mechanical</p>
-                          <p>
-                            <!-- <div class="mr-auto text-left phone"> -->
-                            <i class="fa fa-phone" aria-hidden="true"></i>+91 9130072278  </p>
-                          <!-- <div class="mr-auto text-left email"> -->
-                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                            <a href="mailto:180030018@iitdh.ac.in ">180030018@iitdh.ac.in  </a></div>
-                        <!-- </div> -->
-                      </div>
-                    </div>
-                  </div>
-                </section>
-                <span id="more" style="display: none;">
-                    <section class="section1">
-                      <div class="container">
-                        <div class="tab-content">
-                          <div class="clearfix"></div>
-                          <br/>
-                          <h4 class="pt-1"><strong><U>CDC Student Heads</U></strong> </h4>
-                          <div class="row">
-                            <div class="col-sm-4 col">
-                              <p> <h5><strong>Prateek Jain</strong></h5> </p>
-                              <p> 4th year </p><p>
-                                  <!-- <div class="mr-auto text-left phone"> -->
-                              <i class="fa fa-phone" aria-hidden="true"></i>+91 8279803383  </p>
-                              <!-- <div class="mr-auto text-left email"> -->
-                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                <a href="mailto:170010007@iitdh.ac.in ">170010007@iitdh.ac.in  </a><br>
-                              <!-- </div> -->
-                            </div>
-                            <div class="col-sm-4 col">
-                                  <p> <h5><strong>Abhishek Kalokhe</strong></h5> </p><p>4th Year</p>
-                                  <!-- <div class="mr-auto text-left email"> -->
-                                      <p>
-                                          <!-- <div class="mr-auto text-left phone"> -->
-                                          <i class="fa fa-phone" aria-hidden="true"></i>+91 9834646408  </p>
-                                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                    <a href="mailto:170030007@iitdh.ac.in  ">170030007@iitdh.ac.in  </a>
-                                  <!-- </div> -->
-                                    <div class="mr-auto text">
-                                    </div>
-                            </div>
-                            <div class="col-sm-4 col">
-                              <p> <h5><strong>Srishti Srivastava</strong></h5> </p><p>4th Year</p>
-                              <!-- <div class="mr-auto text-left email"> -->
-                                  <p>
-                                      <!-- <div class="mr-auto text-left phone"> -->
-                                      <i class="fa fa-phone" aria-hidden="true"></i>+91 7022658903  </p>
-                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                <a href="mailto:170020008@iitdh.ac.in ">170020008@iitdh.ac.in </a>
-                              <!-- </div> -->
-                              <div class="mr-auto text">
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </section>
-
-                    <section class="section1">
-                      <div class="container">
-                        <div class="tab-content">
-                          <div class="clearfix"></div>
-                          <br/>
-                          <h4 class="pt-1"><strong><U>Faculty Advisors</U></strong> </h4>
-                          <div class="row">
-                            <div class="col-sm-4 col">
-                              <br/> <h><u><strong>CAREER GUIDANCE</strong> </u></h>
-                              <p> <h5><strong>Dr. Bharat B. N</strong></h5> </p>
-                              <p> Assistant Professor <br/> Dept. of Electrical Engineering </p>
-                              <!-- <div class="mr-auto text-left email"> -->
-                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                <a href="mailto:bharathbn@iitdh.ac.in">bharathbn@iitdh.ac.in  </a><br>
-                              <!-- </div> -->
-                                <a href="https://bharathbettagerenagaraja.wordpress.com/" target="_blank">View profile </a>
-                            </div>
-                            <div class="col-sm-4 col">
-                                  <br/>
-                                  <h><u><strong>PLACEMENTS</strong> </u></h>
-                                  <p> <h5><strong>Dr. Dhiraj V. Patil </strong></h5> </p><p> Assistant Professor <br/> Dept. of Mechanical Engineering </p>
-                                  <!-- <div class="mr-auto text-left email"> -->
-                                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                    <a href="mailto:dhiraj@iitdh.ac.in">dhiraj@iitdh.ac.in  </a>
-                                  <!-- </div> -->
-                                    <div class="mr-auto text">
-                                      <a href="https://sites.google.com/site/dvpmultiplefluidsatiitmandi/" target="_blank">View profile </a></div>
-
-                            </div>
-                            <div class="col-sm-4 col">
-                              <br/>
-                              <h><u><strong>INTERNSHIPS</strong> </u></h>
-                              <p> <h5><strong>Dr. Rajshekar K </strong></h5> </p><p> Assistant Professor <br/>  Dept. of Computer Science and Engineering </p>
-                              <!-- <div class="mr-auto text-left email"> -->
-                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                <a href="mailto:rajshekar.k@iitdh.ac.in">rajshekar.k@iitdh.ac.in </a>
-                              <!-- </div> -->
-                              <div class="mr-auto text">
-                                  <a href="http://www.cse.iitd.ac.in/~rajshekar/" target="_blank">View profile </a>
-                              </div>
-                            </div>
-                            <div class="col-sm-4 col"> </div>
-                            <div class="col-sm-4 col">
-                              <br />
-                              <p> <h5><strong>Dr. Naveen M B</strong> </h5> </p><p> Assistant Professor <br/> Dept. of Electrical Engineering </p>
-                              <!-- <div class="mr-auto text-left email"> -->
-                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                <a href="mailto:naveenmb@iitdh.ac.in">naveenmb@iitdh.ac.in  </a>
-                              <!-- </div> -->
-                                <div class="mr-auto text">
-                                  <a href="naveenmb" target="_blank">View profile </a></div>
-                            </div>
-                            <div class="col-lg-4"> </div>
-                          </div>
-                        </div>
-                      </div>
-                    </section>
-                </span>
-                <br>
-                <br>
-                <button onclick="More_func('more', 'moreBtn', 'More Contacts', 'Less Contacts')" id="moreBtn" class="btn btn-info" style = "outline:none;border:none;cursor:pointer;overflow:hidden;color:#ffffff;">More Contacts</button>
+                <p>Indian Institute of Technology Dharwad<br> Karnataka, India - 580011.</p>
+              </div>
             </div>
+            <div class="col-lg-6 col-md-4 col-xs-12 col-sm-4">
+              <div class="tz-map-address">
+                <a href="#" class="tz-background-color-4">
+                  <i class="fa fa-envelope-o"></i>
+                </a>
+                <!--  <span><img src="images/check.png" alt="Images"></span> -->
+                <p>cdc@iitdh.ac.in</p>
+              </div>
+
+            </div>
+            <p></p>
+          </div>
         </div>
-        <br>
-        <br>
-        <!-- End class tzWrap -->
-    </section>
-    <!-- <div class="tz-map" id="googleMap"></div> -->
-    <!-- End class tz-wrapper-default -->
+      </div>
+    </div>
+    <br>
+    <br>
+    <!-- End class tzWrap -->
+  </section>
+  <!-- <div class="tz-map" id="googleMap"></div> -->
+  <!-- End class tz-wrapper-default -->
 
 
-        <!-- Begin Footer -->
-        <footer class="tz-footer">
-            <div class="tz-footer-content tz-footer-content-2 tz-background-color-4">
-                <div class="container">
-                    <div class = "row">
-                        <div class = "col-lg-3">
-                            <img src="images/home/logo.png" alt="Icon-footer" style = "padding-bottom:30px">
-                            <ul>
-                                <li><a href="#" style = "color:#fff">Indian Institute of Technology Dharwad,</a></li>
-                                <li><a href="#" style = "color:#fff">Karnataka, India - 580011</a></li>
-                                <li><a href="#" style = "color:#fff">cdc@iitdh.ac.in</a></li>
-                                <li><a href="#" style = "color:#fff">+91 836 2212 839</a></li>
-                            </ul>
-                        </div>
+  <!-- Begin Footer -->
+  <footer class="tz-footer">
+    <div class="tz-footer-content tz-footer-content-2 tz-background-color-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <img src="images/home/logo.png" alt="Icon-footer" style="padding-bottom:30px">
+            <ul>
+              <li><a href="#" style="color:#fff">Indian Institute of Technology Dharwad,</a></li>
+              <li><a href="#" style="color:#fff">Karnataka, India - 580011</a></li>
+              <li><a href="#" style="color:#fff">cdc@iitdh.ac.in</a></li>
+              <li><a href="#" style="color:#fff">+91 836 2212 839</a></li>
+            </ul>
+          </div>
 
-                        <div class = "col-lg-3">
-                            <ul class="">
-                                <li>
-                                    <div class="tz-footer-content-main">
-                                        <!--<img src="images/check-02-home2.png" alt="Images remove footer">-->
-                                        <h4>Quick Links</h4>
-                                        <ul>
-                                            <li><a href="#">Home</a></li>
-                                        </ul>
+          <div class="col-lg-3">
+            <ul class="">
+              <li>
+                <div class="tz-footer-content-main">
+                  <!--<img src="images/check-02-home2.png" alt="Images remove footer">-->
+                  <h4>Quick Links</h4>
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                  </ul>
 
-                                        <h4>Academic Information</h4>
-                                        <ul>
-                                            <li><a href="academics.html">Undergraduate</a></li>
-                                            <li><a href="faculty_page.html">Faculty</a></li>
-                                            <li><a href="academic_facility_page.html">Academic Facilities</a></li>
-                                            <!-- <li><a href="#">R&D</a></li> -->
-                                            <!-- <li><a href="#">Students Projects</a></li> -->
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+                  <h4>Academic Information</h4>
+                  <ul>
+                    <li><a href="academics.html">Undergraduate</a></li>
+                    <li><a href="faculty_page.html">Faculty</a></li>
+                    <li><a href="academic_facility_page.html">Academic Facilities</a></li>
+                    <!-- <li><a href="#">R&D</a></li> -->
+                    <!-- <li><a href="#">Students Projects</a></li> -->
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
 
-                        <div class = "col-lg-3">
-                            <ul class="">
-                                <li>
-                                    <div class="tz-footer-content-main">
-                                        <!--<img src="images/check-02-home2.png" alt="Images remove footer">-->
-                                        <h4>For Recruiters</h4>
-                                        <ul>
-                                            <li><a href="internship_procedure.html">Internship</a></li>
-                                            <li><a href="placementprocedure.html">Placement</a></li>
-                                            <!-- <li><a href="#">Internship</a></li> -->
-                                            <li><a href="https://drive.google.com/file/d/13_qduU5w51fdu7YfOtOjGNadX3qziDDV/view" target="_blank">Brochure</a></li>
-                                            <li><a href="companies_faqs.html">FAQs</a></li>
-                                        </ul>
+          <div class="col-lg-3">
+            <ul class="">
+              <li>
+                <div class="tz-footer-content-main">
+                  <!--<img src="images/check-02-home2.png" alt="Images remove footer">-->
+                  <h4>For Recruiters</h4>
+                  <ul>
+                    <li><a href="internship_procedure.html">Internship</a></li>
+                    <li><a href="placementprocedure.html">Placement</a></li>
+                    <!-- <li><a href="#">Internship</a></li> -->
+                    <li><a href="https://drive.google.com/file/d/13_qduU5w51fdu7YfOtOjGNadX3qziDDV/view" target="_blank">Brochure</a></li>
+                    <li><a href="companies_faqs.html">FAQs</a></li>
+                  </ul>
 
-                                        <h4>For Students</h4>
-                                        <ul>
-                                            <!-- <li><a href="placement.html">For Placements</a></li> -->
-                                            <!-- <li><a href="#">For Internships</a></li> -->
-                                            <li><a href="https://drive.google.com/file/d/1-v1KiMw0-hlvEnmUEQJc2rAQJTgH3xPg/view?usp=sharing" target="_blank">Placements - Rules & Regulations</a></li>
-                                            <li><a href="https://drive.google.com/file/d/1W04IZ5sx6Qmp89EpyKA0YCI9TPlf2P7Q/view?usp=sharing" target="_blank">Internships - Rules & Regulations</a></li>
-                                            <li><a href="https://drive.google.com/file/d/1-jV15-Aj-f45oC0Qp50m-SRxOAzz8W25/view" target="_blank">Internship Information</a></li>
-                                        </ul>
+                  <h4>For Students</h4>
+                  <ul>
+                    <!-- <li><a href="placement.html">For Placements</a></li> -->
+                    <!-- <li><a href="#">For Internships</a></li> -->
+                    <li><a href="https://drive.google.com/file/d/1-v1KiMw0-hlvEnmUEQJc2rAQJTgH3xPg/view?usp=sharing" target="_blank">Placements - Rules & Regulations</a></li>
+                    <li><a href="https://drive.google.com/file/d/1W04IZ5sx6Qmp89EpyKA0YCI9TPlf2P7Q/view?usp=sharing" target="_blank">Internships - Rules & Regulations</a></li>
+                    <li><a href="https://drive.google.com/file/d/1-jV15-Aj-f45oC0Qp50m-SRxOAzz8W25/view" target="_blank">Internship Information</a></li>
+                  </ul>
 
 
 
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+                </div>
+              </li>
+            </ul>
+          </div>
 
-                        <div class = "col-lg-3">
-                            <ul class="">
-                                <li>
-                                    <div class="tz-footer-content-main">
-                                        <!--<img src="images/check-02-home2.png" alt="Images remove footer">-->
-                                        <h4>Beyond Academics</h4>
-                                        <ul>
-                                            <li><a href="https://www.iitdh.ac.in/iic/" target="_blank">IIC</a></li>
-                                            <li><a href="https://smp.iitdh.ac.in/" target="_blank">SMP</a></li>
-                                            <!-- <li><a href="#">Cultural Events</a></li> -->
-                                            <li><a href="https://oss2019.github.io/" target="_blank">OSS</a></li>
-                                            <!-- <li><a href="#">CSR</a></li> -->
-                                        </ul>
-                                        <ul>
-                                            <li><a href="contact_cdc.html"><h4>Contact Us</h4></a></li>
-                                        </ul>
+          <div class="col-lg-3">
+            <ul class="">
+              <li>
+                <div class="tz-footer-content-main">
+                  <!--<img src="images/check-02-home2.png" alt="Images remove footer">-->
+                  <h4>Beyond Academics</h4>
+                  <ul>
+                    <li><a href="https://www.iitdh.ac.in/iic/" target="_blank">IIC</a></li>
+                    <li><a href="https://smp.iitdh.ac.in/" target="_blank">SMP</a></li>
+                    <!-- <li><a href="#">Cultural Events</a></li> -->
+                    <li><a href="https://oss2019.github.io/" target="_blank">OSS</a></li>
+                    <!-- <li><a href="#">CSR</a></li> -->
+                  </ul>
+                  <ul>
+                    <li><a href="contact_cdc.html">
+                        <h4>Contact Us</h4>
+                      </a></li>
+                  </ul>
 
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!--<img src="images/home/logo.png" alt="Icon-footer">
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--<img src="images/home/logo.png" alt="Icon-footer">
                     <ul class="tz-footer-part">
                         <li>
                             <div class="tz-footer-content-main">
@@ -842,25 +880,26 @@
                             </div>
                         </li>
                     </ul>-->
-                </div>
-            </div>
-        </footer>
-        <!-- End Footer -->
-    <script>
-        var Desktop       =   5,
-            tabletportrait    =   2,
-            mobilelandscape   =   1,
-            mobileportrait    =   1,
-            resizeTimer       =   null;
-    </script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/off-canvas.js"></script>
-    <script src="js/jquery.isotope.min.js"></script>
-    <script src="js/resize.js"></script>
-    <script src="js/custom-portfolio.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.parallax-1.1.3.js"></script>
-    <script src="js/custom.js"></script>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+  <script>
+    var Desktop = 5,
+      tabletportrait = 2,
+      mobilelandscape = 1,
+      mobileportrait = 1,
+      resizeTimer = null;
+  </script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/off-canvas.js"></script>
+  <script src="js/jquery.isotope.min.js"></script>
+  <script src="js/resize.js"></script>
+  <script src="js/custom-portfolio.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.parallax-1.1.3.js"></script>
+  <script src="js/custom.js"></script>
 </body>
+
 </html>
