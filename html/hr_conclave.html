@@ -69,36 +69,40 @@
     var elm2 = document.querySelectorAll("#sub2")[1];
     var elm3 = document.querySelectorAll("#sub3")[1];
     var elm4 = document.querySelectorAll("#sub4")[1];
+    var elm14 = document.querySelectorAll("#sub5")[1];
     elm1.style.display = "none";
     elm2.style.display = "none";
     elm3.style.display = "none";
     elm4.style.display = "none";
+    elm14.style.display = "none";
     var elm5 = document.querySelectorAll("#a1")[0];
     var elm6 = document.querySelectorAll("#a2")[0];
     var elm7 = document.querySelectorAll("#a3")[0];
     var elm8 = document.querySelectorAll("#a4")[0];
     var elm9 = document.querySelectorAll("#a5")[0];
     var elm10 = document.querySelectorAll("#a6")[0];
+    var elm11 = document.querySelectorAll("#a7")[0];
     elm5.style.display = "inline";
     elm6.style.display = "inline";
     elm7.style.display = "inline";
     elm8.style.display = "inline";
     elm9.style.display = "inline";
     elm10.style.display = "inline";
-    var elm11 = document.querySelectorAll(".nav-collapse")[0];
-    elm11.style.padding = "15px 0px 0px 300px";
-    var elm12 = document.querySelectorAll("#header_logo")[0];
+    elm11.style.display = "inline";
+    var elm12 = document.querySelectorAll(".nav-collapse")[0];
+    elm12.style.padding = "15px 0px 0px 300px";
+    var elm13 = document.querySelectorAll("#header_logo")[0];
     if ($(window).width() < 800) {
-      elm12.style.float = "right";
+      elm13.style.float = "right";
     } else {
-      elm12.style.float = "left";
+      elm13.style.float = "left";
     }
   }
 </script>
 
 <script>
   function dropdown_func(id) {
-    var all_subs = ['sub1', 'sub2', 'sub3', 'sub4']
+    var all_subs = ['sub1', 'sub2', 'sub3', 'sub4', 'sub5']
     for (sub in all_subs) {
       if (all_subs[sub] != id) {
         var elms = document.querySelectorAll("#" + all_subs[sub])[1];
@@ -363,7 +367,24 @@
                 </ul>
               </li>
               <li>
-                <a href="contact_cdc.html" id="a6">Contact Us</a>
+                <a href="#" id="a6" style="width: 80%">Events</a>
+                <button type="button" class="tz-button-toggle pull-right" onclick="dropdown_func('sub5')" style="border: none; font-size: 16px; cursor: pointer; background: #333333; color: #ffffff; margin: 5px 10px 0px 0px;">
+                  <i class="fa fa-chevron-down"></i>
+                </button>
+                <ul id="sub5" class="sub-menu sub-menu-style-1">
+                  <li>
+                    <a href="hr_conclave.html">HR Conclave</a>
+                  </li>
+                  <!-- <li>
+                                    <a href="r&d_page.html">R&D</a>
+                                </li>
+                                <li>
+                                    <a href="acad_studentProject.html">Students Projects</a>
+                                </li> -->
+                </ul>
+              </li>
+              <li>
+                <a href="contact_cdc.html" id="a7">Contact Us</a>
                 <ul class="sub-menu sub-menu-style-1">
                   <!--<li>
                                     <a href="JoomlaBase-404Page.html">CDC Head</a>
@@ -580,12 +601,15 @@
                     <li><a href="https://oss2019.github.io/" target="_blank">OSS</a></li>
                     <!-- <li><a href="#">CSR</a></li> -->
                   </ul>
+                  <h4>Events</h4>
+                  <ul>
+                    <li><a href="hr_conclave.html">HR Conclave</a></li>
+                  </ul>
                   <ul>
                     <li><a href="contact_cdc.html">
                         <h4>Contact Us</h4>
                       </a></li>
                   </ul>
-
                 </div>
               </li>
             </ul>
