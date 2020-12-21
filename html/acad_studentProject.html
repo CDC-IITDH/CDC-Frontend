@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ethic - Blog- Single Post Page</title>
-    <!--[if IE 8]>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ethic - Blog- Single Post Page</title>
+  <!--[if IE 8]>
     <link href="style_ie8.css" rel="stylesheet" type="text/css" />
     <![endif]-->
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
     <![endif]-->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="fonts/awesome/css/font-awesome.min.css" rel="stylesheet" />
-    <link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
-    <link href="style.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
-    <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
-    <link rel="icon" href="images/CDC_Logos/favicon.ico" type="image/x-icon" />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="fonts/awesome/css/font-awesome.min.css" rel="stylesheet" />
+  <link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
+  <link href="style.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+  <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
+  <link rel="icon" href="images/CDC_Logos/favicon.ico" type="image/x-icon" />
 </head>
 
 <script>
@@ -28,69 +29,70 @@
     var elm2 = document.querySelectorAll("#sub2")[1];
     var elm3 = document.querySelectorAll("#sub3")[1];
     var elm4 = document.querySelectorAll("#sub4")[1];
+    var elm14 = document.querySelectorAll("#sub5")[1];
     elm1.style.display = "none";
     elm2.style.display = "none";
     elm3.style.display = "none";
     elm4.style.display = "none";
+    elm14.style.display = "none";
     var elm5 = document.querySelectorAll("#a1")[0];
     var elm6 = document.querySelectorAll("#a2")[0];
     var elm7 = document.querySelectorAll("#a3")[0];
     var elm8 = document.querySelectorAll("#a4")[0];
     var elm9 = document.querySelectorAll("#a5")[0];
     var elm10 = document.querySelectorAll("#a6")[0];
+    var elm11 = document.querySelectorAll("#a7")[0];
     elm5.style.display = "inline";
     elm6.style.display = "inline";
     elm7.style.display = "inline";
     elm8.style.display = "inline";
     elm9.style.display = "inline";
     elm10.style.display = "inline";
-    var elm11 = document.querySelectorAll(".nav-collapse")[0];
-    elm11.style.padding = "15px 0px 0px 300px";
-    var elm12 = document.querySelectorAll("#header_logo")[0];
+    elm11.style.display = "inline";
+    var elm12 = document.querySelectorAll(".nav-collapse")[0];
+    elm12.style.padding = "15px 0px 0px 300px";
+    var elm13 = document.querySelectorAll("#header_logo")[0];
     if ($(window).width() < 800) {
-        elm12.style.float = "right"; 
-    }
-    else {
-        elm12.style.float = "left"; 
+      elm13.style.float = "right";
+    } else {
+      elm13.style.float = "left";
     }
   }
 </script>
 
 <script>
   function dropdown_func(id) {
-    var all_subs = ['sub1', 'sub2', 'sub3', 'sub4']
+    var all_subs = ['sub1', 'sub2', 'sub3', 'sub4', 'sub5']
     for (sub in all_subs) {
-        if (all_subs[sub] != id) {
-            var elms = document.querySelectorAll("#"+all_subs[sub])[1];
-            elms.style.display = "none";
+      if (all_subs[sub] != id) {
+        var elms = document.querySelectorAll("#" + all_subs[sub])[1];
+        elms.style.display = "none";
+      } else {
+        var elms = document.querySelectorAll("#" + all_subs[sub])[1];
+        if (elms.style.display === "none") {
+          elms.style.display = "block";
+        } else {
+          elms.style.display = "none";
         }
-        else {
-            var elms = document.querySelectorAll("#"+all_subs[sub])[1];
-            if (elms.style.display === "none") {
-              elms.style.display = "block";
-            } else {
-              elms.style.display = "none";
-            }
-        }
+      }
     }
   }
 </script>
 
 <body onload="initial_func()">
-<div class="loading-page">
+  <div class="loading-page">
     <img src="images/image-preload.gif" alt="Images-loading">
-</div>
-<!-- Begin section search form -->
-<div class="tz-content-search">
+  </div>
+  <!-- Begin section search form -->
+  <div class="tz-content-search">
     <form action="#" method="get">
-        <i class="fa fa-times tz-form-close"></i>
-        <input type="text" class="tz-search-input" id="tz-search-input" name="search" placeholder="Search...">
+      <i class="fa fa-times tz-form-close"></i>
+      <input type="text" class="tz-search-input" id="tz-search-input" name="search" placeholder="Search...">
     </form><!-- End form search -->
-</div>
-<!-- End section search form -->
-
-<!-- Begin class tz-header-2 -->
-<header class="tz-header tz-header-2">
+  </div>
+  <!-- End section search form -->
+  <!-- Begin class tz-header-2 -->
+  <header class="tz-header tz-header-2">
     <!--<div class="tz-sign-in">
     <div class="container">
         <p><i class="fa fa-times"></i>Welcome to Ethic University. Sign in to enjoy our best online lessions!</p>
@@ -98,19 +100,19 @@
     </div>
 </div>-->
     <div class="tz-customer-container">
-        <div class="container">
-            <div class="tz-header-content">
-                <button type="button" class="tz-button-toggle btn-navbar pull-left" data-target=".nav-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <h3 class="tz-logo" id="header_logo">
-                    <a href="index.html"><img alt="Images Logo" src="images/home/CDC_Logo/website_header@2x.png" style = "height:80px;width:200px"></a>
-                </h3>
-                <nav class="nav-collapse">
-                    <ul class="tz-menu">
-                        <li>
-                            <a href="index.html" id="a1">HOME</a>
-                            <!--<ul class="sub-menu sub-menu-style-1">
+      <div class="container">
+        <div class="tz-header-content">
+          <button type="button" class="tz-button-toggle btn-navbar pull-left" data-target=".nav-collapse">
+            <i class="fa fa-bars"></i>
+          </button>
+          <h3 class="tz-logo" id="header_logo">
+            <a href="index.html"><img alt="Images Logo" src="images/home/CDC_Logo/website_header@2x.png" style="height:80px;width:200px"></a>
+          </h3>
+          <nav class="nav-collapse">
+            <ul class="tz-menu">
+              <li>
+                <a href="index.html" id="a1">Home</a>
+                <!--<ul class="sub-menu sub-menu-style-1">
                                 <li>
                                     <a href="Home-01.html">Home Version 01</a>
                                 </li>
@@ -133,51 +135,54 @@
                                     <a href="Home-07.html">Home Version 07</a>
                                 </li>
                             </ul>-->
-                        </li>
-                        <li>
-                            <a href="#" id="a2" style="width: 80%">Academic Info</a>
-                            <button type="button" class="tz-button-toggle pull-right" onclick="dropdown_func('sub1')" style="border: none; font-size: 16px; cursor: pointer; background: #333333; color: #ffffff; margin: 5px 10px 0px 0px;">
-                                <i class="fa fa-chevron-down"></i>
-                            </button>
-                            <ul id="sub1" class="sub-menu sub-menu-style-1">
-                                <li>
-                                    <a href="academic_facility_page.html">Academic Facilities</a>
-                                </li>
-                                <li>
-                                    <a href="faculty_page.html">Faculty</a>
-                                </li>
-                                <li>
+              </li>
+              <li>
+                <a href="#" id="a2" style="width: 80%">Academic Info</a>
+                <button type="button" class="tz-button-toggle pull-right" onclick="dropdown_func('sub1')" style="border: none; font-size: 16px; cursor: pointer; background: #333333; color: #ffffff; margin: 5px 10px 0px 0px;">
+                  <i class="fa fa-chevron-down"></i>
+                </button>
+                <ul id="sub1" class="sub-menu sub-menu-style-1">
+                  <li>
+                    <a href="academics.html">Undergraduate</a>
+                  </li>
+                  <li>
+                    <a href="academic_facility_page.html">Academic Facilities</a>
+                  </li>
+                  <li>
+                    <a href="faculty_page.html">Faculty</a>
+                  </li>
+                  <!-- <li>
                                     <a href="r&d_page.html">R&D</a>
                                 </li>
                                 <li>
                                     <a href="acad_studentProject.html">Students Projects</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#" id="a3" style="width: 80%">For Recruiters</a>
-                            <button type="button" class="tz-button-toggle  pull-right" onclick="dropdown_func('sub2')" style="border: none; font-size: 16px; cursor: pointer; background: #333333; color: #ffffff; margin: 5px 10px 0px 0px;">
-                                <i class="fa fa-chevron-down"></i>
-                            </button>
-                            <ul id="sub2" class="sub-menu sub-menu-style-1"  >
-                                <li>
-                                    <a href="Courses-Grid.html">Why recruit?</a>
-                                </li>
-                                <li>
-                                    <a href="Courses-ListClass.html">Placement</a>
-                                </li>
-                                <li>
-                                    <a href="Courses-ListInTable.html">Internship</a>
-                                </li>
-                                <li>
-                                    <a href="Courses-Register.html">Brochure</a>
-                                </li>
-                                <li>
-                                    <a href="Courses-Single.html">FAQs</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <!--<li class="tz-point-static">
+                                </li> -->
+                </ul>
+              </li>
+              <li>
+                <a href="#" id="a3" style="width: 80%">For Recruiters</a>
+                <button type="button" class="tz-button-toggle  pull-right" onclick="dropdown_func('sub2')" style="border: none; font-size: 16px; cursor: pointer; background: #333333; color: #ffffff; margin: 5px 10px 0px 0px;">
+                  <i class="fa fa-chevron-down"></i>
+                </button>
+                <ul id="sub2" class="sub-menu sub-menu-style-1">
+                  <li>
+                    <a href="internship_procedure.html">Internship</a>
+                  </li>
+                  <li>
+                    <a href="placementprocedure.html">Placement</a>
+                  </li>
+                  <!-- <li>
+                                    <a href="#">Internship</a>
+                                </li> -->
+                  <li>
+                    <a href="https://drive.google.com/file/d/13_qduU5w51fdu7YfOtOjGNadX3qziDDV/view" target="_blank">Brochure</a>
+                  </li>
+                  <li>
+                    <a href="companies_faqs.html">FAQs</a>
+                  </li>
+                </ul>
+              </li>
+              <!--<li class="tz-point-static">
                             <a href="#">For Students</a>
                             <div class="sub-menu sub-menu-style-2">
                                 <div class="tz-submenu-2-wrapper">
@@ -272,50 +277,76 @@
                                 </div>
                             </div>
                         </li>-->
-                        <li>
-                            <a href="#" id="a4" style="width: 80%">For Students</a>
-                            <button type="button" class="tz-button-toggle  pull-right" onclick="dropdown_func('sub3')" style="border: none; font-size: 16px; cursor: pointer; background: #333333; color: #ffffff; margin: 5px 10px 0px 0px;">
-                                <i class="fa fa-chevron-down"></i>
-                            </button>
-                            <ul id="sub3" class="sub-menu sub-menu-style-1">
-                                <li>
-                                    <a href="https://drive.google.com/file/d/1-v1KiMw0-hlvEnmUEQJc2rAQJTgH3xPg/view?usp=sharing" target="_blank">Placements - Rules & Regulations</a>
+              <li>
+                <a href="#" id="a4" style="width: 80%">For Students</a>
+                <button type="button" class="tz-button-toggle  pull-right" onclick="dropdown_func('sub3')" style="border: none; font-size: 16px; cursor: pointer; background: #333333; color: #ffffff; margin: 5px 10px 0px 0px;">
+                  <i class="fa fa-chevron-down"></i>
+                </button>
+                <ul id="sub3" class="sub-menu sub-menu-style-1">
+                  <!-- <li>
+                                    <a href="placement.html">For placements</a>
                                 </li>
                                 <li>
-                                    <a href="https://drive.google.com/file/d/1W04IZ5sx6Qmp89EpyKA0YCI9TPlf2P7Q/view?usp=sharing" target="_blank">Internships - Rules & Regulations</a>
+                                    <a href="intern.html">For internships</a>
                                 </li>
                                 <li>
-                                    <a href="https://drive.google.com/file/d/1-jV15-Aj-f45oC0Qp50m-SRxOAzz8W25/view" target="_blank">Internship Information</a>
+                                    <a href="intern.html">For Internships</a>
+                                </li> -->
+                  <li>
+                    <a href="https://drive.google.com/file/d/1-v1KiMw0-hlvEnmUEQJc2rAQJTgH3xPg/view?usp=sharing" target="_blank">Placements - Rules & Regulations</a>
+                  </li>
+                  <li>
+                    <a href="https://drive.google.com/file/d/1W04IZ5sx6Qmp89EpyKA0YCI9TPlf2P7Q/view?usp=sharing" target="_blank">Internships - Rules & Regulations</a>
+                  </li>
+                  <li>
+                    <a href="https://drive.google.com/file/d/1-jV15-Aj-f45oC0Qp50m-SRxOAzz8W25/view" target="_blank">Internship Information</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" id="a5" style="width: 80%">Beyond Academics</a>
+                <button type="button" class="tz-button-toggle pull-right" onclick="dropdown_func('sub4')" style="border: none; cursor: pointer; background: #333333; color: #ffffff; padding: 5px 10px 0px 0px;">
+                  <i class="fa fa-chevron-down"></i>
+                </button>
+                <ul id="sub4" class="sub-menu sub-menu-style-1">
+                  <li>
+                    <a href="https://www.iitdh.ac.in/iic/" target="_blank">IIC</a>
+                  </li>
+                  <li>
+                    <a href="https://smp.iitdh.ac.in/" target="_blank">SMP</a>
+                  </li>
+                  <!-- <li>
+                                    <a href="#">Cultural Events</a>
+                                </li> -->
+                  <li>
+                    <a href="https://oss2019.github.io/" target="_blank">OSS</a>
+                  </li>
+                  <!-- <li>
+                                    <a href="#">CSR</a>
+                                </li> -->
+                </ul>
+              </li>
+              <li>
+                <a href="#" id="a6" style="width: 80%">Events</a>
+                <button type="button" class="tz-button-toggle pull-right" onclick="dropdown_func('sub5')" style="border: none; font-size: 16px; cursor: pointer; background: #333333; color: #ffffff; margin: 5px 10px 0px 0px;">
+                  <i class="fa fa-chevron-down"></i>
+                </button>
+                <ul id="sub5" class="sub-menu sub-menu-style-1">
+                  <li>
+                    <a href="hr_conclave.html">HR Conclave</a>
+                  </li>
+                  <!-- <li>
+                                    <a href="r&d_page.html">R&D</a>
                                 </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#" id="a5" style="width: 80%">Beyond Academics</a>
-                            <button type="button" class="tz-button-toggle pull-right" onclick="dropdown_func('sub4')" style="border: none; cursor: pointer; background: #333333; color: #ffffff; padding: 5px 10px 0px 0px;">
-                                <i class="fa fa-chevron-down"></i>
-                            </button>
-                            <ul id="sub4" class="sub-menu sub-menu-style-1">
                                 <li>
-                                    <a href="Social-Activity.html">IIC</a>
-                                </li>
-                                <li>
-                                    <a href="Social-Groups.html">SMP</a>
-                                </li>
-                                <li>
-                                    <a href="Social-Login.html">Cultural Events</a>
-                                </li>
-                                <li>
-                                    <a href="Social-Members.html">OSS</a>
-                                </li>
-                                <li>
-                                    <a href="Social-SingleGroup.html">CSR</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="contact_cdc.html" id="a6">Contact Us</a>
-                            <ul class="sub-menu sub-menu-style-1">
-                                <!--<li>
+                                    <a href="acad_studentProject.html">Students Projects</a>
+                                </li> -->
+                </ul>
+              </li>
+              <li>
+                <a href="contact_cdc.html" id="a7">Contact Us</a>
+                <ul class="sub-menu sub-menu-style-1">
+                  <!--<li>
                                     <a href="JoomlaBase-404Page.html">CDC Head</a>
                                 </li>
                                 <li>
@@ -339,475 +370,480 @@
                                 <li>
                                     <a href="JoomlaBase-Page-Resgister.html">JoomlaBase Resgister</a>
                                 </li>-->
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div><!-- End Content Main Header -->
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div><!-- End Content Main Header -->
     </div>
-</header>
-<!-- End class tz-header-2 -->
+  </header>
+  <!-- End class tz-header-2 -->
 
-<section class="tz-banner">
+
+  <section class="tz-banner">
     <!-- Begin class banner style-3 -->
     <div class="tz-banner-style4">
-        <div class="tz-slider-banner">
-            <div class="tz-items">
-                <div class="tr-fp-image">
-                    <img src="images/sp2.jfif" alt="Images" style="height: 400px;">
-                </div>
-                <div class="tz-banner-content">
-                    <div class="container">
-                        <h4 style="color:white;font-family: Verdana, Geneva, Tahoma, sans-serif;">Student Projects</h4>
-                        <span class="tz-under-line"></span>
-                    </div>
-                </div>
+      <div class="tz-slider-banner">
+        <div class="tz-items">
+          <div class="tr-fp-image">
+            <img src="images/sp2.jfif" alt="Images" style="height: 400px;">
+          </div>
+          <div class="tz-banner-content">
+            <div class="container">
+              <h4 style="color:white;font-family: Verdana, Geneva, Tahoma, sans-serif;">Student Projects</h4>
+              <span class="tz-under-line"></span>
             </div>
+          </div>
         </div>
+      </div>
     </div>
     <!-- End  class banner style-3 -->
-</section>
+  </section>
 
-<section class="tz-wrapper-default">
+  <section class="tz-wrapper-default">
     <div class="container">
-        <div class="tz-blog-wrapper-style-4">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
-                    <!-- Start class tz-blog-item -->
+      <div class="tz-blog-wrapper-style-4">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
+            <!-- Start class tz-blog-item -->
 
-                        <div class="tz-events-item">
-                            <div class="tz-image">
-                                <img alt="Image" src="images/sp3.jfif" alt="Images">
-                                <a href="images/sp3.jfif" data-lightbox="mygallary" data-title="project title comes here."><i class="fa fa-arrows-alt"></i></a>
-                            </div>
-                            <div class="tz-description">
-                                <h3><a href="#">Student BTP project</a></h3>
-                                <p>This is my project during last years of my engineering.</p>
-                            </div>
-                        </div>
-
-                    <!-- End class tz-blog-item -->
-                </div>
-                <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
-                    <!-- Start class tz-blog-item -->
-                    <div class="tz-events-item">
-                        <div class="tz-image">
-                            <img alt="Image" src="images/sp3.jfif" alt="Images">
-                            <a href="images/sp3.jfif" data-lightbox="mygallary" data-title="project title comes here."><i class="fa fa-arrows-alt"></i></a>
-                        </div>
-                        <div class="tz-description">
-                            <h3><a href="#">Student BTP project</a></h3>
-                            <p>This is my project during last years of my engineering.</p>
-                        </div>
-                    </div>
-                    <!-- End class tz-blog-item -->
-                </div>
-                <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
-                    <!-- Start class tz-blog-item -->
-                    <div class="tz-events-item">
-                        <div class="tz-image">
-                            <img alt="Image" src="images/sp3.jfif" alt="Images">
-                            <a href="images/sp3.jfif" data-lightbox="mygallary" data-title="project title comes here."><i class="fa fa-arrows-alt"></i></a>
-                        </div>
-                        <div class="tz-description">
-                            <h3><a href="#">Student BTP project</a></h3>
-                            <p>This is my project during last years of my engineering.</p>
-                        </div>
-                    </div>
-                    <!-- End class tz-blog-item -->
-                </div>
-                <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
-                    <!-- Start class tz-blog-item -->
-                    <div class="tz-events-item">
-                        <div class="tz-image">
-                            <img alt="Image" src="images/sp3.jfif" alt="Images">
-                            <a href="images/sp3.jfif" data-lightbox="mygallary" data-title="project title comes here."><i class="fa fa-arrows-alt"></i></a>
-                        </div>
-                        <div class="tz-description">
-                            <h3><a href="#">Student BTP project</a></h3>
-                            <p>This is my project during last years of my engineering.</p>
-                        </div>
-                    </div>
-                    <!-- End class tz-blog-item -->
-                </div>
-                <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
-                    <!-- Start class tz-blog-item -->
-                    <div class="tz-events-item">
-                        <div class="tz-image">
-                            <img alt="Image" src="images/sp3.jfif" alt="Images">
-                            <a href="images/sp3.jfif" data-lightbox="mygallary" data-title="project title comes here."><i class="fa fa-arrows-alt"></i></a>
-                        </div>
-                        <div class="tz-description">
-                            <h3><a href="#">Student BTP project</a></h3>
-                            <p>This is my project during last years of my engineering.</p>
-                        </div>
-                    </div>
-                    <!-- End class tz-blog-item -->
-                </div>
-                <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
-                    <!-- Start class tz-blog-item -->
-                    <div class="tz-events-item">
-                        <div class="tz-image">
-                            <img alt="Image" src="images/sp3.jfif" alt="Images">
-                            <a href="images/sp3.jfif" data-lightbox="mygallary" data-title="project title comes here."><i class="fa fa-arrows-alt"></i></a>
-                        </div>
-                        <div class="tz-description">
-                            <h3><a href="#">Student BTP project</a></h3>
-                            <p>This is my project during last years of my engineering.</p>
-                        </div>
-                    </div>
-                    <!-- End class tz-blog-item -->
-                </div>
-                <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
-                    <!-- Start class tz-blog-item -->
-                    <div class="tz-events-item">
-                        <div class="tz-image">
-                            <img alt="Image" src="images/sp3.jfif" alt="Images">
-                            <a href="images/sp3.jfif" data-lightbox="mygallary" data-title="project title comes here."><i class="fa fa-arrows-alt"></i></a>
-                        </div>
-                        <div class="tz-description">
-                            <h3><a href="#">Student BTP project</a></h3>
-                            <p>This is my project during last years of my engineering.</p>
-                        </div>
-                    </div>
-                    <!-- End class tz-blog-item -->
-                </div>
-                <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
-                    <!-- Start class tz-blog-item -->
-                    <div class="tz-events-item">
-                        <div class="tz-image">
-                            <img alt="Image" src="images/sp3.jfif" alt="Images">
-                            <a href="images/sp3.jfif" data-lightbox="mygallary" data-title="project title comes here."><i class="fa fa-arrows-alt"></i></a>
-                        </div>
-                        <div class="tz-description">
-                            <h3><a href="#">Student BTP project</a></h3>
-                            <p>This is my project during last years of my engineering.</p>
-                        </div>
-                    </div>
-                    <!-- End class tz-blog-item -->
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
-                    <!-- Start class tz-blog-item -->
-                    <div class="tz-events-item">
-                        <div class="tz-image">
-                            <img alt="Image" src="images/sp3.jfif" alt="Images">
-                            <a href="images/sp3.jfif" data-lightbox="mygallary" data-title="project title comes here."><i class="fa fa-arrows-alt"></i></a>
-                        </div>
-                        <div class="tz-description">
-                            <h3><a href="#">Student BTP project</a></h3>
-                            <p>This is my project during last years of my engineering.</p>
-                        </div>
-                    </div>
-                    <!-- End class tz-blog-item -->
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
-                    <!-- Start class tz-blog-item -->
-                    <div class="tz-events-item">
-                        <div class="tz-image">
-                            <img alt="Image" src="images/sp3.jfif" alt="Images">
-                            <a href="images/sp3.jfif" data-lightbox="mygallary" data-title="project title comes here."><i class="fa fa-arrows-alt"></i></a>
-                        </div>
-                        <div class="tz-description">
-                            <h3><a href="#">Student BTP project</a></h3>
-                            <p>This is my project during last years of my engineering.</p>
-                        </div>
-                    </div>
-                    <!-- End class tz-blog-item -->
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
-                    <!-- Start class tz-blog-item -->
-                    <div class="tz-events-item">
-                        <div class="tz-image">
-                            <img alt="Image" src="images/sp3.jfif" alt="Images">
-                            <a href="images/sp3.jfif" data-lightbox="mygallary" data-title="project title comes here."><i class="fa fa-arrows-alt"></i></a>
-                        </div>
-                        <div class="tz-description">
-                            <h3><a href="#">Student BTP project</a></h3>
-                            <p>This is my project during last years of my engineering.</p>
-                        </div>
-                    </div>
-                    <!-- End class tz-blog-item -->
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
-                    <!-- Start class tz-blog-item -->
-                    <div class="tz-events-item">
-                        <div class="tz-image">
-                            <img alt="Image" src="images/sp3.jfif" alt="Images">
-                            <a href="images/sp3.jfif" data-lightbox="mygallary" data-title="project title comes here."><i class="fa fa-arrows-alt"></i></a>
-                        </div>
-                        <div class="tz-description">
-                            <h3><a href="#">Student BTP project</a></h3>
-                            <p>This is my project during last years of my engineering.</p>
-                        </div>
-                    </div>
-                    <!-- End class tz-blog-item -->
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
-                    <!-- Start class tz-blog-item -->
-                    <div class="tz-events-item">
-                        <div class="tz-image">
-                            <img alt="Image" src="images/sp3.jfif" alt="Images">
-                            <a href="images/sp3.jfif" data-lightbox="mygallary" data-title="project title comes here."><i class="fa fa-arrows-alt"></i></a>
-                        </div>
-                        <div class="tz-description">
-                            <h3><a href="#">Student BTP project</a></h3>
-                            <p>This is my project during last years of my engineering.</p>
-                        </div>
-                    </div>
-                    <!-- End class tz-blog-item -->
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
-                    <!-- Start class tz-blog-item -->
-                    <div class="tz-events-item">
-                        <div class="tz-image">
-                            <img alt="Image" src="images/sp3.jfif" alt="Images">
-                            <a href="images/sp3.jfif" data-lightbox="mygallary" data-title="project title comes here."><i class="fa fa-arrows-alt"></i></a>
-                        </div>
-                        <div class="tz-description">
-                            <h3><a href="#">Student BTP project</a></h3>
-                            <p>This is my project during last years of my engineering.</p>
-                        </div>
-                    </div>
-                    <!-- End class tz-blog-item -->
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
-                    <!-- Start class tz-blog-item -->
-                    <div class="tz-events-item">
-                        <div class="tz-image">
-                            <img alt="Image" src="images/facultyimage1.jfif" alt="Images">
-                            <a href="images/facultyimage1.jfif" data-lightbox="mygallary" data-title="project title comes here."><i class="fa fa-arrows-alt"></i></a>
-                        </div>
-                        <div class="tz-description">
-                            <h3><a href="#">Student BTP project</a></h3>
-                            <p>This is my project during last years of my engineering.</p>
-                        </div>
-                    </div>
-                    <!-- End class tz-blog-item -->
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
-                    <!-- Start class tz-blog-item -->
-                    <div class="tz-events-item">
-                        <div class="tz-image">
-                            <img alt="Image" src="images/sp3.jfif" alt="Images">
-                            <a href="images/sp3.jfif" data-lightbox="mygallary" data-title="project title comes here."><i class="fa fa-arrows-alt"></i></a>
-                        </div>
-                        <div class="tz-description">
-                            <h3><a href="#">Student BTP project</a></h3>
-                            <p>This is my project during last years of my engineering.</p>
-                        </div>
-                    </div>
-                    <!-- End class tz-blog-item -->
-                </div>
-                <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
-                    <!-- Start class tz-blog-item -->
-                    <div class="tz-events-item">
-                        <div class="tz-image">
-                            <img alt="Image" src="images/sp3.jfif" alt="Images">
-                            <a href="images/sp3.jfif" data-lightbox="mygallary" data-title="project title comes here."><i class="fa fa-arrows-alt"></i></a>
-                        </div>
-                        <div class="tz-description">
-                            <h3><a href="#">Student BTP project</a></h3>
-                            <p>This is my project during last years of my engineering.</p>
-                        </div>
-                    </div>
-                    <!-- End class tz-blog-item -->
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
-                    <!-- Start class tz-blog-item -->
-                    <div class="tz-events-item">
-                        <div class="tz-image">
-                            <img alt="Image" src="images/sp3.jfif" alt="Images">
-                            <a href="images/sp3.jfif" data-lightbox="mygallary" data-title="project title comes here."><i class="fa fa-arrows-alt"></i></a>
-                        </div>
-                        <div class="tz-description">
-                            <h3><a href="#">Student BTP project</a></h3>
-                            <p>This is my project during last years of my engineering.</p>
-                        </div>
-                    </div>
-                    <!-- End class tz-blog-item -->
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
-                    <!-- Start class tz-blog-item -->
-                    <div class="tz-events-item">
-                        <div class="tz-image">
-                            <img alt="Image" src="images/sp3.jfif" alt="Images">
-                            <a href="images/sp3.jfif" data-lightbox="mygallary" data-title="project title comes here."><i class="fa fa-arrows-alt"></i></a>
-                        </div>
-                        <div class="tz-description">
-                            <h3><a href="#">Student BTP project</a></h3>
-                            <p>This is my project during last years of my engineering.</p>
-                        </div>
-                    </div>
-                    <!-- End class tz-blog-item -->
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
-                    <!-- Start class tz-blog-item -->
-                    <div class="tz-events-item">
-                        <div class="tz-image">
-                            <img alt="Image" src="images/sp3.jfif" alt="Images">
-                            <a href="images/sp3.jfif" data-lightbox="mygallary" data-title="project title comes here."><i class="fa fa-arrows-alt"></i></a>
-                        </div>
-                        <div class="tz-description">
-                            <h3><a href="#">Student BTP project</a></h3>
-                            <p>This is my project during last years of my engineering.</p>
-                        </div>
-                    </div>
-                    <!-- End class tz-blog-item -->
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
-                    <!-- Start class tz-blog-item -->
-                    <div class="tz-events-item">
-                        <div class="tz-image">
-                            <img alt="Image" src="images/sp3.jfif" alt="Images">
-                            <a href="images/sp3.jfif" data-lightbox="mygallary" data-title="project title comes here."><i class="fa fa-arrows-alt"></i></a>
-                        </div>
-                        <div class="tz-description">
-                            <h3><a href="#">Student BTP project</a></h3>
-                            <p>This is my project during last years of my engineering.</p>
-                        </div>
-                    </div>
-                    <!-- End class tz-blog-item -->
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
-                    <!-- Start class tz-blog-item -->
-                    <div class="tz-events-item">
-                        <div class="tz-image">
-                            <img alt="Image" src="images/facultyimage1.jfif" alt="Images">
-                            <a href="images/facultyimage1.jfif" data-lightbox="mygallary" data-title="project title comes here."><i class="fa fa-arrows-alt"></i></a>
-                        </div>
-                        <div class="tz-description">
-                            <h3><a href="#">Student BTP project</a></h3>
-                            <p>This is my project during last years of my engineering.</p>
-                        </div>
-                    </div>
-                    <!-- End class tz-blog-item -->
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
-                    <!-- Start class tz-blog-item -->
-                    <div class="tz-events-item">
-                        <div class="tz-image">
-                            <img alt="Image" src="images/sp3.jfif" alt="Images">
-                            <a href="images/sp3.jfif" data-lightbox="mygallary" data-title="project title comes here."><i class="fa fa-arrows-alt"></i></a>
-                        </div>
-                        <div class="tz-description">
-                            <h3><a href="#">Student BTP project</a></h3>
-                            <p>This is my project during last years of my engineering.</p>
-                        </div>
-                    </div>
-                    <!-- End class tz-blog-item -->
-                </div>
+            <div class="tz-events-item">
+              <div class="tz-image">
+                <img alt="Image" src="images/sp3.jfif" alt="Images">
+                <a href="images/sp3.jfif" data-lightbox="mygallary" data-title="project title comes here."><i class="fa fa-arrows-alt"></i></a>
+              </div>
+              <div class="tz-description">
+                <h3><a href="#">Student BTP project</a></h3>
+                <p>This is my project during last years of my engineering.</p>
+              </div>
             </div>
+
+            <!-- End class tz-blog-item -->
+          </div>
+          <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
+            <!-- Start class tz-blog-item -->
+            <div class="tz-events-item">
+              <div class="tz-image">
+                <img alt="Image" src="images/sp3.jfif" alt="Images">
+                <a href="images/sp3.jfif" data-lightbox="mygallary" data-title="project title comes here."><i class="fa fa-arrows-alt"></i></a>
+              </div>
+              <div class="tz-description">
+                <h3><a href="#">Student BTP project</a></h3>
+                <p>This is my project during last years of my engineering.</p>
+              </div>
+            </div>
+            <!-- End class tz-blog-item -->
+          </div>
+          <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
+            <!-- Start class tz-blog-item -->
+            <div class="tz-events-item">
+              <div class="tz-image">
+                <img alt="Image" src="images/sp3.jfif" alt="Images">
+                <a href="images/sp3.jfif" data-lightbox="mygallary" data-title="project title comes here."><i class="fa fa-arrows-alt"></i></a>
+              </div>
+              <div class="tz-description">
+                <h3><a href="#">Student BTP project</a></h3>
+                <p>This is my project during last years of my engineering.</p>
+              </div>
+            </div>
+            <!-- End class tz-blog-item -->
+          </div>
+          <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
+            <!-- Start class tz-blog-item -->
+            <div class="tz-events-item">
+              <div class="tz-image">
+                <img alt="Image" src="images/sp3.jfif" alt="Images">
+                <a href="images/sp3.jfif" data-lightbox="mygallary" data-title="project title comes here."><i class="fa fa-arrows-alt"></i></a>
+              </div>
+              <div class="tz-description">
+                <h3><a href="#">Student BTP project</a></h3>
+                <p>This is my project during last years of my engineering.</p>
+              </div>
+            </div>
+            <!-- End class tz-blog-item -->
+          </div>
+          <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
+            <!-- Start class tz-blog-item -->
+            <div class="tz-events-item">
+              <div class="tz-image">
+                <img alt="Image" src="images/sp3.jfif" alt="Images">
+                <a href="images/sp3.jfif" data-lightbox="mygallary" data-title="project title comes here."><i class="fa fa-arrows-alt"></i></a>
+              </div>
+              <div class="tz-description">
+                <h3><a href="#">Student BTP project</a></h3>
+                <p>This is my project during last years of my engineering.</p>
+              </div>
+            </div>
+            <!-- End class tz-blog-item -->
+          </div>
+          <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
+            <!-- Start class tz-blog-item -->
+            <div class="tz-events-item">
+              <div class="tz-image">
+                <img alt="Image" src="images/sp3.jfif" alt="Images">
+                <a href="images/sp3.jfif" data-lightbox="mygallary" data-title="project title comes here."><i class="fa fa-arrows-alt"></i></a>
+              </div>
+              <div class="tz-description">
+                <h3><a href="#">Student BTP project</a></h3>
+                <p>This is my project during last years of my engineering.</p>
+              </div>
+            </div>
+            <!-- End class tz-blog-item -->
+          </div>
+          <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
+            <!-- Start class tz-blog-item -->
+            <div class="tz-events-item">
+              <div class="tz-image">
+                <img alt="Image" src="images/sp3.jfif" alt="Images">
+                <a href="images/sp3.jfif" data-lightbox="mygallary" data-title="project title comes here."><i class="fa fa-arrows-alt"></i></a>
+              </div>
+              <div class="tz-description">
+                <h3><a href="#">Student BTP project</a></h3>
+                <p>This is my project during last years of my engineering.</p>
+              </div>
+            </div>
+            <!-- End class tz-blog-item -->
+          </div>
+          <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
+            <!-- Start class tz-blog-item -->
+            <div class="tz-events-item">
+              <div class="tz-image">
+                <img alt="Image" src="images/sp3.jfif" alt="Images">
+                <a href="images/sp3.jfif" data-lightbox="mygallary" data-title="project title comes here."><i class="fa fa-arrows-alt"></i></a>
+              </div>
+              <div class="tz-description">
+                <h3><a href="#">Student BTP project</a></h3>
+                <p>This is my project during last years of my engineering.</p>
+              </div>
+            </div>
+            <!-- End class tz-blog-item -->
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
+            <!-- Start class tz-blog-item -->
+            <div class="tz-events-item">
+              <div class="tz-image">
+                <img alt="Image" src="images/sp3.jfif" alt="Images">
+                <a href="images/sp3.jfif" data-lightbox="mygallary" data-title="project title comes here."><i class="fa fa-arrows-alt"></i></a>
+              </div>
+              <div class="tz-description">
+                <h3><a href="#">Student BTP project</a></h3>
+                <p>This is my project during last years of my engineering.</p>
+              </div>
+            </div>
+            <!-- End class tz-blog-item -->
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
+            <!-- Start class tz-blog-item -->
+            <div class="tz-events-item">
+              <div class="tz-image">
+                <img alt="Image" src="images/sp3.jfif" alt="Images">
+                <a href="images/sp3.jfif" data-lightbox="mygallary" data-title="project title comes here."><i class="fa fa-arrows-alt"></i></a>
+              </div>
+              <div class="tz-description">
+                <h3><a href="#">Student BTP project</a></h3>
+                <p>This is my project during last years of my engineering.</p>
+              </div>
+            </div>
+            <!-- End class tz-blog-item -->
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
+            <!-- Start class tz-blog-item -->
+            <div class="tz-events-item">
+              <div class="tz-image">
+                <img alt="Image" src="images/sp3.jfif" alt="Images">
+                <a href="images/sp3.jfif" data-lightbox="mygallary" data-title="project title comes here."><i class="fa fa-arrows-alt"></i></a>
+              </div>
+              <div class="tz-description">
+                <h3><a href="#">Student BTP project</a></h3>
+                <p>This is my project during last years of my engineering.</p>
+              </div>
+            </div>
+            <!-- End class tz-blog-item -->
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
+            <!-- Start class tz-blog-item -->
+            <div class="tz-events-item">
+              <div class="tz-image">
+                <img alt="Image" src="images/sp3.jfif" alt="Images">
+                <a href="images/sp3.jfif" data-lightbox="mygallary" data-title="project title comes here."><i class="fa fa-arrows-alt"></i></a>
+              </div>
+              <div class="tz-description">
+                <h3><a href="#">Student BTP project</a></h3>
+                <p>This is my project during last years of my engineering.</p>
+              </div>
+            </div>
+            <!-- End class tz-blog-item -->
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
+            <!-- Start class tz-blog-item -->
+            <div class="tz-events-item">
+              <div class="tz-image">
+                <img alt="Image" src="images/sp3.jfif" alt="Images">
+                <a href="images/sp3.jfif" data-lightbox="mygallary" data-title="project title comes here."><i class="fa fa-arrows-alt"></i></a>
+              </div>
+              <div class="tz-description">
+                <h3><a href="#">Student BTP project</a></h3>
+                <p>This is my project during last years of my engineering.</p>
+              </div>
+            </div>
+            <!-- End class tz-blog-item -->
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
+            <!-- Start class tz-blog-item -->
+            <div class="tz-events-item">
+              <div class="tz-image">
+                <img alt="Image" src="images/sp3.jfif" alt="Images">
+                <a href="images/sp3.jfif" data-lightbox="mygallary" data-title="project title comes here."><i class="fa fa-arrows-alt"></i></a>
+              </div>
+              <div class="tz-description">
+                <h3><a href="#">Student BTP project</a></h3>
+                <p>This is my project during last years of my engineering.</p>
+              </div>
+            </div>
+            <!-- End class tz-blog-item -->
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
+            <!-- Start class tz-blog-item -->
+            <div class="tz-events-item">
+              <div class="tz-image">
+                <img alt="Image" src="images/facultyimage1.jfif" alt="Images">
+                <a href="images/facultyimage1.jfif" data-lightbox="mygallary" data-title="project title comes here."><i class="fa fa-arrows-alt"></i></a>
+              </div>
+              <div class="tz-description">
+                <h3><a href="#">Student BTP project</a></h3>
+                <p>This is my project during last years of my engineering.</p>
+              </div>
+            </div>
+            <!-- End class tz-blog-item -->
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
+            <!-- Start class tz-blog-item -->
+            <div class="tz-events-item">
+              <div class="tz-image">
+                <img alt="Image" src="images/sp3.jfif" alt="Images">
+                <a href="images/sp3.jfif" data-lightbox="mygallary" data-title="project title comes here."><i class="fa fa-arrows-alt"></i></a>
+              </div>
+              <div class="tz-description">
+                <h3><a href="#">Student BTP project</a></h3>
+                <p>This is my project during last years of my engineering.</p>
+              </div>
+            </div>
+            <!-- End class tz-blog-item -->
+          </div>
+          <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
+            <!-- Start class tz-blog-item -->
+            <div class="tz-events-item">
+              <div class="tz-image">
+                <img alt="Image" src="images/sp3.jfif" alt="Images">
+                <a href="images/sp3.jfif" data-lightbox="mygallary" data-title="project title comes here."><i class="fa fa-arrows-alt"></i></a>
+              </div>
+              <div class="tz-description">
+                <h3><a href="#">Student BTP project</a></h3>
+                <p>This is my project during last years of my engineering.</p>
+              </div>
+            </div>
+            <!-- End class tz-blog-item -->
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
+            <!-- Start class tz-blog-item -->
+            <div class="tz-events-item">
+              <div class="tz-image">
+                <img alt="Image" src="images/sp3.jfif" alt="Images">
+                <a href="images/sp3.jfif" data-lightbox="mygallary" data-title="project title comes here."><i class="fa fa-arrows-alt"></i></a>
+              </div>
+              <div class="tz-description">
+                <h3><a href="#">Student BTP project</a></h3>
+                <p>This is my project during last years of my engineering.</p>
+              </div>
+            </div>
+            <!-- End class tz-blog-item -->
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
+            <!-- Start class tz-blog-item -->
+            <div class="tz-events-item">
+              <div class="tz-image">
+                <img alt="Image" src="images/sp3.jfif" alt="Images">
+                <a href="images/sp3.jfif" data-lightbox="mygallary" data-title="project title comes here."><i class="fa fa-arrows-alt"></i></a>
+              </div>
+              <div class="tz-description">
+                <h3><a href="#">Student BTP project</a></h3>
+                <p>This is my project during last years of my engineering.</p>
+              </div>
+            </div>
+            <!-- End class tz-blog-item -->
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
+            <!-- Start class tz-blog-item -->
+            <div class="tz-events-item">
+              <div class="tz-image">
+                <img alt="Image" src="images/sp3.jfif" alt="Images">
+                <a href="images/sp3.jfif" data-lightbox="mygallary" data-title="project title comes here."><i class="fa fa-arrows-alt"></i></a>
+              </div>
+              <div class="tz-description">
+                <h3><a href="#">Student BTP project</a></h3>
+                <p>This is my project during last years of my engineering.</p>
+              </div>
+            </div>
+            <!-- End class tz-blog-item -->
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
+            <!-- Start class tz-blog-item -->
+            <div class="tz-events-item">
+              <div class="tz-image">
+                <img alt="Image" src="images/sp3.jfif" alt="Images">
+                <a href="images/sp3.jfif" data-lightbox="mygallary" data-title="project title comes here."><i class="fa fa-arrows-alt"></i></a>
+              </div>
+              <div class="tz-description">
+                <h3><a href="#">Student BTP project</a></h3>
+                <p>This is my project during last years of my engineering.</p>
+              </div>
+            </div>
+            <!-- End class tz-blog-item -->
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
+            <!-- Start class tz-blog-item -->
+            <div class="tz-events-item">
+              <div class="tz-image">
+                <img alt="Image" src="images/facultyimage1.jfif" alt="Images">
+                <a href="images/facultyimage1.jfif" data-lightbox="mygallary" data-title="project title comes here."><i class="fa fa-arrows-alt"></i></a>
+              </div>
+              <div class="tz-description">
+                <h3><a href="#">Student BTP project</a></h3>
+                <p>This is my project during last years of my engineering.</p>
+              </div>
+            </div>
+            <!-- End class tz-blog-item -->
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
+            <!-- Start class tz-blog-item -->
+            <div class="tz-events-item">
+              <div class="tz-image">
+                <img alt="Image" src="images/sp3.jfif" alt="Images">
+                <a href="images/sp3.jfif" data-lightbox="mygallary" data-title="project title comes here."><i class="fa fa-arrows-alt"></i></a>
+              </div>
+              <div class="tz-description">
+                <h3><a href="#">Student BTP project</a></h3>
+                <p>This is my project during last years of my engineering.</p>
+              </div>
+            </div>
+            <!-- End class tz-blog-item -->
+          </div>
         </div>
+      </div>
     </div>
     <div class="TzPagination TzPagination-style-4">
-        <div class="wp-pagenavi">
-            <a href="#" class="previouspostslink"><i class="fa fa-angle-double-left"></i></a>
-            <a href="#">1</a>
-            <a href="#">2</a>
-            <a class="current">3</a>
-            <a href="#" class="nextpostslink"><i class="fa fa-angle-double-right"></i></a>
-        </div>
-</div>
-</section>
+      <div class="wp-pagenavi">
+        <a href="#" class="previouspostslink"><i class="fa fa-angle-double-left"></i></a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a class="current">3</a>
+        <a href="#" class="nextpostslink"><i class="fa fa-angle-double-right"></i></a>
+      </div>
+    </div>
+  </section>
 
 
-<!-- Begin Footer -->
-<footer class="tz-footer">
+  <!-- Begin Footer -->
+  <footer class="tz-footer">
     <div class="tz-footer-content tz-footer-content-2 tz-background-color-4">
-        <div class="container">
-            <div class = "row">
-                <div class = "col-lg-3">
-                    <img src="images/home/logo.png" alt="Icon-footer" style = "padding-bottom:30px">
-                    <ul>
-                        <li><a href="#" style = "color:#fff">Indian Institute of Technology Dharwad,</a></li>
-                        <li><a href="#" style = "color:#fff">Karnataka, India - 580011</a></li>
-                        <li><a href="#" style = "color:#fff">pro@iitdh.ac.in</a></li>
-                        <li><a href="#" style = "color:#fff">+91 836 2212 839</a></li>
-                    </ul>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <img src="images/home/logo.png" alt="Icon-footer" style="padding-bottom:30px">
+            <ul>
+              <li><a href="#" style="color:#fff">Indian Institute of Technology Dharwad,</a></li>
+              <li><a href="#" style="color:#fff">Karnataka, India - 580011</a></li>
+              <li><a href="#" style="color:#fff">pro@iitdh.ac.in</a></li>
+              <li><a href="#" style="color:#fff">+91 836 2212 839</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3">
+            <ul class="">
+              <li>
+                <div class="tz-footer-content-main">
+                  <!--<img src="images/check-02-home2.png" alt="Images remove footer">-->
+                  <h4>Quick Links</h4>
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                  </ul>
+
+                  <h4>Academic Information</h4>
+                  <ul>
+                    <li><a href="#">Students</a></li>
+                    <li><a href="#">Faculty</a></li>
+                    <li><a href="#">R&D</a></li>
+                    <li><a href="#">Students Projects</a></li>
+                  </ul>
                 </div>
+              </li>
+            </ul>
+          </div>
 
-                <div class = "col-lg-3">
-                    <ul class="">
-                        <li>
-                            <div class="tz-footer-content-main">
-                                <!--<img src="images/check-02-home2.png" alt="Images remove footer">-->
-                                <h4>Quick Links</h4>
-                                <ul>
-                                    <li><a href="#">Home</a></li>
-                                </ul>
+          <div class="col-lg-3">
+            <ul class="">
+              <li>
+                <div class="tz-footer-content-main">
+                  <!--<img src="images/check-02-home2.png" alt="Images remove footer">-->
+                  <h4>For Recruiters</h4>
+                  <ul>
+                    <li><a href="#">Why recruit?</a></li>
+                    <li><a href="#">Placement</a></li>
+                    <li><a href="#">Internship</a></li>
+                    <li><a href="#">Brochur</a></li>
+                    <li><a href="#">FAQs</a></li>
+                  </ul>
 
-                                <h4>Academic Information</h4>
-                                <ul>
-                                    <li><a href="#">Students</a></li>
-                                    <li><a href="#">Faculty</a></li>
-                                    <li><a href="#">R&D</a></li>
-                                    <li><a href="#">Students Projects</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
+                  <h4>For Students</h4>
+                  <ul>
+                    <li><a href="https://drive.google.com/file/d/1-v1KiMw0-hlvEnmUEQJc2rAQJTgH3xPg/view?usp=sharing" target="_blank">Placements - Rules & Regulations</a></li>
+                    <li><a href="https://drive.google.com/file/d/1W04IZ5sx6Qmp89EpyKA0YCI9TPlf2P7Q/view?usp=sharing" target="_blank">Internships - Rules & Regulations</a></li>
+                    <li><a href="https://drive.google.com/file/d/1-jV15-Aj-f45oC0Qp50m-SRxOAzz8W25/view" target="_blank">Internship Information</a></li>
+                  </ul>
+
                 </div>
+              </li>
+            </ul>
+          </div>
 
-                <div class = "col-lg-3">
-                    <ul class="">
-                        <li>
-                            <div class="tz-footer-content-main">
-                                <!--<img src="images/check-02-home2.png" alt="Images remove footer">-->
-                                <h4>For Recruiters</h4>
-                                <ul>
-                                    <li><a href="#">Why recruit?</a></li>
-                                    <li><a href="#">Placement</a></li>
-                                    <li><a href="#">Internship</a></li>
-                                    <li><a href="#">Brochur</a></li>
-                                    <li><a href="#">FAQs</a></li>
-                                </ul>
-
-                                <h4>For Students</h4>
-                                <ul>
-                                    <li><a href="https://drive.google.com/file/d/1-v1KiMw0-hlvEnmUEQJc2rAQJTgH3xPg/view?usp=sharing" target="_blank">Placements - Rules & Regulations</a></li>
-                                    <li><a href="https://drive.google.com/file/d/1W04IZ5sx6Qmp89EpyKA0YCI9TPlf2P7Q/view?usp=sharing" target="_blank">Internships - Rules & Regulations</a></li>
-                                    <li><a href="https://drive.google.com/file/d/1-jV15-Aj-f45oC0Qp50m-SRxOAzz8W25/view" target="_blank">Internship Information</a></li>
-                                </ul>
-
-                            </div>
-                        </li>
-                    </ul>
+          <div class="col-lg-3">
+            <ul class="">
+              <li>
+                <div class="tz-footer-content-main">
+                  <!--<img src="images/check-02-home2.png" alt="Images remove footer">-->
+                  <h4>Beyond Academics</h4>
+                  <ul>
+                    <li><a href="#">IIC</a></li>
+                    <li><a href="#">SMP</a></li>
+                    <li><a href="#">Cultural Events</a></li>
+                    <li><a href="#">OSS</a></li>
+                    <li><a href="#">CSR</a></li>
+                  </ul>
+                  <h4>Events</h4>
+                  <ul>
+                    <li><a href="hr_conclave.html">HR Conclave</a></li>
+                  </ul>
                 </div>
-
-                <div class = "col-lg-3">
-                    <ul class="">
-                        <li>
-                            <div class="tz-footer-content-main">
-                                <!--<img src="images/check-02-home2.png" alt="Images remove footer">-->
-                                <h4>Events</h4>
-                                <ul>
-                                    <li><a href="#">IIC</a></li>
-                                    <li><a href="#">SMP</a></li>
-                                    <li><a href="#">Cultural Events</a></li>
-                                    <li><a href="#">OSS</a></li>
-                                    <li><a href="#">CSR</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!--<img src="images/home/logo.png" alt="Icon-footer">
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--<img src="images/home/logo.png" alt="Icon-footer">
             <ul class="tz-footer-part">
                 <li>
                     <div class="tz-footer-content-main">
@@ -884,23 +920,24 @@
                     </div>
                 </li>
             </ul>-->
-        </div>
+      </div>
     </div>
-</footer>
-<!-- End Footer -->
+  </footer>
+  <!-- End Footer -->
 
-<script>
-    var Desktop       =   5,
-        tabletportrait    =   2,
-        mobilelandscape   =   1,
-        mobileportrait    =   1,
-        resizeTimer       =   null;
-</script>
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/off-canvas.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/jquery.parallax-1.1.3.js"></script>
-<script src="js/custom.js"></script>
+  <script>
+    var Desktop = 5,
+      tabletportrait = 2,
+      mobilelandscape = 1,
+      mobileportrait = 1,
+      resizeTimer = null;
+  </script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/off-canvas.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.parallax-1.1.3.js"></script>
+  <script src="js/custom.js"></script>
 </body>
+
 </html>

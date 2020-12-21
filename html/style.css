@@ -15453,7 +15453,7 @@ body .widget-general .tz-activity-group li {
         text-align: center;
     }
     body .tz-header-2 .tz-menu li a {
-        padding: 18px 30px;
+        padding: 18px 15px;
     }
     body .tz-header-2 .tz-logo {
         padding: 25px 0px 0;
@@ -15472,7 +15472,7 @@ body .widget-general .tz-activity-group li {
     }
     body .tz-header-3 .tz-menu li a {
         border: medium none;
-        padding: 18px 30px;
+        padding: 18px 1px;
     }
     .tz-header-3 .sub-menu-style-2{
         transform: translateX(-40%);
