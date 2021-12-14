@@ -1,127 +1,145 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>IITDH-CDC-Placements</title>
-  <!--[if IE 8]>
-    <link href="style_ie8.css" rel="stylesheet" type="text/css" />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>IITDH-CDC-Placements</title>
+    <!--[if IE 8]>
+      <link href="style_ie8.css" rel="stylesheet" type="text/css" />
     <![endif]-->
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
     <![endif]-->
-  <link href="css/bootstrap.min.css" rel="stylesheet" />
-  <link href="fonts/awesome/css/font-awesome.min.css" rel="stylesheet" />
-  <link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
-  <link href='css/owl.carousel.css' rel='stylesheet' type='text/css'>
-  <link href='css/owl.theme.css' rel='stylesheet' type='text/css'>
-  <link href="style.css" rel="stylesheet" />
-  <link rel="icon" href="images/CDC_Logos/favicon.ico" type="image/x-icon" />
-  <style>
-    .jumbotron {
-      background: url("placement.png");
-      height: 100px;
-      background-repeat: no-repeat;
-      background-size: cover;
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="fonts/awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link
+      href="http://fonts.googleapis.com/css?family=Varela"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" />
+    <link href="css/owl.theme.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="icon" href="images/CDC_Logos/favicon.ico" type="image/x-icon" />
+    <style>
+      .jumbotron {
+        background: url("placement.png");
+        height: 100px;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+  </head>
 
-    }
-  </style>
-</head>
-
-<script>
-  function initial_func() {
-    var elm1 = document.querySelectorAll("#sub1")[1];
-    var elm2 = document.querySelectorAll("#sub2")[1];
-    var elm3 = document.querySelectorAll("#sub3")[1];
-    var elm4 = document.querySelectorAll("#sub4")[1];
-    var elm14 = document.querySelectorAll("#sub5")[1];
-    elm1.style.display = "none";
-    elm2.style.display = "none";
-    elm3.style.display = "none";
-    elm4.style.display = "none";
-    elm14.style.display = "none";
-    var elm5 = document.querySelectorAll("#a1")[0];
-    var elm6 = document.querySelectorAll("#a2")[0];
-    var elm7 = document.querySelectorAll("#a3")[0];
-    var elm8 = document.querySelectorAll("#a4")[0];
-    var elm9 = document.querySelectorAll("#a5")[0];
-    var elm10 = document.querySelectorAll("#a6")[0];
-    var elm11 = document.querySelectorAll("#a7")[0];
-    elm5.style.display = "inline";
-    elm6.style.display = "inline";
-    elm7.style.display = "inline";
-    elm8.style.display = "inline";
-    elm9.style.display = "inline";
-    elm10.style.display = "inline";
-    elm11.style.display = "inline";
-    var elm12 = document.querySelectorAll(".nav-collapse")[0];
-    elm12.style.padding = "15px 0px 0px 300px";
-    var elm13 = document.querySelectorAll("#header_logo")[0];
-    if ($(window).width() < 800) {
-      elm13.style.float = "right";
-    } else {
-      elm13.style.float = "left";
-    }
-  }
-</script>
-
-<script>
-  function dropdown_func(id) {
-    var all_subs = ['sub1', 'sub2', 'sub3', 'sub4', 'sub5']
-    for (sub in all_subs) {
-      if (all_subs[sub] != id) {
-        var elms = document.querySelectorAll("#" + all_subs[sub])[1];
-        elms.style.display = "none";
+  <script>
+    function initial_func() {
+      var elm1 = document.querySelectorAll("#sub1")[1];
+      var elm2 = document.querySelectorAll("#sub2")[1];
+      var elm3 = document.querySelectorAll("#sub3")[1];
+      var elm4 = document.querySelectorAll("#sub4")[1];
+      var elm14 = document.querySelectorAll("#sub5")[1];
+      elm1.style.display = "none";
+      elm2.style.display = "none";
+      elm3.style.display = "none";
+      elm4.style.display = "none";
+      elm14.style.display = "none";
+      var elm5 = document.querySelectorAll("#a1")[0];
+      var elm6 = document.querySelectorAll("#a2")[0];
+      var elm7 = document.querySelectorAll("#a3")[0];
+      var elm8 = document.querySelectorAll("#a4")[0];
+      var elm9 = document.querySelectorAll("#a5")[0];
+      var elm10 = document.querySelectorAll("#a6")[0];
+      var elm11 = document.querySelectorAll("#a7")[0];
+      elm5.style.display = "inline";
+      elm6.style.display = "inline";
+      elm7.style.display = "inline";
+      elm8.style.display = "inline";
+      elm9.style.display = "inline";
+      elm10.style.display = "inline";
+      elm11.style.display = "inline";
+      var elm12 = document.querySelectorAll(".nav-collapse")[0];
+      elm12.style.padding = "15px 0px 0px 300px";
+      var elm13 = document.querySelectorAll("#header_logo")[0];
+      if ($(window).width() < 800) {
+        elm13.style.float = "right";
       } else {
-        var elms = document.querySelectorAll("#" + all_subs[sub])[1];
-        if (elms.style.display === "none") {
-          elms.style.display = "block";
-        } else {
+        elm13.style.float = "left";
+      }
+    }
+  </script>
+
+  <script>
+    function dropdown_func(id) {
+      var all_subs = ["sub1", "sub2", "sub3", "sub4", "sub5"];
+      for (sub in all_subs) {
+        if (all_subs[sub] != id) {
+          var elms = document.querySelectorAll("#" + all_subs[sub])[1];
           elms.style.display = "none";
+        } else {
+          var elms = document.querySelectorAll("#" + all_subs[sub])[1];
+          if (elms.style.display === "none") {
+            elms.style.display = "block";
+          } else {
+            elms.style.display = "none";
+          }
         }
       }
     }
-  }
-</script>
+  </script>
 
-<body onload="initial_func()">
-  <div class="loading-page">
-    <img src="images/image-preload.gif" alt="Images-loading">
-  </div>
-  <!-- Begin section search form -->
-  <div class="tz-content-search">
-    <form action="#" method="get">
-      <i class="fa fa-times tz-form-close"></i>
-      <input type="text" class="tz-search-input" id="tz-search-input" name="search" placeholder="Search...">
-    </form><!-- End form search -->
-  </div>
-  <!-- End section search form -->
-  <!-- Begin class tz-header-2 -->
-  <header class="tz-header tz-header-2">
-    <!--<div class="tz-sign-in">
+  <body onload="initial_func()">
+    <div class="loading-page">
+      <img src="images/image-preload.gif" alt="Images-loading" />
+    </div>
+    <!-- Begin section search form -->
+    <div class="tz-content-search">
+      <form action="#" method="get">
+        <i class="fa fa-times tz-form-close"></i>
+        <input
+          type="text"
+          class="tz-search-input"
+          id="tz-search-input"
+          name="search"
+          placeholder="Search..."
+        />
+      </form>
+      <!-- End form search -->
+    </div>
+    <!-- End section search form -->
+    <!-- Begin class tz-header-2 -->
+    <header class="tz-header tz-header-2">
+      <!--<div class="tz-sign-in">
     <div class="container">
         <p><i class="fa fa-times"></i>Welcome to Ethic University. Sign in to enjoy our best online lessions!</p>
         <button class="tz-search"><i class="fa fa-search"></i></button>
     </div>
 </div>-->
-    <div class="tz-customer-container">
-      <div class="container">
-        <div class="tz-header-content">
-          <button type="button" class="tz-button-toggle btn-navbar pull-left" data-target=".nav-collapse">
-            <i class="fa fa-bars"></i>
-          </button>
-          <h3 class="tz-logo" id="header_logo">
-            <a href="index.html"><img alt="Images Logo" src="images/home/CDC_Logo/website_header@2x.png" style="height:80px;width:200px"></a>
-          </h3>
-          <nav class="nav-collapse">
-            <ul class="tz-menu">
-              <li>
-                <a href="index.html" id="a1">Home</a>
-                <!--<ul class="sub-menu sub-menu-style-1">
+      <div class="tz-customer-container">
+        <div class="container">
+          <div class="tz-header-content">
+            <button
+              type="button"
+              class="tz-button-toggle btn-navbar pull-left"
+              data-target=".nav-collapse"
+            >
+              <i class="fa fa-bars"></i>
+            </button>
+            <h3 class="tz-logo" id="header_logo">
+              <a href="index.html"
+                ><img
+                  alt="Images Logo"
+                  src="images/home/CDC_Logo/website_header@2x.png"
+                  style="height: 80px; width: 200px"
+              /></a>
+            </h3>
+            <nav class="nav-collapse">
+              <ul class="tz-menu">
+                <li>
+                  <a href="index.html" id="a1">Home</a>
+                  <!--<ul class="sub-menu sub-menu-style-1">
                                 <li>
                                     <a href="Home-01.html">Home Version 01</a>
                                 </li>
@@ -144,54 +162,84 @@
                                     <a href="Home-07.html">Home Version 07</a>
                                 </li>
                             </ul>-->
-              </li>
-              <li>
-                <a href="#" id="a2" style="width: 80%">Academic Info</a>
-                <button type="button" class="tz-button-toggle pull-right" onclick="dropdown_func('sub1')" style="border: none; font-size: 16px; cursor: pointer; background: #333333; color: #ffffff; margin: 5px 10px 0px 0px;">
-                  <i class="fa fa-chevron-down"></i>
-                </button>
-                <ul id="sub1" class="sub-menu sub-menu-style-1">
-                  <li>
-                    <a href="academics.html">Undergraduate</a>
-                  </li>
-                  <li>
-                    <a href="academic_facility_page.html">Academic Facilities</a>
-                  </li>
-                  <li>
-                    <a href="faculty_page.html">Faculty</a>
-                  </li>
-                  <!-- <li>
+                </li>
+                <li>
+                  <a href="#" id="a2" style="width: 80%">Academic Info</a>
+                  <button
+                    type="button"
+                    class="tz-button-toggle pull-right"
+                    onclick="dropdown_func('sub1')"
+                    style="
+                      border: none;
+                      font-size: 16px;
+                      cursor: pointer;
+                      background: #333333;
+                      color: #ffffff;
+                      margin: 5px 10px 0px 0px;
+                    "
+                  >
+                    <i class="fa fa-chevron-down"></i>
+                  </button>
+                  <ul id="sub1" class="sub-menu sub-menu-style-1">
+                    <li>
+                      <a href="academics.html">Undergraduate</a>
+                    </li>
+                    <li>
+                      <a href="academic_facility_page.html"
+                        >Academic Facilities</a
+                      >
+                    </li>
+                    <li>
+                      <a href="faculty_page.html">Faculty</a>
+                    </li>
+                    <!-- <li>
                                     <a href="r&d_page.html">R&D</a>
                                 </li>
                                 <li>
                                     <a href="acad_studentProject.html">Students Projects</a>
                                 </li> -->
-                </ul>
-              </li>
-              <li>
-                <a href="#" id="a3" style="width: 80%">For Recruiters</a>
-                <button type="button" class="tz-button-toggle  pull-right" onclick="dropdown_func('sub2')" style="border: none; font-size: 16px; cursor: pointer; background: #333333; color: #ffffff; margin: 5px 10px 0px 0px;">
-                  <i class="fa fa-chevron-down"></i>
-                </button>
-                <ul id="sub2" class="sub-menu sub-menu-style-1">
-                  <li>
-                    <a href="internship_procedure.html">Internship</a>
-                  </li>
-                  <li>
-                    <a href="placementprocedure.html">Placement</a>
-                  </li>
-                  <!-- <li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" id="a3" style="width: 80%">For Recruiters</a>
+                  <button
+                    type="button"
+                    class="tz-button-toggle pull-right"
+                    onclick="dropdown_func('sub2')"
+                    style="
+                      border: none;
+                      font-size: 16px;
+                      cursor: pointer;
+                      background: #333333;
+                      color: #ffffff;
+                      margin: 5px 10px 0px 0px;
+                    "
+                  >
+                    <i class="fa fa-chevron-down"></i>
+                  </button>
+                  <ul id="sub2" class="sub-menu sub-menu-style-1">
+                    <li>
+                      <a href="internship_procedure.html">Internship</a>
+                    </li>
+                    <li>
+                      <a href="placementprocedure.html">Placement</a>
+                    </li>
+                    <!-- <li>
                                     <a href="#">Internship</a>
                                 </li> -->
-                  <li>
-                    <a href="https://drive.google.com/file/d/13_qduU5w51fdu7YfOtOjGNadX3qziDDV/view" target="_blank">Brochure</a>
-                  </li>
-                  <li>
-                    <a href="companies_faqs.html">FAQs</a>
-                  </li>
-                </ul>
-              </li>
-              <!--<li class="tz-point-static">
+                    <li>
+                      <a
+                        href="https://drive.google.com/file/d/13_qduU5w51fdu7YfOtOjGNadX3qziDDV/view"
+                        target="_blank"
+                        >Brochure</a
+                      >
+                    </li>
+                    <li>
+                      <a href="companies_faqs.html">FAQs</a>
+                    </li>
+                  </ul>
+                </li>
+                <!--<li class="tz-point-static">
                             <a href="#">For Students</a>
                             <div class="sub-menu sub-menu-style-2">
                                 <div class="tz-submenu-2-wrapper">
@@ -286,13 +334,25 @@
                                 </div>
                             </div>
                         </li>-->
-              <li>
-                <a href="#" id="a4" style="width: 80%">For Students</a>
-                <button type="button" class="tz-button-toggle  pull-right" onclick="dropdown_func('sub3')" style="border: none; font-size: 16px; cursor: pointer; background: #333333; color: #ffffff; margin: 5px 10px 0px 0px;">
-                  <i class="fa fa-chevron-down"></i>
-                </button>
-                <ul id="sub3" class="sub-menu sub-menu-style-1">
-                  <!-- <li>
+                <li>
+                  <a href="#" id="a4" style="width: 80%">For Students</a>
+                  <button
+                    type="button"
+                    class="tz-button-toggle pull-right"
+                    onclick="dropdown_func('sub3')"
+                    style="
+                      border: none;
+                      font-size: 16px;
+                      cursor: pointer;
+                      background: #333333;
+                      color: #ffffff;
+                      margin: 5px 10px 0px 0px;
+                    "
+                  >
+                    <i class="fa fa-chevron-down"></i>
+                  </button>
+                  <ul id="sub3" class="sub-menu sub-menu-style-1">
+                    <!-- <li>
                                     <a href="placement.html">For placements</a>
                                 </li>
                                 <li>
@@ -301,64 +361,107 @@
                                 <li>
                                     <a href="intern.html">For Internships</a>
                                 </li> -->
-                  <li>
-                    <a href="https://drive.google.com/file/d/1-v1KiMw0-hlvEnmUEQJc2rAQJTgH3xPg/view?usp=sharing" target="_blank">Placements - Rules & Regulations</a>
-                  </li>
-                  <li>
-                    <a href="https://drive.google.com/file/d/1W04IZ5sx6Qmp89EpyKA0YCI9TPlf2P7Q/view?usp=sharing" target="_blank">Internships - Rules & Regulations</a>
-                  </li>
-                  <li>
-                    <a href="https://drive.google.com/file/d/1-jV15-Aj-f45oC0Qp50m-SRxOAzz8W25/view" target="_blank">Internship Information</a>
-                  </li>
-                  <li>
-                    <a href="https://drive.google.com/file/d/1xY4LitY3CEJKTwa0-nW55sQOJ7XunSSk/view?usp=sharing" target="_blank">Miscellaneous</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#" id="a5" style="width: 80%">Beyond Academics</a>
-                <button type="button" class="tz-button-toggle pull-right" onclick="dropdown_func('sub4')" style="border: none; cursor: pointer; background: #333333; color: #ffffff; padding: 5px 10px 0px 0px;">
-                  <i class="fa fa-chevron-down"></i>
-                </button>
-                <ul id="sub4" class="sub-menu sub-menu-style-1">
-                  <li>
-                    <a href="https://www.iitdh.ac.in/iic/" target="_blank">IIC</a>
-                  </li>
-                  <li>
-                    <a href="https://smp.iitdh.ac.in/" target="_blank">SMP</a>
-                  </li>
-                  <!-- <li>
+                    <li>
+                      <a
+                        href="https://drive.google.com/file/d/1aP65HZkvUKcZ-WfxlRdKvN6zZGu30jHu/view?usp=sharing"
+                        target="_blank"
+                        >Placements - Rules & Regulations</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://drive.google.com/file/d/1NYflwhFANehHwbqMFLWi-IHaQQjAt0FJ/view?usp=sharing"
+                        target="_blank"
+                        >Internships - Rules & Regulations</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://drive.google.com/file/d/1-jV15-Aj-f45oC0Qp50m-SRxOAzz8W25/view"
+                        target="_blank"
+                        >Internship Information</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://drive.google.com/file/d/1xY4LitY3CEJKTwa0-nW55sQOJ7XunSSk/view?usp=sharing"
+                        target="_blank"
+                        >Miscellaneous</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" id="a5" style="width: 80%">Beyond Academics</a>
+                  <button
+                    type="button"
+                    class="tz-button-toggle pull-right"
+                    onclick="dropdown_func('sub4')"
+                    style="
+                      border: none;
+                      cursor: pointer;
+                      background: #333333;
+                      color: #ffffff;
+                      padding: 5px 10px 0px 0px;
+                    "
+                  >
+                    <i class="fa fa-chevron-down"></i>
+                  </button>
+                  <ul id="sub4" class="sub-menu sub-menu-style-1">
+                    <li>
+                      <a href="https://www.iitdh.ac.in/iic/" target="_blank"
+                        >IIC</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://smp.iitdh.ac.in/" target="_blank">SMP</a>
+                    </li>
+                    <!-- <li>
                                     <a href="#">Cultural Events</a>
                                 </li> -->
-                  <li>
-                    <a href="https://oss2019.github.io/" target="_blank">OSS</a>
-                  </li>
-                  <!-- <li>
+                    <li>
+                      <a href="https://oss2019.github.io/" target="_blank"
+                        >OSS</a
+                      >
+                    </li>
+                    <!-- <li>
                                     <a href="#">CSR</a>
                                 </li> -->
-                </ul>
-              </li>
-              <li>
-                <a href="#" id="a6" style="width: 80%">Events</a>
-                <button type="button" class="tz-button-toggle pull-right" onclick="dropdown_func('sub5')" style="border: none; font-size: 16px; cursor: pointer; background: #333333; color: #ffffff; margin: 5px 10px 0px 0px;">
-                  <i class="fa fa-chevron-down"></i>
-                </button>
-                <ul id="sub5" class="sub-menu sub-menu-style-1">
-                  <li>
-                    <a href="hr_conclave.html">HR Conclave</a>
-                  </li>
-                  <!-- <li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" id="a6" style="width: 80%">Events</a>
+                  <button
+                    type="button"
+                    class="tz-button-toggle pull-right"
+                    onclick="dropdown_func('sub5')"
+                    style="
+                      border: none;
+                      font-size: 16px;
+                      cursor: pointer;
+                      background: #333333;
+                      color: #ffffff;
+                      margin: 5px 10px 0px 0px;
+                    "
+                  >
+                    <i class="fa fa-chevron-down"></i>
+                  </button>
+                  <ul id="sub5" class="sub-menu sub-menu-style-1">
+                    <li>
+                      <a href="hr_conclave.html">HR Conclave</a>
+                    </li>
+                    <!-- <li>
                                     <a href="r&d_page.html">R&D</a>
                                 </li>
                                 <li>
                                     <a href="acad_studentProject.html">Students Projects</a>
                                 </li> -->
-                </ul>
-              </li>
-              <li>
-                <a href="contact_cdc.html" id="a7">Contact Us</a>
-                <ul class="sub-menu sub-menu-style-1">
-                  <!--<li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="contact_cdc.html" id="a7">Contact Us</a>
+                  <ul class="sub-menu sub-menu-style-1">
+                    <!--<li>
                                     <a href="JoomlaBase-404Page.html">CDC Head</a>
                                 </li>
                                 <li>
@@ -382,166 +485,268 @@
                                 <li>
                                     <a href="JoomlaBase-Page-Resgister.html">JoomlaBase Resgister</a>
                                 </li>-->
-                </ul>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div><!-- End Content Main Header -->
-    </div>
-  </header>
-  <!-- End class tz-header-2 -->
-
-
-
-  <!-- Code for placement and procedure-->
-  <div class="container" style="padding:40px">
-    <div class="row">
-      <div class="col-lg-12 col-sm-12">
-        <center>
-          <h2 class="text-primary" style="font-size:45px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><b>Placement Procedure</b></h2>
-        </center>
-      </div>
-      <br>
-      <div class="col-lg-12">
-        <h3 style="font-weight: bold;font-family:Geneva;">1. Fill the Job Notification Form</h3>
-        <p style="text-align:justify">Interested companies will fill out the <a href="https://form.jotform.me/91311558368461" target="_blank">Job Notification Form</a>.<br>
-          <br>
-          The company has to provide the following mandatory data as per the forms. The key data required are:<br> a. The CTC & Gross pay offered.<br> b.The geographic location where the job is being offered.<br> c. A brief description of the job and
-          responsibilities, required skill set and selection process. </p>
-
-      </div>
-      <div class="col-lg-12">
-        <h3 style="font-weight: bold;font-family:Geneva;">2. Preassessment / Shortlist</h3>
-        <p style="text-align:justify">Resumes of the interested students are made available to the companies. The companies shortlist the students on the basis of their resumes.</p>
-      </div>
-      <div class="col-lg-12">
-        <h3 style="font-weight: bold;font-family:Geneva;">3. Examination / Test</h3>
-        <p style="text-align:justify">Companies conduct various examinations in the form of written or online tests. The students are eligible for the further process on the basis of their performance in the examination.</p>
-      </div>
-      <div class="col-lg-12">
-        <h3 style="font-weight: bold;font-family:Geneva;">4. Placement Talk </h3>
-        <p style="text-align:justify">The companies wishing to give a pre-placement talk will be allotted a given day and time for the same. The CDC team will provide the necessary support for the organization of this talk.</p>
-      </div>
-      <div class="col-lg-12">
-        <h3 style="font-weight: bold;font-family:Geneva;">5. Interview</h3>
-        <p style="text-align:justify">After the preliminary test/examination, the company will send us the list of the students shortlisted for the interview and the details about the schedule of interview. If needed the CDC will help in arranging
-          for the interview in the campus.</p>
-      </div>
-      <div class="col-lg-12">
-        <h3 style="font-weight: bold;font-family:Geneva;">6. Offer</h3>
-        <p style="text-align:justify">After the interview, the company will send out offer letter to the students selected, offering to join the company.</p>
-      </div>
-      <div class="col-lg-12">
-        <h3 style="font-weight: bold;font-family:Geneva;">7. Student Accept / Reject</h3>
-        <p style="text-align:justify">The final decision of whether to accept or reject the offer rests with the student and the student has to inform about this decision within the stipulated time.</p>
-      </div>
-
-    </div>
-
-  </div>
-
-  <!-- End Code for placement and procedure-->
-
-
-  <!-- Begin Footer -->
-  <footer class="tz-footer">
-    <div class="tz-footer-content tz-footer-content-2 tz-background-color-4">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3">
-            <img src="images/home/logo.png" alt="Icon-footer" style="padding-bottom:30px">
-            <ul>
-              <li><a href="#" style="color:#fff">Indian Institute of Technology Dharwad,</a></li>
-              <li><a href="#" style="color:#fff">Karnataka, India - 580011</a></li>
-              <li><a href="#" style="color:#fff">cdc@iitdh.ac.in</a></li>
-              <li><a href="#" style="color:#fff">+91 836 2212 839</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3">
-            <ul class="">
-              <li>
-                <div class="tz-footer-content-main">
-                  <!--<img src="images/check-02-home2.png" alt="Images remove footer">-->
-                  <h4>Quick Links</h4>
-                  <ul>
-                    <li><a href="#">Home</a></li>
                   </ul>
-
-                  <h4>Academic Information</h4>
-                  <ul>
-                    <li><a href="academics.html">Undergraduate</a></li>
-                    <li><a href="faculty_page.html">Faculty</a></li>
-                    <li><a href="academic_facility_page.html">Academic Facilities</a></li>
-                    <!-- <li><a href="#">R&D</a></li> -->
-                    <!-- <li><a href="#">Students Projects</a></li> -->
-                  </ul>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3">
-            <ul class="">
-              <li>
-                <div class="tz-footer-content-main">
-                  <!--<img src="images/check-02-home2.png" alt="Images remove footer">-->
-                  <h4>For Recruiters</h4>
-                  <ul>
-                    <li><a href="internship_procedure.html">Internship</a></li>
-                    <li><a href="placementprocedure.html">Placement</a></li>
-                    <!-- <li><a href="#">Internship</a></li> -->
-                    <li><a href="https://drive.google.com/file/d/13_qduU5w51fdu7YfOtOjGNadX3qziDDV/view" target="_blank">Brochure</a></li>
-                    <li><a href="companies_faqs.html">FAQs</a></li>
-                  </ul>
-
-                  <h4>For Students</h4>
-                  <ul>
-                    <!-- <li><a href="placement.html">For Placements</a></li> -->
-                    <!-- <li><a href="#">For Internships</a></li> -->
-                    <li><a href="https://drive.google.com/file/d/1-v1KiMw0-hlvEnmUEQJc2rAQJTgH3xPg/view?usp=sharing" target="_blank">Placements - Rules & Regulations</a></li>
-                    <li><a href="https://drive.google.com/file/d/1W04IZ5sx6Qmp89EpyKA0YCI9TPlf2P7Q/view?usp=sharing" target="_blank">Internships - Rules & Regulations</a></li>
-                    <li><a href="https://drive.google.com/file/d/1-jV15-Aj-f45oC0Qp50m-SRxOAzz8W25/view" target="_blank">Internship Information</a></li>
-                    <li><a href="https://drive.google.com/file/d/1xY4LitY3CEJKTwa0-nW55sQOJ7XunSSk/view?usp=sharing" target="_blank">Miscellaneous</a></li>
-                  </ul>
-
-
-
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3">
-            <ul class="">
-              <li>
-                <div class="tz-footer-content-main">
-                  <!--<img src="images/check-02-home2.png" alt="Images remove footer">-->
-                  <h4>Beyond Academics</h4>
-                  <ul>
-                    <li><a href="https://www.iitdh.ac.in/iic/" target="_blank">IIC</a></li>
-                    <li><a href="https://smp.iitdh.ac.in/" target="_blank">SMP</a></li>
-                    <!-- <li><a href="#">Cultural Events</a></li> -->
-                    <li><a href="https://oss2019.github.io/" target="_blank">OSS</a></li>
-                    <!-- <li><a href="#">CSR</a></li> -->
-                  </ul>
-                  <h4>Events</h4>
-                  <ul>
-                    <li><a href="hr_conclave.html">HR Conclave</a></li>
-                  </ul>
-                  <ul>
-                    <li><a href="contact_cdc.html">
-                        <h4>Contact Us</h4>
-                      </a></li>
-                  </ul>
-
-                </div>
-              </li>
-            </ul>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
-        <!--<img src="images/home/logo.png" alt="Icon-footer">
+        <!-- End Content Main Header -->
+      </div>
+    </header>
+    <!-- End class tz-header-2 -->
+
+    <!-- Code for placement and procedure-->
+    <div class="container" style="padding: 40px">
+      <div class="row">
+        <div class="col-lg-12 col-sm-12">
+          <center>
+            <h2
+              class="text-primary"
+              style="
+                font-size: 45px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+                  serif;
+              "
+            >
+              <b>Placement Procedure</b>
+            </h2>
+          </center>
+        </div>
+        <br />
+        <div class="col-lg-12">
+          <h3 style="font-weight: bold; font-family: Geneva">
+            1. Fill the Job Notification Form
+          </h3>
+          <p style="text-align: justify">
+            Interested companies will fill out the
+            <a href="https://form.jotform.me/91311558368461" target="_blank"
+              >Job Notification Form</a
+            >.<br />
+            <br />
+            The company has to provide the following mandatory data as per the
+            forms. The key data required are:<br />
+            a. The CTC & Gross pay offered.<br />
+            b.The geographic location where the job is being offered.<br />
+            c. A brief description of the job and responsibilities, required
+            skill set and selection process.
+          </p>
+        </div>
+        <div class="col-lg-12">
+          <h3 style="font-weight: bold; font-family: Geneva">
+            2. Preassessment / Shortlist
+          </h3>
+          <p style="text-align: justify">
+            Resumes of the interested students are made available to the
+            companies. The companies shortlist the students on the basis of
+            their resumes.
+          </p>
+        </div>
+        <div class="col-lg-12">
+          <h3 style="font-weight: bold; font-family: Geneva">
+            3. Examination / Test
+          </h3>
+          <p style="text-align: justify">
+            Companies conduct various examinations in the form of written or
+            online tests. The students are eligible for the further process on
+            the basis of their performance in the examination.
+          </p>
+        </div>
+        <div class="col-lg-12">
+          <h3 style="font-weight: bold; font-family: Geneva">
+            4. Placement Talk
+          </h3>
+          <p style="text-align: justify">
+            The companies wishing to give a pre-placement talk will be allotted
+            a given day and time for the same. The CDC team will provide the
+            necessary support for the organization of this talk.
+          </p>
+        </div>
+        <div class="col-lg-12">
+          <h3 style="font-weight: bold; font-family: Geneva">5. Interview</h3>
+          <p style="text-align: justify">
+            After the preliminary test/examination, the company will send us the
+            list of the students shortlisted for the interview and the details
+            about the schedule of interview. If needed the CDC will help in
+            arranging for the interview in the campus.
+          </p>
+        </div>
+        <div class="col-lg-12">
+          <h3 style="font-weight: bold; font-family: Geneva">6. Offer</h3>
+          <p style="text-align: justify">
+            After the interview, the company will send out offer letter to the
+            students selected, offering to join the company.
+          </p>
+        </div>
+        <div class="col-lg-12">
+          <h3 style="font-weight: bold; font-family: Geneva">
+            7. Student Accept / Reject
+          </h3>
+          <p style="text-align: justify">
+            The final decision of whether to accept or reject the offer rests
+            with the student and the student has to inform about this decision
+            within the stipulated time.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Code for placement and procedure-->
+
+    <!-- Begin Footer -->
+    <footer class="tz-footer">
+      <div class="tz-footer-content tz-footer-content-2 tz-background-color-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3">
+              <img
+                src="images/home/logo.png"
+                alt="Icon-footer"
+                style="padding-bottom: 30px"
+              />
+              <ul>
+                <li>
+                  <a href="#" style="color: #fff"
+                    >Indian Institute of Technology Dharwad,</a
+                  >
+                </li>
+                <li>
+                  <a href="#" style="color: #fff">Karnataka, India - 580011</a>
+                </li>
+                <li><a href="#" style="color: #fff">cdc@iitdh.ac.in</a></li>
+                <li><a href="#" style="color: #fff">+91 836 2212 839</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3">
+              <ul class="">
+                <li>
+                  <div class="tz-footer-content-main">
+                    <!--<img src="images/check-02-home2.png" alt="Images remove footer">-->
+                    <h4>Quick Links</h4>
+                    <ul>
+                      <li><a href="#">Home</a></li>
+                    </ul>
+
+                    <h4>Academic Information</h4>
+                    <ul>
+                      <li><a href="academics.html">Undergraduate</a></li>
+                      <li><a href="faculty_page.html">Faculty</a></li>
+                      <li>
+                        <a href="academic_facility_page.html"
+                          >Academic Facilities</a
+                        >
+                      </li>
+                      <!-- <li><a href="#">R&D</a></li> -->
+                      <!-- <li><a href="#">Students Projects</a></li> -->
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3">
+              <ul class="">
+                <li>
+                  <div class="tz-footer-content-main">
+                    <!--<img src="images/check-02-home2.png" alt="Images remove footer">-->
+                    <h4>For Recruiters</h4>
+                    <ul>
+                      <li>
+                        <a href="internship_procedure.html">Internship</a>
+                      </li>
+                      <li><a href="placementprocedure.html">Placement</a></li>
+                      <!-- <li><a href="#">Internship</a></li> -->
+                      <li>
+                        <a
+                          href="https://drive.google.com/file/d/1bKEqC6L2E4V5LSg0zxDng526Gtmx5cuS/view"
+                          target="_blank"
+                          >Brochure</a
+                        >
+                      </li>
+                      <li><a href="companies_faqs.html">FAQs</a></li>
+                    </ul>
+
+                    <h4>For Students</h4>
+                    <ul>
+                      <!-- <li><a href="placement.html">For Placements</a></li> -->
+                      <!-- <li><a href="#">For Internships</a></li> -->
+                      <li>
+                        <a
+                          href="https://drive.google.com/file/d/1aP65HZkvUKcZ-WfxlRdKvN6zZGu30jHu/view?usp=sharing"
+                          target="_blank"
+                          >Placements - Rules & Regulations</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://drive.google.com/file/d/1NYflwhFANehHwbqMFLWi-IHaQQjAt0FJ/view?usp=sharing"
+                          target="_blank"
+                          >Internships - Rules & Regulations</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://drive.google.com/file/d/1-jV15-Aj-f45oC0Qp50m-SRxOAzz8W25/view"
+                          target="_blank"
+                          >Internship Information</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://drive.google.com/file/d/1xY4LitY3CEJKTwa0-nW55sQOJ7XunSSk/view?usp=sharing"
+                          target="_blank"
+                          >Miscellaneous</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3">
+              <ul class="">
+                <li>
+                  <div class="tz-footer-content-main">
+                    <!--<img src="images/check-02-home2.png" alt="Images remove footer">-->
+                    <h4>Beyond Academics</h4>
+                    <ul>
+                      <li>
+                        <a href="https://www.iitdh.ac.in/iic/" target="_blank"
+                          >IIC</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://smp.iitdh.ac.in/" target="_blank"
+                          >SMP</a
+                        >
+                      </li>
+                      <!-- <li><a href="#">Cultural Events</a></li> -->
+                      <li>
+                        <a href="https://oss2019.github.io/" target="_blank"
+                          >OSS</a
+                        >
+                      </li>
+                      <!-- <li><a href="#">CSR</a></li> -->
+                    </ul>
+                    <h4>Events</h4>
+                    <ul>
+                      <li><a href="hr_conclave.html">HR Conclave</a></li>
+                    </ul>
+                    <ul>
+                      <li>
+                        <a href="contact_cdc.html">
+                          <h4>Contact Us</h4>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--<img src="images/home/logo.png" alt="Icon-footer">
                    <ul class="tz-footer-part">
                        <li>
                            <div class="tz-footer-content-main">
@@ -618,26 +823,25 @@
                            </div>
                        </li>
                    </ul>-->
+        </div>
       </div>
-    </div>
-  </footer>
-  <!-- End Footer -->
-  <script>
-    var Desktop = 5,
-      tabletportrait = 2,
-      mobilelandscape = 1,
-      mobileportrait = 1,
-      resizeTimer = null;
-  </script>
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/off-canvas.js"></script>
-  <script src="js/jquery.isotope.min.js"></script>
-  <script src="js/resize.js"></script>
-  <script src="js/custom-portfolio.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.parallax-1.1.3.js"></script>
-  <script src="js/custom.js"></script>
-</body>
-
+    </footer>
+    <!-- End Footer -->
+    <script>
+      var Desktop = 5,
+        tabletportrait = 2,
+        mobilelandscape = 1,
+        mobileportrait = 1,
+        resizeTimer = null;
+    </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/off-canvas.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/resize.js"></script>
+    <script src="js/custom-portfolio.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.parallax-1.1.3.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
 </html>
