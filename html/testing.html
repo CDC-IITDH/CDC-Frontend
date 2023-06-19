@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Article preview component</title>
+    <link rel="stylesheet" href="style11.css">
+    <link href="https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800" rel="stylesheet" />
+</head>
+
+<body>
+    <article class="article-card">
+        <div class="img-box">
+            <img src="images/home/director.jfif" alt="" class="article-banner">
+            <h1 class="name">Venkappayya R Desai <br>
+                Director, IIT Dharwad
+            </h1>
+        </div>
+        <div class="article-content">
+            <h3 class="article-title">Director's Message </h3>
+            <br><br>
+            <p class="article-text">
+                At the outset, I extend my warm welcome to all the HRs of the esteemed organizations. I am delighted to
+                invite you to
+                IIT Dharwad for the placement of our students.
+            </p>
+            <p class="article-text">
+                Indian Institute of Technology Dharwad was established in July 2016 with B. Tech programs in three core
+                branches, namely
+                Computer Science and Engineering, Electrical, and Mechanical Engineering, and has now grown over the
+                years to house
+                B.Tech, M.Tech, MS, and PhD students.
+            </p>
+            <p class="article-text">
+                IITDh is presently functioning from its transit campus in Water & Land Management Institute (WALMI)
+                Campus situated next
+                to the High Court Bench at Dharwad since August 2016. The transit campus is about 135 acres, spread with
+                over 25
+                buildings and sheds. There are about 11 hostels, playgrounds, classrooms, laboratories, well-furnished
+                kitchens and
+                dining. About 470 acres of land have been allotted by the Karnataka Government for the permanent campus
+                of IIT Dharwad
+                in Chikkamalligawad village. The Library is well equipped with nearly 5000 books and provides access to
+                more than 8500
+                research journals.
+            </p>
+            <p class="article-text">
+                The institute hosts nearly 900 students, with about 20% being women. The students are drawn from about
+                21 states of the
+                country. The Institute has nearly 70 faculty members across ten Departments. All the faculty members
+                have done PhD and
+                postdocs from reputed institutes in India and abroad. The faculty members have secured about ₹28 cr
+                worth of sponsored
+                R&D projects, executed about ₹1.5cr worth of industrial consultancy projects, and published ~400
+                scientific papers.
+            </p>
+            <p class="article-text">
+                It will be an honour for us to host you and provide our students with an opportunity to demonstrate
+                their capability,
+                intellect and professional readiness to get inducted into your esteemed organization. We assure you that
+                we have a good
+                number of meritorious and industry-ready students who may prove asset to your organization.
+            </p>
+            <p class="article-text">
+                Once again, I cordially invite you to our campus for placements and look forward to building a long-term
+                sustainable and
+                mutually beneficial relationship with your esteemed organization.
+            </p>
+        </div>
+    </article>
+    <script>
+
+        const shareOption = document.querySelector('.share-option');
+
+        document.querySelector('.share-button').addEventListener('click', function () {
+            this.classList.toggle('active');
+            shareOption.classList.toggle('active');
+        });
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
