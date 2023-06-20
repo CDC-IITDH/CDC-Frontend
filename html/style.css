@@ -43,7 +43,7 @@ Tags: ajax contact form, animation, blog, bootstrap, business, corporate, css3, 
 * 5.0 - Footer
 * 6.0 - Responsive
 *   6.1 Extra small devices (phones, less than 768px)
-*   6.2 Small devices (tablets, 768px and 991px)
+*   6.2 Small devices (tablets, 768px and 1199px)
 *   6.3 Medium devices (desktops, 992px and 1199px)
 *   6.4 Large devices (desktops, greater 1200px)
 * 7.0 Pre-loading
@@ -336,7 +336,7 @@ li{
 #off-canvas-nav {
     display: none;
 }
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
     .tz-canvas-customer-right{
         display: block;
         -webkit-transition: all 0.3s linear 0s;
@@ -13250,10 +13250,10 @@ body .widget-general .tz-activity-group li {
     }
 }
 /**
-* 6.2 Small devices (tablets, 768px and 991px)
+* 6.2 Small devices (tablets, 768px and 1199px)
 * -----------------------------------------------------------------------------
 */
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 1199px) {
     /*----------------Header 01 ------------------*/
 
     body .tz-header {
@@ -15431,7 +15431,7 @@ body .widget-general .tz-activity-group li {
 * -----------------------------------------------------------------------------
 */
 
-@media (min-width: 1200px) and (max-width: 1299px){
+@media (min-width: 1200px) and (max-width: 1499px){
     /*----------------Header 01 ------------------*/
     body .tz-header .container{
         padding: 0 15px;

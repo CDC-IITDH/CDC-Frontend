@@ -13,15 +13,6 @@
   <meta property="og:title" content="Career Development Cell, IIT Dharwad" />
   <meta property="og:description" content="Career Development Cell, IIT Dharwad" />
   <title>IITDH-CDC</title>
-  <!--[if IE 8]>
-    <link href="style_ie8.css" rel="stylesheet" type="text/css" />
-    <![endif]-->
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
-    <![endif]-->
   <link href="css/bootstrap.min.css" rel="stylesheet" />
   <link href="fonts/awesome/css/font-awesome.min.css" rel="stylesheet" />
   <link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
@@ -29,6 +20,11 @@
   <link href='css/owl.theme.css' rel='stylesheet' type='text/css'>
   <link href="style.css" rel="stylesheet" />
   <link rel="icon" href="images/CDC_Logos/favicon.ico" type="image/x-icon" />
+<style>
+    body {
+      font-family: "Roboto", "Helvetica Neue", Helvetica, Arial;
+    }
+  </style>
 </head>
 <style>
   #more {
@@ -38,8 +34,160 @@
   #more1 {
     display: none;
   }
-</style>
 
+  .link-icon {
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0px auto;
+  }
+
+  .nav-collapse {
+    margin: 0
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --desaturated-dark-blue: hsl(214, 17%, 51%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+    --grayish-blue: hsl(212, 23%, 69%);
+    --white: hsl(0, 0%, 100%);
+
+    --fs-13: 13px;
+  }
+
+  .article-card {
+    display: grid;
+    grid-template-columns: 285px auto;
+    max-width: 1200px;
+    border-radius: 10px;
+    margin: 0 auto;
+    box-shadow: 2px 2px 10px #888888;
+    max-height: 450px;
+  }
+
+  .img-box {
+    border-radius: 10px 0 0 10px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .article-banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.5s ease;
+  }
+
+  .article-content {
+    background: var(--white);
+    padding: 32px 40px;
+    border-radius: 0 10px 10px 0;
+    overflow-y: auto;
+    max-height: 300px;
+    position: relative;
+    /* background-color: aqua; */
+  }
+
+  .article-title {
+    font-size: 30px;
+    color: var(--very-dark-grayish-blue);
+    margin: 0;
+    padding: 20px 10px;
+    position: sticky;
+    top: -40px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+  }
+
+  .article-text {
+    color: var(--desaturated-dark-blue);
+    font-size: var(--fs-8);
+    line-height: 1.5;
+    margin-bottom: 18px;
+  }
+
+  .name {
+    position: absolute;
+    text-align: center;
+    bottom: -5px;
+    width: 100%;
+    padding: 8px 12px;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: rgba(32, 32, 32, 0.862);
+    border-radius: 4px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .img-box {
+      width: 100%;
+      height: 320px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .name {
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .article-card {
+      grid-template-columns: 1fr;
+      max-width: 354px;
+      margin: 0 auto;
+      max-height: none;
+    }
+
+    .img-box,
+    .article-content {
+      border-radius: 0;
+    }
+
+    .article-content {
+      padding: 30px 28px 20px;
+      max-height: 380px;
+      overflow-y: none;
+    }
+
+    .article-text {
+      margin-bottom: 30px;
+      font-size: 14px;
+    }
+
+    .article-title {
+      font-size: 28px;
+    }
+  }
+
+  .about {
+    align-items: center;
+    max-width: 1200px;
+    font-family: 'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+  }
+
+  .about_text {
+    background-color: transparent;
+    line-height: 1.4;
+    color: #fff;
+  }
+</style>
 <script>
   function myFunction() {
     var dots = document.getElementById("dots");
@@ -146,12 +294,6 @@
   <!-- End section search form -->
   <!-- Begin class tz-header-2 -->
   <header class="tz-header tz-header-2">
-    <!--<div class="tz-sign-in">
-    <div class="container">
-        <p><i class="fa fa-times"></i>Welcome to Ethic University. Sign in to enjoy our best online lessions!</p>
-        <button class="tz-search"><i class="fa fa-search"></i></button>
-    </div>
-</div>-->
     <div class="tz-customer-container">
       <div class="container">
         <div class="tz-header-content">
@@ -159,39 +301,18 @@
             <i class="fa fa-bars"></i>
           </button>
           <h3 class="tz-logo" id="header_logo">
-            <a href="index.html"><img alt="Images Logo" src="images/home/CDC_Logo/website_header@2x.png" style="height:80px;width:200px"></a>
+            <a href="index.html"><img alt="Images Logo" src="images/home/CDC_Logo/website_header@2x.png"
+                style="height:80px;width:200px"></a>
           </h3>
           <nav class="nav-collapse">
-            <ul class="tz-menu">
+            <ul class="tz-menu" style="align-items: center;">
               <li>
                 <a href="index.html" id="a1">Home</a>
-                <!--<ul class="sub-menu sub-menu-style-1">
-                                <li>
-                                    <a href="Home-01.html">Home Version 01</a>
-                                </li>
-                                <li>
-                                    <a href="Home-02.html">Home Version 02</a>
-                                </li>
-                                <li>
-                                    <a href="Home-03.html">Home Version 03</a>
-                                </li>
-                                <li>
-                                    <a href="Home-04.html">Home Version 04</a>
-                                </li>
-                                <li>
-                                    <a href="index.html">Home Version 05</a>
-                                </li>
-                                <li>
-                                    <a href="Home-06.html">Home Version 06</a>
-                                </li>
-                                <li>
-                                    <a href="Home-07.html">Home Version 07</a>
-                                </li>
-                            </ul>-->
               </li>
               <li>
                 <a href="#" id="a2" style="width: 80%">Academic Info</a>
-                <button type="button" class="tz-button-toggle pull-right" onclick="dropdown_func('sub1')" style="border: none; font-size: 16px; cursor: pointer; background: #333333; color: #ffffff; margin: 5px 10px 0px 0px;">
+                <button type="button" class="tz-button-toggle pull-right" onclick="dropdown_func('sub1')"
+                  style="border: none; font-size: 16px; cursor: pointer; background: #333333; color: #ffffff; margin: 5px 10px 0px 0px;">
                   <i class="fa fa-chevron-down"></i>
                 </button>
                 <ul id="sub1" class="sub-menu sub-menu-style-1">
@@ -202,19 +323,15 @@
                     <a href="academic_facility_page.html">Academic Facilities</a>
                   </li>
                   <li>
-                    <a href="faculty_page.html">Faculty</a>
+                    <a href="https://www.iitdh.ac.in/faculty_dept.php">Faculty</a>
                   </li>
-                  <!-- <li>
-                                    <a href="r&d_page.html">R&D</a>
-                                </li>
-                                <li>
-                                    <a href="acad_studentProject.html">Students Projects</a>
-                                </li> -->
+
                 </ul>
               </li>
               <li>
                 <a href="#" id="a3" style="width: 80%">For Recruiters</a>
-                <button type="button" class="tz-button-toggle  pull-right" onclick="dropdown_func('sub2')" style="border: none; font-size: 16px; cursor: pointer; background: #333333; color: #ffffff; margin: 5px 10px 0px 0px;">
+                <button type="button" class="tz-button-toggle  pull-right" onclick="dropdown_func('sub2')"
+                  style="border: none; font-size: 16px; cursor: pointer; background: #333333; color: #ffffff; margin: 5px 10px 0px 0px;">
                   <i class="fa fa-chevron-down"></i>
                 </button>
                 <ul id="sub2" class="sub-menu sub-menu-style-1">
@@ -224,138 +341,35 @@
                   <li>
                     <a href="placementprocedure.html">Placement</a>
                   </li>
-                  <!-- <li>
-                                    <a href="#">Internship</a>
-                                </li> -->
+
                   <li>
-                    <a href="https://drive.google.com/file/d/1FaorkD7m_EOsdj-P0ZwiBDu7FjpK0Dv7/view" target="_blank">Brochure</a>
+                    <a href="https://drive.google.com/file/d/1QpP0K4J6AXiFcezI-mBRzrpesci0gsAh/view?usp=drive_link"
+                      target="_blank">Brochure</a>
                   </li>
                   <li>
                     <a href="companies_faqs.html">FAQs</a>
                   </li>
                 </ul>
               </li>
-              <!--<li class="tz-point-static">
-                            <a href="#">For Students</a>
-                            <div class="sub-menu sub-menu-style-2">
-                                <div class="tz-submenu-2-wrapper">
-                                    <div class="row">
-                                        <div class="col-md-3 sub-menu-2-item">
-                                            <ul>
-                                                <li>
-                                                    <a href="Mega-Menu-Style-01.html"><i class="fa fa-home"></i>Mega Menu Style 01</a>
-                                                </li>
-                                                <li>
-                                                    <a href="Mega-Menu-Style-02.html"><i class="fa fa-gift"></i>Mega Menu Style 02</a>
-                                                </li>
-                                                <li>
-                                                    <a href="Mega-Menu-Style-03.html"><i class="fa fa-film"></i>Mega Menu Style 03</a>
-                                                </li>
-                                                <li>
-                                                    <a href="Mega-Menu-Style-04.html"><i class="fa fa-flask"></i>Mega Menu Style 04</a>
-                                                </li>
-                                                <li>
-                                                    <a href="Feature-Forum.html"><i class="fa fa-gavel"></i>Feature Forum</a>
-                                                </li>
-                                                <li>
-                                                    <a href="Feature-RTLLayout.html"><i class="fa fa-glass"></i>Feature RTLLayout</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-3 sub-menu-2-item">
-                                            <ul>
-                                                <li>
-                                                    <a href="Feature-Typography.html"><i class="fa fa-plus"></i>Feature Typography</a>
-                                                </li>
-                                                <li>
-                                                    <a href="Feature-Color-01.html"><i class="fa fa-power-off"></i>Feature Color Style 01</a>
-                                                </li>
-                                                <li>
-                                                    <a href="Feature-Color-02.html"><i class="fa fa-random"></i>Feature Color Style 02</a>
-                                                </li>
-                                                <li>
-                                                    <a href="Feature-Color-03.html"><i class="fa fa-road"></i>Feature Color Style 03</a>
-                                                </li>
-                                                <li>
-                                                    <a href="Feature-Color-04.html"><i class="fa fa-share-square"></i>Feature Color Style 04</a>
-                                                </li>
-                                                <li>
-                                                    <a href="Feature-Color-05.html"><i class="fa fa-sign-in"></i>Feature Color Style 05</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-3 sub-menu-2-item">
-                                            <ul>
-                                                <li>
-                                                    <a href="Feature-SortCodes.html"><i class="fa fa-spoon"></i>Feature SortCodes</a>
-                                                </li>
-                                                <li>
-                                                    <a href="Contact.html"><i class="fa fa-star-o"></i>Contact Us</a>
-                                                </li>
-                                                <li>
-                                                    <a href="About.html"><i class="fa fa-tasks"></i>About Us</a>
-                                                </li>
-                                                <li>
-                                                    <a href="CanvasMenu.html"><i class="fa fa-ticket"></i>Canvas Menu</a>
-                                                </li>
-                                                <li>
-                                                    <a href="Header-01.html"><i class="fa fa-tint"></i>Header Style 01</a>
-                                                </li>
-                                                <li>
-                                                    <a href="Header-02.html"><i class="fa fa-users"></i>Header Style 02</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-3 sub-menu-2-item">
-                                            <ul>
-
-                                                <li>
-                                                    <a href="Header-03.html"><i class="fa fa-volume-up"></i>Header Style 03</a>
-                                                </li>
-                                                <li>
-                                                    <a href="Header-04.html"><i class="fa fa-ambulance"></i>Header Style 04</a>
-                                                </li>
-                                                <li>
-                                                    <a href="Header-05.html"><i class="fa fa-wrench"></i>Header Style 05</a>
-                                                </li>
-                                                <li>
-                                                    <a href="Header-06.html"><i class="fa fa-truck"></i>Header Style 06</a>
-                                                </li>
-                                                <li>
-                                                    <a href="Header-07.html"><i class="fa fa-thumb-tack"></i>Header Style 07</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>-->
               <li>
                 <a href="#" id="a4" style="width: 80%">For Students</a>
-                <button type="button" class="tz-button-toggle  pull-right" onclick="dropdown_func('sub3')" style="border: none; font-size: 16px; cursor: pointer; background: #333333; color: #ffffff; margin: 5px 10px 0px 0px;">
+                <button type="button" class="tz-button-toggle  pull-right" onclick="dropdown_func('sub3')"
+                  style="border: none; font-size: 16px; cursor: pointer; background: #333333; color: #ffffff; margin: 5px 10px 0px 0px;">
                   <i class="fa fa-chevron-down"></i>
                 </button>
                 <ul id="sub3" class="sub-menu sub-menu-style-1">
-                  <!-- <li>
-                                    <a href="placement.html">For placements</a>
-                                </li>
-                                <li>
-                                    <a href="intern.html">For internships</a>
-                                </li>
-                                <li>
-                                    <a href="intern.html">For Internships</a>
-                                </li> -->
+
                   <li>
-                    <a href="https://drive.google.com/file/d/1aP65HZkvUKcZ-WfxlRdKvN6zZGu30jHu/view?usp=sharing" target="_blank">Placements - Rules & Regulations</a>
+                    <a href="https://drive.google.com/file/d/1aP65HZkvUKcZ-WfxlRdKvN6zZGu30jHu/view?usp=sharing"
+                      target="_blank">Placements - Rules & Regulations</a>
                   </li>
                   <li>
-                    <a href="https://drive.google.com/file/d/1NYflwhFANehHwbqMFLWi-IHaQQjAt0FJ/view?usp=sharing" target="_blank">Internships - Rules & Regulations</a>
+                    <a href="https://drive.google.com/file/d/1NYflwhFANehHwbqMFLWi-IHaQQjAt0FJ/view?usp=sharing"
+                      target="_blank">Internships - Rules & Regulations</a>
                   </li>
                   <li>
-                    <a href="https://drive.google.com/file/d/1-jV15-Aj-f45oC0Qp50m-SRxOAzz8W25/view" target="_blank">Internship Information</a>
-                  </li>
-                  <li>
-                    <a href="https://drive.google.com/file/d/1xY4LitY3CEJKTwa0-nW55sQOJ7XunSSk/view?usp=sharing" target="_blank">Miscellaneous</a>
+                    <a href="https://drive.google.com/file/d/1a8cRL4i3aeEWcCVRQIRAv-DrFybPl9N0/view?usp=sharing"
+                      target="_blank">Internship Information</a>
                   </li>
                   <li>
                     <a href="portal/index.html" target="_blank">Student Portal</a>
@@ -364,7 +378,8 @@
               </li>
               <li>
                 <a href="#" id="a5" style="width: 80%">Beyond Academics</a>
-                <button type="button" class="tz-button-toggle pull-right" onclick="dropdown_func('sub4')" style="border: none; cursor: pointer; background: #333333; color: #ffffff; padding: 5px 10px 0px 0px;">
+                <button type="button" class="tz-button-toggle pull-right" onclick="dropdown_func('sub4')"
+                  style="border: none; cursor: pointer; background: #333333; color: #ffffff; padding: 5px 10px 0px 0px;">
                   <i class="fa fa-chevron-down"></i>
                 </button>
                 <ul id="sub4" class="sub-menu sub-menu-style-1">
@@ -374,61 +389,30 @@
                   <li>
                     <a href="https://smp.iitdh.ac.in/" target="_blank">SMP</a>
                   </li>
-                  <!-- <li>
-                                    <a href="#">Cultural Events</a>
-                                </li> -->
+
                   <li>
                     <a href="https://oss2019.github.io/" target="_blank">OSS</a>
                   </li>
-                  <!-- <li>
-                                    <a href="#">CSR</a>
-                                </li> -->
+
                 </ul>
               </li>
               <li>
                 <a href="#" id="a6" style="width: 80%">Events</a>
-                <button type="button" class="tz-button-toggle pull-right" onclick="dropdown_func('sub5')" style="border: none; font-size: 16px; cursor: pointer; background: #333333; color: #ffffff; margin: 5px 10px 0px 0px;">
+                <button type="button" class="tz-button-toggle pull-right" onclick="dropdown_func('sub5')"
+                  style="border: none; font-size: 16px; cursor: pointer; background: #333333; color: #ffffff; margin: 5px 10px 0px 0px;">
                   <i class="fa fa-chevron-down"></i>
                 </button>
                 <ul id="sub5" class="sub-menu sub-menu-style-1">
                   <li>
                     <a href="hr_conclave.html">HR Conclave</a>
                   </li>
-                  <!-- <li>
-                                    <a href="r&d_page.html">R&D</a>
-                                </li>
-                                <li>
-                                    <a href="acad_studentProject.html">Students Projects</a>
-                                </li> -->
+
                 </ul>
               </li>
               <li>
                 <a href="contact_cdc.html" id="a7">Contact Us</a>
                 <ul class="sub-menu sub-menu-style-1">
-                  <!--<li>
-                                    <a href="JoomlaBase-404Page.html">CDC Head</a>
-                                </li>
-                                <li>
-                                    <a href="JoomlaBase-NewFeed.html">Professors</a>
-                                </li>
-                                <li>
-                                    <a href="JoomlaBase-NewLink.html">Executive</a>
-                                </li>
-                                <li>
-                                    <a href="JoomlaBase-Page-Login.html">F</a>
-                                </li>
-                                <li>
-                                    <a href="JoomlaBase-Page-Profile-User.html">JoomlaBase Profile User</a>
-                                </li>
-                                <li>
-                                    <a href="JoomlaBase-Page-Remind-UserName.html">JoomlaBase UserName</a>
-                                </li>
-                                <li>
-                                    <a href="JoomlaBase-Page-Reset-Pass.html">JoomlaBase Reset Pass</a>
-                                </li>
-                                <li>
-                                    <a href="JoomlaBase-Page-Resgister.html">JoomlaBase Resgister</a>
-                                </li>-->
+
                 </ul>
               </li>
             </ul>
@@ -451,111 +435,16 @@
           <div class="tz-banner-content">
             <div class="container">
               <h4>Career Development Cell</h4>
-              <!-- <span class="tz-under-line"></span> -->
+
               <small>Indian Institute of Technology</small>
               </br>
               <small>Dharwad</small>
-              <!--<h6>We Are The Best Worldwide University</h6>-->
-              <!--<a class="tz-item-more-details" href="#">
-                                <span><i class="fa fa-arrows-alt"></i>MORE DETAILS</span>
-                            </a>-->
+
             </div>
           </div>
-          <!--<button class="tz-button-left">
-                        <i class="fa fa-angle-left"></i>
-                    </button>
-                    <button class="tz-button-right">
-                        <i class="fa fa-angle-right"></i>
-                    </button>-->
+
         </div>
-        <!--<div class="tz-items">
-                    <div class="tz-slider-images">
-                        <img src="http://placehold.it/1920x800" alt="Images">
-                    </div>
-                    <div class="tz-banner-content">
-                        <div class="container">
-                            <small>NUMBER ONE</small>
-                            <h4>ENGLAND UNIVERSITY</h4>
-                            <span class="tz-under-line"></span>
-                            <h6>We Are The Best Worldwide University</h6>
-                            <a class="tz-item-more-details" href="#">
-                                <span><i class="fa fa-arrows-alt"></i>MORE DETAILS</span>
-                            </a>
-                        </div>
-                    </div>
-                    <button class="tz-button-left">
-                        <i class="fa fa-angle-left"></i>
-                    </button>
-                    <button class="tz-button-right">
-                        <i class="fa fa-angle-right"></i>
-                    </button>
-                </div>
-                <div class="tz-items">
-                    <div class="tz-slider-images">
-                        <img src="http://placehold.it/1920x800" alt="Images">
-                    </div>
-                    <div class="tz-banner-content">
-                        <div class="container">
-                            <small>NUMBER ONE</small>
-                            <h4>ENGLAND UNIVERSITY</h4>
-                            <span class="tz-under-line"></span>
-                            <h6>We Are The Best Worldwide University</h6>
-                            <a class="tz-item-more-details" href="#">
-                                <span><i class="fa fa-arrows-alt"></i>MORE DETAILS</span>
-                            </a>
-                        </div>
-                    </div>
-                    <button class="tz-button-left">
-                        <i class="fa fa-angle-left"></i>
-                    </button>
-                    <button class="tz-button-right">
-                        <i class="fa fa-angle-right"></i>
-                    </button>
-                </div>
-                <div class="tz-items">
-                    <div class="tz-slider-images">
-                        <img src="http://placehold.it/1920x800" alt="Images">
-                    </div>
-                    <div class="tz-banner-content">
-                        <div class="container">
-                            <small>NUMBER ONE</small>
-                            <h4>ENGLAND UNIVERSITY</h4>
-                            <span class="tz-under-line"></span>
-                            <h6>We Are The Best Worldwide University</h6>
-                            <a class="tz-item-more-details" href="#">
-                                <span><i class="fa fa-arrows-alt"></i>MORE DETAILS</span>
-                            </a>
-                        </div>
-                    </div>
-                    <button class="tz-button-left">
-                        <i class="fa fa-angle-left"></i>
-                    </button>
-                    <button class="tz-button-right">
-                        <i class="fa fa-angle-right"></i>
-                    </button>
-                </div>
-                <div class="tz-items">
-                    <div class="tz-slider-images">
-                        <img src="http://placehold.it/1920x800" alt="Images">
-                    </div>
-                    <div class="tz-banner-content">
-                        <div class="container">
-                            <small>NUMBER ONE</small>
-                            <h4>ENGLAND UNIVERSITY</h4>
-                            <span class="tz-under-line"></span>
-                            <h6>We Are The Best Worldwide University</h6>
-                            <a class="tz-item-more-details" href="#">
-                                <span><i class="fa fa-arrows-alt"></i>MORE DETAILS</span>
-                            </a>
-                        </div>
-                    </div>
-                    <button class="tz-button-left">
-                        <i class="fa fa-angle-left"></i>
-                    </button>
-                    <button class="tz-button-right">
-                        <i class="fa fa-angle-right"></i>
-                    </button>
-                </div>-->
+
       </div>
     </div>
     <!-- End  class banner style-3 -->
@@ -565,29 +454,46 @@
   <section class="tz-introduce-univesity">
     <div class="tz-cource-services tz-cource-services-style-2">
       <ul>
+
         <li>
-          <div class="tz-background-color-1">
-            <a href="whyrecruit.html"><i class="tz-color-1 fa fa-file-text-o"></i></a>
-            <span><a href="whyrecruit.html">Why Recruit?</a></span>
-          </div>
+          <a href="whyrecruit.html">
+            <div class="tz-background-color-1">
+              <span class="link-icon">
+                <i class="tz-color-1 fa fa-file-text-o"></i>
+              </span>
+              <span style="color: #fff;padding-top: 13px;">Why Recruit?</span>
+            </div>
+          </a>
         </li>
         <li>
-          <div class="tz-background-color-2">
-            <a href="placementprocedure.html"><i class="tz-color-2 fa fa-paperclip"></i></a>
-            <span><a href="placementprocedure.html">Procedure</a></span>
-          </div>
+          <a href="placementprocedure.html">
+            <div class="tz-background-color-2">
+              <span class="link-icon">
+                <i class="tz-color-2 fa fa-paperclip"></i>
+              </span>
+              <span style="color: #fff;padding-top: 13px;">Procedure</span>
+            </div>
+          </a>
         </li>
         <li>
-          <div class="tz-background-color-3">
-            <a href="academics.html"><i class="tz-color-3 fa fa-magic"></i></a>
-            <span><a href="academics.html">Academics</a></span>
-          </div>
+          <a href="academics.html">
+            <div class="tz-background-color-3">
+              <span class="link-icon">
+                <i class="tz-color-3 fa fa-magic"></i>
+              </span>
+              <span style="color: #fff;padding-top: 13px;">Academics</span>
+            </div>
+          </a>
         </li>
         <li>
-          <div class="tz-background-color-4">
-            <a href="contact_cdc.html"><i class="tz-color-4 fa fa-cog"></i></a>
-            <span><a href="contact_cdc.html">Contact Us</a></span>
-          </div>
+          <a href="contact_cdc.html">
+            <div class="tz-background-color-4">
+              <span class="link-icon">
+                <i class="tz-color-4 fa fa-cog"></i>
+              </span>
+              <span style="color: #fff;padding-top: 13px;">Contact Us</span>
+            </div>
+          </a>
         </li>
       </ul>
     </div>
@@ -596,227 +502,226 @@
   </section>
   <!-- End section tz-introduce-univesity -->
 
-  <!-- <section class="tz-introduce-style-4">
-    <div class="container">
-      <div class="tz-introduce-content tz-introduce-content-style-4">
-        <h2>Upcoming Talk</h2>
-        <h4>Ashok Leyland, Talk with Head of Leadership Development</h4>
-        <img src="ashok_leyland_talk.jpg" alt="Images" style="max-height:500px"> <br><br>
-      </div>
-    </div>
-  </section> -->
-
-
   <section class="tz-introduce-style-4">
-    <div class="container">
-      <div class="tz-introduce-content tz-introduce-content-style-4">
+    <div class="container about">
+      <div class="tz-introduce-content tz-introduce-content-style-4 about_text">
         <h4>About IIT Dharwad</h4>
-        <p style="text-align:justify;color:#383131;margin:0 0 5px">Established in 2016 as an autonomous institute of national
+        <p style="text-align:justify;color:#101118bd;margin:0 0 5px">Established in 2016 as an autonomous institute of
+          national
           importance by the Ministry of Human Resource Development, GoI, Indian
           Institute of Technology Dharwad (IIT Dharwad) aims at producing world
           class engineers who are capable of establishing themselves in the higher echelons of
           any field they venture into.
         </p>
-        <p style="text-align:justify;color:#383131;margin:0 0 5px">The institute offers three UG programs – B.Tech. in Computer Science and
+        <p style="text-align:justify;color:#101118bd;margin:0 0 5px">The institute offers three UG programs – B.Tech. in
+          Computer Science and
           Engineering, Electrical Engineering and Mechanical Engineering.
           Ph.D Programs are offered in the areas of
           Electrical Engineering, Mechanical Engineering, Mathematics, Computer
           Science, Physics, Humanities and Social Sciences, Biosciences
           Bioengineering and Chemistry.
         </p>
-        <p style="text-align:justify;color:#383131;margin:0 0 5px">The institute aims to make education an innovative and enriching
+        <p style="text-align:justify;color:#101118bd;margin:0 0 5px">The institute aims to make education an innovative
+          and enriching
           experience through a unique blend of academic, sports and extra-curricular
           programs delivered within a student-centric culture to enable the younger
           generation emerge as future leaders.
         </p>
-        <p style="text-align:justify;color:#383131;margin:0 0 5px">The overall academic environment in the institution is highly
+        <p style="text-align:justify;color:#101118bd;margin:0 0 5px">The overall academic environment in the institution
+          is highly
           conducive for achieving academic excellence and for
           developing analytical abilities, ethics and integrity.
         </p>
-        <p style="text-align:justify;color:#383131;margin:0 0 0">Apart from academic excellence, the institute lays
+        <p style="text-align:justify;color:#101118bd;margin:0 0 0">Apart from academic excellence, the institute lays
           emphasis on research temperament, entrepreneurship and motivates
           its students to recognize their true potential without the fear of failure.
         </p>
-        <!-- <img src="images/check-01-home1.png" alt="Images"> -->
-      </div>
-    </div><!-- End container class tz-home-4-introduce -->
-  </section><!-- End class tz-home-4-introduce -->
 
-  <section class="tz-wrapper-default">
-    <div class="tz-blog-title" style="height:70px;padding-top:10px;padding-bottom:10px">
-
-    </div>
-    <div class="container">
-      <h1><a href="#" style="color:#2f3d56">Director's Message</a></h1>
-      <!-- Start class tz-blog-wrapper -->
-      <div class="tz-blog-wrapper">
-        <div class="row">
-          <div class="col-lg-12 col-md-9 col-sm-12 col-xs-12">
-            <!-- Start class tz-blog-item -->
-            <article class="tz-blog-item">
-              <div class="row">
-                <div class="col-lg-3 col-md-5 col-sm-12 col-xs-12">
-                  <div class="tz-blog-thubnail">
-                    <img src="images/home/director.jfif" width="600" height="400" alt="Images"> <br><br>
-                    <h4>
-                      <center><strong>Venkappayya R Desai</strong></center>
-                    </h4>
-                    <h4>
-                      <center>Director, IIT Dharwad</center>
-                    </h4>
-                  </div>
-                </div>
-                <div class="col-lg-9 col-md-7 col-sm-12 col-xs-12">
-                  <div class="tz-blog-description">
-                    <p style="text-align:justify;color:#383131"> 
-                      At the outset, I extend my warm welcome to all the HRs of the esteemed organizations. 
-                      I am delighted to invite you to IIT Dharwad for the placement of our students. 
-                    </p>
-                    <p style="text-align:justify;color:#383131"> 
-                      Indian Institute of Technology Dharwad was established in July 2016 with B. Tech programs in three core branches, 
-                      namely Computer Science and Engineering, Electrical, and Mechanical Engineering, and has now grown over the years to house B.Tech,
-                      M.Tech, MS, and PhD students.
-                    </p>
-                    <p style="text-align:justify;color:#383131"> 
-                        IITDh is presently functioning from its transit campus in Water & Land Management Institute (WALMI) Campus situated next to the High Court Bench at Dharwad since August 2016. The transit campus is about 135 acres, spread with over 25 buildings and sheds. 
-                        There are about 11 hostels, playgrounds, classrooms, laboratories, well-furnished kitchens and dining. About 470 acres of land have been allotted by the Karnataka Government for the permanent campus of IIT Dharwad in Chikkamalligawad village. 
-                        The Library is well equipped with nearly 5000 books and provides access to more than 8500 research journals.                      
-                    </p>
-                    <span id="dots">...</span><span id="more">
-                      <p style="text-align:justify;color:#383131"> 
-                        The institute hosts nearly 900 students, with about 20% being women. The students are drawn from about 21 states of the country. The Institute has nearly 70 faculty members across ten Departments. All the faculty members have done PhD and postdocs from reputed institutes in India and abroad. The faculty members have secured about ₹28 cr worth of sponsored R&D projects, executed about ₹1.5cr worth of industrial consultancy projects, and published ~400 scientific papers.
-                      </p>
-                      <p style="text-align:justify;color:#383131"> 
-                        It will be an honour for us to host you and provide our students with an opportunity to demonstrate their capability, intellect and professional readiness to get inducted into your esteemed organization. We assure you that we have a good number of meritorious and industry-ready students who may prove asset to your organization.
-                      </p>
-                      <p style="text-align:justify;color:#383131"> 
-                        Once again, I cordially invite you to our campus for placements and look forward to building a long-term sustainable and mutually beneficial relationship with your esteemed organization.
-                      </p>
-                    </span>
-                    <button onclick="myFunction()" id="myBtn" style="outline:none;border:none;background-color: Transparent;cursor:pointer;overflow:hidden;color:#334878;">Read more</button>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <!-- End class tz-blog-item -->
-          </div>
-        </div>
       </div>
-      <!-- End class tz-blog-wrapper -->
     </div>
   </section>
 
+  <section class="tz-introduce-style-4" style='background-image: linear-gradient(rgba(1, 1, 14, 0.81), rgba(16, 1, 1, 0.656)), url("./images/about_cdc.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    '>
+    <div class="container about">
+      <div class="tz-introduce-content tz-introduce-content-style-4 about_text">
+        <h4 style="color: #fff;">About Career Development Cell (CDC)</h4>
+        <p style="text-align:justify;margin:0 0 5px; color: #e8e8e8;">CDC is a body of IIT Dharwad that supports
+          students
+          in shaping and managing their careers by building critical
+          ingredients required for a student to be a complete professional.
+        </p>
+        <p style="text-align:justify;margin:0 0 5px;color: #e8e8e8;">It is committed to assisting all IIT Dharwad
+          students
+          in achieving their career goals. To achieve the same, it organizes
+          events like pre-placement training programs and various talk series to facilitate the Industry Institute
+          Interface, to
+          name a few.
+        </p>
+        <p style="text-align:justify;margin:0 0 5px;color: #e8e8e8;">The institute aims to make education an innovative
+          It is also responsible for facilitating campus internships and placements for the students of IIT Dharwad. It
+          further
+          helps them explore opportunities for higher education.
+        </p>
 
-  <section class="tz-wrapper-default">
-    <!--<div class="tz-blog-title" style = "height:70px;padding-top:10px;padding-bottom:10px">
-
-        </div>-->
-    <div class="container">
-      <h1><a href="#" style="color:#2f3d56">Deans' Message</a></h1>
-      <!-- Start class tz-blog-wrapper -->
-      <div class="tz-blog-wrapper">
-        <div class="row">
-          <div class="col-lg-12 col-md-9 col-sm-12 col-xs-12">
-            <!-- Start class tz-blog-item -->
-            <article class="tz-blog-item">
-              <div class="row">
-                <div class="col-lg-3 col-md-5 col-sm-12 col-xs-12">
-                  <div class="tz-blog-thubnail">
-                    <img src="images/home/dean_ap.jpg" alt="Images"> <br><br>
-                    <h4>
-                      <center><strong>Prof. Narayan S Punekar</strong></center>
-                    </h4>
-                    <h4>
-                      <center>Dean of Academic Programmes, IIT Dharwad</center>
-                    </h4>
-                  </div>
-                </div>
-                <div class="col-lg-9 col-md-7 col-sm-12 col-xs-12">
-                  <div class="tz-blog-description">
-
-                    <p style="text-align:justify;color:#383131">I am pleased to invite you to our esteemed institute on behalf of the
-                      students,faculty and the staff of IIT Dharwad, to participate in placements for
-                      the final year students and internships for the pre-final year students.
-                    </p>
-                    <p style="text-align:justify;color:#383131">IIT Dharwad’s course structure is designed to incorporate more hands-on
-                      approach with the intention to provide students the, necessary skills required
-                      to contribute to the practical world of engineering. Most courses include
-                      “Course Projects” which the students conceive and are then guided by our
-                      knowledgable faculty. Our capable and enthusiastic students contribute to
-                      their peers‘ learning in group projects, acting as Teaching assistants and even
-                      writing manuals for new courses or making changes to pre-existing ones.
-                    </p><span id="dots1">...</span><span id="more1">
-                      <p style="text-align:justify;color:#383131">As an infant IIT, students form committees to improve their academic
-                        productivity and “college experience”. Each student contributes by working
-                        through his/her strengths, covering their peers’ weaknesses and helping to
-                        turn those weaknesses to strengths.
-                      </p>
-                      <p style="text-align:justify;color:#383131">I look forward to your participation in the placements for the final year
-                        students and internships for the pre-final year students, hoping that your visit
-                        shall begin a promising and an everlasting relationship between the Institute
-                        and your organization in the days ahead.
-                      </p>
-                    </span>
-                    <button onclick="myFunction1()" id="myBtn1" style="outline:none;border:none;background-color: Transparent;cursor:pointer;overflow:hidden;color:#334878;">Read more</button>
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
       </div>
-
-      <!-- Start class tz-blog-wrapper -->
-      <div class="tz-blog-wrapper">
-        <div class="row">
-          <div class="col-lg-12 col-md-9 col-sm-12 col-xs-12">
-            <!-- Start class tz-blog-item -->
-            <article class="tz-blog-item">
-              <div class="row">
-                <div class="col-lg-3 col-md-5 col-sm-12 col-xs-12">
-                  <div class="tz-blog-thubnail">
-                    <img src="images/home/dean_rnd.jpeg" alt="Images"> <br><br>
-                    <h4>
-                      <center><strong>Prof. Rajesh Hegde</strong></center>
-                    </h4>
-                    <h4>
-                      <center>Dean of Research & Development, IIT Dharwad</center>
-                    </h4>
-                  </div>
-                </div>
-                <div class="col-lg-9 col-md-7 col-sm-12 col-xs-12">
-                  <div class="tz-blog-description">
-                    <p style="color:#383131" align="justify">
-                      The Research and Development (R&D) section of IIT
-                      Dharwad is actively working towards bringing up a vibrant
-                      research and development culture. These include
-                      coordinating with funding agencies in securing sponsored
-                      projects, consultancy projects and offering specialized
-                      in-house courses for industry personnel.
-                    </p>
-
-                    <p style="color:#383131" align="justify">
-                      Industry academia linkage is being established by conducting Development of
-                      Industry and Academia Linkage (DIAL) days. Within a short
-                      span of time, our young and dynamic faculty members have
-                      secured several funded projects worth 6 cr. The R&D
-                      section is also coordinating with reputed universities and
-                      industries, India and abroad for collaboration. Already
-                      many MoUs have been signed with many organizations and
-                      the collaboration has started.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <!-- End class tz-blog-item -->
-          </div>
-        </div>
-      </div>
-      <!-- End class tz-blog-wrapper -->
     </div>
   </section>
 
+  <div style="padding: 100px 0px;">
+    <section class="tz-wrapper-default">
+      <article class="article-card">
+        <div class="img-box">
+          <img src="images/home/director.jfif" alt="" class="article-banner">
+          <h1 class="name">Venkappayya R Desai <br>
+            Director, IIT Dharwad
+          </h1>
+        </div>
+        <div class="article-content">
+          <h3 class="article-title">Director's Message </h3>
+          <br><br>
+          <p class="article-text">
+            At the outset, I extend my warm welcome to all the HRs of the esteemed organizations. I am delighted to
+            invite you to
+            IIT Dharwad for the placement of our students.
+          </p>
+          <p class="article-text">
+            Indian Institute of Technology Dharwad was established in July 2016 with B. Tech programs in three core
+            branches, namely
+            Computer Science and Engineering, Electrical, and Mechanical Engineering, and has now grown over the
+            years to house
+            B.Tech, M.Tech, MS, and PhD students.
+          </p>
+          <p class="article-text">
+            IITDh is presently functioning from its transit campus in Water & Land Management Institute (WALMI)
+            Campus situated next
+            to the High Court Bench at Dharwad since August 2016. The transit campus is about 135 acres, spread with
+            over 25
+            buildings and sheds. There are about 11 hostels, playgrounds, classrooms, laboratories, well-furnished
+            kitchens and
+            dining. About 470 acres of land have been allotted by the Karnataka Government for the permanent campus
+            of IIT Dharwad
+            in Chikkamalligawad village. The Library is well equipped with nearly 5000 books and provides access to
+            more than 8500
+            research journals.
+          </p>
+          <p class="article-text">
+            The institute hosts nearly 900 students, with about 20% being women. The students are drawn from about
+            21 states of the
+            country. The Institute has nearly 70 faculty members across ten Departments. All the faculty members
+            have done PhD and
+            postdocs from reputed institutes in India and abroad. The faculty members have secured about ₹28 cr
+            worth of sponsored
+            R&D projects, executed about ₹1.5cr worth of industrial consultancy projects, and published ~400
+            scientific papers.
+          </p>
+          <p class="article-text">
+            It will be an honour for us to host you and provide our students with an opportunity to demonstrate
+            their capability,
+            intellect and professional readiness to get inducted into your esteemed organization. We assure you that
+            we have a good
+            number of meritorious and industry-ready students who may prove asset to your organization.
+          </p>
+          <p class="article-text">
+            Once again, I cordially invite you to our campus for placements and look forward to building a long-term
+            sustainable and
+            mutually beneficial relationship with your esteemed organization.
+          </p>
+        </div>
+      </article>
+
+    </section>
+    <div style="width: 100%;height:100px;"></div>
+    <section class="tz-wrapper-default">
+      <article class="article-card">
+        <div class="img-box">
+          <img src="images/home/dean_ap.jpg" alt="" class="article-banner">
+          <h1 class="name">Prof. Narayan S Punekar
+            <br>
+            Dean of Academic Programmes, IIT Dharwad
+          </h1>
+        </div>
+        <div class="article-content">
+          <h3 class="article-title">Dean's Message </h3>
+          <br><br>
+          <p class="article-text">
+            I am pleased to invite you to our esteemed institute on behalf of the students,faculty and the staff of IIT
+            Dharwad, to
+            participate in placements for the final year students and internships for the pre-final year students.
+          </p>
+          <p class="article-text">
+            IIT Dharwad’s course structure is designed to incorporate more hands-on approach with the intention to
+            provide
+            students
+            the, necessary skills required to contribute to the practical world of engineering. Most courses include
+            “Course
+            Projects” which the students conceive and are then guided by our knowledgable faculty. Our capable and
+            enthusiastic
+            students contribute to their peers‘ learning in group projects, acting as Teaching assistants and even
+            writing
+            manuals
+            for new courses or making changes to pre-existing ones.
+          </p>
+          <p class="article-text">
+            As an infant IIT, students form committees to improve their academic productivity and “college experience”.
+            Each student
+            contributes by working through his/her strengths, covering their peers’ weaknesses and helping to turn those
+            weaknesses
+            to strengths.
+          </p>
+          <p class="article-text">
+            I look forward to your participation in the placements for the final year students and internships for the
+            pre-final
+            year students, hoping that your visit shall begin a promising and an everlasting relationship between the
+            Institute and
+            your organization in the days ahead.
+          </p>
+
+        </div>
+      </article>
+
+    </section>
+    <div style="width: 100%;height:100px;"></div>
+    <section class="tz-wrapper-default" style="margin-bottom:80px;">
+      <article class="article-card">
+        <div class="img-box">
+          <img src="images/home/dean_rnd.jpeg" alt="" class="article-banner">
+          <h1 class="name">Prof. Rajesh Hegde
+            <br>
+            Dean of Research & Development, IIT Dharwad
+          </h1>
+        </div>
+        <div class="article-content">
+          <h3 class="article-title">Dean's Message </h3>
+          <br><br>
+          <p class="article-text">
+            The Research and Development (R&D) section of IIT Dharwad is actively working towards bringing up a vibrant
+            research and
+            development culture. These include coordinating with funding agencies in securing sponsored projects,
+            consultancy
+            projects and offering specialized in-house courses for industry personnel.
+          </p>
+          <p class="article-text">
+            Industry academia linkage is being established by conducting Development of Industry and Academia Linkage
+            (DIAL) days.
+            Within a short span of time, our young and dynamic faculty members have secured several funded projects
+            worth
+            6 cr. The
+            R&D section is also coordinating with reputed universities and industries, India and abroad for
+            collaboration.
+            Already
+            many MoUs have been signed with many organizations and the collaboration has started.
+          </p>
+
+        </div>
+      </article>
+
+    </section>
+  </div>
 
 
 
@@ -853,466 +758,57 @@
         <div class="tz-image-portfolio">
           <img src="images/home/classrooms.jpg" alt="Vivamus in lorem nisl">
         </div>
-        <!--        <div class="tz-portfolio-content-style-2">
-                    <h4>Responsive Blog - Centro de Inovacoes InovaCidades</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis ...</p>
-                    <span>
-                        <a href="#"><i class="fa fa-arrows-alt"></i>READ MORE</a>
-                    </span>
-                </div> -->
+
       </div>
 
       <div class="element tz-item-portfolio">
         <div class="tz-image-portfolio">
           <img src="images/home/gallery_8.jpg" alt="Vivamus in lorem nisl">
         </div>
-        <!-- <div class="tz-portfolio-content-style-2">
-                    <h4>Responsive Blog - Centro de Inovacoes InovaCidades</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis ...</p>
-                    <span>
-                        <a href="#"><i class="fa fa-arrows-alt"></i>READ MORE</a>
-                    </span>
-                </div> -->
+
       </div>
       <div class="element tz-item-portfolio">
         <div class="tz-image-portfolio">
           <img src="images/home/gallery_2.jpg" alt="Vivamus in lorem nisl">
           <!-- <a href="#" class="tz-color-icon-1"> <i class="fa fa-camera"></i></a> -->
         </div>
-        <!-- <div class="tz-portfolio-content-style-2">
-                    <h4>Responsive Blog - Centro de Inovacoes InovaCidades</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis ...</p>
-                    <span>
-                        <a href="#"><i class="fa fa-arrows-alt"></i>READ MORE</a>
-                    </span>
-                </div> -->
+        >
       </div>
       <div class="element tz-item-portfolio">
         <div class="tz-image-portfolio">
           <img src="images/home/workshops.jpg" alt="Vivamus in lorem nisl">
         </div>
-        <!-- <div class="tz-portfolio-content-style-2">
-                    <h4>Responsive Blog - Centro de Inovacoes InovaCidades</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis ...</p>
-                    <span>
-                        <a href="#"><i class="fa fa-arrows-alt"></i>READ MORE</a>
-                    </span>
-                </div> -->
+
       </div>
       <div class="element tz-item-portfolio">
         <div class="tz-image-portfolio">
           <img src="images/home/greenery_view.png" alt="Vivamus in lorem nisl">
           <!-- <a href="#" class="tz-color-icon-2"><i class="fa fa-video-camera"></i></a> -->
         </div>
-        <!--    <div class="tz-portfolio-content-style-2">
-                    <h4>Responsive Blog - Centro de Inovacoes InovaCidades</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis ...</p>
-                    <span>
-                        <a href="#"><i class="fa fa-arrows-alt"></i>READ MORE</a>
-                    </span>
-                </div> -->
+
       </div>
       <div class="element tz-item-portfolio">
         <div class="tz-image-portfolio">
           <img src="images/home/gallery_4.jpg" alt="Vivamus in lorem nisl">
         </div>
-        <!--         <div class="tz-portfolio-content-style-2">
-                    <h4>Responsive Blog - Centro de Inovacoes InovaCidades</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis ...</p>
-                    <span>
-                        <a href="#"><i class="fa fa-arrows-alt"></i>READ MORE</a>
-                    </span>
-                </div> -->
+
       </div>
       <div class="element tz-item-portfolio">
         <div class="tz-image-portfolio">
           <img src="images/home/Hardware-win.jpeg" alt="Vivamus in lorem nisl">
         </div>
-        <!--  <div class="tz-portfolio-content-style-2">
-                    <h4>Responsive Blog - Centro de Inovacoes InovaCidades</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis ...</p>
-                    <span>
-                        <a href="#"><i class="fa fa-arrows-alt"></i>READ MORE</a>
-                    </span>
-                </div> -->
+
       </div>
 
       <div class="element tz-item-portfolio">
         <div class="tz-image-portfolio">
           <img src="images/home/cultural-min.jpg" alt="Vivamus in lorem nisl">
         </div>
-        <!--    <div class="tz-portfolio-content-style-2">
-                    <h4>Responsive Blog - Centro de Inovacoes InovaCidades</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis ...</p>
-                    <span>
-                        <a href="#"><i class="fa fa-arrows-alt"></i>READ MORE</a>
-                    </span>
-                </div> -->
+
       </div>
     </div>
     <!--End class tz-portfolio-->
   </section>
-  <!-- End section tz-portfolio-wrapper -->
-
-  <!-- Begin section tz-cources -->
-  <!--<section class="tz-cources">
-        <span class="tz-images-check"><img src="images/check-01-home1.png" alt="Images"></span>
-        <h3 class="tz-title-find">FIND COURSES</h3>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <ul id="tz-sidemenu" class="tz-cources-content-left">
-                        <li>
-                            <div>
-                                <a href="#tz-fine-arts" class="tz-open">
-                                    <span><img src="images/check-01-home1.png" alt="Images"></span>
-                                    <i class="fa fa-arrows-alt"></i>
-                                    <strong>Fine Arts</strong>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <a href="#tz-comunication-tudies">
-                                    <span><img src="images/check-01-home1.png" alt="Images"></span>
-                                    <i class="fa fa-arrows-alt"></i>
-                                    <strong>Comunication Studies</strong>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <a href="#tz-bussiness">
-                                    <span><img src="images/check-01-home1.png" alt="Images"></span>
-                                    <i class="fa fa-arrows-alt"></i>
-                                    <strong>Bussiness</strong>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <a href="#tz-humanities">
-                                    <span><img src="images/check-01-home1.png" alt="Images"></span>
-                                    <i class="fa fa-arrows-alt"></i>
-                                    <strong>Humanities</strong>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <a href="#tz-languge-global">
-                                    <span><img src="images/check-01-home1.png" alt="Images"></span>
-                                    <i class="fa fa-arrows-alt"></i>
-                                    <strong>Languages / Global </strong>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <a href="#tz-sciences">
-                                    <span><img src="images/check-01-home1.png" alt="Images"></span>
-                                    <i class="fa fa-arrows-alt"></i>
-                                    <strong>Sciences & Math</strong>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <a href="#tz-professinal">
-                                    <span><img src="images/check-01-home1.png" alt="Images"></span>
-                                    <i class="fa fa-arrows-alt"></i>
-                                    <strong>Professional Programs </strong>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <a href="#tz-education">
-                                    <span><img src="images/check-01-home1.png" alt="Images"></span>
-                                    <i class="fa fa-arrows-alt"></i>
-                                    <strong>Education</strong>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <a href="#tz-multimedia">
-                                    <span><img src="images/check-01-home1.png" alt="Images"></span>
-                                    <i class="fa fa-arrows-alt"></i>
-                                    <strong>Multimedia / Design</strong>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <a href="#tz-economics">
-                                    <span><img src="images/check-01-home1.png" alt="Images"></span>
-                                    <i class="fa fa-arrows-alt"></i>
-                                    <strong>Economics</strong>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                    <div id="tz-fine-arts" class="tz-content-right">
-                        <div class="tz-tab-slider-img">
-                            <button class="tz-cources-prev">
-                                <i class="fa fa-angle-left"></i>
-                            </button>
-                            <button class="tz-cources-next">
-                                <i class="fa fa-angle-right"></i>
-                            </button>
-                            <ul class="tz-tab-slider">
-                                <li>
-                                    <img src="http://placehold.it/770x412" alt="Images">
-                                </li>
-                                <li>
-                                    <img src="http://placehold.it/770x412" alt="Images">
-                                </li>
-                                <li>
-                                    <img src="http://placehold.it/770x412" alt="Images">
-                                </li>
-                                <li>
-                                    <img src="http://placehold.it/770x412" alt="Images">
-                                </li>
-                                <li>
-                                    <img src="http://placehold.it/770x412" alt="Images">
-                                </li>
-                                <li>
-                                    <img src="http://placehold.it/770x412" alt="Images">
-                                </li>
-                                <li>
-                                    <img src="http://placehold.it/770x412" alt="Images">
-                                </li>
-                                <li>
-                                    <img src="http://placehold.it/770x412" alt="Images">
-                                </li>
-                                <li>
-                                    <img src="http://placehold.it/770x412" alt="Images">
-                                </li>
-                                <li>
-                                    <img src="http://placehold.it/770x412" alt="Images">
-                                </li>
-                                <li>
-                                    <img src="http://placehold.it/770x412" alt="Images">
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="tz-tab-description">
-                            <img src="images/check-02-home2.png" alt="Images">
-                            <h4>Comunication Studies</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis. Lorem ipsum dolor amet, consectetur adipiscing elit. Elementum nisi eget mi mollis ...</p>
-                            <span>
-                                <a href="#">Film Studies</a>
-                                <a href="#">Mass Media</a>
-                                <a href="#">Public Relations</a>
-                            </span>
-                        </div>
-                    </div>
-                    <div id="tz-comunication-tudies" class="tz-content-right tz-hidden">
-                        <div class="tz-tab-slider-img">
-                            <ul class="tz-tab-slider">
-                                <li>
-                                    <img src="http://placehold.it/770x412" alt="Images">
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="tz-tab-description">
-                            <img src="images/check-02-home2.png" alt="Images">
-                            <h4>Comunication Studies</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis. Lorem ipsum dolor amet, consectetur adipiscing elit. Elementum nisi eget mi mollis ...</p>
-                            <span>
-                                <a href="#">Film Studies</a>
-                                <a href="#">Mass Media</a>
-                                <a href="#">Public Relations</a>
-                            </span>
-                        </div>
-                    </div>
-
-                    <div id="tz-bussiness" class="tz-content-right tz-hidden">
-                        <div class="tz-tab-slider-img">
-                            <ul class="tz-tab-slider">
-                                <li>
-                                    <img src="http://placehold.it/770x412" alt="Images">
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="tz-tab-description">
-                            <img src="images/check-02-home2.png" alt="Images">
-                            <h4>Comunication Studies</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis. Lorem ipsum dolor amet, consectetur adipiscing elit. Elementum nisi eget mi mollis ...</p>
-                            <span>
-                                <a href="#">Film Studies</a>
-                                <a href="#">Mass Media</a>
-                                <a href="#">Public Relations</a>
-                            </span>
-                        </div>
-                    </div>
-
-                    <div id="tz-humanities" class="tz-content-right tz-hidden">
-                        <div class="tz-tab-slider-img">
-                            <ul class="tz-tab-slider">
-                                <li>
-                                    <img src="http://placehold.it/770x412" alt="Images">
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="tz-tab-description">
-                            <img src="images/check-02-home2.png" alt="Images">
-                            <h4>Comunication Studies</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis. Lorem ipsum dolor amet, consectetur adipiscing elit. Elementum nisi eget mi mollis ...</p>
-                            <span>
-                                <a href="#">Film Studies</a>
-                                <a href="#">Mass Media</a>
-                                <a href="#">Public Relations</a>
-                            </span>
-                        </div>
-                    </div>
-
-                    <div id="tz-languge-global" class="tz-content-right tz-hidden">
-                        <div class="tz-tab-slider-img">
-                            <ul class="tz-tab-slider">
-                                <li>
-                                    <img src="http://placehold.it/770x412" alt="Images">
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="tz-tab-description">
-                            <img src="images/check-02-home2.png" alt="Images">
-                            <h4>Comunication Studies</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis. Lorem ipsum dolor amet, consectetur adipiscing elit. Elementum nisi eget mi mollis ...</p>
-                            <span>
-                                <a href="#">Film Studies</a>
-                                <a href="#">Mass Media</a>
-                                <a href="#">Public Relations</a>
-                            </span>
-                        </div>
-                    </div>
-
-                    <div id="tz-sciences" class="tz-content-right tz-hidden">
-                        <div class="tz-tab-slider-img">
-                            <ul class="tz-tab-slider">
-                                <li>
-                                    <img src="http://placehold.it/770x412" alt="Images">
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="tz-tab-description">
-                            <img src="images/check-02-home2.png" alt="Images">
-                            <h4>Comunication Studies</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis. Lorem ipsum dolor amet, consectetur adipiscing elit. Elementum nisi eget mi mollis ...</p>
-                            <span>
-                                <a href="#">Film Studies</a>
-                                <a href="#">Mass Media</a>
-                                <a href="#">Public Relations</a>
-                            </span>
-                        </div>
-                    </div>
-
-                    <div id="tz-professinal" class="tz-content-right tz-hidden">
-                        <div class="tz-tab-slider-img">
-                            <ul class="tz-tab-slider">
-                                <li>
-                                    <img src="http://placehold.it/770x412" alt="Images">
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="tz-tab-description">
-                            <img src="images/check-02-home2.png" alt="Images">
-                            <h4>Comunication Studies</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis. Lorem ipsum dolor amet, consectetur adipiscing elit. Elementum nisi eget mi mollis ...</p>
-                            <span>
-                                <a href="#">Film Studies</a>
-                                <a href="#">Mass Media</a>
-                                <a href="#">Public Relations</a>
-                            </span>
-                        </div>
-                    </div>
-
-                    <div id="tz-education" class="tz-content-right tz-hidden">
-                        <div class="tz-tab-slider-img">
-                            <ul class="tz-tab-slider">
-                                <li>
-                                    <img src="http://placehold.it/770x412" alt="Images">
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="tz-tab-description">
-                            <img src="images/check-02-home2.png" alt="Images">
-                            <h4>Comunication Studies</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis. Lorem ipsum dolor amet, consectetur adipiscing elit. Elementum nisi eget mi mollis ...</p>
-                            <span>
-                                <a href="#">Film Studies</a>
-                                <a href="#">Mass Media</a>
-                                <a href="#">Public Relations</a>
-                            </span>
-                        </div>
-                    </div>
-
-                    <div id="tz-multimedia"  class="tz-content-right tz-hidden">
-                        <div class="tz-tab-slider-img">
-                            <ul class="tz-tab-slider">
-                                <li>
-                                    <img src="http://placehold.it/770x412" alt="Images">
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="tz-tab-description">
-                            <img src="images/check-02-home2.png" alt="Images">
-                            <h4>Comunication Studies</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis. Lorem ipsum dolor amet, consectetur adipiscing elit. Elementum nisi eget mi mollis ...</p>
-                            <span>
-                                <a href="#">Film Studies</a>
-                                <a href="#">Mass Media</a>
-                                <a href="#">Public Relations</a>
-                            </span>
-                        </div>
-                    </div>
-
-                    <div id="tz-economics"  class="tz-content-right tz-hidden">
-                        <div class="tz-tab-slider-img">
-                            <ul class="tz-tab-slider">
-                                <li>
-                                    <img src="http://placehold.it/770x412" alt="Images">
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="tz-tab-description">
-                            <img src="images/check-02-home2.png" alt="Images">
-                            <h4>Comunication Studies</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis. Lorem ipsum dolor amet, consectetur adipiscing elit. Elementum nisi eget mi mollis ...</p>
-                            <span>
-                                <a href="#">Film Studies</a>
-                                <a href="#">Mass Media</a>
-                                <a href="#">Public Relations</a>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div><!-- End container class tz-cources
-    </section>-->
-  <!-- End section tz-cources -->
-
-  <!-- Begin section tz-video -->
-  <!-- <section class="tz-video">
-        <div class="tz-video-content">
-            <button class="tzautoplay"><i class="fa fa-video-camera"></i></button>
-            <button class="tzpause"><i class="fa fa-pause"></i></button>
-            <h3>Enjoy your<br> best student life </h3>
-            <small>ETHIC UNIVERSITY</small>
-            <span class="tz-under-line"></span>
-        </div>
-        <div class="bg-video"></div>
-        <video class="videoID">
-            <source type="video/mp4" src="video/video.mp4" />
-            <source type="video/ogg" src="video/video.ogv" />
-            <source type="video/webm" src="video/video.webm" />
-        </video>
-    </section> -->
-  <!--End section tz-video-->
-
 
   <!-- Begin section tz-lastest-event -->
   <section class="tz-lastest-event" style="padding-top:20px">
@@ -1684,199 +1180,6 @@
   </section>
   <!-- End section tz-lastest-event -->
 
-  <!-- Start class tz-wrapper-default -->
-  <!--<section class="tz-wrapper-default">
-            <div class="">
-                <div class="tz-events-wrapper">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
-                            <div class="row">
-
-                                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
-                                    <div class="tz-gallary">
-                                        <h3>
-                                            <a href="#">Recruiters letter</a>
-                                        </h3>
-                                        <div class="tz-gallery-images">
-                                            <button class="tz-cources-prev">
-                                                <i class="fa fa-angle-left"></i>
-                                            </button>
-                                            <button class="tz-cources-next">
-                                                <i class="fa fa-angle-right"></i>
-                                            </button>
-                                            <ul class="tz-gallery-wrapper">
-                                                <li>
-                                                    <!-- End class tz-services-wrapper-style-6
-                                                    <section class="tz-services-wrapper-style-6">
-                                                        <div class="container">
-                                                            <div class="tz-services-style-6">
-                                                                <div class="row">
-                                                                    <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12">
-                                                                        <div class="tz-services-description">
-
-                                                                            <h3><a href="#">ETHIC GIVE YOUR BEST SERVICES</a></h3>
-                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis laoreet. Morbi non dignissim tellus, vitae blandit urna Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi non dignissim.</p>
-                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis laoreet. Morbi non dignissim tellus, vitae blandit urna Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi non dignissim.</p>
-                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis laoreet. Morbi non dignissim tellus, vitae blandit urna Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi non dignissim.</p>
-                                                                        </div>
-                                                                    </div>
-
-                                                                </div>
-                                                            </div>
-                                                        </div><!-- End container class tz-services-style-6
-                                                    </section>
-                                                    <!-- End class tz-services-wrapper-style-6
-                                                </li>
-                                                <li>
-                                                    <!-- End class tz-services-wrapper-style-6
-                                                    <section class="tz-services-wrapper-style-6">
-                                                        <div class="container">
-                                                            <div class="tz-services-style-6">
-                                                                <div class="row">
-                                                                    <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12">
-                                                                        <div class="tz-services-description">
-                                                                            <h3><a href="#">ETHIC GIVE YOUR BEST SERVICES</a></h3>
-                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis laoreet. Morbi non dignissim tellus, vitae blandit urna Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi non dignissim.</p>
-                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis laoreet. Morbi non dignissim tellus, vitae blandit urna Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi non dignissim.</p>
-                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis laoreet. Morbi non dignissim tellus, vitae blandit urna Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi non dignissim.</p>
-                                                                        </div>
-                                                                    </div>
-
-                                                                </div>
-                                                            </div>
-                                                        </div><!-- End container class tz-services-style-6
-                                                    </section>
-                                                    <!-- End class tz-services-wrapper-style-6
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>-->
-  <!-- End class tz-wrapper-default -->
-
-
-  <!-- Begin section tz-lastest-event -->
-  <!--<section class="tz-lastest-event">
-        <span class="tz-images-check"><img src="images/check-01-home1.png" alt="Images"></span>
-        <h3 class="tz-title-event tz-title-event-2">LATEST EVENTS</h3>
-        <div class="container">
-            <button class="tz-last-event-prev">
-                <i class="fa fa-angle-left"></i>
-            </button>
-            <button class="tz-last-event-next">
-                <i class="fa fa-angle-right"></i>
-            </button>
-            <div class="tz-event-container">
-                <div class="tz-event-wrapper">
-                    <div class="tz-event-content">
-                        <div class="tz-image-event-item">
-                            <img src="http://placehold.it/270x270" alt="Image">
-                            <a href="#"><i class="fa fa-arrows-alt"></i></a>
-                        </div>
-                        <img src="images/check-01-home1.png" alt="Images">
-                        <h6>Pesticide Applicators Training</h6>
-                        <strong>14 May 2016 @ 7:00 am</strong>
-                    </div>
-                    <div class="tz-event-content">
-                        <div class="tz-image-event-item">
-                            <img src="http://placehold.it/270x270" alt="Image">
-                            <a href="#"><i class="fa fa-arrows-alt"></i></a>
-                        </div>
-                        <img src="images/check-01-home1.png" alt="Images">
-                        <h6>Project 2014 - Workshop</h6>
-                        <strong>14 May 2016 @ 7:00 am</strong>
-                    </div>
-                    <div class="tz-event-content">
-                        <div class="tz-image-event-item">
-                            <img src="http://placehold.it/270x270" alt="Image">
-                            <a href="#"><i class="fa fa-arrows-alt"></i></a>
-                        </div>
-                        <img src="images/check-01-home1.png" alt="Images">
-                        <h6>Criminal Justice Camp</h6>
-                        <strong>14 May 2016 @ 7:00 am</strong>
-                    </div>
-                    <div class="tz-event-content">
-                        <div class="tz-image-event-item">
-                            <img src="http://placehold.it/270x270" alt="Image">
-                            <a href="#"><i class="fa fa-arrows-alt"></i></a>
-                        </div>
-                        <img src="images/check-01-home1.png" alt="Images">
-                        <h6>Your Success in Your College</h6>
-                        <strong>14 May 2016 @ 7:00 am</strong>
-                    </div>
-                    <div class="tz-event-content">
-                        <div class="tz-image-event-item">
-                            <img src="http://placehold.it/270x270" alt="Image">
-                            <a href="#"><i class="fa fa-arrows-alt"></i></a>
-                        </div>
-                        <img src="images/check-01-home1.png" alt="Images">
-                        <h6>Pesticide Applicators Training</h6>
-                        <strong>14 May 2016 @ 7:00 am</strong>
-                    </div>
-                    <div class="tz-event-content">
-                        <div class="tz-image-event-item">
-                            <img src="http://placehold.it/270x270" alt="Image">
-                            <a href="#"><i class="fa fa-arrows-alt"></i></a>
-                        </div>
-                        <img src="images/check-01-home1.png" alt="Images">
-                        <h6>Project 2014 - Workshop</h6>
-                        <strong>14 May 2016 @ 7:00 am</strong>
-                    </div>
-                    <div class="tz-event-content">
-                        <div class="tz-image-event-item">
-                            <img src="http://placehold.it/270x270" alt="Image">
-                            <a href="#"><i class="fa fa-arrows-alt"></i></a>
-                        </div>
-                        <img src="images/check-01-home1.png" alt="Images">
-                        <h6>Criminal Justice Camp</h6>
-                        <strong>14 May 2016 @ 7:00 am</strong>
-                    </div>
-                    <div class="tz-event-content">
-                        <div class="tz-image-event-item">
-                            <img src="http://placehold.it/270x270" alt="Image">
-                            <a href="#"><i class="fa fa-arrows-alt"></i></a>
-                        </div>
-                        <img src="images/check-01-home1.png" alt="Images">
-                        <h6>Your Success in Your College</h6>
-                        <strong>14 May 2016 @ 7:00 am</strong>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>-->
-  <!-- End section tz-lastest-event -->
-
-  <!-- Begin section tz-contact-us -->
-  <!--<div class="tz-contact-us">
-        <div class="container">
-            <form action="#" method="post" class="tz-contact-form" name="frm_contact">
-                <ul class="tz-contact-wapper">
-                    <li>
-                        <span>YOU WANT TO KNOW MORE <br> INFORMATION? SEND US A MAIL!</span>
-                    </li>
-                    <li>
-                        <input class="tz-contact-input-name" type="text" name="txtname" placeholder="Your Name">
-                    </li>
-                    <li>
-                        <input class="tz-contact-input-email" type="text" name="txtemail" placeholder="Your Email">
-                    </li>
-                    <li>
-                        <textarea class="tz-contact-message" placeholder="Your Message" name="textarea-message"></textarea>
-                    </li>
-                    <li>
-                        <button type="submit"><i class="fa fa-arrows-alt"></i>SEND</button>
-                    </li>
-                </ul>
-            </form>
-        </div><!-- End class container tz-contact-us
-    </div>-->
-  <!-- End section tz-contact-us -->
 
   <!-- Begin Footer -->
   <footer class="tz-footer">
@@ -1906,7 +1209,7 @@
                   <h4>Academic Information</h4>
                   <ul>
                     <li><a href="academics.html">Undergraduate</a></li>
-                    <li><a href="faculty_page.html">Faculty</a></li>
+                    <li><a href="https://www.iitdh.ac.in/faculty_dept.php">Faculty</a></li>
                     <li><a href="academic_facility_page.html">Academic Facilities</a></li>
                     <!-- <li><a href="#">R&D</a></li> -->
                     <!-- <li><a href="#">Students Projects</a></li> -->
@@ -1926,7 +1229,8 @@
                     <li><a href="internship_procedure.html">Internship</a></li>
                     <li><a href="placementprocedure.html">Placement</a></li>
                     <!-- <li><a href="#">Internship</a></li> -->
-                    <li><a href="https://drive.google.com/file/d/1FaorkD7m_EOsdj-P0ZwiBDu7FjpK0Dv7/view" target="_blank">Brochure</a></li>
+                    <li><a href="https://drive.google.com/file/d/1QpP0K4J6AXiFcezI-mBRzrpesci0gsAh/view?usp=drive_link"
+                        target="_blank">Brochure</a></li>
                     <li><a href="companies_faqs.html">FAQs</a></li>
                   </ul>
 
@@ -1934,13 +1238,15 @@
                   <ul>
                     <!-- <li><a href="placement.html">For Placements</a></li> -->
                     <!-- <li><a href="#">For Internships</a></li> -->
-                    <li><a href="https://drive.google.com/file/d/1aP65HZkvUKcZ-WfxlRdKvN6zZGu30jHu/view?usp=sharing" target="_blank">Placements - Rules & Regulations</a></li>
-                    <li><a href="https://drive.google.com/file/d/1NYflwhFANehHwbqMFLWi-IHaQQjAt0FJ/view?usp=sharing" target="_blank">Internships - Rules & Regulations</a></li>
-                    <li><a href="https://drive.google.com/file/d/1-jV15-Aj-f45oC0Qp50m-SRxOAzz8W25/view" target="_blank">Internship Information</a></li>
-                    <li><a href="https://drive.google.com/file/d/1xY4LitY3CEJKTwa0-nW55sQOJ7XunSSk/view?usp=sharing" target="_blank">Miscellaneous</a></li>
+                    <li><a href="https://drive.google.com/file/d/1aP65HZkvUKcZ-WfxlRdKvN6zZGu30jHu/view?usp=sharing"
+                        target="_blank">Placements - Rules & Regulations</a></li>
+                    <li><a href="https://drive.google.com/file/d/1NYflwhFANehHwbqMFLWi-IHaQQjAt0FJ/view?usp=sharing"
+                        target="_blank">Internships - Rules & Regulations</a></li>
+                    <li><a href="https://drive.google.com/file/d/1a8cRL4i3aeEWcCVRQIRAv-DrFybPl9N0/view?usp=sharing"
+                        target="_blank">Internship Information</a></li>
                     <li>
-                    <a href="portal/index.html" target="_blank">Student Portal</a>
-                  </li>
+                      <a href="portal/index.html" target="_blank">Student Portal</a>
+                    </li>
                   </ul>
 
 
@@ -1978,83 +1284,7 @@
             </ul>
           </div>
         </div>
-        <!--<img src="images/home/logo.png" alt="Icon-footer">
-                <ul class="tz-footer-part">
-                    <li>
-                        <div class="tz-footer-content-main">
-                            <img src="images/check-02-home2.png" alt="Images remove footer">
-                            <h4>ABOUT UNIVERSITY</h4>
-                            <ul>
-                                <li><a href="#">History & Mission</a></li>
-                                <li><a href="#">Administration</a></li>
-                                <li><a href="#">Community</a></li>
-                                <li><a href="#">Around the World</a></li>
-                                <li><a href="#">News Network</a></li>
-                                <li><a href="#">Visitor Information</a></li>
-                                <li><a href="#">Notable Facts & Statistics</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="tz-footer-content-main">
-                            <img src="images/check-02-home2.png" alt="Images remove footer">
-                            <h4>ADMISSIONS</h4>
-                            <ul>
-                                <li><a href="#">Undergraduate</a></li>
-                                <li><a href="#">By School</a></li>
-                                <li><a href="#">Process</a></li>
-                                <li><a href="#">Visitor Information</a></li>
-                                <li><a href="#">For Prospective Parents</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="tz-footer-content-main">
-                            <img src="images/check-02-home2.png" alt="Images remove footer">
-                            <h4>ACADAMIES</h4>
-                            <ul>
-                                <li><a href="#">Schools</a></li>
-                                <li><a href="#">Depts. and Disciplines</a></li>
-                                <li><a href="#">Undergraduate Studies</a></li>
-                                <li><a href="#">Graduate Studies</a></li>
-                                <li><a href="#">Part-Time and Non-Degree</a></li>
-                                <li><a href="#">Summer</a></li>
-                                <li><a href="#">Distance Education</a></li>
-                                <li><a href="#">Catalogs</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="tz-footer-content-main">
-                            <img src="images/check-02-home2.png" alt="Images remove footer">
-                            <h4>RESEARCH</h4>
-                            <ul>
-                                <li><a href="#">Applied Physics Laboratory</a></li>
-                                <li><a href="#">Research Projects</a></li>
-                                <li><a href="#">Administration</a></li>
-                                <li><a href="#">Funding Opportunities</a></li>
-                                <li><a href="#">Undergraduate Research</a></li>
-                                <li><a href="#">Resources</a></li>
-                                <li><a>Health & Medicine</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="tz-footer-content-main">
-                            <img src="images/check-02-home2.png" alt="Images remove footer">
-                            <h4>EVENTS</h4>
-                            <ul>
-                                <li><a href="#">Calendar of Events</a></li>
-                                <li><a href="#">Student Life</a></li>
-                                <li><a href="#">Campus Services</a></li>
-                                <li><a href="#">Athletic Facilities</a></li>
-                                <li><a href="#">Arts and Culture</a></li>
-                                <li><a href="#">For Students</a></li>
-                                <li><a href="#">For Parents</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>-->
+
       </div>
     </div>
   </footer>

@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --desaturated-dark-blue: hsl(214, 17%, 51%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+  --grayish-blue: hsl(212, 23%, 69%);
+  --white: hsl(0, 0%, 100%);
+
+  --fs-13: 13px;
+}
+
+.article-card {
+  display: grid;
+  grid-template-columns: 285px auto;
+  max-width: 1000px;
+  border-radius: 10px;
+  margin: 0 auto;
+  box-shadow: 6px 6px 5px hsla(0, 0%, 0%, 0.02),
+    25px 25px 20px hsla(0, 0%, 0%, 0.03), 100px 100px 80px hsla(0, 0%, 0%, 0.05);
+  max-height: 450px;
+}
+
+.img-box {
+  border-radius: 10px 0 0 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.article-banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: all 0.5s ease;
+}
+
+.article-content {
+  background: var(--white);
+  padding: 32px 40px;
+  border-radius: 0 10px 10px 0;
+  overflow-y: auto;
+  max-height: 300px;
+  position: relative;
+  /* background-color: aqua; */
+}
+
+.article-title {
+  font-size: 30px;
+  color: var(--very-dark-grayish-blue);
+  margin: 0;
+  padding: 20px 10px;
+  position: sticky;
+  top: -40px;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+}
+
+.article-text {
+  color: var(--desaturated-dark-blue);
+  font-size: var(--fs-8);
+  line-height: 1.5;
+  margin-bottom: 18px;
+}
+
+.name {
+  position: absolute;
+  text-align: center;
+  bottom: -5px;
+  width: 100%;
+  padding: 8px 12px;
+  color: var(--white);
+  font-size: 16px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background-color: rgba(32, 32, 32, 0.862);
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 768px) {
+  .img-box {
+    width: 100%;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .name {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .article-card {
+    grid-template-columns: 1fr;
+    max-width: 354px;
+    margin: 0 auto;
+  }
+  .img-box,
+  .article-content {
+    border-radius: 0;
+  }
+  .article-content {
+    padding: 30px 28px 20px;
+    overflow-y: scroll;
+    max-height: none;
+  }
+  .article-text {
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+  .article-title {
+    font-size: 28px;
+  }
+}
