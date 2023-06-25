@@ -290,6 +290,18 @@
     z-index: 1;
   }
 
+  .item .no-dark-image-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+
+
   .item .gradient-overlay {
     position: absolute;
     top: 0;
@@ -297,6 +309,15 @@
     width: 100%;
     height: 100%;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    z-index: 2;
+  }
+  .item .no-gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
     z-index: 2;
   }
 </style>
@@ -568,7 +589,6 @@
       <ol class="carousel-indicators">
         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
       </ol>
 
       <!-- Wrapper for slides -->
@@ -592,15 +612,13 @@
           </div>
         </div> -->
         <div class="item">
-          <div class="image-container">
-            <img src="./images/home/gate.jpg" alt="..." style="width: 100%;">
-            <div class="gradient-overlay"></div>
-            <div class="carousel-caption">
-              <h1>...</h1>
-            </div>
+          <a href="#past-recruiters">
+          <div class="no-dark-image-container">
+            <img src="./images/home/banner2.jpg" alt="..." style="width: 100%; ">
+            <div class="no-gradient-overlay"></div>
           </div>
+        </a>
         </div>
-
       </div>
 
       <!-- Controls -->
@@ -976,10 +994,12 @@
     <!--End class tz-portfolio-->
   </section>
 
+  <div id="past-recruiters"></div>
+
   <!-- Begin section tz-lastest-event -->
   <section class="tz-lastest-event" style="padding-top:20px">
     <!--<span class="tz-images-check"><img src="images/check-01-home1.png" alt="Images"></span>-->
-    <h3 class="tz-title-event tz-title-event-2" style="padding-top:40px">Past Recruiters</h3>
+    <h3 class="tz-title-event tz-title-event-2" style="padding-top:40px" >Past Recruiters</h3>
     <div class="container">
       <button class="tz-last-event-prev">
         <i class="fa fa-angle-left"></i>
