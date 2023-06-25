@@ -4439,9 +4439,13 @@ div.tz-event-content-style-1 > span{
 }
 .tz-event-container {
     margin: 0 -15px;
+    /* background-color: #fff; */
 }
 .tz-event-content{
     padding: 0 15px;
+    height: 312px;
+    display: grid;
+    align-content: center;
 }
 .tz-event-content > img {
     margin-top: 27px;
@@ -4533,23 +4537,35 @@ div.tz-event-content-style-1 > span{
     padding-bottom: 53px;
 }
 .tz-last-event-prev{
-    background:rgb(255, 255, 255);
+    background:rgb(99, 188, 243, 0.4);
     border: 1px solid rgb(238, 238, 238);
     height: 47px;
     left: 8%;
     position: absolute;
-    top: 50%;
+    top: 60%;
     width: 47px;
+    z-index: 9999;
 }
+
+.tz-last-event-prev:hover{
+    background:rgb(99, 188, 243, 0.8);
+}
+
 .tz-last-event-next {
-    background:rgb(255, 255, 255);
+    background:rgb(99, 188, 243, 0.4);
     border: 1px solid rgb(238, 238, 238);
     height: 47px;
     right: 8%;
     position: absolute;
-    top: 50%;
+    top: 60%;
     width: 47px;
+    z-index: 9999;
 }
+
+.tz-last-event-next:hover{
+    background:rgb(99, 188, 243, 0.8);
+}
+
 .tz-last-event-prev i,
 .tz-last-event-next i{
     color: #eaeaea;
