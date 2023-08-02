@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:image" content="images/home/CDC_Logo/CDC_Logo_fullcolor@2x.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="1024">
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://cdc.iitdh.ac.in/" />
+  <meta property="og:title" content="Career Development Cell, IIT Dharwad" />
+  <meta property="og:description" content="Career Development Cell, IIT Dharwad" />
+  <title>IITDH-CDC</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="fonts/awesome/css/font-awesome.min.css" rel="stylesheet" />
+  <link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
+  <link href='css/owl.carousel.css' rel='stylesheet' type='text/css'>
+  <link href='css/owl.theme.css' rel='stylesheet' type='text/css'>
+  <link href="style.css" rel="stylesheet" />
+  <link rel="icon" href="images/CDC_Logos/favicon.ico" type="image/x-icon" />
+  <style>
+    body {
+      font-family: "Roboto", "Helvetica Neue", Helvetica, Arial;
+    }
+  </style>
+</head>
+<style>
+  #more {
+    display: none;
+  }
+
+  #more1 {
+    display: none;
+  }
+
+  .link-icon {
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0px auto;
+  }
+
+  .nav-collapse {
+    margin: 0
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --desaturated-dark-blue: hsl(214, 17%, 51%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+    --grayish-blue: hsl(212, 23%, 69%);
+    --white: hsl(0, 0%, 100%);
+
+    --fs-13: 13px;
+  }
+
+  .article-card {
+    display: grid;
+    grid-template-columns: 285px auto;
+    max-width: 1200px;
+    border-radius: 10px;
+    margin: 0 auto;
+    box-shadow: 2px 2px 10px #888888;
+    max-height: 450px;
+  }
+
+  .img-box {
+    border-radius: 10px 0 0 10px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .article-banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.5s ease;
+  }
+
+  .article-content {
+    background: var(--white);
+    padding: 32px 40px;
+    border-radius: 0 10px 10px 0;
+    overflow-y: auto;
+    max-height: 300px;
+    position: relative;
+    /* background-color: aqua; */
+  }
+
+  .article-title {
+    font-size: 30px;
+    color: var(--very-dark-grayish-blue);
+    margin: 0;
+    padding: 20px 10px;
+    position: sticky;
+    top: -40px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+  }
+
+  .article-text {
+    color: var(--desaturated-dark-blue);
+    font-size: var(--fs-8);
+    line-height: 1.5;
+    margin-bottom: 18px;
+  }
+
+  .name {
+    position: absolute;
+    text-align: center;
+    bottom: -5px;
+    width: 100%;
+    padding: 8px 12px;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: rgba(32, 32, 32, 0.862);
+    border-radius: 4px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .img-box {
+      width: 100%;
+      height: 320px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .name {
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .article-card {
+      grid-template-columns: 1fr;
+      max-width: 354px;
+      margin: 0 auto;
+      max-height: none;
+    }
+
+    .img-box,
+    .article-content {
+      border-radius: 0;
+    }
+
+    .article-content {
+      padding: 30px 28px 20px;
+      max-height: 380px;
+      overflow-y: none;
+    }
+
+    .article-text {
+      margin-bottom: 30px;
+      font-size: 14px;
+    }
+
+    .article-title {
+      font-size: 28px;
+    }
+  }
+
+  .about {
+    align-items: center;
+    max-width: 1200px;
+    font-family: 'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+  }
+
+  .about_text {
+    background-color: transparent;
+    line-height: 1.4;
+    color: #fff;
+  }
+</style>
+<script>
+  function myFunction() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less";
+      moreText.style.display = "inline";
+    }
+  }
+</script>
+
+<script>
+  function myFunction1() {
+    var dots = document.getElementById("dots1");
+    var moreText = document.getElementById("more1");
+    var btnText = document.getElementById("myBtn1");
+
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less";
+      moreText.style.display = "inline";
+    }
+  }
+</script>
+
+<script>
+  function initial_func() {
+    var elm1 = document.querySelectorAll("#sub1")[1];
+    var elm2 = document.querySelectorAll("#sub2")[1];
+    var elm3 = document.querySelectorAll("#sub3")[1];
+    var elm4 = document.querySelectorAll("#sub4")[1];
+    var elm14 = document.querySelectorAll("#sub5")[1];
+    elm1.style.display = "none";
+    elm2.style.display = "none";
+    elm3.style.display = "none";
+    elm4.style.display = "none";
+    elm14.style.display = "none";
+    var elm5 = document.querySelectorAll("#a1")[0];
+    var elm6 = document.querySelectorAll("#a2")[0];
+    var elm7 = document.querySelectorAll("#a3")[0];
+    var elm8 = document.querySelectorAll("#a4")[0];
+    var elm9 = document.querySelectorAll("#a5")[0];
+    var elm10 = document.querySelectorAll("#a6")[0];
+    var elm11 = document.querySelectorAll("#a7")[0];
+    elm5.style.display = "inline";
+    elm6.style.display = "inline";
+    elm7.style.display = "inline";
+    elm8.style.display = "inline";
+    elm9.style.display = "inline";
+    elm10.style.display = "inline";
+    elm11.style.display = "inline";
+    var elm12 = document.querySelectorAll(".nav-collapse")[0];
+    elm12.style.padding = "15px 0px 0px 300px";
+    var elm13 = document.querySelectorAll("#header_logo")[0];
+    if ($(window).width() < 800) {
+      elm13.style.float = "right";
+    } else {
+      elm13.style.float = "left";
+    }
+  }
+</script>
+
+<script>
+  function dropdown_func(id) {
+    var all_subs = ['sub1', 'sub2', 'sub3', 'sub4', 'sub5']
+    for (sub in all_subs) {
+      if (all_subs[sub] != id) {
+        var elms = document.querySelectorAll("#" + all_subs[sub])[1];
+        elms.style.display = "none";
+      } else {
+        var elms = document.querySelectorAll("#" + all_subs[sub])[1];
+        if (elms.style.display === "none") {
+          elms.style.display = "block";
+        } else {
+          elms.style.display = "none";
+        }
+      }
+    }
+  }
+</script>
+
+<body onload="initial_func()">
+  <div class="loading-page">
+    <img src="images/image-preload.gif" alt="Images-loading">
+  </div>
+  <!-- Begin section search form -->
+  <div class="tz-content-search">
+    <form action="#" method="get">
+      <i class="fa fa-times tz-form-close"></i>
+      <input type="text" class="tz-search-input" id="tz-search-input" name="search" placeholder="Search...">
+    </form><!-- End form search -->
+  </div>
+  <!-- End section search form -->
+  <!-- Begin class tz-header-2 -->
+  <header class="tz-header tz-header-2">
+    <div class="tz-customer-container">
+      <div class="container">
+        <div class="tz-header-content">
+          <button type="button" class="tz-button-toggle btn-navbar pull-left" data-target=".nav-collapse">
+            <i class="fa fa-bars"></i>
+          </button>
+          <h3 class="tz-logo" id="header_logo">
+            <a href="index.html"><img alt="Images Logo" src="images/home/CDC_Logo/website_header@2x.png"
+                style="height:80px;width:200px"></a>
+          </h3>
+          <nav class="nav-collapse">
+            <ul class="tz-menu" style="align-items: center;">
+              <li>
+                <a href="index.html" id="a1">Home</a>
+              </li>
+              <li>
+                <a href="#" id="a2" style="width: 80%">Academic Info</a>
+                <button type="button" class="tz-button-toggle pull-right" onclick="dropdown_func('sub1')"
+                  style="border: none; font-size: 16px; cursor: pointer; background: #333333; color: #ffffff; margin: 5px 10px 0px 0px;">
+                  <i class="fa fa-chevron-down"></i>
+                </button>
+                <ul id="sub1" class="sub-menu sub-menu-style-1">
+                  <li>
+                    <a href="academics.html">Undergraduate</a>
+                  </li>
+                  <li>
+                    <a href="academic_facility_page.html">Academic Facilities</a>
+                  </li>
+                  <li>
+                    <a href="https://www.iitdh.ac.in/faculty_dept.php">Faculty</a>
+                  </li>
+
+                </ul>
+              </li>
+              <li>
+                <a href="#" id="a3" style="width: 80%">For Recruiters</a>
+                <button type="button" class="tz-button-toggle  pull-right" onclick="dropdown_func('sub2')"
+                  style="border: none; font-size: 16px; cursor: pointer; background: #333333; color: #ffffff; margin: 5px 10px 0px 0px;">
+                  <i class="fa fa-chevron-down"></i>
+                </button>
+                <ul id="sub2" class="sub-menu sub-menu-style-1">
+                  <li>
+                    <a href="internship_procedure.html">Internship</a>
+                  </li>
+                  <li>
+                    <a href="placementprocedure.html">Placement</a>
+                  </li>
+
+                  <li>
+                    <a href="https://drive.google.com/file/d/1QpP0K4J6AXiFcezI-mBRzrpesci0gsAh/view?usp=drive_link"
+                      target="_blank">Brochure</a>
+                  </li>
+                  <li>
+                    <a href="companies_faqs.html">FAQs</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" id="a4" style="width: 80%">For Students</a>
+                <button type="button" class="tz-button-toggle  pull-right" onclick="dropdown_func('sub3')"
+                  style="border: none; font-size: 16px; cursor: pointer; background: #333333; color: #ffffff; margin: 5px 10px 0px 0px;">
+                  <i class="fa fa-chevron-down"></i>
+                </button>
+                <ul id="sub3" class="sub-menu sub-menu-style-1">
+
+                  <li>
+                    <a href="https://drive.google.com/file/d/1aP65HZkvUKcZ-WfxlRdKvN6zZGu30jHu/view?usp=sharing"
+                      target="_blank">Placements - Rules & Regulations</a>
+                  </li>
+                  <li>
+                    <a href="https://drive.google.com/file/d/1NYflwhFANehHwbqMFLWi-IHaQQjAt0FJ/view?usp=sharing"
+                      target="_blank">Internships - Rules & Regulations</a>
+                  </li>
+                  <li>
+                    <a href="https://drive.google.com/file/d/1a8cRL4i3aeEWcCVRQIRAv-DrFybPl9N0/view?usp=sharing"
+                      target="_blank">Internship Information</a>
+                  </li>
+                  <li>
+                    <a href="portal/index.html" target="_blank">Student Portal</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" id="a5" style="width: 80%">Beyond Academics</a>
+                <button type="button" class="tz-button-toggle pull-right" onclick="dropdown_func('sub4')"
+                  style="border: none; cursor: pointer; background: #333333; color: #ffffff; padding: 5px 10px 0px 0px;">
+                  <i class="fa fa-chevron-down"></i>
+                </button>
+                <ul id="sub4" class="sub-menu sub-menu-style-1">
+                  <li>
+                    <a href="https://www.iitdh.ac.in/iic/" target="_blank">IIC</a>
+                  </li>
+                  <li>
+                    <a href="https://smp.iitdh.ac.in/" target="_blank">SMP</a>
+                  </li>
+
+                  <li>
+                    <a href="https://oss2019.github.io/" target="_blank">OSS</a>
+                  </li>
+
+                </ul>
+              </li>
+              <li>
+                <a href="#" id="a6" style="width: 80%">Events</a>
+                <button type="button" class="tz-button-toggle pull-right" onclick="dropdown_func('sub5')"
+                  style="border: none; font-size: 16px; cursor: pointer; background: #333333; color: #ffffff; margin: 5px 10px 0px 0px;">
+                  <i class="fa fa-chevron-down"></i>
+                </button>
+                <ul id="sub5" class="sub-menu sub-menu-style-1">
+                  <li>
+                    <a href="hr_conclave.html">HR Conclave</a>
+                  </li>
+
+                </ul>
+              </li>
+              <li>
+                <a href="contact_cdc.html" id="a7">Contact Us</a>
+                <ul class="sub-menu sub-menu-style-1">
+
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div><!-- End Content Main Header -->
+    </div>
+  </header>
+  <!-- End class tz-header-2 -->
+
+
+  <section class="tz-banner tz-banner-style2">
+    <!-- Begin class banner style-3 -->
+    <div class="tz-banner-style2">
+      <div class="tz-slider-banner">
+        <div class="tz-items">
+          <div class="tz-slider-images">
+            <img src="images/home/gate.jpg" alt="Images">
+          </div>
+          <div class="tz-banner-content">
+            <div class="container">
+              <h4>Career Development Cell</h4>
+
+              <small>Indian Institute of Technology</small>
+              </br>
+              <small>Dharwad</small>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <!-- End  class banner style-3 -->
+  </section>
+
+  <!-- Begin section tz-introduce-univesity -->
+  <section class="tz-introduce-univesity">
+    <div class="tz-cource-services tz-cource-services-style-2">
+      <ul>
+
+        <li>
+          <a href="whyrecruit.html">
+            <div class="tz-background-color-1">
+              <span class="link-icon">
+                <i class="tz-color-1 fa fa-file-text-o"></i>
+              </span>
+              <span style="color: #fff;padding-top: 13px;">Why Recruit?</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="placementprocedure.html">
+            <div class="tz-background-color-2">
+              <span class="link-icon">
+                <i class="tz-color-2 fa fa-paperclip"></i>
+              </span>
+              <span style="color: #fff;padding-top: 13px;">Procedure</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.iitdh.ac.in/pdf/CDC/placeement%20stats.pdf">
+            <div class="tz-background-color-3">
+              <span class="link-icon">
+                <i class="tz-color-3 fa fa-rocket"></i>
+              </span>
+              <span style="color: #fff;padding-top: 13px;">Placement Statistics</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="contact_cdc.html">
+            <div class="tz-background-color-4">
+              <span class="link-icon">
+                <i class="tz-color-4 fa fa-cog"></i>
+              </span>
+              <span style="color: #fff;padding-top: 13px;">Contact Us</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+    </div>
+
+  </section>
+  <!-- End section tz-introduce-univesity -->
+
+  <section class="tz-introduce-style-4">
+    <div class="container about">
+      <div class="tz-introduce-content tz-introduce-content-style-4 about_text">
+        <h4>About IIT Dharwad</h4>
+        <p style="text-align:justify;color:#101118bd;margin:0 0 5px">Established in 2016 as an autonomous institute of
+          national
+          importance by the Ministry of Human Resource Development, GoI, Indian
+          Institute of Technology Dharwad (IIT Dharwad) aims at producing world
+          class engineers who are capable of establishing themselves in the higher echelons of
+          any field they venture into.
+        </p>
+        <p style="text-align:justify;color:#101118bd;margin:0 0 5px">The institute offers three UG programs – B.Tech. in
+          Computer Science and
+          Engineering, Electrical Engineering and Mechanical Engineering.
+          Ph.D Programs are offered in the areas of
+          Electrical Engineering, Mechanical Engineering, Mathematics, Computer
+          Science, Physics, Humanities and Social Sciences, Biosciences
+          Bioengineering and Chemistry.
+        </p>
+        <p style="text-align:justify;color:#101118bd;margin:0 0 5px">The institute aims to make education an innovative
+          and enriching
+          experience through a unique blend of academic, sports and extra-curricular
+          programs delivered within a student-centric culture to enable the younger
+          generation emerge as future leaders.
+        </p>
+        <p style="text-align:justify;color:#101118bd;margin:0 0 5px">The overall academic environment in the institution
+          is highly
+          conducive for achieving academic excellence and for
+          developing analytical abilities, ethics and integrity.
+        </p>
+        <p style="text-align:justify;color:#101118bd;margin:0 0 0">Apart from academic excellence, the institute lays
+          emphasis on research temperament, entrepreneurship and motivates
+          its students to recognize their true potential without the fear of failure.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="tz-introduce-style-4" style='background-image: linear-gradient(rgba(1, 1, 14, 0.81), rgba(16, 1, 1, 0.656)), url("./images/about_cdc.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    '>
+    <div class="container about">
+      <div class="tz-introduce-content tz-introduce-content-style-4 about_text">
+        <h4 style="color: #fff;">About Career Development Cell (CDC)</h4>
+        <p style="text-align:justify;margin:0 0 5px; color: #e8e8e8;">CDC is a body of IIT Dharwad that supports
+          students
+          in shaping and managing their careers by building critical
+          ingredients required for a student to be a complete professional.It is committed to assisting all IIT Dharwad
+          students
+          in achieving their career goals. To achieve the same, it organizes
+          events like pre-placement training programs and various talk series to facilitate the Industry Institute
+          Interface, to name a few.
+        </p>
+        <p style="text-align:justify;margin:0 0 5px;color: #e8e8e8;">The institute aims to make education an innovative
+          It is also responsible for facilitating campus internships and placements for the students of IIT Dharwad. It
+          further helps them explore opportunities for higher education. The CDC has successfully concluded the
+          placement and internship session for the 2020, 2021 and 2022 batches respectively. Among 105 students who are
+          qualified and appeared for the placements (in the class of 2022), 92 received placement offers. The CDC is now
+          actively working on and is committed to having another successful year.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <div style="padding: 100px 0px;">
+    <section class="tz-wrapper-default">
+      <article class="article-card">
+        <div class="img-box">
+          <img src="images/home/director.jfif" alt="" class="article-banner">
+          <h1 class="name">Venkappayya R Desai <br>
+            Director, IIT Dharwad
+          </h1>
+        </div>
+        <div class="article-content">
+          <h3 class="article-title">Director's Message </h3>
+          <br><br>
+          <p class="article-text">
+            At the outset, I extend my warm welcome to all the HRs of the esteemed organizations. I am delighted to
+            invite you to
+            IIT Dharwad for the placement of our students.
+          </p>
+          <p class="article-text">
+            Indian Institute of Technology Dharwad was established in July 2016 with B. Tech programs in three core
+            branches, namely
+            Computer Science and Engineering, Electrical, and Mechanical Engineering, and has now grown over the
+            years to house
+            B.Tech, M.Tech, MS, and PhD students.
+          </p>
+          <p class="article-text">
+            IITDh is presently functioning from its transit campus in Water & Land Management Institute (WALMI)
+            Campus situated next
+            to the High Court Bench at Dharwad since August 2016. The transit campus is about 135 acres, spread with
+            over 25
+            buildings and sheds. There are about 11 hostels, playgrounds, classrooms, laboratories, well-furnished
+            kitchens and
+            dining. About 470 acres of land have been allotted by the Karnataka Government for the permanent campus
+            of IIT Dharwad
+            in Chikkamalligawad village. The Library is well equipped with nearly 5000 books and provides access to
+            more than 8500
+            research journals.
+          </p>
+          <p class="article-text">
+            The institute hosts nearly 900 students, with about 20% being women. The students are drawn from about
+            21 states of the
+            country. The Institute has nearly 70 faculty members across ten Departments. All the faculty members
+            have done PhD and
+            postdocs from reputed institutes in India and abroad. The faculty members have secured about ₹28 cr
+            worth of sponsored
+            R&D projects, executed about ₹1.5cr worth of industrial consultancy projects, and published ~400
+            scientific papers.
+          </p>
+          <p class="article-text">
+            It will be an honour for us to host you and provide our students with an opportunity to demonstrate
+            their capability,
+            intellect and professional readiness to get inducted into your esteemed organization. We assure you that
+            we have a good
+            number of meritorious and industry-ready students who may prove asset to your organization.
+          </p>
+          <p class="article-text">
+            Once again, I cordially invite you to our campus for placements and look forward to building a long-term
+            sustainable and
+            mutually beneficial relationship with your esteemed organization.
+          </p>
+        </div>
+      </article>
+
+    </section>
+    <div style="width: 100%;height:100px;"></div>
+    <section class="tz-wrapper-default">
+      <article class="article-card">
+        <div class="img-box">
+          <img src="images/home/dean_ap.jpg" alt="" class="article-banner">
+          <h1 class="name">Prof. Narayan S Punekar
+            <br>
+            Dean of Academic Programmes, IIT Dharwad
+          </h1>
+        </div>
+        <div class="article-content">
+          <h3 class="article-title">Dean's Message </h3>
+          <br><br>
+          <p class="article-text">
+            I am pleased to invite you to our esteemed institute on behalf of the students,faculty and the staff of IIT
+            Dharwad, to
+            participate in placements for the final year students and internships for the pre-final year students.
+          </p>
+          <p class="article-text">
+            IIT Dharwad’s course structure is designed to incorporate more hands-on approach with the intention to
+            provide
+            students
+            the, necessary skills required to contribute to the practical world of engineering. Most courses include
+            “Course
+            Projects” which the students conceive and are then guided by our knowledgable faculty. Our capable and
+            enthusiastic
+            students contribute to their peers‘ learning in group projects, acting as Teaching assistants and even
+            writing
+            manuals
+            for new courses or making changes to pre-existing ones.
+          </p>
+          <p class="article-text">
+            As an infant IIT, students form committees to improve their academic productivity and “college experience”.
+            Each student
+            contributes by working through his/her strengths, covering their peers’ weaknesses and helping to turn those
+            weaknesses
+            to strengths.
+          </p>
+          <p class="article-text">
+            I look forward to your participation in the placements for the final year students and internships for the
+            pre-final
+            year students, hoping that your visit shall begin a promising and an everlasting relationship between the
+            Institute and
+            your organization in the days ahead.
+          </p>
+
+        </div>
+      </article>
+
+    </section>
+    <div style="width: 100%;height:100px;"></div>
+    <section class="tz-wrapper-default" style="margin-bottom:80px;">
+      <article class="article-card">
+        <div class="img-box">
+          <img src="images/home/dean_rnd.jpeg" alt="" class="article-banner">
+          <h1 class="name">Prof. Rajesh Hegde
+            <br>
+            Dean of Research & Development, IIT Dharwad
+          </h1>
+        </div>
+        <div class="article-content">
+          <h3 class="article-title">Dean's Message </h3>
+          <br><br>
+          <p class="article-text">
+            The Research and Development (R&D) section of IIT Dharwad is actively working towards bringing up a vibrant
+            research and
+            development culture. These include coordinating with funding agencies in securing sponsored projects,
+            consultancy
+            projects and offering specialized in-house courses for industry personnel.
+          </p>
+          <p class="article-text">
+            Industry academia linkage is being established by conducting Development of Industry and Academia Linkage
+            (DIAL) days.
+            Within a short span of time, our young and dynamic faculty members have secured several funded projects
+            worth
+            6 cr. The
+            R&D section is also coordinating with reputed universities and industries, India and abroad for
+            collaboration.
+            Already
+            many MoUs have been signed with many organizations and the collaboration has started.
+          </p>
+
+        </div>
+      </article>
+
+    </section>
+  </div>
+
+
+
+  <!-- Begin section tz-portfolio-wrapper -->
+  <section class="tz-portfolio-wrapper">
+    <!--<span class="tz-images-check"><img src="images/check-01-home1.png" alt="Images"></span>-->
+    <!-- <h3 class="tz-portfolio-title" style = "padding-top:30px"><a href="#">LATEST ARTICLES</a></h3> -->
+    <div class="tz-portfolio">
+      <div class="element tz-item-portfolio">
+        <div class="tz-image-portfolio">
+          <img src="images/home/wr_dial_2018-min.jpg" alt="Vivamus in lorem nisl">
+        </div>
+        <!--  <div class="tz-portfolio-content-style-2">
+                    <h4></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis ...</p>
+                    <span>
+                        <a href="#"><i class="fa fa-arrows-alt"></i>READ MORE</a>
+                    </span>
+                </div> -->
+      </div>
+      <div class="element tz-item-portfolio">
+        <div class="tz-image-portfolio">
+          <img src="images/home/gallery_1-min.jpg" alt="Vivamus in lorem nisl">
+        </div>
+        <!-- <div class="tz-portfolio-content-style-2">
+                    <h4>Responsive Blog - Centro de Inovacoes InovaCidades</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nisi eget mi mollis ...</p>
+                    <span>
+                        <a href="#"><i class="fa fa-arrows-alt"></i>READ MORE</a>
+                    </span>
+                </div> -->
+      </div>
+      <div class="element tz-item-portfolio">
+        <div class="tz-image-portfolio">
+          <img src="images/home/classrooms.jpg" alt="Vivamus in lorem nisl">
+        </div>
+
+      </div>
+
+      <div class="element tz-item-portfolio">
+        <div class="tz-image-portfolio">
+          <img src="images/home/gallery_8.jpg" alt="Vivamus in lorem nisl">
+        </div>
+
+      </div>
+      <div class="element tz-item-portfolio">
+        <div class="tz-image-portfolio">
+          <img src="images/home/gallery_2.jpg" alt="Vivamus in lorem nisl">
+          <!-- <a href="#" class="tz-color-icon-1"> <i class="fa fa-camera"></i></a> -->
+        </div>
+      </div>
+      <div class="element tz-item-portfolio">
+        <div class="tz-image-portfolio">
+          <img src="images/home/workshops.jpg" alt="Vivamus in lorem nisl">
+        </div>
+
+      </div>
+      <div class="element tz-item-portfolio">
+        <div class="tz-image-portfolio">
+          <img src="images/home/greenery_view.png" alt="Vivamus in lorem nisl">
+          <!-- <a href="#" class="tz-color-icon-2"><i class="fa fa-video-camera"></i></a> -->
+        </div>
+
+      </div>
+      <div class="element tz-item-portfolio">
+        <div class="tz-image-portfolio">
+          <img src="images/home/gallery_4.jpg" alt="Vivamus in lorem nisl">
+        </div>
+
+      </div>
+      <div class="element tz-item-portfolio">
+        <div class="tz-image-portfolio">
+          <img src="images/home/Hardware-win.jpeg" alt="Vivamus in lorem nisl">
+        </div>
+
+      </div>
+
+      <div class="element tz-item-portfolio">
+        <div class="tz-image-portfolio">
+          <img src="images/home/cultural-min.jpg" alt="Vivamus in lorem nisl">
+        </div>
+
+      </div>
+    </div>
+    <!--End class tz-portfolio-->
+  </section>
+
+  <!-- Begin section tz-lastest-event -->
+  <section class="tz-lastest-event" style="padding-top:20px">
+    <!--<span class="tz-images-check"><img src="images/check-01-home1.png" alt="Images"></span>-->
+    <h3 class="tz-title-event tz-title-event-2" style="padding-top:40px">Past Recruiters</h3>
+    <div class="container">
+      <button class="tz-last-event-prev">
+        <i class="fa fa-angle-left"></i>
+      </button>
+      <button class="tz-last-event-next">
+        <i class="fa fa-angle-right"></i>
+      </button>
+      <div class="tz-event-container">
+        <div class="tz-event-wrapper">
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/ibm.png" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+            <!--<img src="images/check-01-home1.png" alt="Images">-->
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/lg.jpeg" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+            <!--<img src="images/check-01-home1.png" alt="Images">-->
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/sprinklr.png" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+            <!--<img src="images/check-01-home1.png" alt="Images">-->
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/arista.png" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+            <!--<img src="images/check-01-home1.png" alt="Images">-->
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/nasdaq.png" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/cred.png" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/paytm.png" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/air_asia.jpg" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/jio.png" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/makemytrip.png" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+            <!--<img src="images/check-01-home1.png" alt="Images">-->
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/maq_software.png" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/gupshup.jpeg" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+            <!--<img src="images/check-01-home1.png" alt="Images">-->
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/mcafree.png" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/icici.png" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/tcs.jpg" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/TexasInstruments-Logo.png" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/tigeranalytics.png" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+            <!--<img src="images/check-01-home1.png" alt="Images">-->
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/cognizant.png" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/l&t.png" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+            <!--<img src="images/check-01-home1.png" alt="Images">-->
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/broadridge.jpg" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+            <!--<img src="images/check-01-home1.png" alt="Images">-->
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/bharat_electronics.png" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+            <!--<img src="images/check-01-home1.png" alt="Images">-->
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/raam_group.png" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+            <!--<img src="images/check-01-home1.png" alt="Images">-->
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/increff.png" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+            <!--<img src="images/check-01-home1.png" alt="Images">-->
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/scoreplus.png" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+            <!--<img src="images/check-01-home1.png" alt="Images">-->
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/aequs.png" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+            <!--<img src="images/check-01-home1.png" alt="Images">-->
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/infosys.png" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+            <!--<img src="images/check-01-home1.png" alt="Images">-->
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/toshiba.png" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/credit_one.png" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+            <!--<img src="images/check-01-home1.png" alt="Images">-->
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/dunzo.png" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+            <!--<img src="images/check-01-home1.png" alt="Images">-->
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/fiserv.png" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+            <!--<img src="images/check-01-home1.png" alt="Images">-->
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/idrive.jpeg" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+            <!--<img src="images/check-01-home1.png" alt="Images">-->
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/betsol.png" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+            <!--<img src="images/check-01-home1.png" alt="Images">-->
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/aptean.png" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+            <!--<img src="images/check-01-home1.png" alt="Images">-->
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/entrupy.png" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+            <!--<img src="images/check-01-home1.png" alt="Images">-->
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/cerner.png" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+            <!--<img src="images/check-01-home1.png" alt="Images">-->
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/logicfruit.png" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+            <!--<img src="images/check-01-home1.png" alt="Images">-->
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/avanti.png" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+            <!--<img src="images/check-01-home1.png" alt="Images">-->
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/cr.png" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+            <!--<img src="images/check-01-home1.png" alt="Images">-->
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/signalchip.png" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+            <!--<img src="images/check-01-home1.png" alt="Images">-->
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/lekha.png" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+            <!--<img src="images/check-01-home1.png" alt="Images">-->
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/sterlite.png" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+            <!--<img src="images/check-01-home1.png" alt="Images">-->
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/helium.png" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+            <!--<img src="images/check-01-home1.png" alt="Images">-->
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/hcl.png" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+            <!--<img src="images/check-01-home1.png" alt="Images">-->
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/capgemini.png" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+            <!--<img src="images/check-01-home1.png" alt="Images">-->
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/scoreplus.png" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+            <!--<img src="images/check-01-home1.png" alt="Images">-->
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/thoughtspot.png" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+            <!--<img src="images/check-01-home1.png" alt="Images">-->
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/publicissapient.png" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+            <!--<img src="images/check-01-home1.png" alt="Images">-->
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/examwizards.png" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+            <!--<img src="images/check-01-home1.png" alt="Images">-->
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/ajira.png" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+            <!--<img src="images/check-01-home1.png" alt="Images">-->
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/mmrfi.jpg" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+            <!--<img src="images/check-01-home1.png" alt="Images">-->
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/exa.png" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+            <!--<img src="images/check-01-home1.png" alt="Images">-->
+          </div>
+          <div class="tz-event-content">
+            <div class="tz-image-event-item">
+              <img src="images/home/recruiters/k12.png" alt="Image">
+              <!-- <a href="#"><i class="fa fa-arrows-alt"></i></a> -->
+            </div>
+            <!--<img src="images/check-01-home1.png" alt="Images">-->
+          </div>
+        </div>
+      </div><!-- End container class tz-lastest-event -->
+  </section>
+  <!-- End section tz-lastest-event -->
+
+
+  <!-- Begin Footer -->
+  <footer class="tz-footer">
+    <div class="tz-footer-content tz-footer-content-2 tz-background-color-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <img src="images/home/logo.png" alt="Icon-footer" style="padding-bottom:30px">
+            <ul>
+              <li><a href="#" style="color:#fff">Indian Institute of Technology Dharwad,</a></li>
+              <li><a href="#" style="color:#fff">Karnataka, India - 580011</a></li>
+              <li><a href="#" style="color:#fff">cdc@iitdh.ac.in</a></li>
+              <li><a href="#" style="color:#fff">+91 836 2212 839</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3">
+            <ul class="">
+              <li>
+                <div class="tz-footer-content-main">
+                  <!--<img src="images/check-02-home2.png" alt="Images remove footer">-->
+                  <h4>Quick Links</h4>
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                  </ul>
+
+                  <h4>Academic Information</h4>
+                  <ul>
+                    <li><a href="academics.html">Undergraduate</a></li>
+                    <li><a href="https://www.iitdh.ac.in/faculty_dept.php">Faculty</a></li>
+                    <li><a href="academic_facility_page.html">Academic Facilities</a></li>
+                    <!-- <li><a href="#">R&D</a></li> -->
+                    <!-- <li><a href="#">Students Projects</a></li> -->
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3">
+            <ul class="">
+              <li>
+                <div class="tz-footer-content-main">
+                  <!--<img src="images/check-02-home2.png" alt="Images remove footer">-->
+                  <h4>For Recruiters</h4>
+                  <ul>
+                    <li><a href="internship_procedure.html">Internship</a></li>
+                    <li><a href="placementprocedure.html">Placement</a></li>
+                    <!-- <li><a href="#">Internship</a></li> -->
+                    <li><a href="https://drive.google.com/file/d/1QpP0K4J6AXiFcezI-mBRzrpesci0gsAh/view?usp=drive_link"
+                        target="_blank">Brochure</a></li>
+                    <li><a href="companies_faqs.html">FAQs</a></li>
+                  </ul>
+
+                  <h4>For Students</h4>
+                  <ul>
+                    <!-- <li><a href="placement.html">For Placements</a></li> -->
+                    <!-- <li><a href="#">For Internships</a></li> -->
+                    <li><a href="https://drive.google.com/file/d/1aP65HZkvUKcZ-WfxlRdKvN6zZGu30jHu/view?usp=sharing"
+                        target="_blank">Placements - Rules & Regulations</a></li>
+                    <li><a href="https://drive.google.com/file/d/1NYflwhFANehHwbqMFLWi-IHaQQjAt0FJ/view?usp=sharing"
+                        target="_blank">Internships - Rules & Regulations</a></li>
+                    <li><a href="https://drive.google.com/file/d/1a8cRL4i3aeEWcCVRQIRAv-DrFybPl9N0/view?usp=sharing"
+                        target="_blank">Internship Information</a></li>
+                    <li>
+                      <a href="portal/index.html" target="_blank">Student Portal</a>
+                    </li>
+                  </ul>
+
+
+
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3">
+            <ul class="">
+              <li>
+                <div class="tz-footer-content-main">
+                  <!--<img src="images/check-02-home2.png" alt="Images remove footer">-->
+                  <h4>Beyond Academics</h4>
+                  <ul>
+                    <li><a href="https://www.iitdh.ac.in/iic/" target="_blank">IIC</a></li>
+                    <li><a href="https://smp.iitdh.ac.in/" target="_blank">SMP</a></li>
+                    <!-- <li><a href="#">Cultural Events</a></li> -->
+                    <li><a href="https://oss2019.github.io/" target="_blank">OSS</a></li>
+                    <!-- <li><a href="#">CSR</a></li> -->
+                  </ul>
+                  <h4>Events</h4>
+                  <ul>
+                    <li><a href="hr_conclave.html">HR Conclave</a></li>
+                  </ul>
+                  <ul>
+                    <li><a href="contact_cdc.html">
+                        <h4>Contact Us</h4>
+                      </a></li>
+                  </ul>
+
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <script>
+    var Desktop = 5,
+      tabletportrait = 2,
+      mobilelandscape = 1,
+      mobileportrait = 1,
+      resizeTimer = null;
+  </script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/off-canvas.js"></script>
+  <script src="js/jquery.isotope.min.js"></script>
+  <script src="js/resize.js"></script>
+  <script src="js/custom-portfolio.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.parallax-1.1.3.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+
+</html>
