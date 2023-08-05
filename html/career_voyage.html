@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:image" content="images/home/CDC_Logo/CDC_Logo_fullcolor@2x.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="1024">
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://cdc.iitdh.ac.in/" />
+  <meta property="og:title" content="Career Development Cell, IIT Dharwad" />
+  <meta property="og:description" content="Career Development Cell, IIT Dharwad" />
+  <title>IITDH-CDC</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="fonts/awesome/css/font-awesome.min.css" rel="stylesheet" />
+  <link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
+  <link href='css/owl.carousel.css' rel='stylesheet' type='text/css'>
+  <link href='css/owl.theme.css' rel='stylesheet' type='text/css'>
+  <link href="style.css" rel="stylesheet" />
+  <link rel="icon" href="images/CDC_Logos/favicon.ico" type="image/x-icon" />
+  <style>
+    body {
+      font-family: "Roboto", "Helvetica Neue", Helvetica, Arial;
+    }
+  </style>
+</head>
+<style>
+  #more {
+    display: none;
+  }
+
+  #more1 {
+    display: none;
+  }
+
+  .link-icon {
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0px auto;
+  }
+
+  .nav-collapse {
+    margin: 0
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --desaturated-dark-blue: hsl(214, 17%, 51%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+    --grayish-blue: hsl(212, 23%, 69%);
+    --white: hsl(0, 0%, 100%);
+
+    --fs-13: 13px;
+  }
+
+  .article-card {
+    display: grid;
+    grid-template-columns: 285px auto;
+    max-width: 1200px;
+    border-radius: 10px;
+    margin: 0 auto;
+    box-shadow: 2px 2px 10px #888888;
+    max-height: 450px;
+  }
+
+
+  .article-card:hover .article-banner {
+    transform: scale(1.1);
+  }
+
+
+
+  .img-box {
+    border-radius: 10px 0 0 10px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .article-banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.5s ease;
+  }
+
+  .article-content {
+    background: var(--white);
+    padding: 32px 40px;
+    border-radius: 0 10px 10px 0;
+    overflow-y: auto;
+    max-height: 300px;
+    position: relative;
+    /* background-color: aqua; */
+  }
+
+  .article-title {
+    font-size: 30px;
+    color: var(--very-dark-grayish-blue);
+    margin: 0;
+    padding: 20px 10px;
+    position: sticky;
+    top: -40px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+  }
+
+  .article-text {
+    color: var(--desaturated-dark-blue);
+    font-size: var(--fs-8);
+    line-height: 1.5;
+    margin-bottom: 18px;
+  }
+
+  .name {
+    position: absolute;
+    text-align: center;
+    bottom: -5px;
+    width: 100%;
+    padding: 8px 12px;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: rgba(32, 32, 32, 0.862);
+    border-radius: 4px;
+  }
+
+  @media screen and (max-width: 10000px) {
+    .img-box {
+      width: 100%;
+      height: 320px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .name {
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .article-card {
+      grid-template-columns: 1fr;
+      max-width: 354px;
+      margin: 0 auto;
+      max-height: none;
+    }
+
+    .img-box,
+    .article-content {
+      border-radius: 0;
+    }
+
+    .article-content {
+      padding: 30px 28px 20px;
+      max-height: 380px;
+      overflow-y: none;
+    }
+
+    .article-text {
+      margin-bottom: 30px;
+      font-size: 14px;
+    }
+
+    .article-title {
+      font-size: 28px;
+    }
+  }
+
+  .about {
+    align-items: center;
+    max-width: 1200px;
+    font-family: 'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+  }
+
+  .about_text {
+    background-color: transparent;
+    line-height: 1.4;
+    color: #fff;
+  }
+
+  .blog-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  
+  @media screen and (max-width: 770px) {
+
+    .blog-grid {
+      display: grid;
+      grid-template-columns: auto;
+    }
+  }
+
+  @media  screen and (min-width: 770px) and (max-width: 1138px){
+    .blog-grid {
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+  }
+
+  .links-div {
+    display: flex;
+    justify-content: space-between;
+    position: relative;bottom: 0;
+    margin-top: 1rem;
+  }
+  
+
+</style>
+<script>
+  function myFunction() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less";
+      moreText.style.display = "inline";
+    }
+  }
+</script>
+
+<script>
+  function myFunction1() {
+    var dots = document.getElementById("dots1");
+    var moreText = document.getElementById("more1");
+    var btnText = document.getElementById("myBtn1");
+
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less";
+      moreText.style.display = "inline";
+    }
+  }
+</script>
+
+<script>
+  function initial_func() {
+    var elm1 = document.querySelectorAll("#sub1")[1];
+    var elm2 = document.querySelectorAll("#sub2")[1];
+    var elm3 = document.querySelectorAll("#sub3")[1];
+    var elm4 = document.querySelectorAll("#sub4")[1];
+    var elm14 = document.querySelectorAll("#sub5")[1];
+    elm1.style.display = "none";
+    elm2.style.display = "none";
+    elm3.style.display = "none";
+    elm4.style.display = "none";
+    elm14.style.display = "none";
+    var elm5 = document.querySelectorAll("#a1")[0];
+    var elm6 = document.querySelectorAll("#a2")[0];
+    var elm7 = document.querySelectorAll("#a3")[0];
+    var elm8 = document.querySelectorAll("#a4")[0];
+    var elm9 = document.querySelectorAll("#a5")[0];
+    var elm10 = document.querySelectorAll("#a6")[0];
+    var elm11 = document.querySelectorAll("#a7")[0];
+    elm5.style.display = "inline";
+    elm6.style.display = "inline";
+    elm7.style.display = "inline";
+    elm8.style.display = "inline";
+    elm9.style.display = "inline";
+    elm10.style.display = "inline";
+    elm11.style.display = "inline";
+    var elm12 = document.querySelectorAll(".nav-collapse")[0];
+    elm12.style.padding = "15px 0px 0px 300px";
+    var elm13 = document.querySelectorAll("#header_logo")[0];
+    if ($(window).width() < 800) {
+      elm13.style.float = "right";
+    } else {
+      elm13.style.float = "left";
+    }
+  }
+</script>
+
+<script>
+  function dropdown_func(id) {
+    var all_subs = ['sub1', 'sub2', 'sub3', 'sub4', 'sub5']
+    for (sub in all_subs) {
+      if (all_subs[sub] != id) {
+        var elms = document.querySelectorAll("#" + all_subs[sub])[1];
+        elms.style.display = "none";
+      } else {
+        var elms = document.querySelectorAll("#" + all_subs[sub])[1];
+        if (elms.style.display === "none") {
+          elms.style.display = "block";
+        } else {
+          elms.style.display = "none";
+        }
+      }
+    }
+  }
+</script>
+
+<body onload="initial_func()">
+  <div class="loading-page">
+    <img src="images/image-preload.gif" alt="Images-loading">
+  </div>
+  <!-- Begin section search form -->
+  <div class="tz-content-search">
+    <form action="#" method="get">
+      <i class="fa fa-times tz-form-close"></i>
+      <input type="text" class="tz-search-input" id="tz-search-input" name="search" placeholder="Search...">
+    </form><!-- End form search -->
+  </div>
+  <!-- End section search form -->
+  <!-- Begin class tz-header-2 -->
+  <header class="tz-header tz-header-2">
+    <div class="tz-customer-container">
+      <div class="container">
+        <div class="tz-header-content">
+          <button type="button" class="tz-button-toggle btn-navbar pull-left" data-target=".nav-collapse">
+            <i class="fa fa-bars"></i>
+          </button>
+          <h3 class="tz-logo" id="header_logo">
+            <a href="index.html"><img alt="Images Logo" src="images/home/CDC_Logo/website_header@2x.png"
+                style="height:80px;width:200px"></a>
+          </h3>
+          <nav class="nav-collapse">
+            <ul class="tz-menu" style="align-items: center;">
+              <li>
+                <a href="index.html" id="a1">Home</a>
+              </li>
+              <li>
+                <a href="#" id="a2" style="width: 80%">Academic Info</a>
+                <button type="button" class="tz-button-toggle pull-right" onclick="dropdown_func('sub1')"
+                  style="border: none; font-size: 16px; cursor: pointer; background: #333333; color: #ffffff; margin: 5px 10px 0px 0px;">
+                  <i class="fa fa-chevron-down"></i>
+                </button>
+                <ul id="sub1" class="sub-menu sub-menu-style-1">
+                  <li>
+                    <a href="academics.html">Undergraduate</a>
+                  </li>
+                  <li>
+                    <a href="academic_facility_page.html">Academic Facilities</a>
+                  </li>
+                  <li>
+                    <a href="https://www.iitdh.ac.in/faculty_dept.php">Faculty</a>
+                  </li>
+
+                </ul>
+              </li>
+              <li>
+                <a href="#" id="a3" style="width: 80%">For Recruiters</a>
+                <button type="button" class="tz-button-toggle  pull-right" onclick="dropdown_func('sub2')"
+                  style="border: none; font-size: 16px; cursor: pointer; background: #333333; color: #ffffff; margin: 5px 10px 0px 0px;">
+                  <i class="fa fa-chevron-down"></i>
+                </button>
+                <ul id="sub2" class="sub-menu sub-menu-style-1">
+                  <li>
+                    <a href="internship_procedure.html">Internship</a>
+                  </li>
+                  <li>
+                    <a href="placementprocedure.html">Placement</a>
+                  </li>
+
+                  <li>
+                    <a href="https://drive.google.com/file/d/1QpP0K4J6AXiFcezI-mBRzrpesci0gsAh/view?usp=drive_link"
+                      target="_blank">Brochure</a>
+                  </li>
+                  <li>
+                    <a href="companies_faqs.html">FAQs</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" id="a4" style="width: 80%">For Students</a>
+                <button type="button" class="tz-button-toggle  pull-right" onclick="dropdown_func('sub3')"
+                  style="border: none; font-size: 16px; cursor: pointer; background: #333333; color: #ffffff; margin: 5px 10px 0px 0px;">
+                  <i class="fa fa-chevron-down"></i>
+                </button>
+                <ul id="sub3" class="sub-menu sub-menu-style-1">
+
+                  <li>
+                    <a href="https://drive.google.com/file/d/1P8z5w-PVAl3w6p2Z8kWgSDOUPukuMx--/view?usp=sharing"
+                      target="_blank">Placements - Rules & Regulations</a>
+                  </li>
+                  <li>
+                    <a href="https://drive.google.com/file/d/1WnXy-HGVIHF5GnfPDyGQzoRZ436-12IB/view?usp=drive_link"
+                      target="_blank">Internships - Rules & Regulations</a>
+                  </li>
+                  <li>
+                    <a href="https://drive.google.com/file/d/1PLHd6BiXP7fAbQaob8o0juXZzRSu8vWa/view?usp=drive_link"
+                      target="_blank">Violations and Penalities</a>
+                  </li>
+                    <a href="https://drive.google.com/file/d/1a8cRL4i3aeEWcCVRQIRAv-DrFybPl9N0/view?usp=sharing"
+                      target="_blank">Internship Information</a>
+                  </li>
+                  <li>
+                    <a href="portal/index.html" target="_blank">Student Portal</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" id="a5" style="width: 80%">Beyond Academics</a>
+                <button type="button" class="tz-button-toggle pull-right" onclick="dropdown_func('sub4')"
+                  style="border: none; cursor: pointer; background: #333333; color: #ffffff; padding: 5px 10px 0px 0px;">
+                  <i class="fa fa-chevron-down"></i>
+                </button>
+                <ul id="sub4" class="sub-menu sub-menu-style-1">
+                  <li>
+                    <a href="https://www.iitdh.ac.in/iic/" target="_blank">IIC</a>
+                  </li>
+                  <li>
+                    <a href="https://smp.iitdh.ac.in/" target="_blank">SMP</a>
+                  </li>
+
+                  <li>
+                    <a href="https://oss2019.github.io/" target="_blank">OSS</a>
+                  </li>
+                  <li>
+                    <a href="career_voyage.html" target="_self">Career Voyage</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" id="a6" style="width: 80%">Events</a>
+                <button type="button" class="tz-button-toggle pull-right" onclick="dropdown_func('sub5')"
+                  style="border: none; font-size: 16px; cursor: pointer; background: #333333; color: #ffffff; margin: 5px 10px 0px 0px;">
+                  <i class="fa fa-chevron-down"></i>
+                </button>
+                <ul id="sub5" class="sub-menu sub-menu-style-1">
+                  <li>
+                    <a href="hr_conclave.html">HR Conclave</a>
+                  </li>
+
+                </ul>
+              </li>
+              <li>
+                <a href="contact_cdc.html" id="a7">Contact Us</a>
+                <ul class="sub-menu sub-menu-style-1">
+
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div><!-- End Content Main Header -->
+    </div>
+  </header>
+  <!-- End class tz-header-2 -->
+
+
+  <section class="tz-banner tz-banner-style2">
+    <!-- Begin class banner style-3 -->
+    <div class="tz-banner-style2">
+      <div class="tz-slider-banner">
+        <div class="tz-items">
+          <div class="tz-slider-images">
+            <img src="images/home/greenery_view-1.png" alt="Images">
+          </div>
+          <div class="tz-banner-content">
+            <div class="container">
+              <h4>Career Voyage</h4>
+
+              <small>Alumni Stories Unlocked</small>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <!-- End  class banner style-3 -->
+  </section>
+
+  <!-- End section tz-introduce-univesity -->
+
+  <section class="tz-introduce-style-4">
+    <div class="container about">
+      <div class="tz-introduce-content tz-introduce-content-style-4 about_text">
+        <!-- <h4>About Career Voyage</h4> -->
+        <br />
+        <p style="font-size: 18px; text-align:justify;color:#101118bd;margin:0 0 5px">
+          At IIT Dharwad, we believe in providing our students with the best tools to navigate the professional realm
+          successfully.
+          To further this commitment, we have conducted exclusive interviews with some of our outstanding graduates who
+          have excelled in their internships and placements and are now flourishing in the corporate world.
+        </p>
+        <p style="font-size: 18px;text-align:justify;color:#101118bd;margin:0 0 5px">
+          The "Career Voyage" series offers a unique opportunity for our current students to gain invaluable insights,
+          advice, and inspiration from those who have walked the path you are embarking upon.
+          We know how essential it is to make informed decisions about career choices, and there's no better way to do
+          so than to learn from the experiences of your own peers.
+        </p>
+        <p style="font-size: 18px;text-align:justify;color:#101118bd;margin:0 0 5px">
+          Our amazing alumni have generously shared their successes, challenges, and lessons from internships and
+          corporate life.
+          We'll share their stories through engaging social media posts.
+          Get ready for exciting anecdotes, expert tips, and a behind-the-scenes look into the professional world.
+        </p>
+        <p style="font-size: 18px;text-align:justify;color:#101118bd;margin:0 0 5px">
+          Join us in celebrating the success of our alumni and leveraging their knowledge to make informed decisions for
+          your own future!
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  
+  <div  style="margin: 50px 0px;" class="blog-grid">
+    <div class="tz-wrapper-default" style="margin: 3rem;">
+      <article class="article-card">
+        <div class="img-box">
+          <a
+            href="https://open.substack.com/pub/careervoyage/p/a-journey-of-dedication-and-success?r=2k5yxf&utm_campaign=post&utm_medium=web"><img
+              src="images/career_voyage/prateek.jpeg" alt="" class="article-banner"></a>
+        </div>
+        <div class="article-content">
+          <h3 class="article-title">Prateek Jain </h3>
+          <div style="height: 12rem; overflow: overlay;">
+
+            <p class="article-text">
+              Prateek, currently pursuing his MS in Computer Science at Columbia University in the City of New York,
+              USA, has skillfully navigated both the academic and corporate landscapes. Publishing 2 research papers at
+              distinguished conferences and noteworthy industry experience at esteemed organisations such as DRDO, Adobe
+              Research, and CRED, Prateek has certainly made the IIT Dharwad community proud.
+              In this blog post, we delve into Prateek's journey from his days at IIT Dharwad to his current pursuits in
+              academia and industry.
+            </p>
+          </div>
+
+          <div class="links-div">
+            <col>
+            <a href="https://open.substack.com/pub/careervoyage/p/a-journey-of-dedication-and-success?r=2k5yxf&utm_campaign=post&utm_medium=web"
+              target="_blank" class="tz-view-more"> <i class="fa fa-globe"></i> Blog</a>
+            </col>
+            <col>
+            <a href="https://twitter.com/cdc_iitdh/status/1681624799838363650?s=20" target="_blank"
+              class="tz-view-more"> <i class="fa fa-twitter"></i> twitter</a>
+            </col>
+            <col>
+            <a href="https://www.youtube.com/watch?v=5TtQP-vtnkM&t=49s" target="_blank" class="tz-view-more"> <i
+                class="fa fa-youtube"></i> youtube</a>
+            </col>
+            <col>
+            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7087388062925647873?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7087388062925647873%29"
+              target="_blank" class="tz-view-more"> <i class="fa fa-linkedin"></i> linkedin</a>
+            </col>
+          </row>
+        </div>
+      </article>
+    </div>
+
+
+
+    <div class="tz-wrapper-default" style="margin: 3rem;">
+      <article class="article-card">
+        <div class="img-box">
+          <a href="#"><img src="images/career_voyage/mayank.jpeg" alt="" class="article-banner"></a>
+        </div>
+        <div class="article-content">
+          <h3 class="article-title">Mayank Mittal </h3>
+          <div style="height: 12rem; overflow-x: overlay;">
+            <p class="article-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus adipisci enim, quia itaque
+              voluptatibus ipsam rem quas nulla, eius deserunt reprehenderit velit praesentium? Quam dolorem autem qui
+              illo quisquam ipsum.
+            </p>
+          </div>
+          <div class="links-div">
+            <col>
+            <a href="_blank" target="_blank" class="tz-view-more"> <i class="fa fa-globe"></i> Blog</a>
+            </col>
+            <col>
+            <a href="https://twitter.com/cdc_iitdh/status/1681624799838363650?s=20" target="_blank"
+              class="tz-view-more"> <i class="fa fa-twitter"></i> twitter</a>
+            </col>
+            <col>
+            <a href="_blank" target="_blank" class="tz-view-more"> <i class="fa fa-youtube"></i> youtube</a>
+            </col>
+            <col>
+            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7089957717372526592?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7089957717372526592%29"
+              target="_blank" class="tz-view-more"> <i class="fa fa-linkedin"></i> linkedin</a>
+            </col>
+          </row>
+        </div>
+      </article>
+    </div>
+
+    <div class="tz-wrapper-default" style="margin: 3rem;">
+      <article class="article-card">
+        <div class="img-box">
+          <a href="#"><img src="images/F19zPmsaUAEXaCj.jpeg" alt="" class="article-banner"></a>
+        </div>
+        <div class="article-content">
+          <h3 class="article-title">Mayank Mittal </h3>
+          <div style="height: 12rem; overflow-x: overlay;">
+            <p class="article-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus adipisci enim, quia itaque
+              voluptatibus ipsam rem quas nulla, eius deserunt reprehenderit velit praesentium? Quam dolorem autem qui
+              illo quisquam ipsum.
+            </p>
+          </div>
+          <div class="links-div">
+            <col>
+            <a href="_blank" target="_blank" class="tz-view-more"> <i class="fa fa-globe"></i> Blog</a>
+            </col>
+            <col>
+            <a href="https://twitter.com/cdc_iitdh/status/1681624799838363650?s=20" target="_blank"
+              class="tz-view-more"> <i class="fa fa-twitter"></i> twitter</a>
+            </col>
+            <col>
+            <a href="_blank" target="_blank" class="tz-view-more"> <i class="fa fa-youtube"></i> youtube</a>
+            </col>
+            <col>
+            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7089957717372526592?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7089957717372526592%29"
+              target="_blank" class="tz-view-more"> <i class="fa fa-linkedin"></i> linkedin</a>
+            </col>
+          </row>
+        </div>
+      </article>
+    </div>
+
+  </div>
+
+
+  <div style="margin: 100px 0;">
+
+    <h4 style="text-align: center;">Subscribe to our newsletter to get updates on the latest updates!</h4>
+    <div style="margin: auto;">
+
+      <iframe src="https://careervoyage.substack.com/embed" width="480" height="320"
+        style="border:1px solid #EEE; background:white; display: block;margin: auto;" frameborder="0"
+        scrolling="no"></iframe>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Begin Footer -->
+  <footer class="tz-footer">
+    <div class="tz-footer-content tz-footer-content-2 tz-background-color-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <img src="images/home/logo.png" alt="Icon-footer" style="padding-bottom:30px">
+            <ul>
+              <li><a href="#" style="color:#fff">Indian Institute of Technology Dharwad,</a></li>
+              <li><a href="#" style="color:#fff">Karnataka, India - 580011</a></li>
+              <li><a href="#" style="color:#fff">cdc@iitdh.ac.in</a></li>
+              <li><a href="#" style="color:#fff">+91 836 2212 839</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3">
+            <ul class="">
+              <li>
+                <div class="tz-footer-content-main">
+                  <!--<img src="images/check-02-home2.png" alt="Images remove footer">-->
+                  <h4>Quick Links</h4>
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                  </ul>
+
+                  <h4>Academic Information</h4>
+                  <ul>
+                    <li><a href="academics.html">Undergraduate</a></li>
+                    <li><a href="https://www.iitdh.ac.in/faculty_dept.php">Faculty</a></li>
+                    <li><a href="academic_facility_page.html">Academic Facilities</a></li>
+                    <!-- <li><a href="#">R&D</a></li> -->
+                    <!-- <li><a href="#">Students Projects</a></li> -->
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3">
+            <ul class="">
+              <li>
+                <div class="tz-footer-content-main">
+                  <!--<img src="images/check-02-home2.png" alt="Images remove footer">-->
+                  <h4>For Recruiters</h4>
+                  <ul>
+                    <li><a href="internship_procedure.html">Internship</a></li>
+                    <li><a href="placementprocedure.html">Placement</a></li>
+                    <!-- <li><a href="#">Internship</a></li> -->
+                    <li><a href="https://drive.google.com/file/d/1QpP0K4J6AXiFcezI-mBRzrpesci0gsAh/view?usp=drive_link"
+                        target="_blank">Brochure</a></li>
+                    <li><a href="companies_faqs.html">FAQs</a></li>
+                  </ul>
+
+                  <h4>For Students</h4>
+                  <ul>
+                    <!-- <li><a href="placement.html">For Placements</a></li> -->
+                    <!-- <li><a href="#">For Internships</a></li> -->
+                    <li><a href="https://drive.google.com/file/d/1P8z5w-PVAl3w6p2Z8kWgSDOUPukuMx--/view?usp=sharing"
+                        target="_blank">Placements - Rules & Regulations</a></li>
+                    <li><a href="https://drive.google.com/file/d/1PLHd6BiXP7fAbQaob8o0juXZzRSu8vWa/view?usp=drive_link"
+                        target="_blank">Internships - Rules & Regulations</a></li>
+                    <li><a href="https://drive.google.com/file/d/1a8cRL4i3aeEWcCVRQIRAv-DrFybPl9N0/view?usp=sharing"
+                        target="_blank">Internship Information</a></li>
+                    <li>
+                      <a href="portal/index.html" target="_blank">Student Portal</a>
+                    </li>
+                  </ul>
+
+
+
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3">
+            <ul class="">
+              <li>
+                <div class="tz-footer-content-main">
+                  <!--<img src="images/check-02-home2.png" alt="Images remove footer">-->
+                  <h4>Beyond Academics</h4>
+                  <ul>
+                    <li><a href="https://www.iitdh.ac.in/iic/" target="_blank">IIC</a></li>
+                    <li><a href="https://smp.iitdh.ac.in/" target="_blank">SMP</a></li>
+                    <!-- <li><a href="#">Cultural Events</a></li> -->
+                    <li><a href="https://oss2019.github.io/" target="_blank">OSS</a></li>
+                    <!-- <li><a href="#">CSR</a></li> -->
+                  </ul>
+                  <h4>Events</h4>
+                  <ul>
+                    <li><a href="hr_conclave.html">HR Conclave</a></li>
+                  </ul>
+                  <ul>
+                    <li><a href="contact_cdc.html">
+                        <h4>Contact Us</h4>
+                      </a></li>
+                  </ul>
+
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <script>
+    var Desktop = 5,
+      tabletportrait = 2,
+      mobilelandscape = 1,
+      mobileportrait = 1,
+      resizeTimer = null;
+  </script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/off-canvas.js"></script>
+  <script src="js/jquery.isotope.min.js"></script>
+  <script src="js/resize.js"></script>
+  <script src="js/custom-portfolio.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.parallax-1.1.3.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+
+</html>
