@@ -20,7 +20,7 @@
   <link href='css/owl.theme.css' rel='stylesheet' type='text/css'>
   <link href="style.css" rel="stylesheet" />
   <link rel="icon" href="images/CDC_Logos/favicon.ico" type="image/x-icon" />
-<style>
+  <style>
     body {
       font-family: "Roboto", "Helvetica Neue", Helvetica, Arial;
     }
@@ -73,6 +73,13 @@
     box-shadow: 2px 2px 10px #888888;
     max-height: 450px;
   }
+
+
+  .article-card:hover .article-banner {
+    transform: scale(1.1);
+  }
+
+
 
   .img-box {
     border-radius: 10px 0 0 10px;
@@ -130,7 +137,7 @@
     border-radius: 4px;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 10000px) {
     .img-box {
       width: 100%;
       height: 320px;
@@ -187,6 +194,35 @@
     line-height: 1.4;
     color: #fff;
   }
+
+  .blog-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  
+  @media screen and (max-width: 770px) {
+
+    .blog-grid {
+      display: grid;
+      grid-template-columns: auto;
+    }
+  }
+
+  @media  screen and (min-width: 770px) and (max-width: 1138px){
+    .blog-grid {
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+  }
+
+  .links-div {
+    display: flex;
+    justify-content: space-between;
+    position: relative;bottom: 0;
+    margin-top: 1rem;
+  }
+  
+
 </style>
 <script>
   function myFunction() {
@@ -455,78 +491,166 @@
   <section class="tz-introduce-style-4">
     <div class="container about">
       <div class="tz-introduce-content tz-introduce-content-style-4 about_text">
-        <h4>About Career Voyage</h4>
+        <!-- <h4>About Career Voyage</h4> -->
+        <br />
         <p style="font-size: 18px; text-align:justify;color:#101118bd;margin:0 0 5px">
-          At IIT Dharwad, we believe in providing our students with the best tools to navigate the professional realm successfully. 
-          To further this commitment, we have conducted exclusive interviews with some of our outstanding graduates who have excelled in their internships and placements and are now flourishing in the corporate world.
+          At IIT Dharwad, we believe in providing our students with the best tools to navigate the professional realm
+          successfully.
+          To further this commitment, we have conducted exclusive interviews with some of our outstanding graduates who
+          have excelled in their internships and placements and are now flourishing in the corporate world.
         </p>
         <p style="font-size: 18px;text-align:justify;color:#101118bd;margin:0 0 5px">
-          The "Career Voyage" series offers a unique opportunity for our current students to gain invaluable insights, advice, and inspiration from those who have walked the path you are embarking upon. 
-          We know how essential it is to make informed decisions about career choices, and there's no better way to do so than to learn from the experiences of your own peers.
+          The "Career Voyage" series offers a unique opportunity for our current students to gain invaluable insights,
+          advice, and inspiration from those who have walked the path you are embarking upon.
+          We know how essential it is to make informed decisions about career choices, and there's no better way to do
+          so than to learn from the experiences of your own peers.
         </p>
         <p style="font-size: 18px;text-align:justify;color:#101118bd;margin:0 0 5px">
-          Our amazing alumni have generously shared their successes, challenges, and lessons from internships and corporate life. 
-          We'll share their stories through engaging social media posts. 
+          Our amazing alumni have generously shared their successes, challenges, and lessons from internships and
+          corporate life.
+          We'll share their stories through engaging social media posts.
           Get ready for exciting anecdotes, expert tips, and a behind-the-scenes look into the professional world.
         </p>
         <p style="font-size: 18px;text-align:justify;color:#101118bd;margin:0 0 5px">
-          Join us in celebrating the success of our alumni and leveraging their knowledge to make informed decisions for your own future!
+          Join us in celebrating the success of our alumni and leveraging their knowledge to make informed decisions for
+          your own future!
         </p>
 
       </div>
     </div>
   </section>
 
-  <div style="padding: 100px 0px;">
-    <section class="tz-wrapper-default">
+  
+  <div  style="margin: 50px 0px;" class="blog-grid">
+    <div class="tz-wrapper-default" style="margin: 3rem;">
       <article class="article-card">
         <div class="img-box">
-          <img src="images/home/director.jfif" alt="" class="article-banner">
-          <h1 class="name">Venkappayya R Desai <br>
-            Director, IIT Dharwad
-          </h1>
+          <a
+            href="https://open.substack.com/pub/careervoyage/p/a-journey-of-dedication-and-success?r=2k5yxf&utm_campaign=post&utm_medium=web"><img
+              src="images/career_voyage/prateek.jpeg" alt="" class="article-banner"></a>
         </div>
         <div class="article-content">
           <h3 class="article-title">Prateek Jain </h3>
-          <br><br>
-          <p class="article-text">
-            At the outset, I extend my warm welcome to all the HRs of the esteemed organizations. I am delighted to
-            invite you to
-            IIT Dharwad for the placement of our students.
-          </p>
+          <div style="height: 12rem; overflow: overlay;">
+
+            <p class="article-text">
+              Prateek, currently pursuing his MS in Computer Science at Columbia University in the City of New York,
+              USA, has skillfully navigated both the academic and corporate landscapes. Publishing 2 research papers at
+              distinguished conferences and noteworthy industry experience at esteemed organisations such as DRDO, Adobe
+              Research, and CRED, Prateek has certainly made the IIT Dharwad community proud.
+              In this blog post, we delve into Prateek's journey from his days at IIT Dharwad to his current pursuits in
+              academia and industry.
+            </p>
+          </div>
+
+          <div class="links-div">
+            <col>
+            <a href="https://open.substack.com/pub/careervoyage/p/a-journey-of-dedication-and-success?r=2k5yxf&utm_campaign=post&utm_medium=web"
+              target="_blank" class="tz-view-more"> <i class="fa fa-globe"></i> Blog</a>
+            </col>
+            <col>
+            <a href="https://twitter.com/cdc_iitdh/status/1681624799838363650?s=20" target="_blank"
+              class="tz-view-more"> <i class="fa fa-twitter"></i> twitter</a>
+            </col>
+            <col>
+            <a href="https://www.youtube.com/watch?v=5TtQP-vtnkM&t=49s" target="_blank" class="tz-view-more"> <i
+                class="fa fa-youtube"></i> youtube</a>
+            </col>
+            <col>
+            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7087388062925647873?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7087388062925647873%29"
+              target="_blank" class="tz-view-more"> <i class="fa fa-linkedin"></i> linkedin</a>
+            </col>
+          </row>
         </div>
       </article>
+    </div>
 
-    </section>
-    <div style="width: 100%;height:100px;"></div>
-    <section class="tz-wrapper-default">
+
+
+    <div class="tz-wrapper-default" style="margin: 3rem;">
       <article class="article-card">
         <div class="img-box">
-          <img src="images/home/dean_ap.jpg" alt="" class="article-banner">
-          <h1 class="name">Prof. Narayan S Punekar
-            <br>
-            Dean of Academic Programmes, IIT Dharwad
-          </h1>
+          <a href="#"><img src="images/career_voyage/mayank.jpeg" alt="" class="article-banner"></a>
         </div>
         <div class="article-content">
           <h3 class="article-title">Mayank Mittal </h3>
-          <br><br>
-          <p class="article-text">
-            I am pleased to invite you to our esteemed institute on behalf of the students,faculty and the staff of IIT
-            Dharwad, to
-            participate in placements for the final year students and internships for the pre-final year students.
-          </p>
+          <div style="height: 12rem; overflow-x: overlay;">
+            <p class="article-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus adipisci enim, quia itaque
+              voluptatibus ipsam rem quas nulla, eius deserunt reprehenderit velit praesentium? Quam dolorem autem qui
+              illo quisquam ipsum.
+            </p>
+          </div>
+          <div class="links-div">
+            <col>
+            <a href="_blank" target="_blank" class="tz-view-more"> <i class="fa fa-globe"></i> Blog</a>
+            </col>
+            <col>
+            <a href="https://twitter.com/cdc_iitdh/status/1681624799838363650?s=20" target="_blank"
+              class="tz-view-more"> <i class="fa fa-twitter"></i> twitter</a>
+            </col>
+            <col>
+            <a href="_blank" target="_blank" class="tz-view-more"> <i class="fa fa-youtube"></i> youtube</a>
+            </col>
+            <col>
+            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7089957717372526592?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7089957717372526592%29"
+              target="_blank" class="tz-view-more"> <i class="fa fa-linkedin"></i> linkedin</a>
+            </col>
+          </row>
+        </div>
       </article>
+    </div>
 
-    </section>
-    <div style="width: 100%;height:100px;"></div>
+    <div class="tz-wrapper-default" style="margin: 3rem;">
+      <article class="article-card">
+        <div class="img-box">
+          <a href="#"><img src="images/F19zPmsaUAEXaCj.jpeg" alt="" class="article-banner"></a>
+        </div>
+        <div class="article-content">
+          <h3 class="article-title">Mayank Mittal </h3>
+          <div style="height: 12rem; overflow-x: overlay;">
+            <p class="article-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus adipisci enim, quia itaque
+              voluptatibus ipsam rem quas nulla, eius deserunt reprehenderit velit praesentium? Quam dolorem autem qui
+              illo quisquam ipsum.
+            </p>
+          </div>
+          <div class="links-div">
+            <col>
+            <a href="_blank" target="_blank" class="tz-view-more"> <i class="fa fa-globe"></i> Blog</a>
+            </col>
+            <col>
+            <a href="https://twitter.com/cdc_iitdh/status/1681624799838363650?s=20" target="_blank"
+              class="tz-view-more"> <i class="fa fa-twitter"></i> twitter</a>
+            </col>
+            <col>
+            <a href="_blank" target="_blank" class="tz-view-more"> <i class="fa fa-youtube"></i> youtube</a>
+            </col>
+            <col>
+            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7089957717372526592?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7089957717372526592%29"
+              target="_blank" class="tz-view-more"> <i class="fa fa-linkedin"></i> linkedin</a>
+            </col>
+          </row>
+        </div>
+      </article>
+    </div>
 
-    </section>
+  </div>
+
+
+  <div style="margin: 100px 0;">
+
+    <h4 style="text-align: center;">Subscribe to our newsletter to get updates on the latest updates!</h4>
+    <div style="margin: auto;">
+
+      <iframe src="https://careervoyage.substack.com/embed" width="480" height="320"
+        style="border:1px solid #EEE; background:white; display: block;margin: auto;" frameborder="0"
+        scrolling="no"></iframe>
+    </div>
   </div>
 
 
 
-  
 
 
   <!-- Begin Footer -->
