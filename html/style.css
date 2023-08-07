@@ -3549,12 +3549,23 @@ div.tz-cource-services-style-7 li div{
 }
 .tz-item-portfolio {
     position: relative;
-    text-align: center;
+    /* text-align: center; */
     z-index: 1;
 }
-.tz-item-portfolio .tz-image-portfolio{
+.tz-item-portfolio .tz-image-portfolio {
     overflow: hidden;
     height: 384px;
+    width: 384px;
+    position: relative;
+}
+
+.tz-item-portfolio .tz-image-portfolio img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .tz-item-portfolio a.tz-color-icon-1 {
     background:rgb(51, 72, 120);
