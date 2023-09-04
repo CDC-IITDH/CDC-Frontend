@@ -626,57 +626,9 @@
   </div>
 
 
-  <!-- Begin section tz-introduce-univesity -->
-  <section class="tz-introduce-univesity">
-    <div class="tz-cource-services tz-cource-services-style-2">
-      <ul>
+  <div id="whyiitdharwad">
 
-        <li>
-          <a href="whyrecruit.html">
-            <div class="tz-background-color-1">
-              <span class="link-icon">
-                <i class="tz-color-1 fa fa-file-text-o"></i>
-              </span>
-              <span style="color: #fff;padding-top: 13px;">Why Recruit?</span>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="placementprocedure.html">
-            <div class="tz-background-color-2">
-              <span class="link-icon">
-                <i class="tz-color-2 fa fa-paperclip"></i>
-              </span>
-              <span style="color: #fff;padding-top: 13px;">Procedure</span>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.iitdh.ac.in/pdf/CDC/placeement%20stats.pdf">
-            <div class="tz-background-color-3">
-              <span class="link-icon">
-                <i class="tz-color-3 fa fa-rocket"></i>
-              </span>
-              <span style="color: #fff;padding-top: 13px;">Placement Statistics</span>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="contact_cdc.html">
-            <div class="tz-background-color-4">
-              <span class="link-icon">
-                <i class="tz-color-4 fa fa-cog"></i>
-              </span>
-              <span style="color: #fff;padding-top: 13px;">Contact Us</span>
-            </div>
-          </a>
-        </li>
-      </ul>
-    </div>
-    </div>
-
-  </section>
-  <!-- End section tz-introduce-univesity -->
+  </div>
 
   <section class="tz-introduce-style-4">
     <div class="container about">
@@ -1365,6 +1317,100 @@
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/jquery.parallax-1.1.3.js"></script>
   <script src="js/custom.js"></script>
+  <!-- change the url in production -->
+  <!-- change the url in production --><!-- change the url in production --><!-- change the url in production --><!-- change the url in production -->
+
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- setup react root component other components -->
+  <script type="text/babel">
+
+    const sectionStyles = {
+      padding: "20px ", margin: "0",
+      fontFamily: "sans-serif",
+      backgroundColor: "#526ba7",
+      backgroundImage: "url(\"data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%233d4394' fill-opacity='0.53' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E\")",
+    };
+
+    const buttonStyles = {
+      display: 'inline-block',
+      margin: '0 20px 8px 0',
+      outline: 'none',
+      cursor: 'pointer',
+      fontWeight: '500',
+      borderRadius: '3px',
+      padding: '0 16px',
+      color: '#fff',
+      background: '#6200ee',
+      lineHeight: '1.15',
+      fontSize: '14px',
+      height: '36px',
+      wordSpacing: '0px',
+      letterSpacing: '.0892857143em',
+      textDecoration: 'none',
+      textTransform: 'uppercase',
+      minWidth: '64px',
+      border: 'none',
+      textAlign: 'center',
+      boxShadow: '0px 3px 1px -2px rgba(0, 0, 0, 0.20), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12)',
+      transition: 'box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1)',
+    };
+
+    const buttonHoverStyles = {
+      background: 'rgb(98, 0, 238)',
+      boxShadow: '0px 2px 4px -1px rgba(0, 0, 0, 0.20), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12)',
+    };
+
+    const contactUs = { color: 'black', textDecoration: 'none' }
+
+    function MyComponent() {
+      return (
+        <section className="tz-introduce-style-4" style={sectionStyles}>
+          <div className="container about">
+            <div className="tz-introduce-content tz-introduce-content-style-4 about_text">
+              <h1 style={{ color: '#fff', textAlign: "left", fontSize: "5rem", padding: "10px 0" }}>Why IIT Dharwad ?</h1>
+              <p style={{ textAlign: 'justify', margin: '0 0 5px', color: '#e8e8e8' }}>
+                CDC is a body of IIT Dharwad that supports students in shaping an CDC is a body of IIT Dharwad that supports students in shaping and CDC is a body of IIT Dharwad that supports students in shaping and CDC is a body of IIT Dharwad that supports students in shaping and CDC is a body of IIT Dharwad that supports students in shaping and CDC is a body of IIT Dharwad that supports students in shaping andd managing their careers by building critical ingredients required for a student to be a complete professional.
+              </p>
+              <div style={{ textAlign: "left" }}>
+                <button
+                  style={{ ...buttonStyles, marginTop: "1.5rem" }}
+                >
+                  <a style={{ color: "white" }} href="internship_procedure.html">Register for Internship</a>
+                </button>
+                <button
+                  style={buttonStyles}
+                >
+                  <a style={{ color: "white" }} href="placementprocedure.html">Register  for Placements</a>
+                </button>
+                <br />
+                <span sx={{ marginTop: '10px' }}>
+                  Feel free to react out to us at &nbsp;
+                  <a href="mailto:cdc@iitdh.ac.in" sx={contactUs}>
+                    cdc@iitdh.ac.in
+                  </a>
+                </span>
+              </div>
+
+            </div>
+          </div>
+        </section >
+      );
+    }
+
+    function RootComponent() {
+      return (
+        <div>
+          <MyComponent />
+        </div>
+      );
+    }
+
+    const domContainer = document.querySelector('#whyiitdharwad');
+    ReactDOM.render(React.createElement(RootComponent), domContainer);
+  </script>
 </body>
 
 </html>
