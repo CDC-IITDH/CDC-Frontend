@@ -1330,7 +1330,7 @@
     const sectionStyles = {
       padding: "20px ", margin: "0",
       fontFamily: "sans-serif",
-      backgroundColor: '#dbc85e',
+      backgroundColor: '#DB9C5E',
       backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'6\' height=\'6\' viewBox=\'0 0 6 6\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'%23343436\' fill-opacity=\'0.15\' fill-rule=\'evenodd\'%3E%3Cpath d=\'M5 0h1L0 6V5zM6 5v1H5z\'/%3E%3C/g%3E%3C/svg%3E")',
     };
 
@@ -1343,7 +1343,7 @@
       borderRadius: '3px',
       padding: '0 16px',
       color: '#fff',
-      background: '#6200ee',
+      background: '#334864',
       lineHeight: '1.15',
       fontSize: '14px',
       height: '36px',
@@ -1359,7 +1359,7 @@
     };
 
     const buttonHoverStyles = {
-      background: 'rgb(98, 0, 238)',
+      background: 'rgb(51, 72, 120)',
       boxShadow: '0px 2px 4px -1px rgba(0, 0, 0, 0.20), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12)',
     };
 
@@ -1371,22 +1371,22 @@
           <div className="container about">
             <div className="tz-introduce-content tz-introduce-content-style-4 about_text">
               <h1 style={{ color: 'black', textAlign: "left", fontSize: "5rem", padding: "10px 0" }}>Why IIT Dharwad ?</h1>
-              <p style={{ textAlign: 'justify', margin: '0 0 5px', color: 'gray' }}>
+              <p style={{ textAlign: 'justify', margin: '0 0 5px', color: 'black' }}>
                 IIT Dharwad is a premier educational institution, focusing on the holistic development of each student. Our students are nurtured to be curious, hardworking and adaptive, right from the first semester. In addition to theoretical knowledge, we also impart hands on knowledge and industry relevant skills to our students, to enable them to thrive in any setting. Through organizing various events and participating in our plethora of club activities, our students are skilled in management, teamwork and logistics too. A lot of impetus is given to sports in our college, from where our students pick up important life skills like leadership, and team-spirit. Thus, be it research or management, rest assured that our students will be able to add value to your organization, in whatever role you may choose to hire them.
                </p>
-                <div style={{ textAlign: "left" }}>
-                  <button
-                    style={{ ...buttonStyles, marginTop: "1.5rem" }}
-                  >
-                    <a style={{ color: "white" }} href="internship_procedure.html">Register for Internship</a>
-                  </button>
+                <div style={{ textAlign: "left" }}>    
                   <button
                     style={buttonStyles}
                   >
-                    <a style={{ color: "white" }} href="placementprocedure.html">Register  for Placements</a>
+                    <a href="placementprocedure.html" style={{ color: "white" }} ><b>Register for Placements</b></a>
+                  </button>
+                  <button 
+                    style={{ ...buttonStyles, marginTop: "1.5rem" }}
+                  >
+                    <a href="internship_procedure.html" style={{ color: "white" }} ><b>Register for Internships</b></a>
                   </button>
                   <br />
-                  <span sx={{ marginTop: '10px' }}>
+                  <span style={{ marginTop: '10px',fontSize:"2rem" }}>
                     Feel free to react out to us at &nbsp;
                     <a href="mailto:cdc@iitdh.ac.in" sx={contactUs}>
                       cdc@iitdh.ac.in
